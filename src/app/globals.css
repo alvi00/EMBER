@@ -1,0 +1,238 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "../styles/tokens.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* EMBER tokens → Tailwind utilities */
+@theme inline {
+  /* Fonts (next/font variables set on <html>) */
+  --font-sans: var(--font-geist-sans), "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-display: var(--font-instrument-serif), "Iowan Old Style", Georgia, serif;
+  --font-heading: var(--font-instrument-serif), Georgia, serif;
+
+  /* Type scale */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+  --text-display-sm: var(--step-48);
+  --text-display-sm--line-height: 1.02;
+  --text-display: var(--step-72);
+  --text-display--line-height: 0.98;
+  --text-display-lg: var(--step-112);
+  --text-display-lg--line-height: 0.92;
+
+  /* EMBER palette */
+  --color-canvas: var(--bg);
+  --color-elev-1: var(--bg-elev-1);
+  --color-elev-2: var(--bg-elev-2);
+  --color-elev-3: var(--bg-elev-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--text);
+  --color-ink-muted: var(--text-muted);
+  --color-ink-faint: var(--text-faint);
+  --color-flame-micro: var(--flame-micro);
+  --color-flame-violet: var(--flame-violet);
+  --color-flame-violet-text: var(--flame-violet-text);
+  --color-flame-earth: var(--flame-earth);
+  --color-flame-core: var(--flame-core);
+  --color-danger: var(--danger);
+  --color-ok: var(--ok);
+  --color-unknown: var(--unknown);
+
+  /* shadcn semantic colours */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --radius-card: var(--radius-card);
+
+  --ease-out-3: var(--ease-out-3);
+  --ease-out-expo: var(--ease-out-expo);
+
+  --animate-pulse-ring: pulse-ring 2.4s var(--ease-out-3) infinite;
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.6);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+}
+
+/* EMBER is dark-only: shadcn variables point at EMBER tokens */
+:root {
+  --background: var(--bg);
+  --foreground: var(--text);
+  --card: var(--bg-elev-1);
+  --card-foreground: var(--text);
+  --popover: var(--bg-elev-2);
+  --popover-foreground: var(--text);
+  --primary: var(--text);
+  --primary-foreground: var(--bg);
+  --secondary: var(--bg-elev-2);
+  --secondary-foreground: var(--text);
+  --muted: var(--bg-elev-2);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--bg-elev-3);
+  --accent-foreground: var(--text);
+  --destructive: var(--danger);
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--flame-micro);
+  --chart-1: var(--flame-micro);
+  --chart-2: var(--flame-violet);
+  --chart-3: var(--flame-earth);
+  --chart-4: var(--flame-core);
+  --chart-5: var(--ok);
+  --radius: 0.625rem;
+  --sidebar: var(--bg-elev-1);
+  --sidebar-foreground: var(--text);
+  --sidebar-primary: var(--flame-micro);
+  --sidebar-primary-foreground: var(--bg);
+  --sidebar-accent: var(--bg-elev-2);
+  --sidebar-accent-foreground: var(--text);
+  --sidebar-border: var(--line);
+  --sidebar-ring: var(--flame-micro);
+  color-scheme: dark;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    background: var(--bg);
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: calc(var(--nav-h) + 16px);
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+  /* Film grain (3–4%) — a fixed, non-interactive layer above the page background */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--flame-micro) 35%, transparent);
+    color: var(--text);
+  }
+  :focus-visible {
+    outline: 2px solid var(--flame-micro);
+    outline-offset: 2px;
+  }
+  .tabular,
+  code,
+  kbd,
+  samp {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Standard EMBER card surface: elev-1, hairline, radius 16, inner top highlight */
+  .surface {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--card-highlight);
+  }
+  .surface-2 {
+    background: var(--bg-elev-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--card-highlight);
+  }
+  .hatch {
+    background-image: var(--hatch);
+  }
+  .text-flame-gradient {
+    background: var(--flame-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .container-ember {
+    width: 100%;
+    max-width: var(--max-content);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+  .eyebrow {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-size: var(--step-12);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.12s !important;
+    scroll-behavior: auto !important;
+  }
+}

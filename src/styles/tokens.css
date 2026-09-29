@@ -1,0 +1,89 @@
+/*
+ * EMBER design tokens — "Deep space, living flame" (project.md §6).
+ * Blue = microgravity / cool / space. Amber-orange = Earth gravity / sooty / danger.
+ * These raw tokens are mapped into Tailwind utilities in src/app/globals.css (@theme inline).
+ */
+:root {
+  /* Surfaces */
+  --bg: #05060a;
+  --bg-elev-1: #0b0d14;
+  --bg-elev-2: #11141d;
+  --bg-elev-3: #171b26;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --text: #e8eaf0;
+  --text-muted: #8a90a2;
+  --text-faint: #6b7184;
+
+  /* Flame palette */
+  --flame-micro: #4cc9f0;
+  --flame-violet: #7b61ff;
+  --flame-earth: #ff7a18;
+  --flame-core: #ffd166;
+
+  /* Semantic */
+  --danger: #ff4d4f;
+  --ok: #3ddc97;
+  --unknown: #5b6275;
+
+  /* Violet lifted for text use on dark surfaces (AA ≥ 4.5:1 on --bg-elev-1) */
+  --flame-violet-text: #a594ff;
+
+  --flame-gradient: linear-gradient(135deg, var(--flame-micro) 0%, var(--flame-violet) 50%, var(--flame-earth) 100%);
+
+  /* Hatched "no data" pattern (never colour alone) */
+  --hatch: repeating-linear-gradient(
+    135deg,
+    rgba(91, 98, 117, 0.55) 0 2px,
+    transparent 2px 7px
+  );
+
+  /* Type scale (px → rem at 16px root): 12/14/16/18/24/32/48/72/112 */
+  --step-12: 0.75rem;
+  --step-14: 0.875rem;
+  --step-16: 1rem;
+  --step-18: 1.125rem;
+  --step-24: 1.5rem;
+  --step-32: 2rem;
+  --step-48: 3rem;
+  --step-72: 4.5rem;
+  --step-112: 7rem;
+
+  /* Radii */
+  --radius-card: 16px;
+  --radius-control: 10px;
+  --radius-chip: 999px;
+
+  /* Motion */
+  --dur-micro: 150ms;
+  --dur-ui: 300ms;
+  --dur-story: 750ms;
+  --ease-out-3: cubic-bezier(0.215, 0.61, 0.355, 1); /* power3.out */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1); /* expo.out */
+
+  /* Layout */
+  --max-content: 1440px;
+  --gutter: 24px;
+  --nav-h: 64px;
+
+  /* Elevation: inner top highlight used on cards */
+  --card-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--flame-micro);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --gutter: 16px;
+    --nav-h: 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-micro: 0ms;
+    --dur-ui: 120ms;
+    --dur-story: 150ms;
+  }
+}
