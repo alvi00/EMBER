@@ -1,0 +1,276 @@
+
+=== PAGE 1 ===
+“Cool Flames” in Space, a Hot Prospect on Earth!
+Anomalous combustion of alkane fuel droplets in space
+Vedha Nayagam
+National Center for Space Exploration Research
+Case Western Reserve University/NASA Glenn Research Center
+Cleveland, Ohio 44135
+2nd Annual ISS Research and Development Conference
+July 16-18, 2013 Denver, Colorado
+
+=== PAGE 2 ===
+Principal Investigator
+Prof. Forman A. Williams, UCSD
+Co- Investigators
+Prof. C. Thomas Avedisian, Cornell
+Prof. Mun Y. Choi, UConn
+Prof. Frederick L. Dryer, Princeton
+Prof. Tanvir Farouk, U South Carolina
+Mr. Michael C. Hicks, NASA GRC
+Dr. Vedha Nayagam, NCSER/CWRU
+Prof. Benjamin D. Shaw, UC Davis
+Project Scientist
+Dr. Daniel L. Dietrich, NASA GRC
+Dr. Paul V. Ferkul, NCSER/GRC
+Ms. Victoria M. Bryg, NCSER/GRC
+Project Manager
+Mr. J. Mark Hickman, NASA GRC
+Flame Extinguishment Experiment (FLEX) Science Team
+
+=== PAGE 3 ===
+ISS FLEX Experiments - Background
+•
+Microgravity droplet combustion experiments aimed at
+understanding the flammability boundaries of liquid
+fuels in a variety of ambient conditions – spacecraft fire
+safety
+•
+Sooting and non-sooting fuels are burned in nitrogen,
+helium, carbon dioxide, and xenon environment at
+various oxygen concentrations at different pressures
+(effectiveness of fire suppressants in spacecraft
+environments – CO2 is used in ISS)
+•
+Conventional understanding has been that the droplet
+flame can extinguish via two modes:
+•
+Diffusive extinction (high Oxygen, small droplet) or
+•
+Radiative extinction (low oxygen, large droplet)
+•
+Pure evaporation following extinction
+•
+Existing theories and numerical simulations supported
+this view
+ISS
+1-g
+
+=== PAGE 4 ===
+ISS FLEX Experiments
+•
+Example of two modes of extinction: Droplet combustion experiment (DCE)
+Space Lab Mission MSL-1
+n-heptane in 30-70% oxygen-helium environment at 1 atm
+diffusive
+radiative
+
+=== PAGE 5 ===
+ISS FLEX Experiments
+•
+Droplet combustion experiment (DCE) Space Lab Mission (MSL-1)
+n-heptane in 30-70% oxygen-helium environment at 1 atm
+Radiative extinction
+Diffusive extinction
+Backlit images of the droplet
+UV images of the flame
+UV images of the flame
+
+=== PAGE 6 ===
+ISS FLEX Experiments
+•
+Anomalous Combustion
+
+=== PAGE 7 ===
+ISS FLEX “Anomalous” Combustion
+heptane droplet burning in air at 1 atm pressure
+
+=== PAGE 8 ===
+ISS FLEX “Anomalous” Combustion
+Three examples of 2nd stage combustion: heptane in air, 18-82%O2-N2, 18-67-15% O2-N2-CO2
+More recent test show similar behavior in n-octane, and n-decane fuels
+
+=== PAGE 9 ===
+ISS FLEX “Cool Flame” Combustion
+•
+Over 50 years of microgravity droplet combustion experiments (drop-
+towers, parabolic-flights, and space shuttle) and the 2nd stage low-
+temperature combustion has never been observed
+•
+Initial attempts at explaining this behavior using pure vaporization could
+not agree with quasi-steady d-square law behavior. Diffusion controlled
+surface catalytic reaction models required unacceptably high diffusion
+coefficients for oxygen
+•
+low heat release rate
+•
+quasi-steady burning
+•
+2nd extinction
+•
+lower activation energy
+Passes “the duck test” – it must be cool-flame supported combustion!
+
+=== PAGE 10 ===
+ISS FLEX “Cool Flame” Combustion
+Published after critical reviews from skeptical reviewers!
+
+=== PAGE 11 ===
+Cool Flames
+Traditional view of cool flames (reason for skepticism)
+•
+Historically cool flames are associated with premixed combustion leading to
+ignition of hot fuel/air mixtures. (commonly encountered in car-engine knock)
+cool flames -> ignition
+hot flames -> cool flame combustion! (Never – until now!)
+Visionary?
+A history of cool flame research
+by Prof. Griffiths* (~2002)
+“cool flames – a hot prospect”
+
+=== PAGE 12 ===
+•
+Combustion of hydrocarbons is a complex process and involves multiple
+reactions involving free radicals
+•
+The exact nature of the chemical pathways depend on molecular structure of
+the fuel, pressure, and temperature among others
+A simple model:
+Cool Flames
+
+=== PAGE 13 ===
+•
+Numerical simulations and confirmation
+of “cool-flame” combustion
+ISS FLEX “Cool Flame” Numerical Validation
+
+=== PAGE 14 ===
+ISS FLEX “Cool Flame” Numerical Validation
+•
+Numerical simulations by the Princeton Group (Farouk & Dryer)
+-
+Full detailed chemical kinetics (Curran et al., 2002: Lawrence Livermore)
+-
+Involves 1038 species and 2739 reactions
+-
+Reduce mechanism with 128 species and 565 reactions using path flux analysis
+
+=== PAGE 15 ===
+Numerical simulations
+Evolution of, flame temperature (n-heptane, do = 3.91 mm, air, atmospheric pressure)
+Pure evaporation
+hot chemistry only
+includes low
+temperature chemistry
+Captures the low-temperature combustion – but how good is it?
+cool flames!
+
+=== PAGE 16 ===
+•
+Predicted droplet diameter and burning rate evolution compared experiments
+Model => Curran chemistry with PFA reduction
+Revised model => The reaction rates for the most sensitive reactions are modified
+•
+QOOHO2 -> QOOH + O2 (was increased: A factor increased by 2)
+•
+QOOHO2-> Ketohydroperoxide + OH (was decreased: A factor decreased by 2).
+Numerical simulations
+
+=== PAGE 17 ===
+•
+Revised kinetics improves ignition delay and reactivity predictions in the low-
+temperature region
+Numerical simulations
+Predicted shock tube ignition delay and flow reactor reactivity with
+revised chemical kinetics model.
+Droplet combustion improves predictions of results from other universally used
+experimental techniques
+
+=== PAGE 18 ===
+•
+Further confirmation of “cool-flame” 2nd stage burning by Italian researchers
+Numerical simulations
+
+=== PAGE 19 ===
+ISS FLEX Experiments
+•
+Potential applications of “cool-flame” combustion
+
+=== PAGE 20 ===
+Potential applications
+•
+Advanced low temperature combustion engines*
+•
+Homogeneous charge compression ignition engine (HCCI)
+•
+Provides low emissions and improved efficiency (~15% fuel savings)
+•
+Major technical challenge is control of ignition timing
+*Reitz, R.D., Combustion and Flame, 2013
+
+=== PAGE 21 ===
+Potential applications
+•
+Fuel reforming technologies*
+•
+Heavy fuels are partially oxidized (using “cool flame”) and used in
+gaseous burners with reduced emission and good power modulation
+and hydrogen for fuel cells
+*Hartman et al., J. of Power Sources, 2003
+Catalytic diesel reformer
+•
+New burner technologies
+•
+The possibility to use cool-mode combustion of individual droplets may lead
+to entirely different design concepts of spray burners (A. Cuoci, et al., 2013)
+
+=== PAGE 22 ===
+Potential applications
+•
+Fire safety
+•
+On Earth spontaneous combustion and explosion of liquid fuel
+vapors in chemical industry is a major concern
+•
+In space “cool flame” can persist after hot flame extinction and
+generate combustible vapor that can reignite (similar to smoldering
+combustion in solid fuels)
+•
+Recent results show re-ignition with decane
+
+=== PAGE 23 ===
+Concluding Remarks
+•
+A new phenomenon where a hot flame extinction leads
+to a low-temperature, “cool-flame” burning in
+microgravity has been observed for the first time
+•
+These cool flames produce partially oxidized fuel and
+potentially re-ignite to hot flames posing fire safety
+concerns in spacecraft environments
+•
+Existing, widely-used detailed chemical kinetic models
+do not accurately predict the 2nd stage cool flame
+extinction and need further improvement
+•
+Improved low temperature chemistry will have wide
+ranging applications including advanced internal
+combustion engine design and development
+•
+The new phenomena may lead to new innovative
+burner designs and fuel reforming technologies
+
+=== PAGE 24 ===
+Questions?
+Diluent Manifold
+Oxygen
+Manifold
+N2 Diluent
+Manifold
+Gaseous Fuel
+Manifold
+Adsorber
+Cartridge
+Chamber
+CIR
+MDCA

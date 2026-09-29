@@ -1,0 +1,423 @@
+
+=== PAGE 1 ===
+ 
+American Institute of Aeronautics and Astronautics 
+1
+Evaluating Material Flammability in Microgravity and Martian Gravity  
+Compared to the NASA Standard Normal Gravity Test 
+ 
+S.L. Olson*1 and P.V. Ferkul2 
+ 
+1NASA Glenn Research Center, Cleveland, OH 44135 
+2National Center for Space Exploration Research, Cleveland, OH 44135  
+ 
+ 
+ 
+Drop tower tests are conducted at Martian gravity to determine the flammability of three 
+materials compared to previous tests in other normal gravity and reduced gravity 
+environments.  The comparison is made with consideration of a modified NASA standard 
+test protocol.  Material flammability limits in the different gravity and flow environments 
+are tabulated to determine the factor of safety associated with normal gravity flammability 
+screening.  Previous testing at microgravity and Lunar gravity indicated that some 
+materials burned to lower oxygen concentrations in low gravity than in normal gravity, 
+although the low g extinction limit criteria are not the same as 1g due to time constraints in 
+drop testing.  Similarly, the data presented in this paper for Martian gravity suggest that 
+there is a gravity level below Earth’s at which materials burn more readily than on Earth.  
+If proven for more materials, this may indicate the need to include a factor of safety on 1g 
+flammability limits. 
+ 
+I. Introduction 
+urrently, NASA STD 6001 Test 1 is the major method used to assess flammability of materials intended for use 
+in habitable environments of U.S. spacecraft.1 The method is a pass/fail upward flame propagation test 
+conducted in the most severe flaming combustion environment (oxygen concentration, pressure) expected in the 
+spacecraft (e.g. currently 30% oxygen at 10.2 psia which is the pre-breath environment on the ISS for spacewalks). 
+Materials that do not self-extinguish after six inches of burning must undergo other special considerations and/or 
+tests if they are to be used on spacecraft.  To better understand the actual spacecraft flammability limits, a modified 
+Test 1 protocol has been evaluated with 3 materials in Martian gravity (0.38 g Earth) and compared to earlier related 
+tests at 1g, Lunar g, and microgravity with forced convection.  This modified Test 1 protocol relies on performing 
+multiple tests in 1-g (refs. 2-4).  For reduced gravity tests, the protocol is modified slightly (as described later) 
+because of the number of drop tower tests which would be required. 
+ 
+This protocol, rather than qualifying materials as pass/fail in the worst-expected environments, measures the 
+actual upward flammability limit (akin to the Limiting Oxygen Index (LOI)) for the material so that a more accurate 
+assessment of the margin of safety of the material in the real use environment can be made. In broader application, 
+the modified Test 1 protocol would provide the option of selecting better or best materials based on the best margin 
+of safety relative to the use environment, as opposed to what would be considered just “passing” from a 
+flammability point of view.  
+For future space missions, it is often desirable to reduce cabin pressure while maintaining oxygen partial 
+pressure.5 Atmospheres are chosen based on several considerations including: material flammability, decompression 
+sickness, hypoxia, and efficient crew transfers and excursions.  Keeping oxygen partial pressure constant while 
+reducing total pressure has the effect of increasing the concentration of oxygen which in turn leads to increased 
+flammability of materials. 
+One of the major lessons learned from the Apollo 1 fire is that it is impossible to eliminate all ignition sources,6 
+so fire prevention is achieved in spacecraft through material controls near potential ignition sources and the use of 
+fire resistant materials. After Skylab, the Space Shuttle and the International Space Station (ISS) have operated at 
+normal sea-level conditions (air, 21% oxygen and 79% nitrogen by volume at 14.7 psia total pressure) except for 
+brief pre-EVA activities when oxygen levels are increased for a short period of time to 30% oxygen while the total 
+C
+
+=== PAGE 2 ===
+ 
+American Institute of Aeronautics and Astronautics 
+2
+pressure is lowered to 10.2 psia. Many of the materials which had been used in the Shuttle or which are currently 
+used in ISS are therefore only tested and rated to 30% oxygen at 10.2 psia.  
+ 
+ 
+ 
+In the modified procedure,2 the oxygen concentration in Test 1 is successively reduced to identify the Upward 
+Limiting Oxygen Index (1g ULOI) and the Maximum Oxygen Concentration (1g MOC) that consistently results in 
+self-extinguishment of the material. The 1g ULOI is defined as the oxygen concentration at which a material passes 
+the NASA STD 6001 Test 1 burn length criterion approximately half the time. The 1g MOC is defined as the 
+oxygen concentration where at least five samples passed the burning criterion (according to the NASA STD 6001 
+Test 1 definition) and where at least one sample failed in the environment that contained 1 percent more oxygen by 
+volume.  This is shown schematically for an arbitrary material in Fig. 1.  For reduced gravity tests, the definitions of 
+MOC and ULOI are modified slightly (as described later) because of the number of drop tower tests which would be 
+required. 
+II. Experiment Description 
+To better understand a material’s flammability limits at reduced gravity, we evaluate three materials in Martian-g 
+using the centrifuge described below. These tests are combined with 1g tests performed at NASA’s White Sands 
+Test Facility (WSFT), microgravity tests with forced convection, and Lunar-g tests at NASA’s Glenn Research 
+Center.  
+The centrifuge was developed for use in a drop tower environment. The apparatus is subject to the usual 
+constraints on size and volume for the Zero Gravity Facility at the NASA Glenn Research Center.7 The centrifuge 
+consists of a flat circular base (turntable) and the chamber dome. 
+Most experiments examining fluid and gas flows require a chamber for containment and atmosphere, since the 
+drop tower is evacuated before a drop.  The chamber was designed to maximize the rotation radius possible on the 
+drop bus. The strength of the chamber was built to permit tests up to 2 atm absolute pressure. A photograph of the 
+chamber is shown in Fig. 2.  More details are provided elsewhere.8 
+The fuels used include Ultem® 1000, Nomex® HT90-40, and Mylar® G or Melinex® 515.   These three 
+materials were evaluated for microgravity, Lunar, and Martian flammability limits to compare with the 1g ULOI and 
+1g MOC.  
+Ultem® 1000 (fire retarded polyetherimide (PEI)) in 10 mil thick film is inherently flame-retarding, with 
+charring characteristics, a very low smoke signature, very low smoke toxicity, and a low heat-release rate.   
+  
+Figure 1. Near limit probability that a material will burn or not, with the ULOI and MOC indicated. 
+
+=== PAGE 3 ===
+ 
+American Institute of Aeronautics and Astronautics 
+3
+Nomex® HT90-40 is a 12 mil thick fire 
+retarded aromatic nylon fabric which does not 
+melt or drip as it burns. When exposed to a heat 
+source, the Nomex fibers swell and seal the spaces 
+between the fibers, stopping air movement 
+through the fabric and thus inhibiting heat transfer 
+through the fabric.  
+Mylar® G is a 5 mil thick plastic film made 
+from polyethylene terephthalate. It is not fire-
+retarded, melts as it burns, and was selected 
+primarily for its non-charring character. The 
+WSTF comparison tests used Melinex® 515, a 
+very similar Dupont Teijin film. 
+The solid fuel sample was mounted within the 
+chamber as shown schematically in Fig. 3. The 
+fuel sheet is mounted parallel to the turntable and 
+near the outer periphery. It is sandwiched between 
+two 0.005”-thick mica rectangular frames (5 cm x 
+15 cm opening) which are in turn sandwiched 
+between 0.010”-thick stainless steel rectangular 
+frames. The fuel is ignited with a hot wire at the 
+furthest point from the center so that a concurrent-
+flow flame spread geometry is established. 
+The chamber is filled to the desired 
+atmosphere. Prior to the drop, the chamber is 
+rotated for at least five minutes to allow the 
+interior gases to come up to speed (solid body rotation). To achieve Martian gravity levels, the rotation rate required 
+is 30.8 RPM.  Martian g-level is achieved at the radial distance of the igniter. 
+ 
+In order to maximize available drop time, the goal was to get the samples ignited right at or slightly before the 
+drop. For the Ultem and Nomex samples, the igniter current was initiated 2.1 seconds before drop and was on for a 
+  
+Figure 3. Schematic of Zero-Gravity Centrifuge showing fuel location; buoyant flow is toward the 
+center of the turntable. 
+Rotation 
+Chamber Dome 
+Experiment Platform       
+                (Turntable) 
+Igniter 
+Figure 2. Zero-Gravity Centrifuge. 
+Drop Bus 
+Chamber Dome 
+Experiment Platform               
+(Turntable) 
+Pneumatic Lifters 
+
+=== PAGE 4 ===
+ 
+American Institute of Aeronautics and Astronautics 
+4
+total of 3.5 seconds. For the Mylar samples, ignition was easier to achieve. The igniter current was initiated 1 second 
+before the drop and was on for a total of 2 seconds. The Mylar sample ignitions were assisted using a small strip of 
+thin tissue paper (Kimwipes, 0.5-cm width) which helped provide a uniform energy deposition to this melting fuel. 
+For all cases, the average igniter power was 58 watts. All the Martian-g cases used the same igniter wire. 
+Experiments were then conducted to examine the maximum oxygen concentration at which three different 
+materials burning in Martian gravity would self-extinguish. (Experiment materials and test conditions were chosen 
+to match earlier tests performed at WSTF, described below.)  Slightly different than the 1-g definitions of MOC and 
+ULOI, the MOC* for these tests was defined as the maximum oxygen concentration at which the flame was 
+observed to self-extinguish during the drop time. The ULOI* criterion was minimum oxygen concentration where 
+the flame survived the full drop time. Images of the ULOI* conditions for each are shown in Fig. 4. The Mylar 
+flame appeared stable (as shown later in Fig. 5) but the Nomex and Ultem flames were becoming quite dim and 
+shrinking at the end of the drop (less than 1 cm in length and getting smaller).  Since it is likely that these very weak 
+flames might have extinguished given longer time in Martian g, the limits found are conservative.a  
+ 
+The NASA WSTF tests were conducted using the STD-6001 Test 1 protocol except a hot wire igniter is used to 
+ignite the samples instead of a chemical igniter, to better compare with the low gravity results. This is because the 
+chemical igniter provides heat for 25 seconds, and the longest low gravity time is 5 seconds. In addition, the 
+atmosphere of the test was modified to find the ULOI and MOC as described earlier.  
+III. Results 
+Materials flammability tests were conducted for three materials at Martian-g.  The results were compared to ULOI 
+and MOC values in 1-g, Lunar-g, and 0g (with a concurrent flow of 30 cm/s, which is a reasonable maximum local 
+spacecraft ventilation velocity9).  
+Representative flame images are shown in fig. 5 for Mylar burning at the Martian-g ULOI* condition (18% O2 at 
+10.2 psi).  The igniter can be seen glowing on the left side of the frame until ignition.  Igniter power is then turned 
+off and the igniter cools.  The flame starts out as dim blue but then brightens to yellow and actually appears to 
+stabilize.  While the flame does not span the 5-cm width of the sample, it survives for the duration of the drop test.  
+When the oxygen is decreased in another test to 17%, the flame goes out. 
+                                               
+a The flames in these Martian-g centrifuge tests were relatively small compared to the sample size and spread 
+only a short distance along the available fuel in the 5.18 sec-duration drop tower tests.  Since the local centrifugal 
+acceleration level is proportional to radius from the center of rotation, this means that the flame stays in a region of 
+approximately constant g-level (lunar g).  On the other hand, if the flame were to spread a significant way along the 
+fuel, the local acceleration level experienced by the flame would change appreciably as it spread. 
+ 
+Figure 4. Front view pictures of Martian gravity concurrent flames for three different fuels
+samples at the ULOI just as the drop ends (t=5.18 s).  
+Nomex HT90-40  
+Mylar G  
+Ultem 1000 (10 mil) 
+
+=== PAGE 5 ===
+ 
+American Institute of Aeronautics and Astronautics 
+5
+ 
+Figure 5.  Flame images for Mylar at the Martian-g ULOI*.  Images are shown at 10 Hz progressing left to 
+right then top to bottom.  The last frame shows flame extinction caused by impact of the experiment. 
+ 
+The limiting oxygen values (ULOI and MOC) for each fuel are summarized in Table I (includes earlier data from 
+ref. 8). We reiterate that the definition of MOC* and ULOI* are slightly different in reduced gravity (compared to 
+MOC and ULOI definitions in normal gravity) because of the number of drop tower tests which would be required.  
+The near-limit flames are generally small and localized to the upstream edge of the material. We noticed that any 
+distortion of the burned edge of the material, such as curling, swelling, or contracting, weakens the flame apparently 
+by influencing the flow around the burned edge. Since oxygen transport is critical to low gravity flames, anything 
+that reduces the free flow of oxygen past the sample will reduce the material’s flammability.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PAGE 6 ===
+ 
+American Institute of Aeronautics and Astronautics 
+6
+Table I: Limiting Oxygen Molar Concentrations and 
+Oxygen Margin of Safety for Different Gravity Levels 
+ 
+Fuel 
+ 
+ 
+Mylar® G 
+10.2 psia 
+Ultem® 1000 
+10.2 psia 
+Nomex® HT90-40 
+14.7 psia 
+1g ULOI 
+21.2 
+23.5 
+23.5 
+1g MOC 
+20.0 
+23.0 
+22.1 
+Martian ULOI* 
+18.0 
+22.0 
+19.9 
+Martian MOC* 
+17.0 
+21.1 
+19.0 
+Lunar ULOI* 
+15.6 
+21.0 
+21.0 
+Lunar MOC* 
+14.1 
+19.9 
+19.9 
+0g* ULOI* 
+17.0 
+24.0 
+23.0 
+0g* MOC* 
+16.0 
+23.0 
+22.0 
+Martian ∆O2 % 
+-3.1 
+-1.7 
+-3.35 
+Lunar ∆O2 % 
+-5.75 
+-2.8 
+-2.35 
+0g ∆O2 % 
+-4.1 
+0.25 
+-0.3 
+ 
+From the limit data, we can evaluate the oxygen margin of safety of the material in low gravity relative to the 1g 
+Test 1 data. The oxygen margin of safety, or ∆O2 %,  is defined here as the mean 0g limit or the Lunar limit minus 
+the mean 1g limit as follows: 
+
+
+
+
+
+
++
+−
+
+
+
+
++
+=
+∆
+2
+)
+(
+2
+)
+*
+*
+(
+%
+1
+1
+2
+g
+g
+MOC
+ULOI
+MOC
+ULOI
+O
+   
+ 
+(1) 
+In Eq. (1), the lowest %O2 at which the material burned in the drop test for the full test time was taken as the 0g 
+Lunar-g, or Martian-g ULOI*; the maximum %O2 where the material extinguished during the drop test was taken as 
+the 0g, Lunar-g, or Martian-g MOC*. It should be noted that the low g extinction limit criteria are not the same as 1g 
+due to time constraints in drop testing. A positive ∆O2% means that the flame will burn in 1g at lower oxygen 
+concentrations than in low gravity (Lunar or 0g). Conversely, a negative ∆O2% means that the flame will propagate 
+in Lunar or 0g at a lower oxygen concentration than in 1g and as reflected by the negative margin of safety. Values 
+of ∆O2% for both 0g and Lunar g (from ref. 8) are included in Table I. 
+
+=== PAGE 7 ===
+ 
+American Institute of Aeronautics and Astronautics 
+7
+ 
+As shown in Fig. 6 and Table I, the 1g flammability limits are generally not conservative for these materials as 
+evidenced by the negative ∆O2%, by up to -5.75% oxygen. For low gravity concurrent (upward) flow conditions, the 
+absence of or reduction of buoyancy reduces convective heat loss from the flame zone. As such, the flame doesn’t 
+have to release as much heat as in 1g to provide the same amount of heat flux to the unburned fuel. Thus, it is not 
+entirely surprising that the low gravity flammability limits are lower than the 1g flammability limits, which is the 
+general trend. The evaluation of the magnitude of this ∆O2% for other materials is continuing for concurrent 
+flammability limits, to be followed by evaluation of the limits for opposed flow. If proven for more materials, this 
+may indicate the need to include a factor of safety on 1g flammability limits.  
+Nomex and Ultem are charring fuels. Char layer formation is a known fire-retardant mechanism since it reduces 
+the heat release rate of the material. For these charring materials, the oxygen margin of safety in 0g is very close to 
+zero, indicating that any reduced charring for 0g may be offset by less heat release in the reduced convective 
+environment. In Lunar gravity, the oxygen margin of safety for these charring fuels is ~ 2.5% lower than 1g. It may 
+be that with adequate but not excessive convection, materials burn better, as predicted by flammability maps.10  
+Mylar is a non-charring material. Just as for metals combustion11 the absence of gravitational-induced dripping 
+keeps heated molten fuel in the flame zone rather than removing it, and the result is a significantly negative oxygen 
+margin of safety (~4-5%) in Martian, Lunar, and 0g.  
+In fig. 7, limiting oxygen concentration is plotted for Mylar as a function of gravity level.  There appears to be a 
+range of g-levels within which a flame can survive.  This is similar to the forced convective flammability 
+boundary10.  The two u-shaped curves are presumed to bound the flammability boundary of this material.  Fig. 7 
+includes additional two data points at sub-lunar g-levels to probe the behavior at low flow speeds, including one test 
+at a g-level equaling that on Pluto.  Tests were conducted using precision mixtures of gases (+/- 0.1% O2) but at 
+Figure 6. Oxygen Margin of Safety for four different gravity levels.  The squares are normal gravity
+data which by definition has zero oxygen margin of safety since it is the test standard upon which
+materials are assessed.  Martian, lunar, and microgravity oxygen margins of safety are generally
+negative by as much as -5.75% O2 in molar concentration.  The average 0g oxygen margin of safety
+for these three materials  is -2.6% and the average Martian oxygen margin of safety is 2.7%. 
+Nomex HT90-40  
+Mylar G  
+Ultem 1000 (10 mil) 
+
+=== PAGE 8 ===
+ 
+American Institute of Aeronautics and Astronautics 
+8
+increments of 1% O2.  Given the sparcity of points, the exact shapes of the curves are not known, nor are the 
+absolute minimums.  However the curves indicated show the qualitative features.  
+ 
+IV. Conclusions 
+A series of drop tower tests has been completed to determine the upward flame spread oxygen concentration 
+extinction limits of three materials at Martian buoyant flow gravity levels for comparison with upward normal 
+gravity limits, Lunar gravity, and at microgravity (with forced convection). The limiting oxygen levels at Martian 
+gravity were significantly lower than normal gravity (up to 5.75% O2 lower), and typically between the normal 
+gravity and Lunar gravity values. However, it should be noted that the low-g extinction limit criteria are not the 
+same as 1g due to time constraints in drop testing. This consistent trend of negative margins of safety on normal 
+gravity flammability screening tests indicates that normal gravity material flammability screening tests may not be 
+conservative and some materials tested to be safe for use in space may actually be flammable. If proven for more 
+materials, this may indicate the need to include a factor of safety on 1g flammability limits.  
+The limits are defined with consideration of a modified NASA STD-6001 Test 1 protocol.2 That modified 
+protocol measures the actual upward flammability limit (akin to the Limiting Oxygen Index (LOI)) for the material 
+so that a more accurate assessment of the margin of safety of the material in the real use space environment can be 
+made rather than merely qualifying materials as pass/fail in the worst-expected environments. 
+The centrifuge apparatus is a useful tool to achieve gravitational acceleration levels in a range not easily 
+attainable in simple drop tower or aircraft experiments. Additional research projects could make use of the chamber 
+for their own specific objectives. 
+Figure 7. Limiting Oxygen Concentration as a function of g-level for Mylar.  For a given oxygen
+concentration, there is range of g-levels which will permit the flame to be sustained. 
+Nomex HT90-40  
+Mylar G  
+Ultem 1000 (10 mil) 
+
+=== PAGE 9 ===
+ 
+American Institute of Aeronautics and Astronautics 
+9
+Acknowledgments 
+We are grateful for the support of the FPDS (Fire Protection, Detection, and Suppression) program at NASA 
+Glenn Research Center under the direction of Gary Ruff and JSC’s Lunar Surface Systems project office. Dan Gotti 
+of NCSER at NASA GRC was responsible for the mechanical design of the centrifuge chamber.  Eric Neumann and 
+his staff at the NASA GRC Zero-Gravity Facility were instrumental in the successful conduct of this experiment.  
+ 
+References 
+1“Flammability, Odor, Offgassing, and Compatibility Requirements and Test Procedures for Materials in Environments that 
+Support Combustion, NASA STD 6001, Test 1, Upward Flame Propagation,” formerly NHB 8060.1C, 1998. 
+2Hirsch, D.B. and Beeson, H.D., “Improved Test Method to Determine Flammability of Aerospace Materials,” Halon Options 
+Technical Working Conference, 2001. 
+3Hirsch, D.B. and Beeson, H.D., “Test Method to Determine Flammability of Aerospace Materials,” Journal of Testing and 
+Evaluation Vol. 30, Issue 2, 2002. 
+4Hirsch, D.B., Williams, J.H., Harper, S.A., Beeson, H., and Pedley, M.D., “Oxygen Concentration Flammability Thresholds 
+of Selected Aerospace Materials Considered for the Constellation Program,” Second IAASS Conference: Space Safety in a 
+Global World, Chicago, 2007. 
+5Campbell, P.D., “Recommendations for Exploration Spacecraft Internal Atmospheres: The Final Report of the NASA 
+Exploration Atmospheres Working Group”, NASA JSC-63309, 2006. 
+6Lewis, J.F., Barido, R.A., and Tuan, G., “Crew Exploration Vehicle Environmental Control and Life Support Fire Protection 
+Approach,” International Conference on Environmental Systems, SAE 2007-01-3255, 2007. 
+7Lekan, J., “Microgravity Research in NASA Ground-Based Facilities,” NASA TM 101397, NASA LeRC, also AIAA-89-
+0236, 1989. 
+8Ferkul, P.V. and Olson, S.L., “Zero-Gravity Centrifuge Used for the Evaluation of Material Flammability in Lunar Gravity,” 
+Journal of Thermophysics and Heat Transfer, Vol. 25, No. 3 (2011). 
+9Sauers, D.G., "The Effects of Forced Air Flow and Oxygen Concentration on Flammability, Smoke Density, and Pyrolytic 
+Toxicity,” Journal of Fire and Flammability, Vol. 7, 1976, pp. 181-199. 
+10T’ien, J.S., “Diffusion Flame Extinction at Small Stretch Rates: the Mechanism of Radiative Loss,” Combustion and Flame 
+Vol. 65, No. 1, 1986, pp. 31-34. 
+11Steinberg, T.A., Wilson, D.B., and Benz, F.J., “Microgravity  and Normal Gravity Combustion of Metals and Alloys in 
+High Pressure Oxygen,” Flammability and Sensitivity of Materials in Oxygen-Enriched Atmospheres, Vol. 6, ASTM STP 1197, 
+edited by D.D. Janoff and J.M. Stoltzfus, American Society for Testing and Materials, Philadelphia, 1993. 
+ 

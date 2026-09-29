@@ -1,0 +1,195 @@
+
+=== PAGE 1 ===
+MATERIAL FLAMMABILITY AT LUNAR AND MARTIAN GRAVITY. Paul Ferkul,1 Nathan Kralik2, and 
+Ya-Ting Liao2 
+1Universities Space Research Association, NASA Glenn Research Center, 21000 Brookpark Rd., Cleveland, OH 
+44135, paul.ferkul@nasa.gov) 2Case Western Reserve University, Cleveland, OH. 
+ 
+ 
+Introduction: NASA relies on NASA-STD-6001B 
+Test 1 for screening material flammability for flight 
+[1].  The test is conducted in normal Earth gravity, 
+with the assumption that if a material passes the 1-g 
+test, then it is considered safe for spaceflight.  This 
+approach has provided a practical means to assess the 
+great number of materials that are used currently, and 
+which have been used in the past.  But the approach 
+has important uncertainties.  Microgravity research 
+over the last few decades has shown that normal 
+gravity may not necessarily represent the most 
+flammable condition for a material.  Theoretical and 
+experimental results have demonstrated that some 
+materials that will not burn in 1-g will burn in 0-g 
+(with a low-speed flow) or in partial gravity (such as 
+Lunar-g).   
+This can be understood by examining the role of 
+buoyant flow on flame spread.  On Earth, buoyancy 
+causes hot product gases to accelerate upwards and out 
+of the flame, at the same time drawing fresh oxidizer 
+into the flame base.  This introduction of fresh oxygen 
+sustains the flame.  The speed of the air entering the 
+flame can be so high, however, that the chemical 
+reactions are unable to keep pace.  Furthermore, the 
+rate of heat release and/or transport may be too low to 
+provide the energy to heat the incoming cold flow.  
+These effects can lead to flame de-stabilization, 
+commonly known as blowoff.  The governing non-
+dimensional parameter is the Damkohler Number, 
+which is the ratio of the characteristic flow time to the 
+chemical reaction time.  
+Consider a material that is marginally non-
+flammable on Earth.  The same material may be 
+flammable at a lower gravity level (for example, on the 
+Moon) since the crucial mechanism of buoyant oxygen 
+entrainment at the flame base is still present, but at a 
+slower rate, allowing the chemical reaction rates to 
+“keep up” and the flame to adequately heat the 
+incoming cool air.  Alternatively, a material that is not 
+flammable on Earth can be burned in microgravity, but 
+with the introduction of a low speed forced flow of air.  
+Applying a flow below the buoyant blowoff limit 
+speed permits a material to burn in microgravity, albeit 
+with a smaller flame size, even though it may not burn 
+at all in 1-g.   
+Current Knowledge: Using drop towers, aircraft, 
+sounding rockets, and modeling, it is observed that 
+certain partial-g environments are expected to increase 
+the flammability limits for some materials.  Early 
+numerical and experimental evidence suggested that 
+Lunar gravity could be more hazardous, since flame 
+spread rate as a function of gravity peaks there [2].  
+Related work suggests that oxygen concentration for 
+flammability reaches a minimum value in the vicinity 
+of g = g Lunar.   
+Furthermore, in order to facilitate the convenient 
+donning of space suits, future explorers of the Moon 
+and Mars are likely to live in atmospheres at sub-
+atmospheric pressure but higher oxygen concentration 
+compared to standard air  Consequently, partial-g fire 
+in an extraterrestrial habitat is a real hazard that is 
+expected to be substantially worse than in 0-g and 
+potentially worse than even 1-g.   
+Discussion: This work contributes directly to 
+filling knowledge and capability gaps in spacecraft fire 
+safety that have been the focus of many projects at the 
+NASA John H. Glenn Research Center.    NASA has 
+undertaken extensive tests examining solid fuel flame 
+spread with a particular application to material 
+flammability in microgravity culminating in a number 
+of flight experiments (e.g., [3-7]).  Partial gravity tests 
+can be performed in drop towers [8] and aboard 
+aircraft [2], but the available times are too short to 
+provide significant flame development (5 s for drop 
+tower and ~25 s for aircraft).  For an orbital platform 
+such as the International Space Station (ISS), partial 
+gravity tests can be performed using centrifuges, but 
+those currently available have small radii of rotation 
+producing appreciable Coriolis effects for the length 
+scales 
+necessary, 
+adding 
+complexity 
+to 
+the 
+interpretation of results.  A sounding rocket utilizing 
+vehicle rotation to simulate Lunar gravity provided test 
+times on the order of 150 s, burning two different 
+materials, but again the Coriolis force introduces 
+uncertainty.  
+Combustion on the Moon: The first-ever 
+combustion experiments on another world will be 
+performed, with a planned launch date of late 2026.  
+Flammability of Materials on the Moon (FM2) will 
+burn a total of four solid fuel samples in quiescent 
+habitable atmospheres in actual long duration Lunar 
+gravity (Fig. 1).  Cameras will be used to record flame 
+characteristics, including spread rate.  Radiometers and 
+an oxygen sensor will be included.  The tests will 
+provide benchmark data and are part of the larger 
+
+=== PAGE 2 ===
+effort to understand how Lunar gravity will affect 
+material flammability.   
+Direct Lunar access offers the best way to assess 
+flammability of materials on the Moon.  An extensive 
+materials qualification test series there would be ideal, 
+but such tests will need to be put off until an extended 
+human presence on the Moon is established.  Prior to 
+this, a limited series of tests would enable a 
+comparison between fires on the Moon and Earth and 
+would validate models and theories developed using 0-
+g and 1-g testing. 
+ 
+Figure 1.  Top: FM2 experiment design showing solid 
+model and cross section of the combustion chamber.  
+Four flat samples are burned in separate tests.  Small, 
+pressurized gas bottles provide air for each test.  
+Cameras record flame images while sensors include 
+thermocouples, radiometers, and O2 concentration.   
+Bottom: FM2 Hardware. Left: Chamber exterior; 
+Right: Internal components. 
+ 
+The outcome of this work would include the first-
+ever, long-duration observation and measurement of 
+flame spread in a partial-g environment.  It is expected 
+that the fuels tested will provide verification of the 
+hypothesis that some materials burning in partial-g 
+environments may be more flammable compared to 1-
+g.  The results will provide a bridge between the 
+current 1-g material screening method and actual 
+behavior in reduced gravity.  This will refine 
+understanding of the conditions when the test may not 
+be conservative enough, and likely will lead to an 
+amended test procedure which is safer and more 
+accurate.  
+References: [1] Mulville, D., "NASA-STD-6001B: 
+Flammability, off-gassing, and compatibility require-
+ments and test procedures," NASA, 2016. [2] K. R. 
+Sacksteder and J. S. T'ien, "Buoyant downward 
+diffusion flame spread and extinction in partial-gravity 
+accelerations," 
+Symposium 
+(International) 
+on 
+Combustion, vol. 25, no. 1, pp. 1685-1692, 1994. [3] 
+D. L. Urban, P. Ferkul, S. Olson, G. Ruff, J. Easton, J. 
+S. T'ien, Y.-T. T. Liao, C. Li, C. Fernandez-Pello, J. 
+Torero, G. Legros, C. Eigenbrod, N. Smirnov, O. 
+Fujita, S. Rouvreau, B. Toth and G. Jomaas, "Flame 
+spread: effects of microgravity and scale," Combustion 
+and Flame, vol. 199, pp. 168-182, 2019. [4] X. Zhao, 
+Y.-T. T. Liao, M. C. Johnston, J. S. T'ien, P. V. Ferkul 
+and S. L. Olson, "Concurrent flame growth, spread, 
+and quenching over composite fabric samples in low 
+speed 
+purely 
+forced 
+flow 
+in 
+microgravity," 
+Proceedings of the Combustion Institute, vol. 36, pp. 
+2971- 2978, 2017. [5] Bhattacharjee, S., and 
+Altenkirch, R.A., “A comparison of theory and 
+experiment in flame spread over thin condensed fuel in 
+quiescent microgravity environment,” Proc. of the 
+Combustion Institute, pp. 1669-1676, 1992. [6] 
+Bhattacharjee, S., Altenkirch, R.A., and Sacksteder, 
+K., “Implications of spread rate and temperature 
+measurement in quiescent, microgravity, space-based 
+environment,” Combustion Science and Technology, 
+Vol. 91, pp. 225-231, 1993. [7] S. L. Olson and P. V. 
+Ferkul, “Microgravity flammability boundary for 
+PMMA rods in axial stagnation flow: experimental 
+results and energy balance analyses,” Comb. Flame 
+180, 2017. [8] P. V. Ferkul and S. L. Olson, "Zero-
+gravity centrifuge used for the evaluation of material 
+flammability 
+in 
+Lunar 
+gravity," 
+Journal 
+of 
+Thermophysics and Heat Transfer, vol. 25, no. 3, pp. 
+457-461, 2011. 
+ 
+ 

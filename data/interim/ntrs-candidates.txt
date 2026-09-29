@@ -1,0 +1,114 @@
+20260001992 | 2026 | CONFERENCE | pdf=Y | Heat and Smoke Emission from Tests on the Saffire VI Experiment | David L Urban, Gary A Ruff, Paul Ferkul | q=Spacecraft Fire Experiment Saf
+20260002050 | 2026 | CONFERENCE | pdf=Y | Surface Vehicle Atmospheric Considerations for Moon to Mars Exploration | Brian K Alpert, Logan Kennedy, L Daren Welsh | q=lunar gravity flammability
+20260006059 | 2026 | PRESENTATI | pdf=N | Surface Vehicle Atmospheric Considerations for Moon to Mars Exploration | Logan Kennedy, Brian Alpert | q=lunar gravity flammability
+20260000641 | 2026 | ACCEPTED_M | pdf=Y | Computational Fluid Dynamics Analysis of Flame Dynamics in Partial Gravity Environments in a Rotating Centrifuge | Ankit Sharma, Arland Zatania Lojo, Ya-Ting T Liao | q=spacecraft fire safety explora
+20260000646 | 2026 | EXTENDED_A | pdf=Y | Material Flammability at Lunar and Martian Gravity | Paul Ferkul, Nathan Kralik, Ya-Ting Liao | q=lunar gravity flammability
+20260001966 | 2026 | PRESENTATI | pdf=Y | Material Flammability at Lunar and Martian Gravity | Paul Ferkul, Nathan Kralik, Ya-Ting Liao | q=lunar gravity flammability
+20250010653 | 2025 | PRESENTATI | pdf=Y | Lunar Combustion Investigation: Flammability Results from a Rotating Sounding Rocket | Paul V Ferkul, Michael C Johnston, Nathan Kralik | q=partial gravity flame spread
+20250010975 | 2025 | POSTER | pdf=Y | Characterizing the Flammability of Nomex Fabric for the Preparation of FM<sup>2</sup> | Jocelyn Schechter, Jennifer Zayac, Paul Ferkul | q=lunar gravity flammability
+20250006779 | 2025 | PRESENTATI | pdf=Y | Solid Fuel Ignition Testing for Lunar Applications, Theory and Experimental Results | David Urban, Sandra Olson, Daniel Dietrich | q=lunar gravity flammability
+20250002114 | 2025 | CONFERENCE | pdf=Y | Solid Fuel Ignition Testing for Lunar Applications, Theory and Experimental Results | David Urban, Sandra Olson, Daniel Dietrich | q=lunar gravity flammability
+20240015307 | 2024 | POSTER | pdf=Y | Flammability of Materials on the Moon | Jennifer Zayac, Michael Johnston, Gary Ruff | q=lunar gravity flammability
+20240008602 | 2024 | CONFERENCE | pdf=Y | Vehicle Modeling During the Burning of Thermally Thick Samples in the Saffire V Experiments | Justin Niehaus, John Brooker, David Urban | q=Saffire flame spread
+20240002981 | 2024 | CONFERENCE | pdf=Y | Preliminary Results from the Saffire VI Experiment | David L Urban, Gary A Ruff, Paul Ferkul | q=Saffire flame spread
+20240007488 | 2024 | PRESENTATI | pdf=Y | Preliminary Results from the Saffire VI Experiment | David L. Urban, Gary A. Ruff, Paul Ferkul | q=Saffire flame spread
+20240008623 | 2024 | POSTER | pdf=Y | Flammability of Materials on the Moon | Jennifer Zayac, Michael Johnston, Gary Ruff | q=lunar gravity flammability
+20230004106 | 2023 | THESIS_DIS | pdf=Y | Combined Experimental and Modeling Study of the Interactions of Acid Gas with Common Spacecraft Surfaces for Fire Safety | Justin Niehaus | q=Spacecraft Fire Experiment Saf
+20220014681 | 2022 | POSTER | pdf=Y | A Comparison of Stratospheric Smoke Events Seen by SAGE II (1984-2005) and SAGE III (2017-2021) | L. W. Thomason | q=smoke aerosol measurement expe
+20220012861 | 2022 | ACCEPTED_M | pdf=Y | Determining Flame Temperature By Broadband Two Color Pyrometry in A Flame Spreading Over A Thin Solid in Microgravity | Maria Thomsena, Juan Jose Cruz, Felipe Escudero | q=Saffire flame spread
+20220002714 | 2022 | CONFERENCE | pdf=Y | Model Development of Large-Scale Spacecraft Fires During the Saffire-IV Experiments | John Brooker, Justin Niehaus | q=Spacecraft Fire Experiment Saf
+20220009086 | 2022 | CONFERENCE | pdf=Y | Opposed-flow Spreading Flames: Effect of Sub-atmospheric Pressure on Spread and Burning Rates | Luca Carmignani, Priya Garg, Michael J Gollner | q=partial gravity flame spread
+20210022143 | 2021 | WHITE_PAPE | pdf=Y | Research Questions and Challenges for Improved Spacecraft Fire Detection | Claire Fortenberry, Xiaoliang Wang , Thomas Cleary  | q=spacecraft fire safety explora
+20210023340 | 2021 | WHITE_PAPE | pdf=Y | Topical: Recommendations for Fire Extinguisher Research for Crewed Missions | John W Easton, Gordon Berger, Claire Fortenberry | q=spacecraft fire safety explora
+20210022402 | 2021 | WHITE_PAPE | pdf=Y | Topical: Solid Fuel Combustion in Partial and Micro-Gravity  | Michael Gollner, Indrek Wichman, Ya-Ting Liao | q=partial gravity flame spread
+20210022617 | 2021 | PRESENTATI | pdf=Y | Isolated Single Droplet Combustion: FLEX Experiments onboard the International Space Station | Vedha Nayagam, Daniel L. Dietrich, Forman A. Williams | q=FLEX droplet cool flame
+20210011385 | 2021 | TECHNICAL_ | pdf=Y | Burning and Suppression of Solids–II  (BASS-II) Summary Report | Sandra L. Olson, Paul V. Ferkul, Subrata Bhattacharjee | q=BASS-II flame spread
+20210020516 | 2021 | PRESENTATI | pdf=Y | Fire on the Moon: Solid Fuel Combustion Experiments | Paul Ferkul, Ya-Ting Liao, Gary Ruff | q=partial gravity flame spread
+20210020446 | 2021 | PRESENTATI | pdf=Y | Impact of Lunar Gravity on Material Flammability  | Gary A. Ruff | q=lunar gravity flammability
+20205004657 | 2021 | CONFERENCE | pdf=Y | Effects of Confinement on Flame Spread in Microgravity | Yanjun Li, Ya-Ting T Liao, Paul V Ferkul | q=BASS microgravity flame spread
+20210011521 | 2021 | CONFERENCE | pdf=Y | Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires | David L. Urban, Gary A. Ruff, Paul Ferkul | q=Saffire flame spread
+20210017780 | 2021 | PRESENTATI | pdf=Y | Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires | David L. Urban, Gary A. Ruff, Paul Ferkul | q=Saffire flame spread
+20210017838 | 2021 | PRESENTATI | pdf=Y | Opposed flame spreading along a structured PMMA-sample in exploration atmosphere under microgravity | Christian Eigenbrod, Florian Meyer, David L. Urban | q=spacecraft fire safety explora
+20210017785 | 2021 | CONFERENCE | pdf=Y | Opposed Flame Spreading Along a Structured PMMA Sample in Exploration Atmosphere Under Microgravity | Christian Eigenbrod, Florian Meyer, Grunde Jomaas | q=spacecraft fire safety explora
+20210017787 | 2021 | CONFERENCE | pdf=Y | Determining the Cause of Reduced Concurrent Flame Spread over Thin Solid Fuels in Low Pressure and Low Gravity | Maria Thomsen, Luca Carmignani, Carlos Fernandez-Pello | q=partial gravity flame spread
+20210017837 | 2021 | PRESENTATI | pdf=Y | Determining the Cause of Reduced Concurrent Flame Spread over Thin Solid Fuels in Low Pressure and Low Gravity | Maria Thomsen, Sonia Fereres , Luca Carmignani | q=partial gravity flame spread
+20200000361 | 2019 | PRESENTATI | pdf=Y | Solid Fuel Ignition and Extinction (SoFIE) Project on ISS | Ferkul, Paul, Brown, Lauren, Mroczka, Christopher | q=SoFIE solid fuel ignition exti
+20190032657 | 2019 | CONFERENCE | pdf=Y | Characterization and Measurement of Spacecraft Airborne Particulate Matter | Meyer, Marit E. | q=smoke aerosol measurement expe
+20200000557 | 2018 | ACCEPTED_M | pdf=Y | Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA | Maria Thomsen, Carlos Fernandez-Pello, Gary A. Ruff | q=Saffire flame spread
+20180005168 | 2017 | PRESENTATI | pdf=Y | Saffire: A Novel Approach to Study of Spacecraft Fire Safety Using Un-Manned Spacecraft | Urban, David L., Ferkul, Paul, Olson, Sandra | q=Saffire flame spread
+20170006615 | 2017 | CONFERENCE | pdf=Y | Mixed Convection Blowoff Limits as a Function of Oxygen Concentration and Upward Forced Stretch Rate for Burning Pmma Ro | Marcum, Jeremy W., Ferkul, Paul V., Olson, Sandra L. | q=BASS-II flame spread
+20170008805 | 2017 | PRESENTATI | pdf=Y | Results of Large-Scale Spacecraft Flammability Tests | Ferkul, Paul , Olson, Sandra , Urban, David L. | q=Saffire flame spread
+20170009141 | 2017 | CONFERENCE | pdf=Y | Emulation of Condensed Fuel Flames Using a Burning Rate Emulator (BRE) in Microgravity | Markan, A., Quintiere, J. G., Sunderland, P. B. | q=Burning Rate Emulator microgra
+20170007283 | 2016 | CONFERENCE | pdf=Y | Spacecraft Fire Safety Research at NASA Glenn Research Center | Meyer, Marit | q=Spacecraft Fire Experiment Saf
+20170002629 | 2016 | PRESENTATI | pdf=Y | Fire Detection Tradeoffs as a Function of Vehicle Parameters | Urban, David L., Dietrich, Daniel L., Brooker, John E. | q=spacecraft smoke detection mic
+20170000230 | 2016 | CONFERENCE | pdf=Y | Operation and Development Status of the Spacecraft Fire Experiments (Saffire) | Ruff, Gary A., Urban, David L. | q=Saffire IV V VI
+20170000248 | 2016 | CONFERENCE | pdf=Y | Fire Detection Tradeoffs as a Function of Vehicle Parameters | Urban, David L., Dietrich, Daniel L., Booker, John E. | q=spacecraft smoke detection mic
+20170001636 | 2016 | CONFERENCE | pdf=Y | The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status | Schoren, William, Ruff, Gary A., Urban, David L. | q=spacecraft fire safety explora
+20160012691 | 2016 | CONFERENCE | pdf=Y | Correlation of Normal Gravity Mixed Convection Blowoff Limits with Microgravity Forced Flow Blowoff Limits | Marcum, Jeremy W., Olson, Sandra L., Ferkul, Paul V. | q=BASS-II flame spread
+20160010073 | 2015 | PRESENTATI | pdf=Y | A Burning Rate Emulator (BRE) for Study in Microgravity | Markan, A., Sunderland, P. B., Quintiere, J. G. | q=Burning Rate Emulator microgra
+20160012298 | 2015 | PRESENTATI | pdf=Y | Quantitative Measurements of CH* Concentration in Normal Gravity and Microgravity Coflow Laminar Diffusion Flames | Giassi, D., Cao, S., Stocker, D. P. | q=SLICE lifted flames microgravi
+20160010264 | 2015 | PRESENTATI | pdf=Y | Quantitative Measurements of Electronically Excited CH Concentration in Normal Gravity and Microgravity Coflow Laminar D | Giassi, D., Cao, S. , Stocker, D. P. | q=SLICE lifted flames microgravi
+20150023456 | 2015 | TECHNICAL_ | pdf=Y | Detailed Results from the Flame Extinguishment Experiment (FLEX) March 2009 to December 2011 | Dietrich, Daniel L., Ferkul, Paul V., Bryg, Victoria M. | q=Flame Extinguishment Experimen
+20150022123 | 2015 | PRESENTATI | pdf=Y | Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire) | Niehaus, Justin , Ferkul, Paul V., Gokoglu, Suleyman | q=Saffire flame spread
+20150019858 | 2015 | CONFERENCE | pdf=Y | Results from On-Board CSA-CP and CDM Sensor Readings During the Burning and Suppression of Solids II (BASS-II) Experimen | Olson, Sandra L., Ferkul, Paul V., Bhattacharjee, Subrata | q=Burning and Suppression of Sol
+20150022421 | 2015 | CONFERENCE | pdf=Y | Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire) | Niehaus, Justin E., Ferkul, Paul V., Gokoglu, Suleyman A. | q=Saffire flame spread
+20150021283 | 2015 | PRESENTATI | pdf=Y | Modeling and Analysis of Realistic Fire Scenarios in Spacecraft | Brooker, J. E., Dietrich, D. L., Gokoglu, S. A. | q=spacecraft smoke detection mic
+20150008962 | 2015 | CONFERENCE | pdf=Y | Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgra | Zhao, Xiaoyang, T'ien, James S., Ferkul, Paul V. | q=BASS-II flame spread
+20160000593 | 2014 | PRESENTATI | pdf=Y | Combustion of Solids in Microgravity: Results from the BASS-II Experiment | Ferkul, Paul V., Bhattacharjee, Subrata , Fernandez-Pello, Carlos | q=BASS-II flame spread
+20150000894 | 2014 | PRESENTATI | pdf=Y | Large-Scale Spacecraft Fire Safety Tests | Urban, David, Ruff, Gary A., Ferkul, Paul V. | q=Saffire flame spread
+20140011433 | 2013 | PRESENTATI | pdf=Y | Large-Scale Spacecraft Fire Safety Experiments in ISS Resupply Vehicles | Ruff, Gary A., Urban, David | q=spacecraft fire safety explora
+20140006578 | 2013 | CONFERENCE | pdf=Y | Development of Large-Scale Spacecraft Fire Safety Experiments | Ruff, Gary A., Urban, David, Fernandez-Pello, A. Carlos | q=spacecraft fire safety explora
+20130014061 | 2013 | CONFERENCE | pdf=Y | Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity | Nayagam, Vedha, Dietrich, Daniel L., Hicks, Michael C. | q=Flame Extinguishment Experimen
+20140006580 | 2013 | CONFERENCE | pdf=Y | Determination of Realistic Fire Scenarios in Spacecraft | Dietrich, Daniel L., Ruff, Gary A., Urban, David | q=microgravity fire suppression 
+20130003189 | 2012 | PRESENTATI | pdf=Y | Microgravity Science Glovebox (MSG) Space Science's Past, Present, and Future on the International Space Station (ISS) | Spivey, Reggie A., Spearing, Scott F., Jordan, Lee P. | q=spacecraft smoke detection mic
+20130000422 | 2012 | CONFERENCE | pdf=Y | Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2 | Urban, David L., Ruff, Gary A., Greenberg, Paul S. | q=smoke aerosol measurement expe
+20120015332 | 2012 | ABSTRACT | pdf=Y | Benefits of a Single-Person Spacecraft for Weightless Operations | Griffin, Brand Norman | q=spacecraft fire safety explora
+20130010991 | 2012 | CONFERENCE | pdf=Y | Evaluating Material Flammability in Microgravity and Martian Gravity Compared to the NASA Standard Normal Gravity Test | Oslon, Sandra. L., Ferkul, Paul | q=lunar gravity flammability
+20090014812 | 2009 | OTHER | pdf=Y | Multi-User Droplet Combustion Apparatus - Flame Extinguishment Experiment | Williams, Forman A., Nayagam, Vedha, Choi, Mun Y. | q=Flame Extinguishment Experimen
+20070031686 | 2007 | PRESENTATI | pdf=Y | Particle and Smoke Detection on ISS for Next Generation Smoke Detectors | Urban, David L., Ruff, Gary, Yuan, Zeng-guang | q=smoke aerosol measurement expe
+20070021234 | 2007 | CONFERENCE | pdf=Y | ISO 14624 Series - Space Systems - Safety and Compatibility of Materials Flammability Assessment of Spacecraft Materials | Hirsch, David B. | q=spacecraft fire safety explora
+20050215648 | 2005 | OTHER | pdf=Y | Fundamental Research Applied To Enable Hardware Performance in Microgravity | Sheredy, William A. | q=smoke aerosol measurement expe
+20060013463 | 2005 | CONFERENCE | pdf=Y | Exploration Spacecraft and Space Suit Internal Atmosphere Pressure and Composition | Lange, Kevin, Duffield, Bruce, Jeng, Frank | q=spacecraft fire safety explora
+20040142354 | 2004 | CONFERENCE | pdf=Y | Combustion and Reacting Systems for Exploration | Urban, David L. | q=spacecraft fire safety explora
+20040161243 | 2004 | CONFERENCE | pdf=Y | Partially Premixed Flame (PPF) Research for Fire Safety | Puri, Ishwar K., Aggarwal, Suresh K., Lock, Andrew J. | q=partial gravity flame spread
+20040142368 | 2004 | CONFERENCE | pdf=Y | Organizing Questions for Reduced-Gravity Flammability | Miller, Fletcher | q=NASA-STD-6001 microgravity fla
+20040161188 | 2004 | CONFERENCE | pdf=Y | Comparison of Carbon Dioxide and Helium as Fire Extinguishing Agents for Spacecraft | Gokoglu, Suleyman, Son, Youngjin, Ronney, Paul D. | q=microgravity fire suppression 
+20040161185 | 2004 | CONFERENCE | pdf=Y | Strategic Research to Enable NASA's Exploration Missions Conference and Workshop: Poster Session | Nahra, Henry | q=microgravity fire suppression 
+20040084155 | 2004 | CONFERENCE | pdf=Y | A New Test Method for Material Flammability Assessment in Microgravity and Extraterrestrial Environments | Olson, S. L., Beeson, H. D., Haas, J. P. | q=NASA-STD-6001 microgravity fla
+20040084199 | 2004 | ABSTRACT | pdf=N | Comparison of Carbon Dioxide and Helium as Fire Extinguishing Agents for Spacecraft | Gokoglu, Suleyman, Son, Youngjin, Ronney, Paul D. | q=microgravity fire suppression 
+20040084137 | 2004 | CONFERENCE | pdf=Y | Strategic Research to Enable NASA's Exploration Missions Conference | Nahra, Henry | q=microgravity fire suppression 
+20050215297 | 2004 | OTHER | pdf=Y | Carbon Dioxide Dispersion in the Combustion Integrated Rack Simulated Numerically | Wu, Ming-Shin, Ruff, Gary A. | q=microgravity fire suppression 
+20040053578 | 2003 | CONFERENCE | pdf=Y | "Smoke": Characterization Of Smoke Particulate For Spacecraft Fire Detection | Urban, David L., Mulholland, George W., Yang, Jiann | q=spacecraft smoke detection mic
+20040053567 | 2003 | CONFERENCE | pdf=Y | Upward And Downward Flame Spreading And Extinction In Partial Gravity Environments | Sacksteder, Kurt R., Feier, Ioan I., Ferkul, Paul V. | q=partial gravity flame spread
+20040053504 | 2003 | CONFERENCE | pdf=Y | Seventh International Workshop on Microgravity Combustion and Chemically Reacting Systems | Sacksteder, Kurt | q=partial gravity flame spread
+20040053558 | 2003 | CONFERENCE | pdf=Y | An Earth-Based Equivalent Low Stretch Apparatus to Assess Material Flammability for Microgravity and Extraterrestrial Fi | Olson, S. L., Beeson, H., Haas, J. P. | q=NASA-STD-6001 microgravity fla
+20050215025 | 2003 | OTHER | pdf=Y | New Technologies Being Developed for the Thermophoretic Sampling of Smoke Particulates in Microgravity | Sheredy, William A. | q=spacecraft smoke detection mic
+20010074094 | 2001 | CONFERENCE | pdf=Y | SMOKE: Characterization of Smoke Particulate for Spacecraft Fire Detection | Urban, D. L., Mulholland, G., Yuan, Z. G. | q=spacecraft smoke detection mic
+20010074026 | 2001 | CONFERENCE | pdf=Y | Characteristics of Non-Premixed Turbulent Flames in Microgravity | Hegde, U., Yuan, Z. G., Stocker, D. P. | q=Confined Combustion microgravi
+20010074019 | 2001 | CONFERENCE | pdf=Y | Suppression of Low Strain Rate Nonpremixed Flames by an Agent | Hamins, A., Bundy, M., Puri, I. K. | q=Confined Combustion microgravi
+20010074096 | 2001 | CONFERENCE | pdf=Y | An Earth-Based Equivalent Low Stretch Apparatus to Assess Material Flammability for Microgravity & Extraterrestrial Fire | Olson, S. L., Beeson, H., Haas, J. | q=spacecraft fire safety explora
+20010074003 | 2001 | CONFERENCE | pdf=Y | Three-Dimensional Upward Flame Spreading in Partial-Gravity Buoyant Flows | Sacksteder, Kurt R., Feier, Ioan I., Shih, Hsin-Yi | q=partial gravity flame spread
+20010073993 | 2001 | CONFERENCE | pdf=Y | Sixth International Microgravity Combustion Workshop | Sacksteder, Kurt | q=partial gravity flame spread
+20010074072 | 2001 | CONFERENCE | pdf=Y | The Cool Flames Experiment | Pearlman, Howard, Chapek, Richard, Neville, Donna | q=why NASA studies flames in spa
+20050199458 | 2001 | OTHER | pdf=Y | Experiments Developed to Study Microgravity Smoldering Combustion | Vergilii, Franklin | q=Confined Combustion microgravi
+20010059376 | 2001 | PREPRINT | pdf=Y | Upward Flame Spread Over Thin Solids in Partial Gravity | Feier, I. I., Shih, H. Y., Sacksteder, K. R. | q=partial gravity flame spread
+20020028056 | 2000 | PREPRINT | pdf=Y | The Burning of Large N-Heptane Droplets in Microgravity | Manzello, Samuel L., Choi, Mun Young, Kazakov, Andrei | q=Confined Combustion microgravi
+20000010691 | 1999 | CONFERENCE | pdf=Y | Fourth United States Microgravity Payload: One Year Report | Ethridge, Edwin C., Curreri, Peter A., McCauley, D. E. | q=Confined Combustion microgravi
+19990053966 | 1999 | CONFERENCE | pdf=Y | NASA Microgravity Combustion Science Program | Merrill K King | q=partial gravity flame spread
+19990054022 | 1999 | CONFERENCE | pdf=N | Experimental Study of Nonane and Nonane/Hexanol Fuel Droplet Combustion in Microgravity | Avedisian, C. T., Callahan, B. J. | q=Confined Combustion microgravi
+19990053994 | 1999 | CONFERENCE | pdf=N | Laminar Dust Flames: A Program of Microgravity and Ground Based Studies at McGill | Goroshin, Sam, Lee, John | q=Confined Combustion microgravi
+19990054005 | 1999 | CONFERENCE | pdf=N | Hydrodynamic Instability and Thermal Coupling in a Dynamic Model of Liquid-Propellant Combustion | Margolis, S. B. | q=Confined Combustion microgravi
+19990053983 | 1999 | CONFERENCE | pdf=N | Planar Strain-Rate-Free Diffusion Flames: Initiation, Properties, and Extinction | Fendell, Francis, Gokoglu, Suleyman, Rungaldier, Harald | q=Confined Combustion microgravi
+19990054085 | 1999 | CONFERENCE | pdf=N | Flame Spread and Extinction in Partial-Gravity Environments | K R Sacksteder, P V Ferkul, J S T'ien | q=partial gravity flame spread
+20000002799 | 1999 | CONFERENCE | pdf=Y | Experimental Study of Unsupported Nonane fuel Droplet Combustion in Microgravity | Callahan, B. J., Avedisian, C. T., Hertzog, D. E. | q=Confined Combustion microgravi
+19990020833 | 1998 | CONFERENCE | pdf=N | Comparative Soot Diagnostics: 1 Year Report | Urban, David L., Griffin, DeVon W., Gard, Melissa Y. | q=spacecraft smoke detection mic
+19970020580 | 1997 | CONFERENCE | pdf=Y | Comparative Soot Diagnostics: Preliminary Results | David L Urban, DeVon W Griffin, Melissa Y Gard | q=spacecraft smoke detection mic
+20050177911 | 1997 | OTHER | pdf=Y | Comparative Soot Diagnostics Experiment Looks at the Smoky World of Microgravity Combustion | Urban, David L., Griffin, DeVon W., Gard, Melissa Y. | q=spacecraft smoke detection mic
+19960008413 | 1995 | CONFERENCE | pdf=Y | Smoke detection in low-G fires | Urban, David L., Griffin, Devon W., Gard, Melissa Y. | q=spacecraft smoke detection mic
+19960008407 | 1995 | CONFERENCE | pdf=Y | Microgravity combustion of dust clouds: Quenching distance measurements | Goroshin, S., Kleine, H., Lee, J. H. S. | q=Confined Combustion microgravi
+19930015566 | 1993 | CONFERENCE | pdf=Y | Contributions of Microgravity Test Results to the Design of Spacecraft Fire Safety Systems | Friedman, Robert, Urban, David L. | q=spacecraft smoke detection mic
+19930047031 | 1993 | CONFERENCE | pdf=N | Contributions of microgravity test results to the design of spacecraft fire-safety systems | Friedman, Robert, Urban, David L. | q=spacecraft smoke detection mic
+19930011015 | 1993 | CONFERENCE | pdf=Y | Fire safety practices in the Shuttle and the Space Station Freedom | Friedman, Robert | q=microgravity fire suppression 
+19930040901 | 1993 | CONFERENCE | pdf=N | Downward Diffusion Flame Spread and Extinction in Variable Gravitational Fields - Lunar and Martian Simulations | Sacksteder, Kurt R., Tien, James S. | q=partial gravity flame spread
+19910011869 | 1991 | CONFERENCE | pdf=Y | Fire suppression in human-crew spacecraft | Friedman, Robert, Dietrich, Daniel L. | q=microgravity fire suppression 
+20150022260 | 1973 | CONFERENCE | pdf=Y | Fifth Conference on Laser Radar Studies of the Atmosphere, June 4-6, 1973, Hilton Inn, Williamsburg, Virginia: Conferenc |  | q=smoke aerosol measurement expe

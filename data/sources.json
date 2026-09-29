@@ -1,0 +1,2443 @@
+[
+ {
+  "id": "psi-117",
+  "title": "Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis (PSI-117) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-159",
+  "title": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases (ACME CFI-G) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/cyt1-kh64",
+  "accession": "PSI-159",
+  "experimentIds": [
+   "acme-cfi-g"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-10",
+  "title": "Advanced Combustion via Microgravity Experiments / Flame Design (ACME/Flame Design) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+  "accessed": "2026-09-30",
+  "doi": "10.60555/w4zy-bt45",
+  "accession": "PSI-10",
+  "experimentIds": [
+   "acme-flame-design"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-62",
+  "title": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography (PSI-62) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-62",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/e9xp-ex83",
+  "accession": "PSI-62",
+  "experimentIds": [
+   "bass-flame-spread-modeling"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-60",
+  "title": "Computational and Experimental Analysis of SPICE Data Sets (PSI-60) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-60",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/mzjm-yv57",
+  "accession": "PSI-60",
+  "experimentIds": [
+   "spice-soot-analysis"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-142",
+  "title": "Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames (PSI-142) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/80qf-vj95",
+  "accession": "PSI-142",
+  "experimentIds": [
+   "cool-flame-counterflow"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-101",
+  "title": "Smoke Aerosol Measurement Experiment-Reflight (SAME-R) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/2np7-jv14",
+  "accession": "PSI-101",
+  "experimentIds": [
+   "same-r"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-115",
+  "title": "Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity (PSI-115) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-115",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/q0v5-1v28",
+  "accession": "PSI-115",
+  "experimentIds": [
+   "same-smoke-modeling"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-98",
+  "title": "Spacecraft Fire Safety Experiment-I (SAFFIRE-I) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/0t15-1z43",
+  "accession": "PSI-98",
+  "experimentIds": [
+   "saffire-i"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-39",
+  "title": "Cool Flames Investigation (CFI) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/m6pj-a914",
+  "accession": "PSI-39",
+  "experimentIds": [
+   "cfi"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-102",
+  "title": "Smoke and Aerosol Measurement Experiment (SAME) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gd4k-8h62",
+  "accession": "PSI-102",
+  "experimentIds": [
+   "same"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-106",
+  "title": "Structure and Liftoff In Combustion Experiment (SLICE) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/pm12-rg61",
+  "accession": "PSI-106",
+  "experimentIds": [
+   "slice"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-99",
+  "title": "Spacecraft Fire Experiment-II (SAFFIRE-II) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/2chp-m469",
+  "accession": "PSI-99",
+  "experimentIds": [
+   "saffire-ii"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-107",
+  "title": "Smoke Point In Co-flow Experiment (SPICE) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/9kbh-e962",
+  "accession": "PSI-107",
+  "experimentIds": [
+   "spice"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-100",
+  "title": "Spacecraft Fire Experiment-III (SAFFIRE-III) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/040q-4h36",
+  "accession": "PSI-100",
+  "experimentIds": [
+   "saffire-iii"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-21",
+  "title": "Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame (ACME CLD Flame) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/23e1-9950",
+  "accession": "PSI-21",
+  "experimentIds": [
+   "acme-cld"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-25",
+  "title": "Burning and Suppression of Solids - II (BASS-II) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/4qc4-de67",
+  "accession": "PSI-25",
+  "experimentIds": [
+   "bass-ii"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-20",
+  "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator (ACME BRE) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/vb93-3y72",
+  "accession": "PSI-20",
+  "experimentIds": [
+   "acme-bre"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-68",
+  "title": "Flame Extinguishment Experiment - 2 (FLEX-2) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/byp8-h018",
+  "accession": "PSI-68",
+  "experimentIds": [
+   "flex-2"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-22",
+  "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames (ACME E-FIELD Flames) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/se5a-8c73",
+  "accession": "PSI-22",
+  "experimentIds": [
+   "acme-e-field"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-23",
+  "title": "Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames (ACME s-Flame) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/k57n-p030",
+  "accession": "PSI-23",
+  "experimentIds": [
+   "acme-s-flame"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-69",
+  "title": "Flame Extinguishment Experiment (FLEX) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/mbq8-0451",
+  "accession": "PSI-69",
+  "experimentIds": [
+   "flex"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-26",
+  "title": "Burning and Suppression of Solids (BASS) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/58h4-dy80",
+  "accession": "PSI-26",
+  "experimentIds": [
+   "bass"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-47",
+  "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2 (DAFT / DAFT-2) — NASA PSI investigation record",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/ztgj-d202",
+  "accession": "PSI-47",
+  "experimentIds": [
+   "daft"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "Investigation metadata (objectives, approach, hypothesis, impacts) from the PSI public repository API."
+ },
+ {
+  "id": "psi-10-experimental-table-flame-design-inverse-flame",
+  "title": "ACME/Flame Design: Flame Design_Inverse Flame (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+  "accessed": "2026-09-30",
+  "doi": "10.60555/w4zy-bt45",
+  "accession": "PSI-10",
+  "localPath": "data/raw/psi/PSI-10/PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+  "experimentIds": [
+   "acme-flame-design"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-10_Experimental table_Flame Design_Inverse Flame.csv' in the PSI 'Experimental table' folder of PSI-10. Download from the investigation page."
+ },
+ {
+  "id": "psi-10-experimental-table-flame-design-normal-flame",
+  "title": "ACME/Flame Design: Flame Design_Normal Flame (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+  "accessed": "2026-09-30",
+  "doi": "10.60555/w4zy-bt45",
+  "accession": "PSI-10",
+  "localPath": "data/raw/psi/PSI-10/PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+  "experimentIds": [
+   "acme-flame-design"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-10_Experimental table_Flame Design_Normal Flame.csv' in the PSI 'Experimental table' folder of PSI-10. Download from the investigation page."
+ },
+ {
+  "id": "psi-10-reports-finalrpt-acmeflamedesign",
+  "title": "ACME/Flame Design: FinalRpt_ACMEFlameDesign (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+  "accessed": "2026-09-30",
+  "doi": "10.60555/w4zy-bt45",
+  "accession": "PSI-10",
+  "localPath": "data/raw/psi/PSI-10/PSI-10_Reports_FinalRpt_ACMEFlameDesign.pdf",
+  "experimentIds": [
+   "acme-flame-design"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-10_Reports_FinalRpt_ACMEFlameDesign.pdf' in the PSI 'Reports' folder of PSI-10. Download from the investigation page."
+ },
+ {
+  "id": "psi-10-reports-taskbookrpts",
+  "title": "ACME/Flame Design: TaskbookRpts (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+  "accessed": "2026-09-30",
+  "doi": "10.60555/w4zy-bt45",
+  "accession": "PSI-10",
+  "localPath": "data/raw/psi/PSI-10/PSI-10_Reports_TaskbookRpts.pdf",
+  "experimentIds": [
+   "acme-flame-design"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-10_Reports_TaskbookRpts.pdf' in the PSI 'Reports' folder of PSI-10. Download from the investigation page."
+ },
+ {
+  "id": "psi-100-experimental-table-saffire-3",
+  "title": "SAFFIRE-III: SAFFIRE-3 (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/040q-4h36",
+  "accession": "PSI-100",
+  "localPath": "data/raw/psi/PSI-100/PSI-100_Experimental table_SAFFIRE-3.csv",
+  "experimentIds": [
+   "saffire-iii"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-100_Experimental table_SAFFIRE-3.csv' in the PSI 'Experimental table' folder of PSI-100. Download from the investigation page."
+ },
+ {
+  "id": "psi-101-analyzed-data-same-same-r-results",
+  "title": "SAME-R: SAME, SAME-R_Results (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/2np7-jv14",
+  "accession": "PSI-101",
+  "localPath": "data/raw/psi/PSI-101/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx",
+  "experimentIds": [
+   "same-r"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx' in the PSI 'Analyzed Data' folder of PSI-101. Download from the investigation page."
+ },
+ {
+  "id": "psi-101-experimental-table-same-r",
+  "title": "SAME-R: SAME-R (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/2np7-jv14",
+  "accession": "PSI-101",
+  "localPath": "data/raw/psi/PSI-101/PSI-101_Experimental table_SAME-R.csv",
+  "experimentIds": [
+   "same-r"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-101_Experimental table_SAME-R.csv' in the PSI 'Experimental table' folder of PSI-101. Download from the investigation page."
+ },
+ {
+  "id": "psi-101-reports-same-r-final-report",
+  "title": "SAME-R: SAME-R_Final Report (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/2np7-jv14",
+  "accession": "PSI-101",
+  "localPath": "data/raw/psi/PSI-101/PSI-101_Reports_SAME-R_Final Report.pdf",
+  "experimentIds": [
+   "same-r"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-101_Reports_SAME-R_Final Report.pdf' in the PSI 'Reports' folder of PSI-101. Download from the investigation page."
+ },
+ {
+  "id": "psi-102-experimental-table-same",
+  "title": "SAME: SAME (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gd4k-8h62",
+  "accession": "PSI-102",
+  "localPath": "data/raw/psi/PSI-102/PSI-102_Experimental table_SAME.csv",
+  "experimentIds": [
+   "same"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-102_Experimental table_SAME.csv' in the PSI 'Experimental table' folder of PSI-102. Download from the investigation page."
+ },
+ {
+  "id": "psi-102-reports-same-final-science-report",
+  "title": "SAME: SAME_Final Science Report (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gd4k-8h62",
+  "accession": "PSI-102",
+  "localPath": "data/raw/psi/PSI-102/PSI-102_Reports_SAME_Final Science Report.pdf",
+  "experimentIds": [
+   "same"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-102_Reports_SAME_Final Science Report.pdf' in the PSI 'Reports' folder of PSI-102. Download from the investigation page."
+ },
+ {
+  "id": "psi-106-experimental-table-slice",
+  "title": "SLICE: Slice (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/pm12-rg61",
+  "accession": "PSI-106",
+  "localPath": "data/raw/psi/PSI-106/PSI-106_Experimental table_Slice.csv",
+  "experimentIds": [
+   "slice"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-106_Experimental table_Slice.csv' in the PSI 'Experimental table' folder of PSI-106. Download from the investigation page."
+ },
+ {
+  "id": "psi-107-experimental-table-spice",
+  "title": "SPICE: Spice (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/9kbh-e962",
+  "accession": "PSI-107",
+  "localPath": "data/raw/psi/PSI-107/PSI-107_Experimental table_Spice.csv",
+  "experimentIds": [
+   "spice"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-107_Experimental table_Spice.csv' in the PSI 'Experimental table' folder of PSI-107. Download from the investigation page."
+ },
+ {
+  "id": "psi-107-presentations-laminar-smoke-points-in-coflow-measured-ab",
+  "title": "SPICE: Laminar Smoke Points in Coflow Measured Aboard ISS (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/9kbh-e962",
+  "accession": "PSI-107",
+  "localPath": "data/raw/psi/PSI-107/PSI-107_Presentations_Laminar Smoke Points in Coflow Measured Aboard ISS.pdf",
+  "experimentIds": [
+   "spice"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-107_Presentations_Laminar Smoke Points in Coflow Measured Aboard ISS.pdf' in the PSI 'Presentations' folder of PSI-107. Download from the investigation page."
+ },
+ {
+  "id": "psi-107-reports-smoke-points-of-microgravity-and-normal-gravity",
+  "title": "SPICE: SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/9kbh-e962",
+  "accession": "PSI-107",
+  "localPath": "data/raw/psi/PSI-107/PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis.pdf",
+  "experimentIds": [
+   "spice"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis.pdf' in the PSI 'Reports' folder of PSI-107. Download from the investigation page."
+ },
+ {
+  "id": "psi-107-reports-spice-30-daypostflightreport",
+  "title": "SPICE: SPICE_30-DayPostFlightReport (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/9kbh-e962",
+  "accession": "PSI-107",
+  "localPath": "data/raw/psi/PSI-107/PSI-107_Reports_SPICE_30-DayPostFlightReport.pdf",
+  "experimentIds": [
+   "spice"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-107_Reports_SPICE_30-DayPostFlightReport.pdf' in the PSI 'Reports' folder of PSI-107. Download from the investigation page."
+ },
+ {
+  "id": "psi-107-reports-spice-finalreport",
+  "title": "SPICE: SPICE_FinalReport (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/9kbh-e962",
+  "accession": "PSI-107",
+  "localPath": "data/raw/psi/PSI-107/PSI-107_Reports_SPICE_FinalReport.pdf",
+  "experimentIds": [
+   "spice"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-107_Reports_SPICE_FinalReport.pdf' in the PSI 'Reports' folder of PSI-107. Download from the investigation page."
+ },
+ {
+  "id": "psi-115-science-documents-dataorganizationdocument",
+  "title": "PSI-115: DataOrganizationDocument (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-115",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/q0v5-1v28",
+  "accession": "PSI-115",
+  "localPath": "data/raw/psi/PSI-115/PSI-115_Science Documents_DataOrganizationDocument.pdf",
+  "experimentIds": [
+   "same-smoke-modeling"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-115_Science Documents_DataOrganizationDocument.pdf' in the PSI 'Science Documents' folder of PSI-115. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-mst-2024-burning-history-flame-diameter",
+  "title": "PSI-117: MST_2024_Burning_history_Flame_diameter (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-mst-2024-dext",
+  "title": "PSI-117: MST_2024_Dext (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_MST_2024_Dext.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_MST_2024_Dext.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-mst-2024-kavg",
+  "title": "PSI-117: MST_2024_Kavg (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_MST_2024_Kavg.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-mst-2024-radiance-flame-diameter",
+  "title": "PSI-117: MST_2024_Radiance_Flame_Diameter (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-proci-2019-oscillatory-cool-flame",
+  "title": "PSI-117: PROCI_2019_Oscillatory_Cool_Flame (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-proci-2019-stable-cool",
+  "title": "PSI-117: PROCI_2019_Stable_Cool (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-proci-2023-alkane-extinction-diameter-1atm",
+  "title": "PSI-117: PROCI_2023_Alkane_Extinction_Diameter_1atm (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-proci-2023-c12-extinction-diameter-vs-pres",
+  "title": "PSI-117: PROCI_2023_C12_Extinction_Diameter_vs_pressure (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-proci-c12-2019-three-stage",
+  "title": "PSI-117: PROCI_C12_2019_Three_Stage (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-117-analyzed-data-readme-list-of-data",
+  "title": "PSI-117: ReadMe_List_of_Data (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/gz0q-b577",
+  "accession": "PSI-117",
+  "localPath": "data/raw/psi/PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+  "experimentIds": [
+   "flex-cool-flame-cfd"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx' in the PSI 'Analyzed Data' folder of PSI-117. Download from the investigation page."
+ },
+ {
+  "id": "psi-142-analyzed-data-psi-data-summary-princeton-with-links",
+  "title": "PSI-142: PSI data summary Princeton with links (Analyzed Data)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/80qf-vj95",
+  "accession": "PSI-142",
+  "localPath": "data/raw/psi/PSI-142/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx",
+  "experimentIds": [
+   "cool-flame-counterflow"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx' in the PSI 'Analyzed Data' folder of PSI-142. Download from the investigation page."
+ },
+ {
+  "id": "psi-142-experimental-table-data-summary-table",
+  "title": "PSI-142: Data Summary Table (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/80qf-vj95",
+  "accession": "PSI-142",
+  "localPath": "data/raw/psi/PSI-142/PSI-142_Experimental table_Data Summary Table.csv",
+  "experimentIds": [
+   "cool-flame-counterflow"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-142_Experimental table_Data Summary Table.csv' in the PSI 'Experimental table' folder of PSI-142. Download from the investigation page."
+ },
+ {
+  "id": "psi-159-experimental-table-cfi-g-inverse-flames",
+  "title": "ACME CFI-G: CFI-G_Inverse Flames (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/cyt1-kh64",
+  "accession": "PSI-159",
+  "localPath": "data/raw/psi/PSI-159/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+  "experimentIds": [
+   "acme-cfi-g"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-159_Experimental table_CFI-G_Inverse Flames.csv' in the PSI 'Experimental table' folder of PSI-159. Download from the investigation page."
+ },
+ {
+  "id": "psi-159-experimental-table-cfi-g-normal-flames",
+  "title": "ACME CFI-G: CFI-G_Normal Flames (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/cyt1-kh64",
+  "accession": "PSI-159",
+  "localPath": "data/raw/psi/PSI-159/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+  "experimentIds": [
+   "acme-cfi-g"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-159_Experimental table_CFI-G_Normal Flames.csv' in the PSI 'Experimental table' folder of PSI-159. Download from the investigation page."
+ },
+ {
+  "id": "psi-159-reports-finalrpt-acme-cfi-g",
+  "title": "ACME CFI-G: FinalRpt_ACME.CFI-G (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/cyt1-kh64",
+  "accession": "PSI-159",
+  "localPath": "data/raw/psi/PSI-159/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+  "experimentIds": [
+   "acme-cfi-g"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf' in the PSI 'Reports' folder of PSI-159. Download from the investigation page."
+ },
+ {
+  "id": "psi-20-experimental-table-acme-bre",
+  "title": "ACME BRE: ACME BRE (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/vb93-3y72",
+  "accession": "PSI-20",
+  "localPath": "data/raw/psi/PSI-20/PSI-20_Experimental table_ACME BRE.csv",
+  "experimentIds": [
+   "acme-bre"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-20_Experimental table_ACME BRE.csv' in the PSI 'Experimental table' folder of PSI-20. Download from the investigation page."
+ },
+ {
+  "id": "psi-21-experimental-table-cld-flame",
+  "title": "ACME CLD Flame: CLD Flame (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/23e1-9950",
+  "accession": "PSI-21",
+  "localPath": "data/raw/psi/PSI-21/PSI-21_Experimental table_CLD Flame.csv",
+  "experimentIds": [
+   "acme-cld"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-21_Experimental table_CLD Flame.csv' in the PSI 'Experimental table' folder of PSI-21. Download from the investigation page."
+ },
+ {
+  "id": "psi-22-experimental-table-acme-e-field-flames",
+  "title": "ACME E-FIELD Flames: ACME E-FIELD Flames (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/se5a-8c73",
+  "accession": "PSI-22",
+  "localPath": "data/raw/psi/PSI-22/PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+  "experimentIds": [
+   "acme-e-field"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-22_Experimental table_ACME E-FIELD Flames.csv' in the PSI 'Experimental table' folder of PSI-22. Download from the investigation page."
+ },
+ {
+  "id": "psi-23-experimental-table-acme-s-flame",
+  "title": "ACME s-Flame: ACME s-Flame (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/k57n-p030",
+  "accession": "PSI-23",
+  "localPath": "data/raw/psi/PSI-23/PSI-23_Experimental table_ACME s-Flame.csv",
+  "experimentIds": [
+   "acme-s-flame"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-23_Experimental table_ACME s-Flame.csv' in the PSI 'Experimental table' folder of PSI-23. Download from the investigation page."
+ },
+ {
+  "id": "psi-23-presentations-acme-fact-sheet-20180820",
+  "title": "ACME s-Flame: ACME fact sheet 20180820 (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/k57n-p030",
+  "accession": "PSI-23",
+  "localPath": "data/raw/psi/PSI-23/PSI-23_Presentations_ACME fact sheet 20180820.pdf",
+  "experimentIds": [
+   "acme-s-flame"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-23_Presentations_ACME fact sheet 20180820.pdf' in the PSI 'Presentations' folder of PSI-23. Download from the investigation page."
+ },
+ {
+  "id": "psi-23-presentations-iss-researchers-guide-combustion-in-reduced",
+  "title": "ACME s-Flame: ISS Researchers Guide - Combustion In Reduced Gravity (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/k57n-p030",
+  "accession": "PSI-23",
+  "localPath": "data/raw/psi/PSI-23/PSI-23_Presentations_ISS Researchers Guide - Combustion In Reduced Gravity.pdf",
+  "experimentIds": [
+   "acme-s-flame"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-23_Presentations_ISS Researchers Guide - Combustion In Reduced Gravity.pdf' in the PSI 'Presentations' folder of PSI-23. Download from the investigation page."
+ },
+ {
+  "id": "psi-23-presentations-ps-03403-acme-on-the-iss",
+  "title": "ACME s-Flame: PS-03403 ACME on the ISS (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/k57n-p030",
+  "accession": "PSI-23",
+  "localPath": "data/raw/psi/PSI-23/PSI-23_Presentations_PS-03403 ACME on the ISS.pdf",
+  "experimentIds": [
+   "acme-s-flame"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-23_Presentations_PS-03403 ACME on the ISS.pdf' in the PSI 'Presentations' folder of PSI-23. Download from the investigation page."
+ },
+ {
+  "id": "psi-23-reports-s-flame-30-day-report-inc-63-20201216",
+  "title": "ACME s-Flame: s-Flame 30-day report Inc 63 20201216 (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/k57n-p030",
+  "accession": "PSI-23",
+  "localPath": "data/raw/psi/PSI-23/PSI-23_Reports_s-Flame 30-day report Inc 63 20201216.pdf",
+  "experimentIds": [
+   "acme-s-flame"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-23_Reports_s-Flame 30-day report Inc 63 20201216.pdf' in the PSI 'Reports' folder of PSI-23. Download from the investigation page."
+ },
+ {
+  "id": "psi-23-reports-s-flame-final-report-20210729",
+  "title": "ACME s-Flame: s_Flame_final_report_20210729 (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/k57n-p030",
+  "accession": "PSI-23",
+  "localPath": "data/raw/psi/PSI-23/PSI-23_Reports_s_Flame_final_report_20210729.pdf",
+  "experimentIds": [
+   "acme-s-flame"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-23_Reports_s_Flame_final_report_20210729.pdf' in the PSI 'Reports' folder of PSI-23. Download from the investigation page."
+ },
+ {
+  "id": "psi-23-science-documents-s-flame-srd-20100125",
+  "title": "ACME s-Flame: s-Flame_SRD_20100125 (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/k57n-p030",
+  "accession": "PSI-23",
+  "localPath": "data/raw/psi/PSI-23/PSI-23_Science Documents_s-Flame_SRD_20100125.pdf",
+  "experimentIds": [
+   "acme-s-flame"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-23_Science Documents_s-Flame_SRD_20100125.pdf' in the PSI 'Science Documents' folder of PSI-23. Download from the investigation page."
+ },
+ {
+  "id": "psi-25-experimental-table-bass-ii",
+  "title": "BASS-II: BASS-II (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/4qc4-de67",
+  "accession": "PSI-25",
+  "localPath": "data/raw/psi/PSI-25/PSI-25_Experimental table_BASS-II.csv",
+  "experimentIds": [
+   "bass-ii"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-25_Experimental table_BASS-II.csv' in the PSI 'Experimental table' folder of PSI-25. Download from the investigation page."
+ },
+ {
+  "id": "psi-25-reports-bass-ii-summary-report",
+  "title": "BASS-II: BASS-II Summary Report (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/4qc4-de67",
+  "accession": "PSI-25",
+  "localPath": "data/raw/psi/PSI-25/PSI-25_Reports_BASS-II Summary Report.pdf",
+  "experimentIds": [
+   "bass-ii"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-25_Reports_BASS-II Summary Report.pdf' in the PSI 'Reports' folder of PSI-25. Download from the investigation page."
+ },
+ {
+  "id": "psi-25-science-documents-bass-ii-srd",
+  "title": "BASS-II: BASS-II_SRD (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/4qc4-de67",
+  "accession": "PSI-25",
+  "localPath": "data/raw/psi/PSI-25/PSI-25_Science Documents_BASS-II_SRD.pdf",
+  "experimentIds": [
+   "bass-ii"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-25_Science Documents_BASS-II_SRD.pdf' in the PSI 'Science Documents' folder of PSI-25. Download from the investigation page."
+ },
+ {
+  "id": "psi-26-experimental-table-bass",
+  "title": "BASS: BASS (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/58h4-dy80",
+  "accession": "PSI-26",
+  "localPath": "data/raw/psi/PSI-26/PSI-26_Experimental table_BASS.csv",
+  "experimentIds": [
+   "bass"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-26_Experimental table_BASS.csv' in the PSI 'Experimental table' folder of PSI-26. Download from the investigation page."
+ },
+ {
+  "id": "psi-26-presentations-bass-overview-of-recent-iss-results",
+  "title": "BASS: BASS_Overview of Recent ISS Results (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/58h4-dy80",
+  "accession": "PSI-26",
+  "localPath": "data/raw/psi/PSI-26/PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+  "experimentIds": [
+   "bass"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf' in the PSI 'Presentations' folder of PSI-26. Download from the investigation page."
+ },
+ {
+  "id": "psi-26-presentations-flammability-aspects-of-fabric-usnationalco",
+  "title": "BASS: Flammability Aspects of Fabric_USNationalCombustion2013 (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/58h4-dy80",
+  "accession": "PSI-26",
+  "localPath": "data/raw/psi/PSI-26/PSI-26_Presentations_Flammability Aspects of Fabric_USNationalCombustion2013.pdf",
+  "experimentIds": [
+   "bass"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-26_Presentations_Flammability Aspects of Fabric_USNationalCombustion2013.pdf' in the PSI 'Presentations' folder of PSI-26. Download from the investigation page."
+ },
+ {
+  "id": "psi-26-presentations-flammabilityaspectsofcottonfiberglassfabric",
+  "title": "BASS: FlammabilityAspectsofCottonFiberglassFabric_ASGSR2012 (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/58h4-dy80",
+  "accession": "PSI-26",
+  "localPath": "data/raw/psi/PSI-26/PSI-26_Presentations_FlammabilityAspectsofCottonFiberglassFabric_ASGSR2012.pdf",
+  "experimentIds": [
+   "bass"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-26_Presentations_FlammabilityAspectsofCottonFiberglassFabric_ASGSR2012.pdf' in the PSI 'Presentations' folder of PSI-26. Download from the investigation page."
+ },
+ {
+  "id": "psi-26-science-documents-as-run-test-matrix",
+  "title": "BASS: As Run_Test Matrix (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/58h4-dy80",
+  "accession": "PSI-26",
+  "localPath": "data/raw/psi/PSI-26/PSI-26_Science Documents_As Run_Test Matrix.xlsx",
+  "experimentIds": [
+   "bass"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-26_Science Documents_As Run_Test Matrix.xlsx' in the PSI 'Science Documents' folder of PSI-26. Download from the investigation page."
+ },
+ {
+  "id": "psi-26-science-documents-planned-test-matrix",
+  "title": "BASS: Planned_Test Matrix (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/58h4-dy80",
+  "accession": "PSI-26",
+  "localPath": "data/raw/psi/PSI-26/PSI-26_Science Documents_Planned_Test Matrix.xlsx",
+  "experimentIds": [
+   "bass"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-26_Science Documents_Planned_Test Matrix.xlsx' in the PSI 'Science Documents' folder of PSI-26. Download from the investigation page."
+ },
+ {
+  "id": "psi-26-science-documents-srd-bass",
+  "title": "BASS: SRD_BASS (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/58h4-dy80",
+  "accession": "PSI-26",
+  "localPath": "data/raw/psi/PSI-26/PSI-26_Science Documents_SRD_BASS.pdf",
+  "experimentIds": [
+   "bass"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-26_Science Documents_SRD_BASS.pdf' in the PSI 'Science Documents' folder of PSI-26. Download from the investigation page."
+ },
+ {
+  "id": "psi-39-experimental-table-cfi",
+  "title": "CFI: CFI (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/m6pj-a914",
+  "accession": "PSI-39",
+  "localPath": "data/raw/psi/PSI-39/PSI-39_Experimental table_CFI.csv",
+  "experimentIds": [
+   "cfi"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-39_Experimental table_CFI.csv' in the PSI 'Experimental table' folder of PSI-39. Download from the investigation page."
+ },
+ {
+  "id": "psi-39-presentations-aspects-of-cool-flame-supported-droplet-com",
+  "title": "CFI: Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/m6pj-a914",
+  "accession": "PSI-39",
+  "localPath": "data/raw/psi/PSI-39/PSI-39_Presentations_Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf",
+  "experimentIds": [
+   "cfi"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-39_Presentations_Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf' in the PSI 'Presentations' folder of PSI-39. Download from the investigation page."
+ },
+ {
+  "id": "psi-39-presentations-cool-flames-in-space-a-hot-prospect-on-eart",
+  "title": "CFI: Cool Flames in Space, a Hot Prospect on Earth_CFI (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/m6pj-a914",
+  "accession": "PSI-39",
+  "localPath": "data/raw/psi/PSI-39/PSI-39_Presentations_Cool Flames in Space, a Hot Prospect on Earth_CFI.pdf",
+  "experimentIds": [
+   "cfi"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-39_Presentations_Cool Flames in Space, a Hot Prospect on Earth_CFI.pdf' in the PSI 'Presentations' folder of PSI-39. Download from the investigation page."
+ },
+ {
+  "id": "psi-39-reports-cfi-science-final-report",
+  "title": "CFI: CFI Science Final Report (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/m6pj-a914",
+  "accession": "PSI-39",
+  "localPath": "data/raw/psi/PSI-39/PSI-39_Reports_CFI Science Final Report.pdf",
+  "experimentIds": [
+   "cfi"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-39_Reports_CFI Science Final Report.pdf' in the PSI 'Reports' folder of PSI-39. Download from the investigation page."
+ },
+ {
+  "id": "psi-39-science-documents-cfi-datasummary-spreadsheet-jan2021",
+  "title": "CFI: CFI_DataSummary_Spreadsheet_Jan2021 (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/m6pj-a914",
+  "accession": "PSI-39",
+  "localPath": "data/raw/psi/PSI-39/PSI-39_Science Documents_CFI_DataSummary_Spreadsheet_Jan2021.xlsx",
+  "experimentIds": [
+   "cfi"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-39_Science Documents_CFI_DataSummary_Spreadsheet_Jan2021.xlsx' in the PSI 'Science Documents' folder of PSI-39. Download from the investigation page."
+ },
+ {
+  "id": "psi-39-science-documents-srd-cfi",
+  "title": "CFI: SRD_CFI (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/m6pj-a914",
+  "accession": "PSI-39",
+  "localPath": "data/raw/psi/PSI-39/PSI-39_Science Documents_SRD_CFI.pdf",
+  "experimentIds": [
+   "cfi"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-39_Science Documents_SRD_CFI.pdf' in the PSI 'Science Documents' folder of PSI-39. Download from the investigation page."
+ },
+ {
+  "id": "psi-47-experimental-table-daft",
+  "title": "DAFT / DAFT-2: DAFT (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/ztgj-d202",
+  "accession": "PSI-47",
+  "localPath": "data/raw/psi/PSI-47/PSI-47_Experimental table_DAFT.csv",
+  "experimentIds": [
+   "daft"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-47_Experimental table_DAFT.csv' in the PSI 'Experimental table' folder of PSI-47. Download from the investigation page."
+ },
+ {
+  "id": "psi-47-presentations-daft-factsheet",
+  "title": "DAFT / DAFT-2: Daft_FactSheet (Presentations)",
+  "type": "presentation",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/ztgj-d202",
+  "accession": "PSI-47",
+  "localPath": "data/raw/psi/PSI-47/PSI-47_Presentations_Daft_FactSheet.pdf",
+  "experimentIds": [
+   "daft"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-47_Presentations_Daft_FactSheet.pdf' in the PSI 'Presentations' folder of PSI-47. Download from the investigation page."
+ },
+ {
+  "id": "psi-47-reports-daft-30day-postflightreport",
+  "title": "DAFT / DAFT-2: DAFT_30Day.PostFlightReport (Reports)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/ztgj-d202",
+  "accession": "PSI-47",
+  "localPath": "data/raw/psi/PSI-47/PSI-47_Reports_DAFT_30Day.PostFlightReport.pdf",
+  "experimentIds": [
+   "daft"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-47_Reports_DAFT_30Day.PostFlightReport.pdf' in the PSI 'Reports' folder of PSI-47. Download from the investigation page."
+ },
+ {
+  "id": "psi-68-experimental-table-flex2",
+  "title": "FLEX-2: Flex2 (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/byp8-h018",
+  "accession": "PSI-68",
+  "localPath": "data/raw/psi/PSI-68/PSI-68_Experimental table_Flex2.csv",
+  "experimentIds": [
+   "flex-2"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-68_Experimental table_Flex2.csv' in the PSI 'Experimental table' folder of PSI-68. Download from the investigation page."
+ },
+ {
+  "id": "psi-69-experimental-table-flex",
+  "title": "FLEX: FLEX (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/mbq8-0451",
+  "accession": "PSI-69",
+  "localPath": "data/raw/psi/PSI-69/PSI-69_Experimental table_FLEX.csv",
+  "experimentIds": [
+   "flex"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-69_Experimental table_FLEX.csv' in the PSI 'Experimental table' folder of PSI-69. Download from the investigation page."
+ },
+ {
+  "id": "psi-98-experimental-table-saffire-1",
+  "title": "SAFFIRE-I: SAFFIRE-1 (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/0t15-1z43",
+  "accession": "PSI-98",
+  "localPath": "data/raw/psi/PSI-98/PSI-98_Experimental table_SAFFIRE-1.csv",
+  "experimentIds": [
+   "saffire-i"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-98_Experimental table_SAFFIRE-1.csv' in the PSI 'Experimental table' folder of PSI-98. Download from the investigation page."
+ },
+ {
+  "id": "psi-98-science-documents-saffire-objectives-development-and-stat",
+  "title": "SAFFIRE-I: SAFFIRE Objectives, Development and Status (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/0t15-1z43",
+  "accession": "PSI-98",
+  "localPath": "data/raw/psi/PSI-98/PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+  "experimentIds": [
+   "saffire-i"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf' in the PSI 'Science Documents' folder of PSI-98. Download from the investigation page."
+ },
+ {
+  "id": "psi-98-science-documents-saffire-i-and-saffire-iii-readme",
+  "title": "SAFFIRE-I: SAFFIRE-I and SAFFIRE-III Readme (Science Documents)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/0t15-1z43",
+  "accession": "PSI-98",
+  "localPath": "data/raw/psi/PSI-98/PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx",
+  "experimentIds": [
+   "saffire-i"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx' in the PSI 'Science Documents' folder of PSI-98. Download from the investigation page."
+ },
+ {
+  "id": "psi-99-experimental-table-saffire-2",
+  "title": "SAFFIRE-II: SAFFIRE-2 (Experimental table)",
+  "type": "psi-dataset",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+  "accessed": "2026-09-30",
+  "license": "CC0-1.0",
+  "doi": "10.60555/2chp-m469",
+  "accession": "PSI-99",
+  "localPath": "data/raw/psi/PSI-99/PSI-99_Experimental table_SAFFIRE-2.csv",
+  "experimentIds": [
+   "saffire-ii"
+  ],
+  "publisher": "NASA Physical Sciences Informatics",
+  "note": "File 'PSI-99_Experimental table_SAFFIRE-2.csv' in the PSI 'Experimental table' folder of PSI-99. Download from the investigation page."
+ },
+ {
+  "id": "ntrs-20210011521",
+  "title": "Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires",
+  "authors": [
+   "David L. Urban",
+   "Gary A. Ruff",
+   "Paul Ferkul",
+   "John Easton",
+   "Jay Owens",
+   "Sandra Olson",
+   "Marit Meyer",
+   "Claire Fortenberry",
+   "John Brooker",
+   "John Graf",
+   "Michael Casteel",
+   "Balazs Toth",
+   "Florian Meyer",
+   "Christian Eigenbrod",
+   "James S. T’ien",
+   "Ya-Ting T. Liao",
+   "A. Carlos Fernandez-Pello",
+   "Guillaume Legros",
+   "Augustin Guibaud",
+   "Nickolay Smirnov",
+   "Osamu Fujita",
+   "Grunde Jomaas"
+  ],
+  "year": 2021,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20210011521",
+  "accessed": "2026-09-30",
+  "accession": "20210011521",
+  "localPath": "data/raw/ntrs/20210011521.pdf",
+  "experimentIds": [
+   "saffire-iv-vi"
+  ],
+  "publisher": "50th International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20240002981",
+  "title": "Preliminary Results from the Saffire VI Experiment",
+  "authors": [
+   "David L Urban",
+   "Gary A Ruff",
+   "Paul Ferkul",
+   "John Easton",
+   "Michael Johnston",
+   "Jay Owens",
+   "Sandra Olson",
+   "Claire Fortenberry",
+   "John Graf",
+   "Oageng George",
+   "Balazs Toth",
+   "Florian Meyer",
+   "Christian Eigenbrod",
+   "James S T'ien",
+   "Ya-Ting T. Liao",
+   "A Carlos Fernandez-Pello",
+   "Guillaume Legros",
+   "Augustin Guibaud",
+   "Nickolay Smirnov",
+   "Osamu Fujita",
+   "Ulises Rojas Alva",
+   "Grunde Jomaas"
+  ],
+  "year": 2024,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20240002981",
+  "accessed": "2026-09-30",
+  "accession": "20240002981",
+  "localPath": "data/raw/ntrs/20240002981.pdf",
+  "experimentIds": [
+   "saffire-iv-vi"
+  ],
+  "publisher": "53rd International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20170008805",
+  "title": "Results of Large-Scale Spacecraft Flammability Tests",
+  "authors": [
+   "Ferkul, Paul ",
+   "Olson, Sandra ",
+   "Urban, David L.",
+   "Ruff, Gary A.",
+   "Easton, John ",
+   "T'ien, James S.",
+   "Liao, Ta-Ting T.",
+   "Fernandez-Pello, A. Carlos",
+   "Torero, Jose L.",
+   "Eigenbrand, Christian",
+   "Legros, Guillaume",
+   "Smirnov, Nickolay",
+   "Fujita, Osamu",
+   "Rouvreau, Sebatien",
+   "Toth, Balazs",
+   "Jomaas, Grunde"
+  ],
+  "year": 2017,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20170008805",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20170008805",
+  "localPath": "data/raw/ntrs/20170008805.pdf",
+  "experimentIds": [
+   "saffire-i",
+   "saffire-ii",
+   "saffire-iii"
+  ],
+  "publisher": "International Conference on Environmental Systems (ICES) 2017",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "ntrs-20170001636",
+  "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+  "authors": [
+   "Schoren, William",
+   "Ruff, Gary A.",
+   "Urban, David L."
+  ],
+  "year": 2016,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20170001636",
+  "accessed": "2026-09-30",
+  "accession": "20170001636",
+  "localPath": "data/raw/ntrs/20170001636.pdf",
+  "experimentIds": [
+   "saffire-i",
+   "saffire-ii",
+   "saffire-iii"
+  ],
+  "publisher": "International Association for the Advancement of Space Safety; International Association for the Advancement of Space Safety Conference (IAASS) 2016",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20170000230",
+  "title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire)",
+  "authors": [
+   "Ruff, Gary A.",
+   "Urban, David L."
+  ],
+  "year": 2016,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20170000230",
+  "accessed": "2026-09-30",
+  "accession": "20170000230",
+  "localPath": "data/raw/ntrs/20170000230.pdf",
+  "experimentIds": [
+   "saffire-i",
+   "saffire-ii",
+   "saffire-iii",
+   "saffire-iv-vi"
+  ],
+  "publisher": "International Conference On Environmental Systems, Inc.; International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20200000557",
+  "title": "Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA",
+  "authors": [
+   "Maria Thomsen",
+   "Carlos Fernandez-Pello",
+   "Gary A. Ruff",
+   "David L. Urban"
+  ],
+  "year": 2018,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20200000557",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "doi": "10.1016/j.combustflame.2018.10.016",
+  "accession": "20200000557",
+  "localPath": "data/raw/ntrs/20200000557.pdf",
+  "experimentIds": [
+   "saffire-ii"
+  ],
+  "publisher": "Combustion and Flame",
+  "note": "NTRS accepted manuscript"
+ },
+ {
+  "id": "ntrs-20260001992",
+  "title": "Heat and Smoke Emission from Tests on the Saffire VI Experiment",
+  "authors": [
+   "David L Urban",
+   "Gary A Ruff",
+   "Paul Ferkul",
+   "John Easton",
+   "Jay Owens",
+   "Sandra Olson",
+   "Claire Fortenberry",
+   "John Graf",
+   "Oageng George",
+   "Balazs Toth",
+   "Florian Meyer",
+   "Christian Eigenbrod",
+   "James S T'ien",
+   "Ya-Ting T Liao",
+   "A Carlos Fernandez-Pello",
+   "Guillaume Legros",
+   "Augustin Guibaud",
+   "Nickolay Smirnov",
+   "Osamu Fujita",
+   "Ulises Rojas Alva",
+   "Grunde Jomaas"
+  ],
+  "year": 2026,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20260001992",
+  "accessed": "2026-09-30",
+  "accession": "20260001992",
+  "localPath": "data/raw/ntrs/20260001992.pdf",
+  "experimentIds": [
+   "saffire-iv-vi"
+  ],
+  "publisher": "55th International Conference on Environmental Systems (ICES)",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20170002628",
+  "title": "Operation and Development Status of the Spacecraft Fire Experiment (Saffire)",
+  "authors": [
+   "Ruff, Gary A.",
+   "Urban, David L."
+  ],
+  "year": 2016,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20170002628",
+  "accessed": "2026-09-30",
+  "accession": "20170002628",
+  "localPath": "data/raw/ntrs/20170002628.pdf",
+  "experimentIds": [
+   "saffire-i",
+   "saffire-ii",
+   "saffire-iii",
+   "saffire-iv-vi"
+  ],
+  "publisher": "International Conference On Environmental Systems, Inc.; International Conference on Environmental Systems",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "ntrs-20160000593",
+  "title": "Combustion of Solids in Microgravity: Results from the BASS-II Experiment",
+  "authors": [
+   "Ferkul, Paul V.",
+   "Bhattacharjee, Subrata ",
+   "Fernandez-Pello, Carlos",
+   "Miller, Fletcher ",
+   "Olson, Sandra L.",
+   "Takahashi, Fumiaki ",
+   "T’ien, James S."
+  ],
+  "year": 2014,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20160000593",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20160000593",
+  "localPath": "data/raw/ntrs/20160000593.pdf",
+  "experimentIds": [
+   "bass-ii",
+   "bass"
+  ],
+  "publisher": "American Society for Gravitational and Space Research; American Society for Gravitational and Space Research Conference",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "ntrs-20150008962",
+  "title": "Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity",
+  "authors": [
+   "Zhao, Xiaoyang",
+   "T'ien, James S.",
+   "Ferkul, Paul V.",
+   "Olson, Sandra L."
+  ],
+  "year": 2015,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20150008962",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20150008962",
+  "localPath": "data/raw/ntrs/20150008962.pdf",
+  "experimentIds": [
+   "bass",
+   "bass-ii"
+  ],
+  "publisher": "U. S. National Combustion Meeting",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20160012691",
+  "title": "Correlation of Normal Gravity Mixed Convection Blowoff Limits with Microgravity Forced Flow Blowoff Limits",
+  "authors": [
+   "Marcum, Jeremy W.",
+   "Olson, Sandra L.",
+   "Ferkul, Paul V."
+  ],
+  "year": 2016,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20160012691",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20160012691",
+  "localPath": "data/raw/ntrs/20160012691.pdf",
+  "experimentIds": [
+   "bass-ii"
+  ],
+  "publisher": "2016 Spring Technical Meeting of the Central States Section of The Combustion Institute",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20170006615",
+  "title": "Mixed Convection Blowoff Limits as a Function of Oxygen Concentration and Upward Forced Stretch Rate for Burning Pmma Rods of Various Sizes",
+  "authors": [
+   "Marcum, Jeremy W.",
+   "Ferkul, Paul V.",
+   "Olson, Sandra L."
+  ],
+  "year": 2017,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20170006615",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20170006615",
+  "localPath": "data/raw/ntrs/20170006615.pdf",
+  "experimentIds": [
+   "bass-ii"
+  ],
+  "publisher": "International Conference On Environmental Systems, Inc.; International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20150019858",
+  "title": "Results from On-Board CSA-CP and CDM Sensor Readings During the Burning and Suppression of Solids II (BASS-II) Experiment in the Microgravity Science Glovebox (MSG)",
+  "authors": [
+   "Olson, Sandra L.",
+   "Ferkul, Paul V.",
+   "Bhattacharjee, Subrata",
+   "Miller, Fletcher J.",
+   "Fernandez-Pello, Carlos",
+   "Link, Shmuel",
+   "T'ien, James S.",
+   "Wichman, Indrek"
+  ],
+  "year": 2015,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20150019858",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20150019858",
+  "localPath": "data/raw/ntrs/20150019858.pdf",
+  "experimentIds": [
+   "bass-ii"
+  ],
+  "publisher": "International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20205004657",
+  "title": "Effects of Confinement on Flame Spread in Microgravity",
+  "authors": [
+   "Yanjun Li",
+   "Ya-Ting T Liao",
+   "Paul V Ferkul",
+   "Michael C Johnston",
+   "Charles Bunnell"
+  ],
+  "year": 2021,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20205004657",
+  "accessed": "2026-09-30",
+  "accession": "20205004657",
+  "localPath": "data/raw/ntrs/20205004657.pdf",
+  "experimentIds": [
+   "confined-combustion"
+  ],
+  "publisher": "50th International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20150023456",
+  "title": "Detailed Results from the Flame Extinguishment Experiment (FLEX) March 2009 to December 2011",
+  "authors": [
+   "Dietrich, Daniel L.",
+   "Ferkul, Paul V.",
+   "Bryg, Victoria M.",
+   "Nayagam, M. Vedha",
+   "Hicks, Michael C.",
+   "Williams, Forman A.",
+   "Dryer, Frederick L.",
+   "Shaw, Benjamin D.",
+   "Choi, Mun Y.",
+   "Avedisian, C. Thomas"
+  ],
+  "year": 2015,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20150023456",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20150023456",
+  "localPath": "data/raw/ntrs/20150023456.pdf",
+  "experimentIds": [
+   "flex"
+  ],
+  "publisher": "NASA Technical Reports Server",
+  "note": "NTRS technical publication"
+ },
+ {
+  "id": "ntrs-20210022617",
+  "title": "Isolated Single Droplet Combustion: FLEX Experiments onboard the International Space Station",
+  "authors": [
+   "Vedha Nayagam",
+   "Daniel L. Dietrich",
+   "Forman A. Williams"
+  ],
+  "year": 2021,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20210022617",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20210022617",
+  "localPath": "data/raw/ntrs/20210022617.pdf",
+  "experimentIds": [
+   "flex",
+   "flex-2",
+   "cfi"
+  ],
+  "publisher": "The 33rd Academic Lecture Meeting of the Japan Society of Microgravity Application (JASMAC-33)",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "ntrs-20130014061",
+  "title": "Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity",
+  "authors": [
+   "Nayagam, Vedha",
+   "Dietrich, Daniel L.",
+   "Hicks, Michael C.",
+   "Williams, Forman A."
+  ],
+  "year": 2013,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20130014061",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20130014061",
+  "localPath": "data/raw/ntrs/20130014061.pdf",
+  "experimentIds": [
+   "flex"
+  ],
+  "publisher": "8th U.S. National Combustion Meeting",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20090014812",
+  "title": "Multi-User Droplet Combustion Apparatus - Flame Extinguishment Experiment",
+  "authors": [
+   "Williams, Forman A.",
+   "Nayagam, Vedha",
+   "Choi, Mun Y.",
+   "Dryer, Frederick L.",
+   "Shaw, Benjamin D."
+  ],
+  "year": 2009,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20090014812",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20090014812",
+  "localPath": "data/raw/ntrs/20090014812.pdf",
+  "experimentIds": [
+   "flex"
+  ],
+  "publisher": "NASA Technical Reports Server",
+  "note": "NTRS other"
+ },
+ {
+  "id": "ntrs-20260000646",
+  "title": "Material Flammability at Lunar and Martian Gravity",
+  "authors": [
+   "Paul Ferkul",
+   "Nathan Kralik",
+   "Ya-Ting Liao"
+  ],
+  "year": 2026,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20260000646",
+  "accessed": "2026-09-30",
+  "accession": "20260000646",
+  "localPath": "data/raw/ntrs/20260000646.pdf",
+  "experimentIds": [
+   "luci",
+   "partial-g-centrifuge"
+  ],
+  "publisher": "57th Lunar and Planetary Science Conference (LPSC)",
+  "note": "NTRS extended abstract"
+ },
+ {
+  "id": "ntrs-20250010653",
+  "title": "Lunar Combustion Investigation: Flammability Results from a Rotating Sounding Rocket",
+  "authors": [
+   "Paul V Ferkul",
+   "Michael C Johnston",
+   "Nathan Kralik",
+   "Ya-Ting Liao"
+  ],
+  "year": 2025,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20250010653",
+  "accessed": "2026-09-30",
+  "accession": "20250010653",
+  "localPath": "data/raw/ntrs/20250010653.pdf",
+  "experimentIds": [
+   "luci"
+  ],
+  "publisher": "American Society for Space and Gravitational Research (ASGSR)",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "ntrs-20250002114",
+  "title": "Solid Fuel Ignition Testing for Lunar Applications, Theory and Experimental Results",
+  "authors": [
+   "David Urban",
+   "Sandra Olson",
+   "Daniel Dietrich",
+   "Dennis Stocker",
+   "Michael Johnston",
+   "Paul Ferkul",
+   "Gary Ruff",
+   "Jennifer Zayac",
+   "Susana Harper",
+   "Alfredo Juarez",
+   "Steven Peralta",
+   "Carlos Fernandez-Pello",
+   "Maria Thomsen",
+   "Ya-Ting Liao",
+   "Harold Beeson",
+   "Gregory Harrigan"
+  ],
+  "year": 2025,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20250002114",
+  "accessed": "2026-09-30",
+  "accession": "20250002114",
+  "localPath": "data/raw/ntrs/20250002114.pdf",
+  "experimentIds": [
+   "partial-g-centrifuge"
+  ],
+  "publisher": "54th International Conference on Environmental Systems (ICES)",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20130010991",
+  "title": "Evaluating Material Flammability in Microgravity and Martian Gravity Compared to the NASA Standard Normal Gravity Test",
+  "authors": [
+   "Oslon, Sandra. L.",
+   "Ferkul, Paul"
+  ],
+  "year": 2012,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20130010991",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20130010991",
+  "localPath": "data/raw/ntrs/20130010991.pdf",
+  "experimentIds": [
+   "partial-g-centrifuge"
+  ],
+  "publisher": "American Inst. of Aeronautics and Astronautics; American Inst. of Chemical Engineers; American Society of Mechanical Engineers; 42nd International Conference on Environmental Systems (ICES)",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20210020446",
+  "title": "Impact of Lunar Gravity on Material Flammability",
+  "authors": [
+   "Gary A. Ruff"
+  ],
+  "year": 2021,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20210020446",
+  "accessed": "2026-09-30",
+  "accession": "20210020446",
+  "localPath": "data/raw/ntrs/20210020446.pdf",
+  "experimentIds": [],
+  "publisher": "Lunar Surface Science Workshop",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "ntrs-20040053567",
+  "title": "Upward And Downward Flame Spreading And Extinction In Partial Gravity Environments",
+  "authors": [
+   "Sacksteder, Kurt R.",
+   "Feier, Ioan I.",
+   "Ferkul, Paul V.",
+   "Kumar, Amit",
+   "T'ien, James S."
+  ],
+  "year": 2003,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20040053567",
+  "accessed": "2026-09-30",
+  "accession": "20040053567",
+  "localPath": "data/raw/ntrs/20040053567.pdf",
+  "experimentIds": [],
+  "publisher": "Seventh International Workshop on Microgravity Combustion and Chemically Reacting Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20210022402",
+  "title": "Topical: Solid Fuel Combustion in Partial and Micro-Gravity",
+  "authors": [
+   "Michael Gollner",
+   "Indrek Wichman",
+   "Ya-Ting Liao",
+   "Luca Carmignani",
+   "Erica Belmont",
+   "Subrata Bhattacharjee",
+   "John de Ris",
+   "Daniel Dietrich",
+   "Christian Eigenbrod",
+   "Makoto Endo",
+   "Carlos Fernandez-Pello",
+   "Claire Fortenberry",
+   "Augustin Guibaud",
+   "Michael Johnston",
+   "Grunde Jomaas",
+   "Amanda Kimball",
+   "Sara McAllister",
+   "Randall McDermott",
+   "Fletcher Miller",
+   "Justin Niehaus",
+   "Vedha Nayagam",
+   "Sandra Olson",
+   "Rosa Padilla",
+   "James Quintiere",
+   "Guillermo Rein",
+   "Paul Ronney",
+   "Sarah Scott",
+   "Albert Simeoni",
+   "Ali Tohidi",
+   "James Urban",
+   "Qingsheng Wang",
+   "Forman Williams",
+   "Jiann Yang"
+  ],
+  "year": 2021,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20210022402",
+  "accessed": "2026-09-30",
+  "accession": "20210022402",
+  "localPath": "data/raw/ntrs/20210022402.pdf",
+  "experimentIds": [],
+  "publisher": "NASA Technical Reports Server",
+  "note": "NTRS white paper"
+ },
+ {
+  "id": "ntrs-20260002050",
+  "title": "Surface Vehicle Atmospheric Considerations for Moon to Mars Exploration",
+  "authors": [
+   "Brian K Alpert",
+   "Logan Kennedy",
+   "L Daren Welsh",
+   "Adam Young",
+   "Gregory L Mercer",
+   "Daniel S Baird"
+  ],
+  "year": 2026,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20260002050",
+  "accessed": "2026-09-30",
+  "accession": "20260002050",
+  "localPath": "data/raw/ntrs/20260002050.pdf",
+  "experimentIds": [],
+  "publisher": "55th International Conference on Environmental Systems (ICES)",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20060013463",
+  "title": "Exploration Spacecraft and Space Suit Internal Atmosphere Pressure and Composition",
+  "authors": [
+   "Lange, Kevin",
+   "Duffield, Bruce",
+   "Jeng, Frank",
+   "Campbell, Paul"
+  ],
+  "year": 2005,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20060013463",
+  "accessed": "2026-09-30",
+  "accession": "20060013463",
+  "localPath": "data/raw/ntrs/20060013463.pdf",
+  "experimentIds": [],
+  "publisher": "2005 Bioastronautics Investigator''s Workshop",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20130000422",
+  "title": "Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2",
+  "authors": [
+   "Urban, David L.",
+   "Ruff, Gary A.",
+   "Greenberg, Paul S.",
+   "Fischer, David",
+   "Meyer, Marit",
+   "Mulholland, George",
+   "Yuan, Zeng-Guang",
+   "Bryg, Victoria",
+   "Cleary, Thomas",
+   "Yang, Jiann"
+  ],
+  "year": 2012,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20130000422",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20130000422",
+  "localPath": "data/raw/ntrs/20130000422.pdf",
+  "experimentIds": [
+   "same",
+   "same-r"
+  ],
+  "publisher": "American Inst. of Aeronautics and Astronautics; 42nd International Conference on Environmental Systems (ICES)",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20170000248",
+  "title": "Fire Detection Tradeoffs as a Function of Vehicle Parameters",
+  "authors": [
+   "Urban, David L.",
+   "Dietrich, Daniel L.",
+   "Booker, John E.",
+   "Meyer, Marit E.",
+   "Ruff, Gary A."
+  ],
+  "year": 2016,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20170000248",
+  "accessed": "2026-09-30",
+  "accession": "20170000248",
+  "localPath": "data/raw/ntrs/20170000248.pdf",
+  "experimentIds": [],
+  "publisher": "International Conference On Environmental Systems, Inc.; International Conference on Environmental Systems (ICES 2016)",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20210022143",
+  "title": "Research Questions and Challenges for Improved Spacecraft Fire Detection",
+  "authors": [
+   "Claire Fortenberry",
+   "Xiaoliang Wang ",
+   "Thomas Cleary ",
+   "John Easton",
+   "Gordon Berger",
+   "Marit Meyer"
+  ],
+  "year": 2021,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20210022143",
+  "accessed": "2026-09-30",
+  "accession": "20210022143",
+  "localPath": "data/raw/ntrs/20210022143.pdf",
+  "experimentIds": [],
+  "publisher": "The Decadal Survey on Biological and Physical Sciences Research in Space 2023-2032",
+  "note": "NTRS white paper"
+ },
+ {
+  "id": "ntrs-20210023340",
+  "title": "Topical: Recommendations for Fire Extinguisher Research for Crewed Missions",
+  "authors": [
+   "John W Easton",
+   "Gordon Berger",
+   "Claire Fortenberry",
+   "Rosa Padilla"
+  ],
+  "year": 2021,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20210023340",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20210023340",
+  "localPath": "data/raw/ntrs/20210023340.pdf",
+  "experimentIds": [],
+  "publisher": "Planetary Science and Astrobiology Decadal Survey 2023-2032",
+  "note": "NTRS white paper"
+ },
+ {
+  "id": "ntrs-20040161188",
+  "title": "Comparison of Carbon Dioxide and Helium as Fire Extinguishing Agents for Spacecraft",
+  "authors": [
+   "Gokoglu, Suleyman",
+   "Son, Youngjin",
+   "Ronney, Paul D."
+  ],
+  "year": 2004,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20040161188",
+  "accessed": "2026-09-30",
+  "accession": "20040161188",
+  "localPath": "data/raw/ntrs/20040161188.pdf",
+  "experimentIds": [],
+  "publisher": "Strategic Research to Enable NASA's Exploration Missions Conference and Workshop: Poster Session, Volume 2",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20170009141",
+  "title": "Emulation of Condensed Fuel Flames Using a Burning Rate Emulator (BRE) in Microgravity",
+  "authors": [
+   "Markan, A.",
+   "Quintiere, J. G.",
+   "Sunderland, P. B.",
+   "De Ris, J. L.",
+   "Stocker, D. P."
+  ],
+  "year": 2017,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20170009141",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20170009141",
+  "localPath": "data/raw/ntrs/20170009141.pdf",
+  "experimentIds": [
+   "acme-bre"
+  ],
+  "publisher": "U.S. National Combustion Meeting 2017",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20200000361",
+  "title": "Solid Fuel Ignition and Extinction (SoFIE) Project on ISS",
+  "authors": [
+   "Ferkul, Paul",
+   "Brown, Lauren",
+   "Mroczka, Christopher",
+   "Bhattacharjee, Subrata",
+   "Fernandez-Pello, Carlos",
+   "Miller, Fletcher",
+   "Olson, Sandra",
+   "T'ien, James",
+   "Wichman, Indrek"
+  ],
+  "year": 2019,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20200000361",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "20200000361",
+  "localPath": "data/raw/ntrs/20200000361.pdf",
+  "experimentIds": [
+   "sofie"
+  ],
+  "publisher": "American Society for Gravitational and Space Research (ASGSR); American Society for Gravitational and Space Research (ASGSR)",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "ntrs-20210017785",
+  "title": "Opposed Flame Spreading Along a Structured PMMA Sample in Exploration Atmosphere Under Microgravity",
+  "authors": [
+   "Christian Eigenbrod",
+   "Florian Meyer",
+   "Grunde Jomaas",
+   "David L Urban",
+   "Gary A Ruff",
+   "Sandra L Olson",
+   "Paul V Ferkul",
+   "Balazs Toth"
+  ],
+  "year": 2021,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20210017785",
+  "accessed": "2026-09-30",
+  "accession": "20210017785",
+  "localPath": "data/raw/ntrs/20210017785.pdf",
+  "experimentIds": [
+   "saffire-iv-vi"
+  ],
+  "publisher": "50th International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20210017787",
+  "title": "Determining the Cause of Reduced Concurrent Flame Spread over Thin Solid Fuels in Low Pressure and Low Gravity",
+  "authors": [
+   "Maria Thomsen",
+   "Luca Carmignani",
+   "Carlos Fernandez-Pello",
+   "Sonia Fereres",
+   "David L. Urban",
+   "Gary A. Ruff"
+  ],
+  "year": 2021,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20210017787",
+  "accessed": "2026-09-30",
+  "accession": "20210017787",
+  "localPath": "data/raw/ntrs/20210017787.pdf",
+  "experimentIds": [],
+  "publisher": "50th International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-19930015566",
+  "title": "Contributions of Microgravity Test Results to the Design of Spacecraft Fire Safety Systems",
+  "authors": [
+   "Friedman, Robert",
+   "Urban, David L."
+  ],
+  "year": 1993,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/19930015566",
+  "accessed": "2026-09-30",
+  "license": "NTRS public use permitted",
+  "accession": "19930015566",
+  "localPath": "data/raw/ntrs/19930015566.pdf",
+  "experimentIds": [],
+  "publisher": "AIAA; AHS/ASEE Second Aerospace Design Conference",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20140006580",
+  "title": "Determination of Realistic Fire Scenarios in Spacecraft",
+  "authors": [
+   "Dietrich, Daniel L.",
+   "Ruff, Gary A.",
+   "Urban, David"
+  ],
+  "year": 2013,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20140006580",
+  "accessed": "2026-09-30",
+  "accession": "20140006580",
+  "localPath": "data/raw/ntrs/20140006580.pdf",
+  "experimentIds": [],
+  "publisher": "American Inst. of Aeronautics and Astronautics; International Conference on Environmental Systems",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20210022542",
+  "title": "Recent Research on Flames of Gaseous Fuel Aboard the International Space Station",
+  "authors": [
+   "Dennis P Stocker"
+  ],
+  "year": 2021,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20210022542",
+  "accessed": "2026-09-30",
+  "accession": "20210022542",
+  "localPath": "data/raw/ntrs/20210022542.pdf",
+  "experimentIds": [
+   "acme-s-flame",
+   "acme-bre",
+   "acme-cld",
+   "acme-e-field",
+   "acme-flame-design",
+   "acme-cfi-g"
+  ],
+  "publisher": "33rd Japanese Conference on Microgravity Science and Application",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "ntrs-20220002714",
+  "title": "Model Development of Large-Scale Spacecraft Fires During the Saffire-IV Experiments",
+  "authors": [
+   "John Brooker",
+   "Justin Niehaus"
+  ],
+  "year": 2022,
+  "type": "ntrs-report",
+  "url": "https://ntrs.nasa.gov/citations/20220002714",
+  "accessed": "2026-09-30",
+  "accession": "20220002714",
+  "localPath": "data/raw/ntrs/20220002714.pdf",
+  "experimentIds": [
+   "saffire-iv-vi"
+  ],
+  "publisher": "51st International Conference on Environmental Systems (ICES)",
+  "note": "NTRS conference paper"
+ },
+ {
+  "id": "ntrs-20210020516",
+  "title": "Fire on the Moon: Solid Fuel Combustion Experiments",
+  "authors": [
+   "Paul Ferkul",
+   "Ya-Ting Liao",
+   "Gary Ruff",
+   "Daniel Gotti",
+   "Jay Owens",
+   "Luke Ogorzaly"
+  ],
+  "year": 2021,
+  "type": "presentation",
+  "url": "https://ntrs.nasa.gov/citations/20210020516",
+  "accessed": "2026-09-30",
+  "accession": "20210020516",
+  "localPath": "data/raw/ntrs/20210020516.pdf",
+  "experimentIds": [],
+  "publisher": "Lunar Surface Science Workshop",
+  "note": "NTRS presentation"
+ },
+ {
+  "id": "nasa-web-why-flames",
+  "title": "Why NASA is studying flames in space",
+  "year": 2024,
+  "type": "nasa-web",
+  "url": "https://science.nasa.gov/biological-physical/resources/explainers-infographics/why-nasa-is-studying-flames-in-space/",
+  "accessed": "2026-09-30",
+  "localPath": "data/raw/web/why-nasa-studies-flames.txt",
+  "experimentIds": [
+   "flex",
+   "sofie",
+   "saffire-i"
+  ],
+  "publisher": "NASA Science — Biological and Physical Sciences",
+  "note": "Public explainer article."
+ }
+]

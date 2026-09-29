@@ -1,0 +1,156 @@
+
+=== PAGE 1 ===
+Dust and Aerosol Measurement 
+Feasibility Test (DAFT)
+Principal Investigators : Dr. David Urban, NASA Glenn Research Center, Cleveland, OH; (216) 433-2835; david.l.urban@nasa.gov
+Dr. Gary Ruff, NASA Glenn Research Center, Cleveland, OH; (216) 433-5697; gary.a.ruff@nasa.gov
+Project Manager: William Sheredy, NASA Glenn Research Center, Cleveland, OH; (216) 433-3685; william.a.sheredy@nasa.gov
+Project Lead: Greg Funk, Zin Technologies, Cleveland, OH; (216) 956-2337; gregory.p.funk@zin-tech.com
+Operations Lead: Nathan Funk, Zin Technologies, Cleveland, OH; (216) 925-1108; nathan.funk@zin-tech.com
+National Aeronautics and
+Space Administration
+Glenn Research Center
+Cleveland, Ohio
+DAFT Isn’t As Crazy As It Sounds
+ 
+T
+he Dust and Aerosol Measurement Feasibility Test (DAFT) was 
+designed to ensure that a modiﬁed P-Trak®—a key component 
+of the forthcoming NASA Smoke Aerosol Measurement Experiment 
+(SAME)—will perform properly in the unique enviroment of micro-
+gravity. If the P-Trak® performs as expected, the device will be used 
+in SAME to provide data that will help scientists design better ﬁre 
+detectors for future, long-duration, manned missions.
+The Challenge  The P-Trak® is a commercial device that counts ultra-
+ﬁne particles (it can recognize particles as small as 0.02 micrometer in 
+diameter). It works by passing particulate-laden air through a heated 
+chamber of vaporous isopropyl alcohol. The individual particles serve 
+as “seeds” around which the alcohol condenses when cooled, forming 
+droplets large enough to be detected and counted as they scatter light 
+from a laser beam (see the schematic on the other side).
+The P-Trak® must be tested in microgravity prior to its use in SAME 
+because its alcohol condenser was redesigned to work properly in mi-
+crogravity. (The original smooth-walled P-Trak® condenser—meant 
+for Earth-based use—depends on gravity.) NASA scientists modiﬁed 
+the unit’s condenser by forming microgrooves in its wall to increase 
+the alcohol ﬂow back to the wick (see photo on right). This modiﬁca-
+tion was based on the knowledge gained from previous microgravity 
+ﬂuids physics experiments conducted by NASA GRC researchers.
+The Plan  The main components of the DAFT experiment—the 
+P-Trak® and the DustTrak® aerosol monitoring devices—were 
+delivered to the International Space Station (ISS) in February 2005. 
+(The DustTrak® uses a sensor to determine the intensity of light being 
+scattered by particles and translates that number into an aerosal mass 
+measurement. It is being used to test the accuracy of the P-Trak® 
+because it is insensitive to gravitational forces.) The ﬁrst set of tests 
+were conducted in February and March 2005 and the results were 
+encouraging. Importantly, the modiﬁed condenser performed as 
+expected. The second set of tests will be conducted after the balance of 
+DAFT parts (including a calibrated aerosol source and an unmodiﬁed 
+P-Trak®) are delivered to the ISS. 
+The P-Trak® and its components (clockwise 
+from the left: alcohol wick, wick container, 
+container cap, P-Trak®, and battery pack.)
+A cross-section of the modiﬁed P-Trak® 
+condenser chamber shows the microgrooves 
+that NASA engineers cut on the inside 
+diameter to improve the ﬂow of alcohol back 
+to the wick in microgravity.
+An engineer holding the DustTrak® (top) and 
+the P-Trak® in their approximate locations 
+in the EXPRESS rack (the blue velcro board 
+has been superceded by straps).
+
+=== PAGE 2 ===
+Research Procedure  During the ISS tests conducted in 2005, 
+astronauts performed several steps:
+Turned on the P-Trak® and the DustTrak®
+Attached High Efﬁciency Particulate Air (HEPA) ﬁlters to the inlets 
+to “zero” the particle counters (since the HEPA ﬁlter removes all 
+airborne particles, if the particle counters don’t read “0” something 
+is amiss)
+Connected the devices to a common sampling hose
+Recorded the ISS environment for several minutes
+Reconnected the HEPA ﬁlters to “zero” the particle counters
+Turned off the P-Trak® and the DustTrak®
+The tests were conducted in the US laboratory module Destiny in front 
+of EXPRESS Rack 4; in the modules’s aft end and port side; and in 
+Node 1. (The EXPRESS Rack is a standardized payload rack system that 
+transports, stores, and supports experiments aboard the ISS; Node 1 is a 
+hub to which various modules are attached.) Three of the tests sampled 
+undisturbed cabin air; the other test validated the instruments at high 
+particulate levels by having an astronaut create airborne debris at the P-
+Trak® and DustTrak® inlets by separating pieces of Velcro®.
+Results So Far The three tests that sampled the undisturbed 
+environment in the ISS showed very low levels of airborne 
+particulates, averaging fewer than 0.005 mg/m3 from the DustTrak® 
+and fewer than 15 particles/cm3 from the P-Trak® (these are typical 
+readings at the baseline). These numbers are dramatically lower than 
+the values recorded in the Space Shuttle in an earlier experiment (~ 
+.050 mg/m3).  Lower levels are to be expected because the ISS US 
+Lab has HEPA ﬁltration for the cabin air as compared to merely a ﬁne 
+screen on the shuttle air handler.  Furthermore, the typical shuttle crew 
+of seven astronauts generates more airborne particulate than an ISS 
+crew of two astronauts. 
+Future DAFT Tests  The next series of tests will take place once 
+the remaining DAFT equipment is delivered to the ISS. These will be 
+performed with Arizona Road Dust (ARD)—a standard aerosal test 
+material of known particle size and distribution—and nitrogen aerosol 
+inside a 15-liter Mylar® bag.  Testing a known particulate will allow 
+scientists to establish deﬁnitively how well the P-Trak® works in 
+microgravity.
+Additional Information  More experiment details—including 
+periodic updates and photos—can be found on the DAFT Web site: 
+http://microgravity.grc.nasa.gov/combustion/daft/daft_index.htm.
+1.
+2.
+3.
+4.
+5.
+6.
+DAFT: Research Procedure—Results So Far—Future DAFT Tests—Additional Information
+The DustTrak®—shown here with its battery 
+pack—is insensitive to gravitational forces. 
+It is used to determine the accuracy of the 
+modiﬁed P-Trak®.
+P-Trak®
+DustTrak®
+Size
+(inches)
+10.75 x 5.5 x 5.5
+8.7 x 5.9 x 3.4
+Weight
+(lbs)
+3.8 
+3.3
+Particle 
+size range 
+(mm) 
+0.02 to > 1.0
+0.10 to 10
+The P-Trak® and the DustTrak® compared.
+As shown in this P-Trak® schematic, particle-
+laden air passes through a heated chamber 
+containing vaporized alcohol and then into a 
+cooled chamber where the alcohol droplets 
+form around the particles. The particles are 
+counted as they pass through a laser beam.
+Qvnq
+Gjmufs
+Dpoefotfs
+)dppmfs*
+Tbuvsbups
+)ifbufs*
+Xjdl!Tpblfe
+xjui!Bmdpipm
+Gpdvtjoh
+Pqujdt
+Sfdfjwjoh
+Pqujdt
+Mbtfs
+Mjhiu
+Tpvsdf
+Efufdups
+Jomfu
+)bjs!mbefo
+xjui!qbsujdmft*

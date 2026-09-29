@@ -1,0 +1,150 @@
+- generic [ref=f7e2]:
+  - generic [ref=f7e4]:
+    - generic [ref=f7e7]:
+      - heading "Investigation Search Filters" [level=4] [ref=f7e8]
+      - table [ref=f7e11]:
+        - rowgroup [ref=f7e12]:
+          - row [ref=f7e13]:
+            - columnheader "Research Area" [ref=f7e14]
+        - rowgroup [ref=f7e15]:
+          - row [ref=f7e16]:
+            - cell "select row Biophysics Biophysics" [ref=f7e17]:
+              - checkbox "select row Biophysics" [ref=f7e21]
+              - generic [ref=f7e22]: Biophysics
+          - row [ref=f7e23]:
+            - cell "select row Combustion Science Combustion Science" [ref=f7e24]:
+              - checkbox "select row Combustion Science" [ref=f7e28]
+              - generic [ref=f7e29]: Combustion Science
+          - row [ref=f7e30]:
+            - cell "select row Complex Fluids - Soft Matter Complex Fluids - Soft Matter" [ref=f7e31]:
+              - checkbox "select row Complex Fluids - Soft Matter" [ref=f7e35]
+              - generic [ref=f7e36]: Complex Fluids - Soft Matter
+          - row [ref=f7e37]:
+            - cell "select row Fluid Physics Fluid Physics" [ref=f7e38]:
+              - checkbox "select row Fluid Physics" [ref=f7e42]
+              - generic [ref=f7e43]: Fluid Physics
+          - row [ref=f7e44]:
+            - cell "select row Fundamental Physics Fundamental Physics" [ref=f7e45]:
+              - checkbox "select row Fundamental Physics" [ref=f7e49]
+              - generic [ref=f7e50]: Fundamental Physics
+          - row [ref=f7e51]:
+            - cell "select row Materials Science Materials Science" [ref=f7e52]:
+              - checkbox "select row Materials Science" [ref=f7e56]
+              - generic [ref=f7e57]: Materials Science
+        - rowgroup [ref=f7e58]:
+          - row [ref=f7e59]:
+            - cell [ref=f7e60]
+      - table [ref=f7e63]:
+        - rowgroup [ref=f7e64]:
+          - row [ref=f7e65]:
+            - columnheader "Project Type" [ref=f7e66]
+        - rowgroup [ref=f7e67]:
+          - row [ref=f7e68]:
+            - cell "select row Ground Investigation Ground Investigation" [ref=f7e69]:
+              - checkbox "select row Ground Investigation" [ref=f7e73]
+              - generic [ref=f7e74]: Ground Investigation
+          - row [ref=f7e75]:
+            - cell "select row Microgravity Investigation Microgravity Investigation" [ref=f7e76]:
+              - checkbox "select row Microgravity Investigation" [ref=f7e80]
+              - generic [ref=f7e81]: Microgravity Investigation
+          - row [ref=f7e82]:
+            - cell "select row Reduced Gravity Investigation Reduced Gravity Investigation" [ref=f7e83]:
+              - checkbox "select row Reduced Gravity Investigation" [ref=f7e87]
+              - generic [ref=f7e88]: Reduced Gravity Investigation
+        - rowgroup [ref=f7e89]:
+          - row [ref=f7e90]:
+            - cell [ref=f7e91]
+    - generic [ref=f7e93]:
+      - generic [ref=f7e96]:
+        - link [ref=f7e98] [cursor=pointer]:
+          - /url: https://science.nasa.gov/physical-sciences-informatics-psi/history-of-physical-science-informatics/
+          - img "NASA" [ref=f7e99]
+        - generic [ref=f7e100]: Physical Sciences Informatics
+        - generic [ref=f7e101]:
+          - link "Home" [ref=f7e102] [cursor=pointer]:
+            - /url: https://science.nasa.gov/physical-sciences-informatics-psi/history-of-physical-science-informatics/
+          - generic [ref=f7e103] [cursor=pointer]:
+            - text: Data & Tools
+            - img "v" [ref=f7e104]
+          - link "Contact Us" [ref=f7e105] [cursor=pointer]:
+            - /url: mailto:msfc-psi-help@mail.nasa.gov
+      - generic [ref=f7e106]:
+        - button [ref=f7e107] [cursor=pointer]:
+          - img [aria-hidden] [ref=f7e108]: close
+        - article [ref=f7e109]:
+          - paragraph [ref=f7e112]:
+            - img [aria-hidden] [ref=f7e113]: info
+            - text: In accordance with NASA’s Science Mission Directorate (SMD) Open Source Science guidance, users are required to cite all publicly available NASA-funded data and software collections hosted in PSI using their unique persistent identifiers (e.g., DOIs) to ensure proper attribution and traceability across peer-reviewed publications, proposals, presentations, and reports. For citation details, refer to the “Cite this Investigation” link provided on each investigation’s landing page.
+      - heading "PSI Data Repository Search" [level=1] [ref=f7e114]
+      - generic [ref=f7e117]:
+        - generic [ref=f7e118]:
+          - textbox "Search Datasets" [ref=f7e119]
+          - generic: Search Datasets
+        - button "Search" [ref=f7e121] [cursor=pointer]:
+          - img [aria-hidden] [ref=f7e123]: search
+      - generic [ref=f7e124]:
+        - heading "Sort By:" [level=3] [ref=f7e125]
+        - combobox "Release Date" [ref=f7e130] [cursor=pointer]
+      - group "Select page" [ref=f7e136]:
+        - generic [ref=f7e138]:
+          - generic [ref=f7e139]:
+            - generic [ref=f7e140]: "Items per page:"
+            - combobox "Items per page:" [ref=f7e145] [cursor=pointer]:
+              - generic [ref=f7e146]: "25"
+          - generic [ref=f7e151]:
+            - generic [ref=f7e152]: 0 of 0
+            - button "First page" [disabled] [ref=f7e153]
+            - button "Previous page" [disabled] [ref=f7e157]
+            - button "Next page" [disabled] [ref=f7e161]
+            - button "Last page" [disabled] [ref=f7e165]
+      - heading "Loading Results..." [level=4] [ref=f7e171]
+      - group "Select page" [ref=f7e172]:
+        - generic [ref=f7e174]:
+          - generic [ref=f7e175]:
+            - generic [ref=f7e176]: "Items per page:"
+            - combobox "Items per page:" [ref=f7e181] [cursor=pointer]:
+              - generic [ref=f7e182]: "25"
+          - generic [ref=f7e187]:
+            - generic [ref=f7e188]: 0 of 0
+            - button "First page" [disabled] [ref=f7e189]
+            - button "Previous page" [disabled] [ref=f7e193]
+            - button "Next page" [disabled] [ref=f7e197]
+            - button "Last page" [disabled] [ref=f7e201]
+  - generic [ref=f7e206]:
+    - generic [ref=f7e207]:
+      - img "NASA" [ref=f7e209]
+      - generic [ref=f7e210]:
+        - generic [ref=f7e211]:
+          - heading "CONTACTS" [level=1] [ref=f7e212]
+          - list [ref=f7e213]:
+            - listitem [ref=f7e214]: "NASA Official: Kevin Depew"
+        - generic [ref=f7e215]:
+          - heading "SITE INFORMATION" [level=1] [ref=f7e216]
+          - list [ref=f7e217]:
+            - listitem [ref=f7e218]:
+              - link "NASA Privacy Policy and Notices" [ref=f7e220] [cursor=pointer]:
+                - /url: https://www.nasa.gov/about/highlights/HP_Privacy.html
+      - generic [ref=f7e221]:
+        - heading "OTHER RESOURCES" [level=1] [ref=f7e222]
+        - list [ref=f7e223]:
+          - listitem [ref=f7e224]:
+            - link "PSI" [ref=f7e226] [cursor=pointer]:
+              - /url: https://science.nasa.gov/physical-sciences-informatics-psi/history-of-physical-science-informatics/
+          - listitem [ref=f7e227]:
+            - link "NASA BPS" [ref=f7e229] [cursor=pointer]:
+              - /url: https://science.nasa.gov/biological-physical/
+    - generic [ref=f7e230]:
+      - link "NASA" [ref=f7e232] [cursor=pointer]:
+        - /url: https://www.nasa.gov/
+      - text: "|"
+      - link "No Fear Act" [ref=f7e234] [cursor=pointer]:
+        - /url: https://www.nasa.gov/odeo/no-fear-act/
+      - text: "|"
+      - link "FOIA" [ref=f7e236] [cursor=pointer]:
+        - /url: http://www.nasa.gov/FOIA
+      - text: "|"
+      - link "USA.gov" [ref=f7e238] [cursor=pointer]:
+        - /url: https://www.usa.gov/
+      - text: "|"
+      - link "Accessibility" [ref=f7e240] [cursor=pointer]:
+        - /url: https://www.nasa.gov/accessibility/

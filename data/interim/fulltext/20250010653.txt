@@ -1,0 +1,551 @@
+
+=== PAGE 1 ===
+Lunar Combustion Investigation: Flammability Results 
+from a Rotating Sounding Rocket
+Paul V. Ferkul1, Michael C. Johnston2, Nathan Kralik3, and Ya-Ting Liao3 
+Universities Space Research Association1
+NASA Johnson Space Center 2 
+Case Western Reserve University 3
+2025 Annual Meeting
+Phoenix, Arizona
+December 3-6, 2025
+
+=== PAGE 2 ===
+Lunar Combustion Investigation: Flammability Results from a Rotating Sounding Rocket
+Objectives
+Demonstrate the feasibility of conducting material flammability experiments in partial-g on the spinning Blue Origin 
+New Shepard vehicle which simulates Lunar gravity with centrifugal force
+Obtain data from the flight that will support other simulated Lunar-g experiments in drop towers and parabolic 
+flight, actual Lunar-g experiments, and computer models.
+Outcome
+The LUCI scientific objectives were achieved.  Material flammability testing at partial-g is feasible using a spinning 
+vehicle.  Conducting large scale flammability testing would require additional programmatic support.  This might be 
+considered should more Lunar-g flights become available using New Shepard.
+
+=== PAGE 3 ===
+Page 3
+Overview
+Conduct partial-g fire tests on the Blue Origin sounding rocket.
+ 
+Hypothesis: some materials burning in partial-g are more flammable than on Earth.  This has 
+important implications for the current 1-g material screening method used by NASA.  
+Fuel samples burned in pairs; cameras and other sensors record flame characteristics.
+Oxygen limits for upward and downward spread at partial-g will be compared to 1-g values.  
+Measured flame characteristics in 1-g and partial-g will be compared to detailed model predictions.  
+These comparisons will refine pressure-gravity scaling relations and will be applied to other g-levels.
+  
+The work directly addresses knowledge gaps in flammability and crew safety as defined in several 
+NASA strategic documents.
+
+=== PAGE 4 ===
+Schematic
+Centrifugal gravity is into the page; this 
+would be looking outward from the 
+axis of rotation of the vehicle toward 
+the cylindrical hull of the rocket.  The 
+flames would generally rise out of the 
+page, or towards the axis of rotation.
+Two samples: Fabric 5 cm wide x 30 cm 
+long and 4-mm-DIA acrylic, (PMMA); 
+ignited with slight pause between 
+them.  
+Sensors: Chamber oxygen 
+concentration, pressure, temperature, 
+and centrifugal acceleration.
+Combustion enclosure/chamber
+Sensors
+Locker
+Flame
+Front view
+Flame
+Edge view
+
+=== PAGE 5 ===
+Schematic
+Centrifugal gravity is into the page; this 
+would be looking outward from the 
+axis of rotation of the vehicle toward 
+the cylindrical hull of the rocket.  The 
+flames would generally rise out of the 
+page, or towards the axis of rotation.
+Two samples: Fabric 5 cm wide x 30 cm 
+long and 4-mm-DIA acrylic, (PMMA); 
+ignited with slight pause between 
+them.  
+Sensors: Chamber oxygen 
+concentration, pressure, temperature, 
+and centrifugal acceleration.
+Combustion enclosure/chamber
+Locker
+Burning Fabric
+Front view
+Sample #2: Acrylic 
+(PMMA) Rod
+Burning Fabric
+Edge view
+Burning Rod
+
+=== PAGE 6 ===
+6
+Glenn Research Center
+ZIN Technologies
+Hardware
+EMI Shielding
+Blue Origin Locker
+Chamber Assembly
+Lid Assembly
+Top Level Assembly
+
+=== PAGE 7 ===
+7
+Glenn Research Center
+ZIN Technologies
+Top Level Assembly
+In Payload Locker
+Out of Payload Locker
+
+=== PAGE 8 ===
+8
+Glenn Research Center
+ZIN Technologies
+Combustion Chamber Lid Assembly  
+Lid is the main attachment point for 
+All Payload Avionics and Diagnostics 
+
+=== PAGE 9 ===
+Page 9
+
+=== PAGE 10 ===
+Page 10
+The effective floor of our hardware (orientated so that the 
+centrifugal g-vector points downward toward the floor) 
+measures about 41 cm x 48 cm.  The available height in the 
+g-direction is about 53 cm.  
+NOTE: How we orient our samples depends on the specific 
+locker location.  It is required that the principle vertical 
+axes of the burn samples be aligned with the radial lines. 
+
+=== PAGE 11 ===
++x
++y
++z
+
+=== PAGE 12 ===
+•
+Blue Origin New Shepard sounding rocket yields Lunar gravity by using centrifugal acceleration.
+•
+These are the first-ever, extended-duration (greater than 25 seconds) combustion tests performed in simulated Lunar gravity.  
+•
+A steady vehicle rotation of 11 RPM is established, with an effective radius of rotation of 1.22 m at the experiment location.  
+•
+Two samples are burned simultaneously in air at normal pressure: Cotton-fiberglass composite fabric sheet and a 4-mm diameter 
+rod of acrylic plastic (polymethyl methacrylate).  
+•
+Flame images from two orthogonal cameras are used to determine flame spread and growth rates, and the burn lasts for over 
+two and a half minutes.  
+•
+The oxygen concentration in the chamber is measured.  As the burns progress, the oxygen concentration drops, enabling a 
+limiting value for extinction to be defined.  
+•
+The effect of Coriolis force is discussed.  
+•
+Results from this experiment are compared to related 1-g work, drop tower tests, aircraft experiments, and modeling.  
+•
+The results are applicable to NASA’s exploration efforts in that they guide the selection of fire-safe materials and environments 
+and ensure safety of future spacecraft and Lunar habitats.  The data also provides fundamental understanding of fires.  
+•
+Finally, the experiment is a steppingstone to the ultimate goal of performing burn tests on the Lunar surface in the Flammability 
+of Materials on the Moon (FM2) experiment which is planned to launch in late 2026. 
+
+=== PAGE 13 ===
+History
+• ZIN technologies brought on board October 2021
+• Initial Planned launch was Spring 2023, Launch provider delay initially delayed launch into late Summer early Fall 2024, until 
+it finally launched Feb 4 2025
+• First mission sequence test was performed in July 2023
+• Due to launch slip some improvements were made and last mission sequence test was ran in February 2024 before 
+being shelved prior to flight. 
+Objectives
+• Burn SIBAL fabric & PMMA 
+• Conduct first-ever, long duration observation and measurement of flame spread in a partial-g environment
+• Verify this platform is a viable means to obtain material flammability data in Lunar-g and will include an assessment of 
+the Coriolis force on results
+• Provide guidance for sample selection and test definition for a Lunar in-situ experiment
+Data
+• First Flight
+• Measurements of flame spread rate and output of other diagnostics, including g-level vs. time for the two samples
+• Sample closeout photos and photos before and after each test
+• Data from 1-g burns
+
+=== PAGE 14 ===
+
+=== PAGE 15 ===
+
+=== PAGE 16 ===
+LUCI samples 30 s after ignition.  Left: Edge view of SIBAL fabric (cotton-fiberglass blend) burning downward in Lunar-g 30 s 
+after ignition.  The flame spread for over a minute.  Right:4-mm-diameter PMMA rod burning upward in air in Lunar-g, 30 s 
+after ignition.  The flame eventually grows to engulf the entire rod.
+
+=== PAGE 17 ===
+PMMA rod after 90 seconds of burning in Lunar g.  
+Two orthogonal camera views are shown.  The one on 
+the right demonstrates how the Coriolis force pulls the 
+flame away from the axis of the fuel, which is aligned 
+with the direction of the centrifugal acceleration.
+
+=== PAGE 18 ===
+Potential Follow-on Objectives
+• Evaluate the hypothesis that some materials burning in partial-g environments may be more flammable 
+compared to 1-g.
+• Compare upward and downward oxygen limits to 1-g values
+• Evaluate flame size, strength, intensity, and spread compared to 1-g
+• Develop a numerical model
+• Assess the applicability of the model by comparing to the test data obtained.  
+• Determine applicability of the pressure-gravity scaling relations for upward spread rates. 
+• Refine model using experiment results
+• Provide a bridge between current 1-g material screen method and actual behavior in reduced gravity.
+Data
+• Flammability limits (%O2) for a subset of materials in Lunar-g
+• Measurements of the flame spread rate over materials in exploration atmospheres
+• Sample closeout photos, and photos before and after each test
+• Data from 1-g burns
+
+=== PAGE 19 ===
+LUCI: SIBAL fabric
+•
+Flame base spread rate = .92 mm/s.
+•
+Flame tip spread rate = 1.1 mm/s
+•
+Flame tip spreads very slightly faster 
+than flame base, indicating a slowly 
+shrinking flame length.
+•
+Spread rates for char front, flame base, 
+and flame tip are all linear (steady state 
+spread).
+
+=== PAGE 20 ===
+LUCI: PMMA
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+•
+Flame length increases 
+~linearly until flame tip becomes 
+obscured by sample holder 
+(could not measure flame length 
+accurately beyond this point).
+•
+Total base spread of ~6cm until 
+extinction.
+•
+Flame base spread rate is not 
+constant; steady spread was not 
+achieved.
+
+=== PAGE 21 ===
+LUCI: PMMA
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+•
+Flame tip spread is 
+approximately linear.
+•
+Flame spread rate = 1.5 
+mm/s.
+
+=== PAGE 22 ===
+LUCI: PMMA
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+•
+O2% decreases from 20% to 
+14.3%.
+•
+O2% rises back to 15.8% 
+likely due to the decrease in 
+gravity (and thus buoyant 
+flow) which occurred at 125s.
+
+=== PAGE 23 ===
+LUCI 1-G Updates
+• Results have been obtained and plotted with partial-g results for 
+comparison.
+• Fits of the data were created where possible and useful, and more 
+fits can be created in the future if necessary.
+• Results are not as clean as partial-g, the program does not read 
+the flame spread as cleanly, and the flame burns out much 
+quicker, resulting in fewer total data points.
+
+=== PAGE 24 ===
+1-G Results: SIBAL fabric
+•
+Flame length is not completely 
+constant; flame shrinks more than 
+partial-g burn.
+•
+Flame width decreases suddenly at 
+~24 seconds, and goes to 0 within 4 
+seconds.
+
+=== PAGE 25 ===
+1-G Results: SIBAL fabric
+•
+Flame tip spread rate is 
+~double flame base spread 
+rate.
+•
+Small fluctuations in the 
+tracking result in inexact fits 
+for the spread data, therefore 
+this is only an approximate 
+relationship.
+
+=== PAGE 26 ===
+1-G Results: SIBAL
+•
+Gravity (in g’s) remains 
+constant at Earth’s gravity.
+
+=== PAGE 27 ===
+1-G Results: SIBAL
+•
+O2% varies slightly but is 
+roughly constant at 20%.
+
+=== PAGE 28 ===
+1-G Results: PMMA
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+•
+Base was not accurately 
+tracked towards the end of 
+the experiment; from 
+observation it remained at a 
+~constant location.
+•
+Flame tip spread was 
+~linear until tip becomes 
+obscured by sample holder.
+
+=== PAGE 29 ===
+1-G Results: PMMA
+•
+Flame tip grows at a rate of 
+~ 3.95 mm/s at the beginning 
+of the burn.
+•
+Flame base location is 
+~constant, so this can be 
+approximated as flame 
+growth rate (flame length).
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+
+=== PAGE 30 ===
+1-G Results: PMMA
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+•
+Gravity remains constant at 
+Earth’s gravity for duration of 
+burn.
+
+=== PAGE 31 ===
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+•
+O2% rises quickly in the 
+beginning, then decreases 
+~linearly from 21% to 14.5%.
+Results: PMMA
+
+=== PAGE 32 ===
+Combined Results: SIBAL
+
+=== PAGE 33 ===
+SIBAL Flame Spread Fit Comparison
+Flame Spread Rates (from linear fits):
+Partial-
+G
+(mm/s)
+1-G
+(mm/s)
+Ratio
+Flame 
+Base
+.9
+1.5
+.6
+Flame 
+Tip
+1.1
+2.8
+.39
+
+=== PAGE 34 ===
+SIBAL Flame Width Comparison
+•
+Flame extinction for 1-g 
+experiment occurs quicker 
+(flame width decrease is 
+steeper than partial-g).
+•
+1-g extinction happens ~ 45 
+seconds sooner than partial-g 
+extinction
+
+=== PAGE 35 ===
+Combined Results: PMMA
+
+=== PAGE 36 ===
+PMMA Flame Tip Comparison
+Partial-G
+(cm/s)
+1-G
+(cm/s)
+Ratio
+.15
+.40
+.38
+Flame Tip Spread (from linear fits):
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+
+=== PAGE 37 ===
+The LUCI project achieved the first-ever, extended duration combustion tests (greater than 25 seconds) in simulated 
+Lunar gravity.  The results are applicable to NASA’s exploration efforts in that they guide the selection of fire-safe 
+materials and environments and ensure safety of future spacecraft and Lunar habitats.  The data also provides 
+fundamental understanding of fires burning at reduced gravity for comparison to sophisticated numerical models.  
+Finally, the experiment is a steppingstone to the ultimate goal of performing burn tests on the Lunar surface in the 
+Flammability of Materials on the Moon (FM2) experiment which will fly on a SpaceX Human Lander System 
+unmanned test flight. 
+
+=== PAGE 38 ===
+Backups
+
+=== PAGE 39 ===
+LUCI Partial-G Recap: SIBAL
+•
+Semi-steady spread is achieved, 
+during which the constant flame 
+width and length are observed (~3.2 
+cm and ~1.5 cm respectively).
+•
+Flame length and width both 
+decrease during extinction (final ~40 
+seconds). 
+•
+Char propagation and flame base 
+propagation are ~parallel, indicating 
+~constant preheat length.
+
+=== PAGE 40 ===
+LUCI Partial-G Recap: SIBAL
+•
+Preheat Length: difference between 
+flame base and char front fit 
+equations.
+•
+Both flame length and preheat length 
+decrease very slowly over time (~ 1.25 
+cm and ~0.4 cm total respectively).
+•
+Preheat length shrink rate = -0.094 
+mm/s.
+
+=== PAGE 41 ===
+LUCI Partial-G Recap: SIBAL
+•
+Gravity (in g’s) remains 
+constant at lunar gravity.
+•
+Flame extinction must be 
+caused by other factors.
+
+=== PAGE 42 ===
+LUCI: SIBAL fabric
+•
+O2 concentration 
+decreases from ~20% to 
+~18%.
+•
+O2% decreases at a roughly 
+constant rate over the entire 
+experiment.
+
+=== PAGE 43 ===
+LUCI: PMMA
+•
+Flame base spread is 
+approximately quadratic.
+•
+Instantaneous spread rate 
+(red line) is plotted derivative 
+of fit equation (linear 
+relation).
+•
+Flame spread rate increases 
+linearly from 0 to ~.6 mm/s 
+(before gravity starts dropping 
+at t = 125s)
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+
+=== PAGE 44 ===
+LUCI: PMMA
+𝑥𝑓𝑏
+𝑥𝑓𝑡
+Sample
+Flame
+g
+𝑙𝑓
+𝑉𝑓
+•
+Gravity remains ~constant for 
+duration of the burn.
