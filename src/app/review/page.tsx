@@ -13,17 +13,17 @@ export const metadata: Metadata = {
 // Always read the latest findings.json from disk so decisions show up immediately.
 export const dynamic = "force-dynamic";
 
-async function readJson<T>(rel: string): Promise<T> {
-  return JSON.parse(await readFile(path.join(process.cwd(), rel), "utf8")) as T;
+async function readData<T>(file: string): Promise<T> {
+  return JSON.parse(await readFile(path.join(process.cwd(), "data", file), "utf8")) as T;
 }
 
 export default async function ReviewPage() {
   assertDevOnly();
   const [findings, chunks, sources, experiments] = await Promise.all([
-    readJson<Finding[]>("data/processed/findings.json"),
-    readJson<Chunk[]>("data/processed/chunks.json"),
-    readJson<Source[]>("data/sources.json"),
-    readJson<Experiment[]>("data/processed/experiments.json"),
+    readData<Finding[]>("processed/findings.json"),
+    readData<Chunk[]>("processed/chunks.json"),
+    readData<Source[]>("sources.json"),
+    readData<Experiment[]>("processed/experiments.json"),
   ]);
   const chunkById = new Map(chunks.map((c) => [c.id, c]));
   const sourceById = new Map(sources.map((s) => [s.id, s]));

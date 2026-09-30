@@ -521,7 +521,7 @@
  },
  {
   "id": "saffire-iv-vi",
-  "acronym": "Saffire IV–VI",
+  "acronym": "Saffire IV-VI",
   "fullName": "Spacecraft Fire Experiments IV, V and VI",
   "category": [
    "solid",
@@ -1314,7 +1314,7 @@
  },
  {
   "id": "partial-g-centrifuge",
-  "acronym": "ZGF partial-g",
+  "acronym": "Partial-g tests",
   "fullName": "Partial-gravity material flammability tests in the GRC Zero Gravity Facility centrifuge",
   "category": [
    "solid"

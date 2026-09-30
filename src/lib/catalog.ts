@@ -36,6 +36,7 @@ export function shortSourceLabel(s: Source): string {
   const exps = s.experimentIds.map((id) => acronymOf.get(id)).filter(Boolean) as string[];
   if (s.accession?.startsWith("PSI") && exps.length) return exps[0];
   if (exps.length === 1) return exps[0];
+  if (exps.length === 2) return `${exps[0]} / ${exps[1]}`;
   return s.accession ? `NTRS ${s.accession}` : tidy(s.title).slice(0, 24);
 }
 

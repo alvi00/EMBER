@@ -287,7 +287,7 @@ def curated(details: dict) -> list[dict]:
         extraSources=["ntrs-20170001636", "ntrs-20170000230"],
     ))
     E.append(dict(
-        id="saffire-iv-vi", psi=None, acronym="Saffire IV–VI", fullName="Spacecraft Fire Experiments IV, V and VI",
+        id="saffire-iv-vi", psi=None, acronym="Saffire IV-VI", fullName="Spacecraft Fire Experiments IV, V and VI",
         category=["solid", "large-scale"], platform="Cygnus",
         facility="Saffire flow unit + far-field diagnostics in the Cygnus vehicle",
         fuels=["PMMA (5 mm 1-sided, 10 mm 2-sided, structured)", "Cotton fabric", "Cotton-fiberglass fabric (SIBAL)", "Nomex"],
@@ -439,7 +439,7 @@ def curated(details: dict) -> list[dict]:
         sourceIds=["ntrs-20250010653", "ntrs-20260000646"], hasRawData=False, kind="flight",
     ))
     E.append(dict(
-        id="partial-g-centrifuge", psi=None, acronym="ZGF partial-g", fullName="Partial-gravity material flammability tests in the GRC Zero Gravity Facility centrifuge",
+        id="partial-g-centrifuge", psi=None, acronym="Partial-g tests", fullName="Partial-gravity material flammability tests in the GRC Zero Gravity Facility centrifuge",
         category=["solid"], platform="Drop tower", facility="NASA Glenn Zero Gravity Facility (5.2 s drop) with rotating centrifuge",
         fuels=["Thin charring fuels", "Mylar"],
         conditions={"gravityG": {"min": 0.166, "max": 0.38, "note": "lunar and Martian gravity via centrifuge (0.38 g Earth stated for Mars)"}},

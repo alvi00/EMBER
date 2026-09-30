@@ -261,6 +261,85 @@
   }
 }
 
+/* Gravity slider: flame-gradient track (blue = microgravity → amber = Earth) */
+.gravity-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+  background: transparent;
+  cursor: pointer;
+}
+.gravity-range::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--flame-micro), var(--flame-violet) 45%, var(--flame-earth));
+}
+.gravity-range::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--flame-micro), var(--flame-violet) 45%, var(--flame-earth));
+}
+.gravity-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -9px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: var(--text);
+  border: 4px solid var(--bg);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 18px rgba(255, 209, 102, 0.45);
+}
+.gravity-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--text);
+  border: 4px solid var(--bg);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 18px rgba(255, 209, 102, 0.45);
+}
+.gravity-range:focus-visible {
+  outline: none;
+}
+.gravity-range:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--flame-micro);
+}
+.gravity-range:focus-visible::-moz-range-thumb {
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--flame-micro);
+}
+
+/* Hero entrance runs at first paint (no JS), so the LCP text is never held back by hydration. */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+.hero-rise {
+  animation: hero-rise 0.9s var(--ease-out-expo) both;
+}
+
+/* Scroll reveal (armed by <Reveal> only for below-the-fold content, never with reduced motion) */
+.reveal-pending {
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(6px);
+  transition:
+    opacity 0.8s var(--ease-out-expo),
+    transform 0.8s var(--ease-out-expo),
+    filter 0.8s var(--ease-out-expo);
+}
+.reveal-pending.reveal-in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
 @layer utilities {
   .no-scrollbar {
     scrollbar-width: none;

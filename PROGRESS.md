@@ -95,3 +95,29 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
 - Decision: `--text-faint` raised from #6B7184 to #7A8094 (4.16:1 → 5.1:1 on --bg) after axe flagged it.
 - **Checkpoint:** styleguide screenshots `qa/phase4/styleguide-{1440,768,375}.png` reviewed; axe (axe-core 4.x injected via
   Playwright) = **0 violations** after fixes; 0 console errors; `tsc --noEmit` clean.
+
+## Phase 5 — Landing + 3D flame · ✅ (2026-09-30)
+- `FlameScene` (R3F, context7-checked APIs): one additive billboard with an fBm fragment shader + 90 embers. `uGravity`
+  0→1 interpolates shape (sphere → upward teardrop, larger/dimmer sphere at 0 g), colour ramp (flame-micro/violet →
+  white-yellow core, orange, sooty tip, blue base), luminosity and flicker rate; embers rise only when g > 0.
+  `dpr=[1,1.75]`, `frameloop` paused off-screen (IntersectionObserver), dynamic import `ssr:false`.
+- Decision: "subtle bloom" is an in-shader additive halo instead of @react-three/postprocessing EffectComposer (cheaper,
+  keeps the landing Performance budget). One/One custom blending so the transparent canvas composites correctly.
+- Fallbacks: static posters `public/flame/poster-{space,moon,mars,earth}.webp` rendered from the live scene with
+  Playwright; used for reduced motion, no WebGL, or low-power devices (≤2 cores / ≤2 GB / save-data). The gravity slider
+  still switches posters.
+- Accessibility: canvas `aria-hidden`; real `<input type="range">` with `aria-valuetext` ("Moon, 0.17 g") and preset
+  buttons evenly spaced (piecewise-linear mapping); "Artistic visualization… not a simulation" label.
+- Landing (§7.1): hero (2-line headline, ShineBorder primary CTA + Ask), sticky flame through three GSAP ScrollTrigger
+  scenes that scrub `uGravity` Earth → orbit → Moon (holding while each step is read; snap-per-step with reduced motion);
+  step copy from findings/NASA text with CitationChips + AI-draft badge; archive section (Magic UI Marquee of 29 acronyms +
+  Tickers computed from data); "How EMBER works" AnimatedBeam pipeline with real counts; mission cards (relevant-finding
+  counts + sourced/assumed cabin); final CTA. Section headlines use GSAP SplitText line reveals (gsap MCP + context7 docs).
+- Decisions: hero entrance is CSS (runs at first paint) rather than JS SplitText, so LCP text is never held back by
+  hydration; SplitText used on section headlines instead. `Reveal` rebuilt as CSS + IntersectionObserver to remove a
+  reduced-motion hydration mismatch; AnimatedBeams render after mount only. SplitHeading sets its text as HTML so React
+  never reconciles nodes SplitText rewrites (fixed a `removeChild` error). `/review` file access scoped to `data/`.
+- **Checkpoint:** scroll screenshots `qa/phase5/scroll-{1..7}*.png`; reduced-motion `qa/phase5/reduced-motion-hero.png`
+  (poster, no canvas); mobile `qa/phase5/mobile-375-*.png`. Production build: CLS **0.00008**, **0 long tasks** during load
+  and a full scroll (rAF frame timing is throttled to 1 fps in the background automation tab, so FPS was not measurable
+  here). Route e2e 24/24 ✅ on the production server.
