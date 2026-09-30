@@ -42,6 +42,7 @@ export function HeroStory({ steps }: { steps: StoryStep[] }) {
           // Scroll story: gravity follows the steps (Earth → orbit → Moon). Scrubbed when motion is allowed,
           // snapped per step otherwise.
           const proxy = { g: 1 };
+          let storyG = proxy.g;
           const stepEls = gsap.utils.toArray<HTMLElement>("[data-step]");
           if (motion && stepEls.length) {
             const tl = gsap.timeline({
@@ -51,7 +52,13 @@ export function HeroStory({ steps }: { steps: StoryStep[] }) {
                 end: "bottom 60%",
                 scrub: 0.6,
               },
-              onUpdate: () => flameState.setTarget(proxy.g),
+              // The story writes the flame only when its own gravity changes (a step transition). Scroll updates that
+              // leave it unchanged, such as small scrolls around the slider, never undo the visitor's choice.
+              onUpdate: () => {
+                if (proxy.g === storyG) return;
+                storyG = proxy.g;
+                flameState.setTarget(proxy.g);
+              },
             });
             // Each step occupies one unit of the timeline and its centre sits at i + 0.5; transitions happen
             // between steps (i - 0.3 → i + 0.3) so the flame holds its state while a step is being read.

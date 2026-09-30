@@ -22,3 +22,29 @@ test("landing CTAs lead to Mission Control and Ask", async ({ page }) => {
   await expect(page.getByRole("link", { name: /Open Mission Control/ }).first()).toHaveAttribute("href", /\/dashboard/);
   await expect(page.getByRole("link", { name: /Ask the Flame/ }).first()).toHaveAttribute("href", /\/ask/);
 });
+
+// Narrated mission scenario cards: the briefing is the saved, cited digest read aloud (citation markers removed).
+test("a mission scenario card reads its saved briefing aloud with captions", async ({ page }) => {
+  await page.addInitScript(() => {
+    const spoken: string[] = [];
+    (window as unknown as { __spoken: string[] }).__spoken = spoken;
+    // Headless Chromium has no speech engine: record what would be spoken instead.
+    Object.defineProperty(window, "speechSynthesis", {
+      configurable: true,
+      value: { speak: (u: SpeechSynthesisUtterance) => spoken.push(u.text), cancel: () => {}, getVoices: () => [] },
+    });
+  });
+  await page.goto("/");
+  const listen = page.getByRole("button", { name: "Listen to the briefing for Lunar surface" });
+  await listen.scrollIntoViewIfNeeded();
+  await listen.click();
+  await expect(page.getByTestId("briefing-caption")).toHaveText("Lunar surface briefing.");
+  const spoken = await page.evaluate(() => (window as unknown as { __spoken: string[] }).__spoken);
+  expect(spoken.length).toBeGreaterThan(3);
+  expect(spoken.join(" ")).not.toMatch(/\[\[S\d+\]\]/);
+  await expect(page.getByRole("link", { name: "See every sentence's source" })).toHaveAttribute("href", "/dashboard?mission=lunar");
+  await page.getByRole("button", { name: "Stop the briefing for Lunar surface" }).click();
+  await expect(page.getByTestId("briefing-caption")).toHaveCount(0);
+  // The card itself still opens the mission's ranked insights.
+  await expect(page.getByRole("link", { name: "Lunar surface", exact: true })).toHaveAttribute("href", "/insights?mission=lunar");
+});

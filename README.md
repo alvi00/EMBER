@@ -172,7 +172,9 @@ mobile menu, count-up animation, layout animation) load on first use so every pa
 - Cabin atmospheres are sourced for the ISS and the lunar surface; Gateway and Mars defaults are marked as assumptions.
 - The coverage metric measures distance to tested conditions; it does not predict whether a material will burn.
 - The copilot's relevance gate was calibrated on 15 questions; the embedding model is small and English-only.
-- The machine-learning flammability estimate (a stretch goal) was not attempted.
+- The machine-learning flammability estimate (a stretch goal) was checked against its bar (at least 150 labelled points
+  in one material family, validated across experiments) and not shipped: only the liquid-droplet family is large enough,
+  and all of it comes from one experiment (FLEX) at 0 g. `/methods` computes these numbers from the data.
 
 ## Credits and licences
 
