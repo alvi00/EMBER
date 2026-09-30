@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local QA scripts and screenshots (gitignored, never shipped).
+    "qa/**",
   ]),
 ]);
 
