@@ -142,3 +142,25 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
 - **Checkpoint:** screenshots `qa/phase6/dashboard-{1440,768,375}.png`; mission switch ISS → Mars surface updates URL,
   KPIs, Top 5 ids, cabin cell ("Mars, O2 ≥30%: no data"), category data; keyboard traversal: 60 tab stops all visible,
   timeline bars show a focus stroke + tooltip (`qa/phase6/timeline-focus.png`); 0 console errors; no horizontal overflow at 375.
+
+## Phase 7 — Explorer & detail · ✅ (2026-09-30)
+- Loaded **minimalist-ui** (calm hairline tables, crisp radii, small uppercase-free tags; dark tokens kept).
+- `src/lib/search.ts`: hybrid retrieval (MiniSearch BM25 top-20 ∪ embedding cosine top-20 → reciprocal-rank fusion,
+  k = 60), query embeddings via transformers.js in the Node route (model cached in `models-cache/`), graceful BM25-only
+  fallback. `/api/search` aggregates passage hits to experiments. This is also the retrieval core for Phase 9.
+- `/experiments`: filter rail (category, platform, fuel group, facility group, year / O2 / pressure / flow range sliders,
+  has-raw-data, verified-only), mobile filter drawer, cards/table toggle, sortable table with sticky header, hybrid search
+  (client MiniSearch over experiment fields + top-8 semantic experiments from source passages, RRF) with highlighted
+  matches and "from a source" snippets; all state in the URL; optimistic local state so controls respond instantly.
+- `/experiments/[id]` (29 static params, unknown ids → 404): header (platform, facility, years, PSI link, DOI), actions
+  (Ask about this experiment, Compare with…), URL-synced tabs: Summary (plain language, why it matters, NASA objectives,
+  facts incl. `yearsNote`), Findings (FindingCard: badges, statement, evidence quotes + chips, mission-relevance dots,
+  severity/actionability/evidence meters), Conditions (range table + notes + source chips, outcome test-matrix scatter
+  with colour + shape), Data (measurement table + client-side CSV export), Sources (all sources, original links).
+- Decisions: `/experiments` and `/dashboard` render per request (`force-dynamic`) so URL state is server-rendered instead
+  of bailing out to client rendering; optimistic mission value shared through the zustand store (pending until the URL
+  catches up). Evidence keys include the index (two excerpts can share a chunk).
+- Data fix: FLEX pressure range excluded 0-mmHg "not recorded" placeholders (was 0-309.3 → now 70.2-309.3 kPa).
+- **Checkpoint:** `e2e/explorer.spec.ts` 6/6 ✅ (desktop + mobile: filter → table → reload restores → open BASS-II →
+  Findings tab → citation opens SourceDrawer with highlighted passage + NASA link → reload restores tab; search in URL with
+  highlights; unknown id 404). Screenshots `qa/phase7/*.png` (1440 / 768 / 375). 0 console errors.

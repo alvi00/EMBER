@@ -160,8 +160,8 @@ export function HeroStory({ steps }: { steps: StoryStep[] }) {
             </h3>
             <p className="mt-4 max-w-[52ch] text-base leading-relaxed text-ink-muted md:text-lg">{s.body}</p>
             <div className="mt-5 flex flex-wrap items-center gap-2">
-              {s.evidence.map((ev) => (
-                <CitationChip key={ev.chunkId} sourceId={ev.sourceId} chunkId={ev.chunkId} page={ev.page} excerpt={ev.excerpt} />
+              {s.evidence.map((ev, i) => (
+                <CitationChip key={`${ev.chunkId}-${i}`} sourceId={ev.sourceId} chunkId={ev.chunkId} page={ev.page} excerpt={ev.excerpt} />
               ))}
               {s.evidence.some((ev) => ev.status === "ai-draft") ? <StatusBadge status="ai-draft" /> : null}
             </div>

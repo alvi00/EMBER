@@ -161,9 +161,9 @@
     "note": "initial ambient O2 mole fraction × 100"
    },
    "pressureKpa": {
-    "min": 0.0,
+    "min": 70.2,
     "max": 309.3,
-    "note": "converted from mmHg"
+    "note": "converted from mmHg; 0 entries in the table mean not recorded"
    },
    "gravityG": {
     "min": 0,

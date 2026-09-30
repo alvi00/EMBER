@@ -202,8 +202,8 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
       <div className="mt-4 grid gap-4 lg:grid-cols-2">
         <section aria-label="Source evidence" className="surface space-y-5 p-5">
           <h2 className="eyebrow">Source evidence</h2>
-          {current.evidence.map((ev) => (
-            <div key={ev.chunkId} className="space-y-2">
+          {current.evidence.map((ev, i) => (
+            <div key={`${ev.chunkId}-${i}`} className="space-y-2">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <p className="text-sm font-medium text-ink">{ev.sourceTitle}</p>
                 <a

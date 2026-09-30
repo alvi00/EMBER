@@ -99,7 +99,7 @@ def conditions_flex() -> dict:
     fuels = sorted({r["Fuel"].strip() for r in rows if r.get("Fuel", "").strip()})
     return {
         "o2Percent": rng([v * 100 for v in o2 if v is not None], "initial ambient O2 mole fraction × 100"),
-        "pressureKpa": rng([v * MMHG_TO_KPA for v in p if v is not None], "converted from mmHg"),
+        "pressureKpa": rng([v * MMHG_TO_KPA for v in p if v], "converted from mmHg; 0 entries in the table mean not recorded"),
         "gravityG": {"min": 0, "max": 0, "note": "ISS microgravity"},
         "diluent": sorted(dil),
         "_fuels": fuels,

@@ -6,6 +6,9 @@ import { DashboardSkeleton } from "@/components/dashboard/DashboardSkeleton";
 import { datasetStats, findings } from "@/lib/data";
 import { coverageCells, timelineRows, unplacedMeasurements } from "@/lib/dashboard";
 
+// Rendered per request so URL state (?mission=, filters) is server-rendered instead of bailing out to the client.
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Mission Control",
   description:

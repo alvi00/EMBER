@@ -15,14 +15,23 @@ export function useMission() {
   const router = useRouter();
   const pathname = usePathname();
   const stored = useMissionStore((s) => s.mission);
+  const pending = useMissionStore((s) => s.pending);
   const setStored = useMissionStore((s) => s.setMission);
+  const clearPending = useMissionStore((s) => s.clearPending);
 
   useEffect(() => {
     void useMissionStore.persist.rehydrate();
   }, []);
 
   const fromUrl = params.get("mission");
-  const id: MissionId = isMissionId(fromUrl) ? fromUrl : stored;
+  const resolved: MissionId = isMissionId(fromUrl) ? fromUrl : stored;
+  // A pending choice wins until the URL catches up, so every tile switches instantly.
+  const id: MissionId = pending ?? resolved;
+  useEffect(() => {
+    if (pending && fromUrl === pending) clearPending();
+  }, [pending, fromUrl, clearPending]);
+  // Navigating elsewhere drops any stale optimistic value.
+  useEffect(() => () => clearPending(), [pathname, clearPending]);
 
   const setMission = useCallback(
     (next: MissionId) => {

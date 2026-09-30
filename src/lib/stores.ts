@@ -6,13 +6,21 @@ import type { MissionId } from "@/lib/schema";
 import { DEFAULT_MISSION } from "@/lib/missions";
 
 /** Last mission the visitor chose; the URL (?mission=) always wins when present. */
-export const useMissionStore = create<{ mission: MissionId; setMission: (m: MissionId) => void }>()(
+export const useMissionStore = create<{
+  mission: MissionId;
+  /** Optimistic value shared by every consumer until the URL reflects the change. */
+  pending: MissionId | null;
+  setMission: (m: MissionId) => void;
+  clearPending: () => void;
+}>()(
   persist(
     (set) => ({
       mission: DEFAULT_MISSION,
-      setMission: (mission) => set({ mission }),
+      pending: null,
+      setMission: (mission) => set({ mission, pending: mission }),
+      clearPending: () => set({ pending: null }),
     }),
-    { name: "ember-mission", skipHydration: true },
+    { name: "ember-mission", skipHydration: true, partialize: (s) => ({ mission: s.mission }) },
   ),
 );
 
