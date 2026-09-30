@@ -290,3 +290,45 @@ Checks: typecheck ✅ · lint ✅ · unit 34/34 ✅ · data:validate ✅ · `npm
   report" is written as the Phase 12 QA report, and STRETCH work only starts once Phase 12 is green.
 - Decision: stale `next dev` (3000) and `next start` (3100) servers from the last session were stopped so e2e runs on a
   fresh build instead of reusing an old server.
+
+## Phase 12 — Local QA & demo-ready · ✅ (2026-09-30, session 2)
+- **Security review** (done by hand: the skill needs a git remote, and this repo deliberately has none): keys only in
+  `.env.local`, never in git history or the client bundle (grep of `.next/static` and `git log -S`); no unescaped
+  HTML sinks (SplitHeading escapes, shadcn chart style tag gone); POST routes (`/api/ask`, `/api/summarize`, dev-only
+  `/api/review`) require JSON + same-origin; fresh digests are POST-only and rate-limited; security headers set
+  (`nosniff`, `DENY` framing, referrer and permissions policies, no `x-powered-by`). Fix: the in-memory limiter now
+  prunes idle keys (at most once per window). CSP not set (Next inline bootstrap would need nonces): known issue.
+- **Code review** (`/code-review`): no correctness findings on the new proxy/limiter code. **Simplify** (`/simplify`, four
+  reviewers: reuse, simplification, efficiency, altitude), applied: toasts rely on Sonner's replay instead of a custom
+  queue; Ticker uses `React.lazy`; share PNGs prerendered at build (`generateStaticParams`) with fonts bundled in
+  `src/assets/fonts` (no reads from inside `node_modules/next`); `truncate()` reused; one shared page list for the
+  palette and mobile menu; `recharts`, `ui/chart.tsx` and `useIsClient` removed as dead code; summarize/same-origin/limiter
+  tidied. Skipped (noted): a shared OG-image module, a status-label map, lens top-4 precompute, pre-existing unused
+  shadcn components.
+- **Bug found by the simplify reviewers:** `LazyMotion strict` + the Magic UI BorderBeam (`motion.div`) would throw in
+  dev on `/insights#<id>` → `strict` removed.
+- **Performance** (Lighthouse 12, default simulated mobile throttling, local `next start`):
+  - Root cause found: the whole page body sat inside the root `loading.tsx` Suspense boundary, which React 19 outlines and
+    reveals by script, so the main text could only paint after JS. Removed `loading.tsx` and the page-level boundaries on
+    lens / explorer / ask; kept them on dashboard and insights where the LCP text is above the outlined view.
+  - Cut first-load JS on every page: CSS nav pill instead of Motion `layoutId` (−112 KB raw), toasts / mobile menu /
+    count-up loaded on first use, LazyMotion for the insights FLIP, HTML category bars instead of Recharts on the
+    dashboard (−337 KB raw), lean Lens payload (no notes / secondary measurements).
+  - Hero copy starts its entrance at 25 % opacity so it is painted in the first frame.
+  - Tried and reverted: `experimental.inlineCss` (HTML 4–5× larger because styles are embedded twice; mixed scores);
+    not preloading Geist Mono (caused a 0.03 CLS on mono figures).
+- **Tablet layout bug fixed:** Mission Control's timeline used `md:col-span-12` in a 6-column grid, which created implicit
+  columns and squeezed the Top 5 card to a sliver at 768 px; the 5-tile KPI row also left an empty cell at 3 columns.
+- Unknown experiment ids: `dynamicParams = false` made Next log an internal `NoFallbackError` per request; with the
+  root boundary gone, the page's own `notFound()` now returns a clean 404 (no proxy allowlist needed).
+- Copilot: `streamText` gets a quiet `onError` (the first-token check already logs one line and falls back offline).
+- **Screenshot matrix:** `qa/phase12/matrix/` — 11 routes × 375/768/1440 × (motion, reduced motion) = 66 shots +
+  contact sheets, reviewed; status, overflow and console checks clean (the only console line is Chrome's own log for the
+  intentional 404 page).
+- **Demo path offline** (`qa/demo-offline.mjs`; browser limited to localhost, Node server run with
+  `qa/net-block.cjs` refusing every outbound socket): all 6 steps pass twice — once with `AI_PROVIDER=offline`, once with
+  the real Groq key configured (the blocked Groq call falls back to the saved answer and the UI says "The AI provider did
+  not respond, so EMBER answered offline"). 0 external requests, 0 console errors. Frames in `qa/phase12/demo-offline/`
+  and `qa/phase12/demo-keyed-netoff/`.
+- Decision: CLAUDE.md / project.md still list Recharts in the stack; left as written (the human's spec) — the app no
+  longer uses it, which README states.

@@ -16,7 +16,7 @@ back to a NASA source (Physical Sciences Informatics or the Technical Reports Se
 | `/dashboard` | Mission Control: KPIs, top 5 insights, a cited AI evidence digest, gravity × oxygen coverage heatmap, findings by category, investigations over time. The mission switcher in the header re-ranks everything. |
 | `/experiments` | Explorer: 29 investigations with filters, cards or table, and hybrid keyword + semantic search over their source documents. All state is in the URL. |
 | `/experiments/[id]` | Detail: summary, findings with evidence, condition ranges, test-point data with CSV export, sources. |
-| `/insights` | Ranked insights with a visible scoring formula, adjustable weights and a per-card score breakdown. Print view exports a mission brief. |
+| `/insights` | Ranked insights with a visible scoring formula, adjustable weights and a per-card score breakdown. Print view exports a mission brief; each insight downloads as a share image (PNG) that carries its source and review status. |
 | `/lens` | Habitat Risk Lens: enter cabin gravity, oxygen, pressure and airflow; see how close NASA tests came, the nearest test points, a flammability map and the evidence gaps. |
 | `/ask` | Ask the Flame: questions answered only from retrieved NASA passages, a citation after every claim, and an honest refusal when the data is silent. Also available from the floating Ask button and ⌘K. |
 | `/compare` | Two or three experiments side by side: conditions tested, outcomes, key findings. |
@@ -41,6 +41,16 @@ npm run build; npm start    # http://localhost:3000
 ```
 
 The processed dataset (`data/processed/*.json`) is committed, so the app runs without re-collecting anything.
+
+### Recording the demo offline
+
+The demo path (landing gravity slider → archive and pipeline → Mission Control on *Lunar surface* → source drawer →
+Risk Lens → Ask the Flame, cited answer and a declined question → mission brief) works with the network off:
+
+1. Run one semantic search while online once, so the query-embedding model is cached in `./models-cache`
+   (already done on the build machine).
+2. `npm run build; $env:AI_PROVIDER = "offline"; npm start`, then open http://localhost:3000.
+   With a key configured and no network, EMBER also falls back to the saved answers and says so on screen.
 
 ### AI provider (optional)
 
@@ -113,7 +123,8 @@ Flow: `data/raw` → `scripts/py` → `data/interim` → `scripts/ts` → `data/
 
 ```
 src/
-  app/                 routes (App Router); api/ask (streaming NDJSON), api/summarize, api/search, api/chunk
+  app/                 routes (App Router); api/ask (streaming NDJSON), api/summarize, api/search, api/chunk,
+                       api/catalog (palette data), api/share/[id] (insight PNGs, built at build time)
   components/          shell (nav, ⌘K, source drawer, mini-ask), story (landing), charts, ask, compare, lens, ...
   content/             UI copy
   hooks/               mission state, streaming answers, client flags
@@ -131,8 +142,9 @@ tests/, e2e/           Vitest and Playwright
 ```
 
 Stack: Next.js 16 (App Router, TypeScript strict), Tailwind CSS 4, shadcn/ui and Magic UI, GSAP with ScrollTrigger,
-three.js with React Three Fiber, D3 and Recharts, MiniSearch, transformers.js, Vercel AI SDK, zod, zustand, Vitest,
-Playwright with axe-core.
+three.js with React Three Fiber, D3 scales with hand-built SVG and HTML charts, MiniSearch, transformers.js, Vercel AI
+SDK, zod, zustand, Vitest, Playwright with axe-core. Heavy pieces (3D flame, command palette, source drawer, toasts,
+mobile menu, count-up animation, layout animation) load on first use so every page's first load stays small.
 
 ### How an answer is made
 
@@ -164,5 +176,5 @@ Playwright with axe-core.
 
 ## Credits and licences
 
-NASA PSI data is CC0. Instrument Serif (`src/assets/fonts/`, used for the social image) is under the SIL Open Font
-License (`src/assets/fonts/OFL.txt`). No NASA insignia or logos are used.
+NASA PSI data is CC0. Instrument Serif and Geist (`src/assets/fonts/`, used for the social and share images) are under
+the SIL Open Font License (`src/assets/fonts/OFL.txt`; Geist by Vercel). No NASA insignia or logos are used.
