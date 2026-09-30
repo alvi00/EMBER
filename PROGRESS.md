@@ -332,3 +332,91 @@ Checks: typecheck ✅ · lint ✅ · unit 34/34 ✅ · data:validate ✅ · `npm
   and `qa/phase12/demo-keyed-netoff/`.
 - Decision: CLAUDE.md / project.md still list Recharts in the stack; left as written (the human's spec) — the app no
   longer uses it, which README states.
+- Final checks on the finished build (after the stretch work below): compare picker rendered inline (its Suspense
+  placeholder caused a 0.03 CLS on mobile); final offline demo walk and a live Groq answer (cited, 0 invalid / 0 flagged
+  citations) both pass; screenshot matrix re-run (`qa/phase12/matrix/`, 66 shots, clean).
+
+## Phase 11 — STRETCH (project.md numbering) · partial by design (2026-09-30, session 2)
+- **Shareable insight images ✅** `/api/share/<findingId>` → 1200×630 PNG with the finding's plain-language text, its
+  review status and its NASA source; prerendered for all 44 findings; "Share image" on every insight card.
+- **Narrated mission scenario cards ✅** the five landing mission cards read their mission briefing aloud (Web Speech API,
+  on-device English voice preferred so it works offline) with the current sentence captioned. The narration is the saved,
+  cited Mission Control digest with only the `[[S#]]` markers removed, labelled "saved AI digest of AI-draft findings"
+  and linked to the cited version. Cards are stretched links, so the Listen button is a real button, not nested in a link.
+- **Bengali toggle ✅** EN ⇄ বাংলা for key UI copy (nav, hero, five page headers, site and Lens disclaimers) via
+  `src/content/i18n.ts` + `<T>`; English is server-rendered (pages stay static), Bengali spans carry `lang="bn"`, Noto Sans
+  / Serif Bengali load only when Bengali text is on screen. Evidence, findings and answers stay English (verbatim quotes).
+- **ML estimate in Lens ✗ (evaluated, not shipped)** per the plan's own bar: only "Liquid fuel droplets" has ≥ 150 labelled
+  points (274), all from FLEX at 0 g with no flow data, so grouped cross-validation by experiment is impossible and a
+  droplet model says nothing about cabin materials. `/methods` now computes and states this from the data.
+- **Light theme ✗ (skipped)**: the chart palettes were validated against the dark surfaces only; doing it properly means
+  re-validating every palette and re-QA of 11 pages, too much risk to MUST quality the night before the deadline.
+- Bug fixed on the way: the scroll story (GSAP scrub) re-applied Earth gravity on idle scroll updates and undid the
+  visitor's slider choice (seen on mobile, where the steps begin right under the slider). It now writes the flame only
+  when its own value changes.
+
+# Final report (Phase 12, the prompt's "Phase 11 final report") — 2026-09-30
+
+**What's done, by tier**
+- MUST: all phases 1–10 and 12 and every §7 MUST page: shell, landing + 3D flame, Mission Control, explorer, detail,
+  insights, Risk Lens, Ask the Flame, methods, about. 44 findings across 20 investigations (≥ 40 / ≥ 8), each with a
+  verbatim ≤ 25-word excerpt, chunk id and page; 472 test points; 3,404 passages; 133 sources; every UI number computed
+  from `data/processed`.
+- NICE: `/compare` ✅, mission brief PDF (print stylesheet) ✅.
+- STRETCH: share images ✅, narrated scenario cards ✅, Bengali toggle ✅, ML estimate evaluated and not shipped (reason on
+  `/methods`), light theme skipped.
+
+**Tests (final build)**
+- `npm run typecheck` ✅ · `npm run lint` ✅ · `npm test` 34/34 ✅ · `npm run data:validate` ✅ · `npm run build` ✅
+- Playwright (`npm run e2e`): **124 passed, 0 failed**, 20 skipped by design (the 768 px sweep runs on one project).
+  Includes axe WCAG 2.1 A/AA on 14 routes + 3 overlays (0 serious/critical), 768 px × (motion, reduced motion) sweep
+  (status, overflow, console errors, no infinite animations under reduced motion), explorer / insights / lens / ask /
+  compare / landing / share-image / Bengali flows, dev-only routes 404 in production.
+- Console errors: 0 on every route in both motion modes (screenshot matrix + sweep).
+
+**Lighthouse 12, local `next start`, mobile** (Accessibility / Best Practices / SEO = 100 / 100 / 100 on every route)
+
+| Route | Perf, simulated throttling (default) | Perf, DevTools throttling | Target |
+|---|---|---|---|
+| `/` | 87 | 88 | ≥ 85 ✅ |
+| `/dashboard` | 88 | 97 | ≥ 90 (simulated ✗ by 2) |
+| `/experiments` | 90 | 97 | ≥ 90 ✅ |
+| `/experiments/flex` | 91 | 97 | ≥ 90 ✅ |
+| `/insights` | 89 | 97 | ≥ 90 (simulated ✗ by 1) |
+| `/lens` | 89 | 97 | ≥ 90 (simulated ✗ by 1) |
+| `/ask` | 92 | 96 | ≥ 90 ✅ |
+| `/compare?ids=…` | 91 | 97 | ≥ 90 ✅ |
+| `/methods` | 92 | 97 | ≥ 90 ✅ |
+| `/about` | 93 | 97 | ≥ 90 ✅ |
+
+TBT ≤ 60 ms and CLS ≤ 0.03 everywhere. Observed LCP under 4× CPU throttling is 140–290 ms; the simulated LCP (3.2–4.0 s)
+is Lantern's estimate from every script fetched before first paint on localhost.
+
+**Demo path (§12), confirmed offline:** browser limited to localhost and every outbound socket of the Node server refused
+(`qa/net-block.cjs`): 1 gravity slider Earth → Mars → Moon → Space (live WebGL flame) · 2 archive counts + pipeline ·
+3 Mission Control → Lunar surface re-ranks the top 5, a citation opens the source drawer with the passage highlighted and
+the NTRS link · 4 Risk Lens lunar cabin → "Near tested conditions" + partial-gravity warning + evidence gaps · 5 Ask →
+cited saved answer (9 citation chips), then "Who won the 2022 FIFA World Cup?" → "Outside the evidence" · 6 mission
+brief PDF. Passes with `AI_PROVIDER=offline` and with the Groq key configured (falls back and says so). 0 external
+requests, 0 console errors. Frames: `qa/phase12/demo-final/`.
+
+**Known issues**
+- Lighthouse simulated Performance is 88–89 on `/dashboard`, `/insights`, `/lens` (target 90); all ≥ 96 with DevTools
+  throttling.
+- 0 of 44 findings are human-verified yet: all are badged "AI draft, pending review" and scored × 0.7 until the team
+  verifies them in `/review` (`npm run dev`, then http://localhost:3000/review).
+- Team names on `/about` are placeholders (`src/content/about.ts`).
+- No Content-Security-Policy header (Next's inline bootstrap would need nonces); other security headers are set.
+- A web-font swap can shift the long `/methods` headline by ~0.03 CLS on slow connections.
+- Bengali covers key UI copy only; narration voices depend on the OS; no light theme; the ML estimate is not shipped.
+- The semantic query model must be cached once while online (`./models-cache`); without it search falls back to BM25.
+
+**How to run (PowerShell)**
+```powershell
+npm install
+npm run dev                                   # http://localhost:3000
+npm run build; npm start                      # production, http://localhost:3000
+$env:AI_PROVIDER = "offline"; npm start       # force offline mode for a recording
+npm test; npm run e2e; npm run data:validate  # checks
+```
+Nothing was deployed and nothing was pushed (no git remote). Local commits only.

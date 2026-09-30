@@ -12,7 +12,7 @@ back to a NASA source (Physical Sciences Informatics or the Technical Reports Se
 
 | Page | What it does |
 |---|---|
-| `/` | The story: an interactive 3D flame with a gravity slider (Space, Moon, Mars, Earth), why fire behaves differently in orbit, the archive problem, how EMBER works. |
+| `/` | The story: an interactive 3D flame with a gravity slider (Space, Moon, Mars, Earth), why fire behaves differently in orbit, the archive problem, how EMBER works, and five mission scenario cards that can read each mission's cited briefing aloud (browser speech, captions on screen). |
 | `/dashboard` | Mission Control: KPIs, top 5 insights, a cited AI evidence digest, gravity × oxygen coverage heatmap, findings by category, investigations over time. The mission switcher in the header re-ranks everything. |
 | `/experiments` | Explorer: 29 investigations with filters, cards or table, and hybrid keyword + semantic search over their source documents. All state is in the URL. |
 | `/experiments/[id]` | Detail: summary, findings with evidence, condition ranges, test-point data with CSV export, sources. |
@@ -24,6 +24,10 @@ back to a NASA source (Physical Sciences Informatics or the Technical Reports Se
 | `/about` | Challenge, credits, disclaimer, team. |
 
 Dev-only (404 in production): `/review` for human verification of AI-drafted findings, `/styleguide`.
+
+**বাংলা:** the language button in the header (or the mobile menu) switches the key interface copy (navigation, the
+landing hero, page headers and disclaimers) to Bengali. Findings, quoted evidence, source titles and answers stay in
+English so every quote remains verbatim and traceable.
 
 ## Run it locally (Windows PowerShell)
 
@@ -171,6 +175,9 @@ mobile menu, count-up animation, layout animation) load on first use so every pa
 - Test points come from seven tables; many investigations report only in prose or figures.
 - Cabin atmospheres are sourced for the ISS and the lunar surface; Gateway and Mars defaults are marked as assumptions.
 - The coverage metric measures distance to tested conditions; it does not predict whether a material will burn.
+- The Bengali toggle covers key interface copy only; evidence and answers are English. There is no light theme (the
+  chart palettes are validated for the dark surfaces only).
+- Narrated briefings use the browser's speech engine; voices and quality depend on the operating system.
 - The copilot's relevance gate was calibrated on 15 questions; the embedding model is small and English-only.
 - The machine-learning flammability estimate (a stretch goal) was checked against its bar (at least 150 labelled points
   in one material family, validated across experiments) and not shipped: only the liquid-droplet family is large enough,
