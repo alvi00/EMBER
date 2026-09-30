@@ -9,13 +9,14 @@ import { CitationChip } from "@/components/ember/CitationChip";
 import { Ticker } from "@/components/ember/Ticker";
 import { EmptyState } from "@/components/ember/states";
 import { CoverageHeatmap } from "@/components/charts/CoverageHeatmap";
+import { EvidenceDigest } from "@/components/dashboard/EvidenceDigest";
 import { ExperimentTimeline } from "@/components/charts/ExperimentTimeline";
 import { CategoryBars, type CategoryDatum } from "@/components/charts/CategoryBars";
 import { useCatalog } from "@/components/providers/CatalogProvider";
 import { useMission } from "@/hooks/use-mission";
 import { gravityRowFor, o2BinFor, type CoverageCell } from "@/lib/coverage-grid";
 import type { TimelineRow } from "@/lib/dashboard";
-import type { Finding, FindingCategory } from "@/lib/schema";
+import type { Finding, FindingCategory, MissionId, PrecomputedAnswer } from "@/lib/schema";
 import { rankFindings } from "@/lib/scoring";
 import { truncate } from "@/lib/text";
 import { cn } from "@/lib/utils";
@@ -26,6 +27,8 @@ export type MissionControlProps = {
   coverage: CoverageCell[];
   unplaced: number;
   stats: { investigations: number; flight: number; ground: number; sources: number; testPoints: number };
+  digests: Partial<Record<MissionId, PrecomputedAnswer>>;
+  aiAvailable: boolean;
 };
 
 const CATEGORIES: FindingCategory[] = [
@@ -39,7 +42,7 @@ const CATEGORIES: FindingCategory[] = [
   "scale-effects",
 ];
 
-export function MissionControl({ findings, timeline, coverage, unplaced, stats }: MissionControlProps) {
+export function MissionControl({ findings, timeline, coverage, unplaced, stats, digests, aiAvailable }: MissionControlProps) {
   const { mission, missionId } = useMission();
   const { experimentById } = useCatalog();
 
@@ -141,24 +144,12 @@ export function MissionControl({ findings, timeline, coverage, unplaced, stats }
         <BentoCard
           name="Evidence digest"
           Icon={NotebookText}
-          description="Offline summary assembled from the four top-ranked findings (no AI). Each sentence cites its source."
+          description="What the top-ranked findings mean for this mission. Every sentence cites the NASA passage behind it."
           href={`/ask?q=${encodeURIComponent(`What does the evidence say about fire safety for ${mission.label}?`)}`}
           cta="Ask the Flame for a fuller answer"
           className="md:col-span-6 xl:col-span-5"
         >
-          <div className="space-y-3 text-sm leading-relaxed text-ink-muted">
-            {digest.map((r) => (
-              <p key={r.finding.id}>
-                <span className="text-ink">{r.finding.plainLanguage}</span>{" "}
-                <CitationChip
-                  sourceId={r.finding.evidence[0].sourceId}
-                  chunkId={r.finding.evidence[0].chunkId}
-                  page={r.finding.evidence[0].page}
-                  excerpt={r.finding.evidence[0].excerpt}
-                />
-              </p>
-            ))}
-          </div>
+          <EvidenceDigest missionId={missionId} saved={digests[missionId]} fallback={digest} aiAvailable={aiAvailable} />
         </BentoCard>
 
         <BentoCard

@@ -5,6 +5,8 @@ import { MissionControl } from "@/components/dashboard/MissionControl";
 import { DashboardSkeleton } from "@/components/dashboard/DashboardSkeleton";
 import { datasetStats, findings } from "@/lib/data";
 import { coverageCells, timelineRows, unplacedMeasurements } from "@/lib/dashboard";
+import { precomputedDigests } from "@/lib/ai/precomputed";
+import { providerStatus } from "@/lib/ai/provider";
 
 // Rendered per request so URL state (?mission=, filters) is server-rendered instead of bailing out to the client.
 export const dynamic = "force-dynamic";
@@ -36,6 +38,8 @@ export default function DashboardPage() {
             sources: stats.sources,
             testPoints: stats.testPoints,
           }}
+          digests={precomputedDigests()}
+          aiAvailable={providerStatus().available}
         />
       </Suspense>
     </>

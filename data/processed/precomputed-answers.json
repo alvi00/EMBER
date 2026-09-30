@@ -1,0 +1,1050 @@
+[
+  {
+    "id": "suggested-lunar-does-lunar-gravity-make-materials-more-flammable",
+    "question": "Does lunar gravity make materials more flammable?",
+    "mission": "lunar",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- Partial-gravity tests and modeling indicate that oxygen flammability limits can be lower in lunar-g than in 1-g, meaning some materials become flammable at lower O₂ concentrations [[S2]][[S3]][[S5]].\n- Experiments showed that the maximum oxygen concentration (MOC) required for flame propagation in lunar-g can be lower than in zero-g or Martian-g for materials such as Nomex, Mylar, and Ultem [[S4]].\n- The reduced buoyant velocity in lunar-g both reduces oxygen flux (tending to weaken flames) and reduces convective heat loss (tending to strengthen flames), overall shifting flammability limits downward [[S5]].\n- The limited data set still suggests that certain configurations that would not support a flame in 1-g may support one in lunar-g [[S3]].\n\n### What it means for Lunar surface\n- Designs that rely on 1-g flammability screening may underestimate fire risk on the Moon; materials deemed safe on Earth could ignite in the lunar environment.\n- Habitat atmosphere oxygen levels must be evaluated against the lower lunar-g flammability limits to avoid inadvertent ignition.\n- Fire detection and suppression strategies need to consider that turning off ECLSS flow may not extinguish a flame because buoyancy-driven flows persist even in lunar-g [[S3]].\n\n### Not covered by the data\n- Quantitative values for specific Δ%O₂ for each material.\n- Long-duration fire behavior or flame spread rates beyond the brief test observations.\n- Detailed mitigation techniques or hardware designs for lunar fire safety.",
+    "citations": [
+      {
+        "chunkId": "ntrs-20250010653:p18:c10",
+        "sourceId": "ntrs-20250010653",
+        "page": 18,
+        "label": "LUCI · p.18"
+      },
+      {
+        "chunkId": "ntrs-20260000646:p1:c1",
+        "sourceId": "ntrs-20260000646",
+        "page": 1,
+        "label": "LUCI / Partial-g tests · p.1"
+      },
+      {
+        "chunkId": "ntrs-20210020446:p17:c16",
+        "sourceId": "ntrs-20210020446",
+        "page": 17,
+        "label": "NTRS 20210020446 · p.17"
+      },
+      {
+        "chunkId": "ntrs-20210020446:p10:c9",
+        "sourceId": "ntrs-20210020446",
+        "page": 10,
+        "label": "NTRS 20210020446 · p.10"
+      },
+      {
+        "chunkId": "ntrs-20210020446:p7:c6",
+        "sourceId": "ntrs-20210020446",
+        "page": 7,
+        "label": "NTRS 20210020446 · p.7"
+      },
+      {
+        "chunkId": "ntrs-20210020446:p1:c0",
+        "sourceId": "ntrs-20210020446",
+        "page": 1,
+        "label": "NTRS 20210020446 · p.1"
+      },
+      {
+        "chunkId": "ntrs-20210020446:p2:c1",
+        "sourceId": "ntrs-20210020446",
+        "page": 2,
+        "label": "NTRS 20210020446 · p.2"
+      },
+      {
+        "chunkId": "ntrs-20250010653:p3:c2",
+        "sourceId": "ntrs-20250010653",
+        "page": 3,
+        "label": "LUCI · p.3"
+      }
+    ],
+    "confidence": "high",
+    "notCovered": "- Quantitative values for specific Δ%O₂ for each material.\n- Long-duration fire behavior or flame spread rates beyond the brief test observations.\n- Detailed mitigation techniques or hardware designs for lunar fire safety.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:35:06.182Z"
+  },
+  {
+    "id": "suggested-iss-does-turning-off-ventilation-put-out-a-fire-in-microgravity",
+    "question": "Does turning off ventilation put out a fire in microgravity?",
+    "mission": "iss",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- In microgravity fire response, turning off the ventilation system is typically the first step taken [[S6]].\n- However, fires can continue to burn even when ventilation is stopped; they persist until the total pressure is reduced enough that oxygen transport becomes insufficient [[S5]].\n\n### What it means for ISS\n- Shutting down cabin airflow alone is not sufficient to guarantee extinguishment; additional suppression actions (e.g., venting to very low pressure or other extinguishing agents) are required to fully put out a microgravity fire.\n\n### Not covered by the data\n- The passages do not provide quantitative success rates or specific procedures for fire extinction after ventilation is turned off.",
+    "citations": [
+      {
+        "chunkId": "psi-20:p0:c3",
+        "sourceId": "psi-20",
+        "label": "ACME BRE"
+      },
+      {
+        "chunkId": "ntrs-19930015566:p5:c10",
+        "sourceId": "ntrs-19930015566",
+        "page": 5,
+        "label": "NTRS 19930015566 · p.5"
+      },
+      {
+        "chunkId": "ntrs-19930015566:p5:c12",
+        "sourceId": "ntrs-19930015566",
+        "page": 5,
+        "label": "NTRS 19930015566 · p.5"
+      },
+      {
+        "chunkId": "ntrs-20130010991:p4:c8",
+        "sourceId": "ntrs-20130010991",
+        "page": 4,
+        "label": "Partial-g tests · p.4"
+      },
+      {
+        "chunkId": "ntrs-19930015566:p6:c15",
+        "sourceId": "ntrs-19930015566",
+        "page": 6,
+        "label": "NTRS 19930015566 · p.6"
+      },
+      {
+        "chunkId": "ntrs-20140006580:p7:c18",
+        "sourceId": "ntrs-20140006580",
+        "page": 7,
+        "label": "NTRS 20140006580 · p.7"
+      },
+      {
+        "chunkId": "ntrs-19930015566:p10:c26",
+        "sourceId": "ntrs-19930015566",
+        "page": 10,
+        "label": "NTRS 19930015566 · p.10"
+      },
+      {
+        "chunkId": "psi-25:p0:c1",
+        "sourceId": "psi-25",
+        "label": "BASS-II"
+      }
+    ],
+    "confidence": "high",
+    "notCovered": "- The passages do not provide quantitative success rates or specific procedures for fire extinction after ventilation is turned off.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:35:10.508Z"
+  },
+  {
+    "id": "suggested-gateway-what-happens-to-smoke-detection-in-a-small-spacecraft",
+    "question": "What happens to smoke detection in a small spacecraft?",
+    "mission": "gateway",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- In spacecraft the smoke mixes throughout the cabin and becomes diluted, so detection requires a larger amount of smoke release compared to terrestrial systems where smoke stays concentrated near the ceiling[[S2]].  \n- The ISS forward-light-scattering detector failed to alarm for Kapton smoke in 50 % of tests and for Teflon smoke in about 67 % of tests, indicating poor performance for common spacecraft materials[[S3]].  \n- Small particles (≈100–250 nm) produced by plastics such as Kapton and Teflon are especially difficult for light-scattering detectors, whose signal scales with the third power of particle size[[S6]].  \n- Rapid filtration by the Environmental Control and Life Support System can remove smoke before concentrations reach the detector’s alarm threshold, further reducing detection likelihood for early-stage fires[[S3]].  \n\n### What it means for Gateway\n- A detection system for a small Gateway module must be more sensitive to low-concentration, fine-particle smoke than current ISS detectors.  \n- Designs should target the smallest particle sizes typical of spacecraft polymers and consider alternative sensing modalities (e.g., gas-phase or charge-based detection) to complement light scattering.  \n- Integration with the habitat’s air-handling system is needed to ensure that filtration does not suppress the smoke signal below alarm levels.\n\n### Not covered by the data\nThe passages do not provide specific performance metrics for detectors designed expressly for the Gateway architecture, nor do they discuss integration with Gateway’s unique environmental control systems.",
+    "citations": [
+      {
+        "chunkId": "ntrs-20210022143:p3:c7",
+        "sourceId": "ntrs-20210022143",
+        "page": 3,
+        "label": "NTRS 20210022143 · p.3"
+      },
+      {
+        "chunkId": "ntrs-20170000248:p2:c4",
+        "sourceId": "ntrs-20170000248",
+        "page": 2,
+        "label": "NTRS 20170000248 · p.2"
+      },
+      {
+        "chunkId": "ntrs-20210022143:p2:c3",
+        "sourceId": "ntrs-20210022143",
+        "page": 2,
+        "label": "NTRS 20210022143 · p.2"
+      },
+      {
+        "chunkId": "ntrs-20170000230:p9:c24",
+        "sourceId": "ntrs-20170000230",
+        "page": 9,
+        "label": "NTRS 20170000230 · p.9"
+      },
+      {
+        "chunkId": "ntrs-20210022143:p3:c5",
+        "sourceId": "ntrs-20210022143",
+        "page": 3,
+        "label": "NTRS 20210022143 · p.3"
+      },
+      {
+        "chunkId": "ntrs-20170000248:p2:c5",
+        "sourceId": "ntrs-20170000248",
+        "page": 2,
+        "label": "NTRS 20170000248 · p.2"
+      },
+      {
+        "chunkId": "psi-101:p0:c2",
+        "sourceId": "psi-101",
+        "label": "SAME-R"
+      },
+      {
+        "chunkId": "psi-102-reports-same-final-science-report:p30:c50",
+        "sourceId": "psi-102-reports-same-final-science-report",
+        "page": 30,
+        "label": "SAME · p.30"
+      }
+    ],
+    "confidence": "high",
+    "notCovered": "The passages do not provide specific performance metrics for detectors designed expressly for the Gateway architecture, nor do they discuss integration with Gateway’s unique environmental control systems.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:35:14.210Z"
+  },
+  {
+    "id": "suggested-lunar-how-does-oxygen-concentration-change-flame-spread-over-thin-",
+    "question": "How does oxygen concentration change flame spread over thin fuels?",
+    "mission": "lunar",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- The provided passages describe experiments and simulations that were performed at a fixed oxygen concentration of 21% (e.g., Fig. 10 and the FDS cases) [[S1]][[S3]][[S7]].  \n- None of the excerpts report results for varying oxygen levels or discuss how changing O₂ concentration influences flame spread over thin solid fuels.\n\n### What it means for Lunar surface\n- Because the dataset does not include any analysis of oxygen-concentration effects, no direct inference can be drawn for lunar-surface fire behavior from these studies.  \n- Design considerations would need to rely on other research that specifically examines enriched or reduced O₂ environments.\n\n### Not covered by the data\n- The impact of oxygen concentration on flame spread rate, flame height, heat release rate, or boundary-layer behavior.  \n- Related topics that are covered: effects of ambient pressure, gravity level, forced flow velocity, and reaction-rate modeling on flame spread.",
+    "citations": [
+      {
+        "chunkId": "ntrs-20210017787:p10:c27",
+        "sourceId": "ntrs-20210017787",
+        "page": 10,
+        "label": "NTRS 20210017787 · p.10"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p7:c18",
+        "sourceId": "ntrs-20210017787",
+        "page": 7,
+        "label": "NTRS 20210017787 · p.7"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p6:c16",
+        "sourceId": "ntrs-20210017787",
+        "page": 6,
+        "label": "NTRS 20210017787 · p.6"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p10:c25",
+        "sourceId": "ntrs-20210017787",
+        "page": 10,
+        "label": "NTRS 20210017787 · p.10"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p12:c31",
+        "sourceId": "ntrs-20210017787",
+        "page": 12,
+        "label": "NTRS 20210017787 · p.12"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p1:c0",
+        "sourceId": "ntrs-20210017787",
+        "page": 1,
+        "label": "NTRS 20210017787 · p.1"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p3:c7",
+        "sourceId": "ntrs-20210017787",
+        "page": 3,
+        "label": "NTRS 20210017787 · p.3"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p5:c14",
+        "sourceId": "ntrs-20210017787",
+        "page": 5,
+        "label": "NTRS 20210017787 · p.5"
+      }
+    ],
+    "confidence": "medium",
+    "notCovered": "- The impact of oxygen concentration on flame spread rate, flame height, heat release rate, or boundary-layer behavior.  \n- Related topics that are covered: effects of ambient pressure, gravity level, forced flow velocity, and reaction-rate modeling on flame spread.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:35:35.122Z"
+  },
+  {
+    "id": "suggested-gateway-what-did-the-saffire-experiments-learn-from-large-fires-in-o",
+    "question": "What did the Saffire experiments learn from large fires in orbit?",
+    "mission": "gateway",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- The Saffire series demonstrated that spacecraft fires can grow to a significant size and persist long enough to be a concern for both crew and vehicle [[S2]].\n- Experiments with 40 cm-wide solid fuel samples (PMMA, cotton, cotton/fiberglass blends) showed flame spread and growth over lengths up to 50 cm, providing data on how large-scale fires behave in a pressurized micro-gravity environment [[S6]].\n- Results indicated that flame spread rates, heat addition, and smoke transport are substantial enough to affect spacecraft systems such as the Environmental Control and Life Support System (ECLSS) and structural components [[S3]].\n\n### What it means for Gateway\n- Large-scale fire behavior observed in Saffire suggests that Gateway habitats must be designed to tolerate prolonged heat and smoke exposure from fires that can spread over tens of centimeters of material.\n- Detection and suppression systems need to account for the demonstrated persistence and growth rates, ensuring they can respond before fire size reaches hazardous levels.\n- Material selection and interior layout should consider the flammability limits and spread characteristics identified in orbit to reduce risk to crew and critical systems.\n\n### Not covered by the data\nThe passages do not provide quantitative metrics (e.g., exact spread rates, temperature peaks) or specific mitigation technologies tested on Gateway. They also do not address fire scenarios involving liquids, gases, or mixed-material assemblies.",
+    "citations": [
+      {
+        "chunkId": "ntrs-20210011521:p11:c30",
+        "sourceId": "ntrs-20210011521",
+        "page": 11,
+        "label": "Saffire IV-VI · p.11"
+      },
+      {
+        "chunkId": "ntrs-20210011521:p2:c4",
+        "sourceId": "ntrs-20210011521",
+        "page": 2,
+        "label": "Saffire IV-VI · p.2"
+      },
+      {
+        "chunkId": "ntrs-20220002714:p1:c1",
+        "sourceId": "ntrs-20220002714",
+        "page": 1,
+        "label": "Saffire IV-VI · p.1"
+      },
+      {
+        "chunkId": "psi-100:p0:c0",
+        "sourceId": "psi-100",
+        "label": "Saffire-III"
+      },
+      {
+        "chunkId": "ntrs-20170000230:p1:c0",
+        "sourceId": "ntrs-20170000230",
+        "page": 1,
+        "label": "NTRS 20170000230 · p.1"
+      },
+      {
+        "chunkId": "ntrs-20210011521:p1:c0",
+        "sourceId": "ntrs-20210011521",
+        "page": 1,
+        "label": "Saffire IV-VI · p.1"
+      },
+      {
+        "chunkId": "ntrs-20170002628:p1:c0",
+        "sourceId": "ntrs-20170002628",
+        "page": 1,
+        "label": "NTRS 20170002628 · p.1"
+      },
+      {
+        "chunkId": "ntrs-20220002714:p11:c20",
+        "sourceId": "ntrs-20220002714",
+        "page": 11,
+        "label": "Saffire IV-VI · p.11"
+      }
+    ],
+    "confidence": "high",
+    "notCovered": "The passages do not provide quantitative metrics (e.g., exact spread rates, temperature peaks) or specific mitigation technologies tested on Gateway. They also do not address fire scenarios involving liquids, gases, or mixed-material assemblies.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:36:01.133Z"
+  },
+  {
+    "id": "suggested-marsTransit-are-cool-flames-a-hazard-in-spacecraft",
+    "question": "Are cool flames a hazard in spacecraft?",
+    "mission": "marsTransit",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- A newly observed phenomenon in microgravity shows that after a hot flame extinguishes, a low-temperature “cool-flame” can persist, producing partially oxidized fuel that may re-ignite into a hot flame[[S1]].  \n- This persistence of cool flames is identified as a fire-safety concern for spacecraft environments[[S1]].  \n- In space, cool flames can generate combustible vapors that can reignite, similar to smoldering combustion in solid fuels[[S5]].  \n- Recent experiments have demonstrated re-ignition of cool flames with decane, confirming the hazard potential[[S5]].\n\n### What it means for Mars transit\n- For a Mars transit vehicle, the possibility that a hot flame could transition to a cool-flame stage and later re-ignite means fire-suppression systems must address low-temperature combustion chemistry, not just high-temperature flame extinction.  \n- Materials and fuel handling strategies should consider the formation of partially oxidized vapors that remain combustible in the microgravity environment of transit.  \n\n### Not covered by the data\n- The passages do not provide quantitative risk assessments, mitigation techniques, or specific design guidelines for Mars-transit spacecraft.  \n- They also do not discuss how varying oxygen levels, pressure, or ventilation in a Mars transit habitat would alter cool-flame behavior.",
+    "citations": [
+      {
+        "chunkId": "psi-39-presentations-cool-flames-in-space-a-hot-prospect-on-eart:p23:c16",
+        "sourceId": "psi-39-presentations-cool-flames-in-space-a-hot-prospect-on-eart",
+        "page": 23,
+        "label": "CFI · p.23"
+      },
+      {
+        "chunkId": "ntrs-20210022542:p4:c3",
+        "sourceId": "ntrs-20210022542",
+        "page": 4,
+        "label": "NTRS 20210022542 · p.4"
+      },
+      {
+        "chunkId": "ntrs-19930015566:p2:c1",
+        "sourceId": "ntrs-19930015566",
+        "page": 2,
+        "label": "NTRS 19930015566 · p.2"
+      },
+      {
+        "chunkId": "psi-39:p0:c1",
+        "sourceId": "psi-39",
+        "label": "CFI"
+      },
+      {
+        "chunkId": "psi-39-presentations-cool-flames-in-space-a-hot-prospect-on-eart:p22:c15",
+        "sourceId": "psi-39-presentations-cool-flames-in-space-a-hot-prospect-on-eart",
+        "page": 22,
+        "label": "CFI · p.22"
+      },
+      {
+        "chunkId": "ntrs-20170001636:p6:c18",
+        "sourceId": "ntrs-20170001636",
+        "page": 6,
+        "label": "NTRS 20170001636 · p.6"
+      },
+      {
+        "chunkId": "psi-39-presentations-cool-flames-in-space-a-hot-prospect-on-eart:p3:c2",
+        "sourceId": "psi-39-presentations-cool-flames-in-space-a-hot-prospect-on-eart",
+        "page": 3,
+        "label": "CFI · p.3"
+      },
+      {
+        "chunkId": "ntrs-20140006580:p12:c32",
+        "sourceId": "ntrs-20140006580",
+        "page": 12,
+        "label": "NTRS 20140006580 · p.12"
+      }
+    ],
+    "confidence": "high",
+    "notCovered": "- The passages do not provide quantitative risk assessments, mitigation techniques, or specific design guidelines for Mars-transit spacecraft.  \n- They also do not discuss how varying oxygen levels, pressure, or ventilation in a Mars transit habitat would alter cool-flame behavior.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:36:19.116Z"
+  },
+  {
+    "id": "suggested-lunar-how-does-lower-cabin-pressure-affect-how-materials-burn",
+    "question": "How does lower cabin pressure affect how materials burn?",
+    "mission": "lunar",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- Reducing ambient pressure thickens the boundary layer, moves the flame farther from the solid, and cuts the heat transferred to the material, which slows the flame-spread rate [[S1]].  \n- The burnout front (where material actually burns out) spreads significantly slower at reduced pressure than in reduced-gravity conditions, even though the pyrolysis front moves at similar speeds [[S2]][[S7]].  \n- Pyrolysis length – the distance between the pyrolysis front and the burnout front – decreases with lower pressure, indicating a smaller region of pre-heated, pyrolyzing material [[S7]].  \n\n### What it means for Lunar surface\n- In a lunar habitat with cabin pressure below Earth sea-level, fires would tend to spread more slowly across solid fuels such as thin cotton or similar fabrics.  \n- The reduced heat flux and shorter pyrolysis zone suggest lower peak fire growth and potentially less severe thermal damage, but the flame may remain farther from the material, altering detection and suppression strategies.  \n\n### Not covered by the data\nThe passages do not address how lower pressure interacts with lunar-specific factors such as reduced gravity, vacuum exterior, or the behavior of non-fabric materials (e.g., metals, polymers other than cotton).",
+    "citations": [
+      {
+        "chunkId": "ntrs-20210017787:p2:c3",
+        "sourceId": "ntrs-20210017787",
+        "page": 2,
+        "label": "NTRS 20210017787 · p.2"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p8:c22",
+        "sourceId": "ntrs-20210017787",
+        "page": 8,
+        "label": "NTRS 20210017787 · p.8"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p11:c29",
+        "sourceId": "ntrs-20210017787",
+        "page": 11,
+        "label": "NTRS 20210017787 · p.11"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p13:c36",
+        "sourceId": "ntrs-20210017787",
+        "page": 13,
+        "label": "NTRS 20210017787 · p.13"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p2:c4",
+        "sourceId": "ntrs-20210017787",
+        "page": 2,
+        "label": "NTRS 20210017787 · p.2"
+      },
+      {
+        "chunkId": "ntrs-20140006580:p1:c0",
+        "sourceId": "ntrs-20140006580",
+        "page": 1,
+        "label": "NTRS 20140006580 · p.1"
+      },
+      {
+        "chunkId": "ntrs-20210017787:p8:c21",
+        "sourceId": "ntrs-20210017787",
+        "page": 8,
+        "label": "NTRS 20210017787 · p.8"
+      },
+      {
+        "chunkId": "ntrs-20140006580:p9:c26",
+        "sourceId": "ntrs-20140006580",
+        "page": 9,
+        "label": "NTRS 20140006580 · p.9"
+      }
+    ],
+    "confidence": "medium",
+    "notCovered": "The passages do not address how lower pressure interacts with lunar-specific factors such as reduced gravity, vacuum exterior, or the behavior of non-fabric materials (e.g., metals, polymers other than cotton).",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:36:43.080Z"
+  },
+  {
+    "id": "suggested-iss-how-do-droplet-flames-burn-differently-without-gravity",
+    "question": "How do droplet flames burn differently without gravity?",
+    "mission": "iss",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- In microgravity, candle-like droplet flames deplete ambient oxygen and approach extinction while showing prolonged flame oscillations; the oscillations grow until the flame finally extinguishes and can last over a minute in extreme cases[[S1]].  \n- Similar oscillatory behavior is observed for spherically symmetric droplet combustion in microgravity[[S1]].  \n- Experiments with large alkane droplets (e.g., FLEX) revealed unexpected “cool flame” behavior, where droplets burn at unusually low temperatures, distinct from the hot-flame regime seen in normal gravity[[S5]][[S6]].  \n\n### What it means for ISS\n- Droplet combustion in the ISS environment can exhibit long-duration, low-frequency oscillations and transition to cool-flame regimes, which affect heat release rates and extinction characteristics.  \n- These unique behaviors provide data for validating combustion models that must account for reduced buoyancy, radiative and diffusive heat loss, and altered chemical pathways in microgravity.\n\n### Not covered by the data\n- The passages do not provide quantitative burn rates, flame size metrics, or detailed chemical mechanisms for specific fuels beyond the qualitative observations above.",
+    "citations": [
+      {
+        "chunkId": "psi-23-presentations-iss-researchers-guide-combustion-in-reduced:p33:c50",
+        "sourceId": "psi-23-presentations-iss-researchers-guide-combustion-in-reduced",
+        "page": 33,
+        "label": "ACME s-Flame · p.33"
+      },
+      {
+        "chunkId": "nasa-web-why-flames:p0:c0",
+        "sourceId": "nasa-web-why-flames",
+        "label": "NASA Science"
+      },
+      {
+        "chunkId": "psi-23-presentations-iss-researchers-guide-combustion-in-reduced:p11:c11",
+        "sourceId": "psi-23-presentations-iss-researchers-guide-combustion-in-reduced",
+        "page": 11,
+        "label": "ACME s-Flame · p.11"
+      },
+      {
+        "chunkId": "psi-10-reports-finalrpt-acmeflamedesign:p5:c9",
+        "sourceId": "psi-10-reports-finalrpt-acmeflamedesign",
+        "page": 5,
+        "label": "ACME Flame Design · p.5"
+      },
+      {
+        "chunkId": "psi-39-presentations-aspects-of-cool-flame-supported-droplet-com:p5:c3",
+        "sourceId": "psi-39-presentations-aspects-of-cool-flame-supported-droplet-com",
+        "page": 5,
+        "label": "CFI · p.5"
+      },
+      {
+        "chunkId": "psi-159-reports-finalrpt-acme-cfi-g:p54:c111",
+        "sourceId": "psi-159-reports-finalrpt-acme-cfi-g",
+        "page": 54,
+        "label": "ACME CFI-G · p.54"
+      },
+      {
+        "chunkId": "psi-39-presentations-aspects-of-cool-flame-supported-droplet-com:p19:c15",
+        "sourceId": "psi-39-presentations-aspects-of-cool-flame-supported-droplet-com",
+        "page": 19,
+        "label": "CFI · p.19"
+      },
+      {
+        "chunkId": "psi-39-presentations-aspects-of-cool-flame-supported-droplet-com:p9:c6",
+        "sourceId": "psi-39-presentations-aspects-of-cool-flame-supported-droplet-com",
+        "page": 9,
+        "label": "CFI · p.9"
+      }
+    ],
+    "confidence": "high",
+    "notCovered": "- The passages do not provide quantitative burn rates, flame size metrics, or detailed chemical mechanisms for specific fuels beyond the qualitative observations above.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:37:03.017Z"
+  },
+  {
+    "id": "suggested-marsTransit-does-the-standard-1-g-flammability-test-predict-burning-in-m",
+    "question": "Does the standard 1-g flammability test predict burning in microgravity?",
+    "mission": "marsTransit",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- Normal-gravity (1 g) flammability testing has historically been assumed to give a safety margin because flames spread more slowly in microgravity, an assumption based on Skylab data[[S2]].  \n- Recent analysis questions that safety factor, noting that microgravity flammability can be enhanced by ventilating flows and therefore may not be lower than in 1 g[[S2]].  \n- Ongoing work seeks to map microgravity flammability and compare it to the NASA-STD-6001 1 g test to evaluate the oxygen margin of safety, indicating that the 1 g test alone is insufficient for prediction[[S6]].  \n\n### What it means for Mars transit\n- Relying solely on the standard 1-g Test 1 results could underestimate fire risk in the reduced-gravity environment of a Mars transit vehicle.  \n- Additional low-gravity testing or predictive mapping is needed to assess true flammability under Martian-gravity conditions.\n\n### Not covered by the data\n- The passages do not provide a definitive quantitative prediction of microgravity burning from the 1-g test.  \n- They do not address specific mitigation strategies for Mars transit beyond the need for further testing.",
+    "citations": [
+      {
+        "chunkId": "ntrs-20130010991:p1:c0",
+        "sourceId": "ntrs-20130010991",
+        "page": 1,
+        "label": "Partial-g tests · p.1"
+      },
+      {
+        "chunkId": "ntrs-19930015566:p7:c18",
+        "sourceId": "ntrs-19930015566",
+        "page": 7,
+        "label": "NTRS 19930015566 · p.7"
+      },
+      {
+        "chunkId": "psi-20:p0:c2",
+        "sourceId": "psi-20",
+        "label": "ACME BRE"
+      },
+      {
+        "chunkId": "ntrs-20130010991:p6:c12",
+        "sourceId": "ntrs-20130010991",
+        "page": 6,
+        "label": "Partial-g tests · p.6"
+      },
+      {
+        "chunkId": "ntrs-20130010991:p7:c14",
+        "sourceId": "ntrs-20130010991",
+        "page": 7,
+        "label": "Partial-g tests · p.7"
+      },
+      {
+        "chunkId": "psi-23-presentations-iss-researchers-guide-combustion-in-reduced:p22:c31",
+        "sourceId": "psi-23-presentations-iss-researchers-guide-combustion-in-reduced",
+        "page": 22,
+        "label": "ACME s-Flame · p.22"
+      },
+      {
+        "chunkId": "ntrs-20130010991:p1:c1",
+        "sourceId": "ntrs-20130010991",
+        "page": 1,
+        "label": "Partial-g tests · p.1"
+      },
+      {
+        "chunkId": "ntrs-20170008805:p4:c3",
+        "sourceId": "ntrs-20170008805",
+        "page": 4,
+        "label": "NTRS 20170008805 · p.4"
+      }
+    ],
+    "confidence": "high",
+    "notCovered": "- The passages do not provide a definitive quantitative prediction of microgravity burning from the 1-g test.  \n- They do not address specific mitigation strategies for Mars transit beyond the need for further testing.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:37:23.952Z"
+  },
+  {
+    "id": "suggested-gateway-what-does-confinement-in-a-narrow-space-do-to-a-flame",
+    "question": "What does confinement in a narrow space do to a flame?",
+    "mission": "gateway",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- In a confined duct the flame length first **increases** as the inter-baffle distance is reduced, reaching a maximum near **D ≈ 4 cm**; further reduction makes the flame **shorten and eventually quench** (flame never spreads past ~0.8 cm) [[S5]].  \n- The **optimal duct height** for the fastest spread in a 10 cm/s flow was found to be **4.0 cm**; above this height the spread rate varies roughly linearly with the **inverse of the duct height** (chimney-effect dominated) [[S2]].  \n- Below the optimal height the spread rate is **approximately proportional to the duct height**, because the flame is limited by the **oxygen supply** to the combustion zone [[S2]].  \n- Confinement also enhances **radiation interactions** and the **chimney effect**, which together increase the flame spread rate, but if the gap becomes too small the flames suffer **oxygen depletion** and the spread rate drops [[S3]].  \n\n### What it means for Gateway\n- Designing narrow passages (e.g., equipment bays, cable trays) should consider an **inter-baffle spacing around 4 cm** as a worst-case for rapid flame spread.  \n- Reducing spacing **below this value** can **slow or even suppress** flame propagation, but only if sufficient oxygen is limited; however, very tight gaps may still allow a brief, intense flame tip before quenching.  \n- Materials and wall finishes that affect **radiative heat loss** (e.g., black-oxide surfaces) will influence the confinement effect and should be accounted for in fire-safety analyses.  \n\n### Not covered by the data\n- Direct measurements of flame temperature, pressure rise, or toxic product generation in confined microgravity conditions.  \n- Long-duration fire behavior in full-scale Gateway modules or in the presence of active life-support systems.",
+    "citations": [
+      {
+        "chunkId": "ntrs-20205004657:p10:c28",
+        "sourceId": "ntrs-20205004657",
+        "page": 10,
+        "label": "Confined Combustion · p.10"
+      },
+      {
+        "chunkId": "ntrs-20205004657:p2:c4",
+        "sourceId": "ntrs-20205004657",
+        "page": 2,
+        "label": "Confined Combustion · p.2"
+      },
+      {
+        "chunkId": "ntrs-20205004657:p2:c5",
+        "sourceId": "ntrs-20205004657",
+        "page": 2,
+        "label": "Confined Combustion · p.2"
+      },
+      {
+        "chunkId": "ntrs-20205004657:p10:c26",
+        "sourceId": "ntrs-20205004657",
+        "page": 10,
+        "label": "Confined Combustion · p.10"
+      },
+      {
+        "chunkId": "ntrs-20205004657:p6:c16",
+        "sourceId": "ntrs-20205004657",
+        "page": 6,
+        "label": "Confined Combustion · p.6"
+      },
+      {
+        "chunkId": "ntrs-20205004657:p5:c14",
+        "sourceId": "ntrs-20205004657",
+        "page": 5,
+        "label": "Confined Combustion · p.5"
+      },
+      {
+        "chunkId": "ntrs-20205004657:p4:c11",
+        "sourceId": "ntrs-20205004657",
+        "page": 4,
+        "label": "Confined Combustion · p.4"
+      },
+      {
+        "chunkId": "ntrs-20205004657:p3:c7",
+        "sourceId": "ntrs-20205004657",
+        "page": 3,
+        "label": "Confined Combustion · p.3"
+      }
+    ],
+    "confidence": "medium",
+    "notCovered": "- Direct measurements of flame temperature, pressure rise, or toxic product generation in confined microgravity conditions.  \n- Long-duration fire behavior in full-scale Gateway modules or in the presence of active life-support systems.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:37:50.337Z"
+  },
+  {
+    "id": "suggested-iss-how-do-diluent-gases-like-carbon-dioxide-or-helium-affect-ex",
+    "question": "How do diluent gases like carbon dioxide or helium affect extinction?",
+    "mission": "iss",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- In microgravity, CO₂ acts as a radiatively-active diluent: it re-absorbs and re-radiates flame emission, reducing heat loss from the flame and can even accelerate flame spread compared with inert gases like N₂ or He at the same O₂ level [[S3]][[S4]].  \n- Helium is radiatively inert (no re-absorption or re-radiation). Its high thermal conductivity creates a thicker flame that loses more heat, making it a more effective extinguishing agent in microgravity [[S1]][[S3]].  \n- Drop-tower tests showed that at high O₂ and low pressure, adding CO₂ produced faster flame spread than He in µg, whereas He gave slower spread and better extinction [[S2]][[S3]].  \n- Overall, He is more efficient than CO₂ on both a mole-basis and a mass-basis for fire suppression in microgravity, requiring smaller storage volume and having no physiological impact [[S5]].\n\n### What it means for ISS\n- Using He instead of CO₂ could improve fire-suppression performance on the ISS because He’s radiative inactivity limits flame propagation in the low-gravity environment.  \n- Helium’s higher effectiveness per unit mass and lack of respiratory effects make it attractive for ISS fire-extinguishing systems, though current ISS hardware relies on CO₂.\n\n### Not covered by the data\nThe passages do not provide quantitative extinction limits, detailed system-design specifications, or results for other inert gases (e.g., N₂, xenon) in ISS-specific configurations.",
+    "citations": [
+      {
+        "chunkId": "ntrs-20040161188:p9:c9",
+        "sourceId": "ntrs-20040161188",
+        "page": 9,
+        "label": "NTRS 20040161188 · p.9"
+      },
+      {
+        "chunkId": "ntrs-20040161188:p8:c8",
+        "sourceId": "ntrs-20040161188",
+        "page": 8,
+        "label": "NTRS 20040161188 · p.8"
+      },
+      {
+        "chunkId": "ntrs-20040161188:p10:c10",
+        "sourceId": "ntrs-20040161188",
+        "page": 10,
+        "label": "NTRS 20040161188 · p.10"
+      },
+      {
+        "chunkId": "ntrs-20040161188:p7:c7",
+        "sourceId": "ntrs-20040161188",
+        "page": 7,
+        "label": "NTRS 20040161188 · p.7"
+      },
+      {
+        "chunkId": "ntrs-20040161188:p1:c1",
+        "sourceId": "ntrs-20040161188",
+        "page": 1,
+        "label": "NTRS 20040161188 · p.1"
+      },
+      {
+        "chunkId": "psi-39-science-documents-srd-cfi:p26:c57",
+        "sourceId": "psi-39-science-documents-srd-cfi",
+        "page": 26,
+        "label": "CFI · p.26"
+      },
+      {
+        "chunkId": "ntrs-20040161188:p2:c2",
+        "sourceId": "ntrs-20040161188",
+        "page": 2,
+        "label": "NTRS 20040161188 · p.2"
+      },
+      {
+        "chunkId": "ntrs-20040161188:p1:c0",
+        "sourceId": "ntrs-20040161188",
+        "page": 1,
+        "label": "NTRS 20040161188 · p.1"
+      }
+    ],
+    "confidence": "medium",
+    "notCovered": "The passages do not provide quantitative extinction limits, detailed system-design specifications, or results for other inert gases (e.g., N₂, xenon) in ISS-specific configurations.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:38:17.167Z"
+  },
+  {
+    "id": "suggested-marsSurface-what-is-known-about-fire-behaviour-in-mars-gravity",
+    "question": "What is known about fire behaviour in Mars gravity?",
+    "mission": "marsSurface",
+    "kind": "suggested",
+    "answer": "### What the evidence shows\n- In Martian-g centrifuge and drop-tower tests, flames are small, localized, and often extinguish within the ~5 s drop time; flame spread is limited to short distances along the fuel [[S3]][[S5]].  \n- Reducing oxygen to about 17 % causes the flame to go out in Martian-g tests [[S3]].  \n- The maximum oxygen concentration at which flames self-extinguish (MOC*) and the minimum at which they survive the full drop (ULOI*) were measured for Mylar, Nomex, and Ultem; Mylar flames remained stable longer, while Nomex and Ultem flames became dim and shrank, suggesting weaker combustion in Martian gravity [[S7]].  \n- Low-gravity conditions reduce buoyancy, decreasing convective heat loss from the flame zone; therefore less heat release is needed to sustain the flame, leading to lower flammability limits compared with 1 g [[S4]].  \n- Atmospheric pressure and oxygen concentration strongly affect flame behavior; reduced pressure lowers water-mist droplet size and velocity, influencing extinguishment, and elevated oxygen (above 30 %) raises flammability risk [[S2]][[S6]].\n\n### What it means for Mars surface\n- Fires in Martian gravity are likely to be small and may self-extinguish quickly, especially at oxygen levels near 17 % or lower.  \n- Materials that char (Nomex, Ultem) show weaker flames and may approach zero oxygen margin of safety, while non-charring materials (Mylar) can sustain flames longer.  \n- Designing habitats with sub-atmospheric pressure and modest oxygen enrichment (≤30 %) could mitigate fire risk, but any increase above this heightens flammability.  \n- Reduced buoyancy means conventional convective cooling is less effective; fire safety designs must account for lower heat loss and altered droplet dynamics.\n\n### Not covered by the data\n- Long-duration fire growth beyond the 5–6 s drop-tower window.  \n- Detailed flame spread rates or heat release rates in sustained Martian-g conditions.  \n- Interaction of fire with Martian regolith or dust.  \n- Effects of suit or habitat ventilation systems on fire behavior.",
+    "citations": [
+      {
+        "chunkId": "ntrs-20260000646:p1:c2",
+        "sourceId": "ntrs-20260000646",
+        "page": 1,
+        "label": "LUCI / Partial-g tests · p.1"
+      },
+      {
+        "chunkId": "ntrs-20210023340:p3:c4",
+        "sourceId": "ntrs-20210023340",
+        "page": 3,
+        "label": "NTRS 20210023340 · p.3"
+      },
+      {
+        "chunkId": "ntrs-20130010991:p4:c9",
+        "sourceId": "ntrs-20130010991",
+        "page": 4,
+        "label": "Partial-g tests · p.4"
+      },
+      {
+        "chunkId": "ntrs-20130010991:p7:c13",
+        "sourceId": "ntrs-20130010991",
+        "page": 7,
+        "label": "Partial-g tests · p.7"
+      },
+      {
+        "chunkId": "ntrs-20130010991:p5:c10",
+        "sourceId": "ntrs-20130010991",
+        "page": 5,
+        "label": "Partial-g tests · p.5"
+      },
+      {
+        "chunkId": "ntrs-20260002050:p3:c4",
+        "sourceId": "ntrs-20260002050",
+        "page": 3,
+        "label": "NTRS 20260002050 · p.3"
+      },
+      {
+        "chunkId": "ntrs-20130010991:p4:c7",
+        "sourceId": "ntrs-20130010991",
+        "page": 4,
+        "label": "Partial-g tests · p.4"
+      },
+      {
+        "chunkId": "ntrs-20040053567:p1:c0",
+        "sourceId": "ntrs-20040053567",
+        "page": 1,
+        "label": "NTRS 20040053567 · p.1"
+      }
+    ],
+    "confidence": "high",
+    "notCovered": "- Long-duration fire growth beyond the 5–6 s drop-tower window.  \n- Detailed flame spread rates or heat release rates in sustained Martian-g conditions.  \n- Interaction of fire with Martian regolith or dust.  \n- Effects of suit or habitat ventilation systems on fire behavior.",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:38:42.366Z"
+  },
+  {
+    "id": "out-of-scope-who-won-the-2022-fifa-world-cup",
+    "question": "Who won the 2022 FIFA World Cup?",
+    "kind": "out-of-scope",
+    "answer": "### What the evidence shows\nThe dataset does not cover this. EMBER only answers from NASA microgravity combustion records, and none of them address this question closely enough to answer it honestly.\n\n### Not covered by the data\nThis question falls outside the records EMBER holds: spacecraft fire experiments on flame spread, flammability limits, droplet and gas-jet flames, smoke and suppression.\n\nNearest experiments in the archive, in case they help:\n- ACME CFI-G: Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases\n- ACME Flame Design: Advanced Combustion via Microgravity Experiments / Flame Design\n- SPICE: Smoke Point In Co-flow Experiment",
+    "citations": [],
+    "confidence": "none",
+    "notCovered": "This question.",
+    "generatedBy": "relevance-gate",
+    "generatedAt": "2026-09-30T06:38:45.320Z"
+  },
+  {
+    "id": "out-of-scope-how-do-i-bake-a-chocolate-cake",
+    "question": "How do I bake a chocolate cake?",
+    "kind": "out-of-scope",
+    "answer": "### What the evidence shows\nThe dataset does not cover this. EMBER only answers from NASA microgravity combustion records, and none of them address this question closely enough to answer it honestly.\n\n### Not covered by the data\nThis question falls outside the records EMBER holds: spacecraft fire experiments on flame spread, flammability limits, droplet and gas-jet flames, smoke and suppression.\n\nNearest experiments in the archive, in case they help:\n- BASS: Burning and Suppression of Solids\n- Partial-g tests: Partial-gravity material flammability tests in the GRC Zero Gravity Facility centrifuge\n- ACME s-Flame: Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+    "citations": [],
+    "confidence": "none",
+    "notCovered": "This question.",
+    "generatedBy": "relevance-gate",
+    "generatedAt": "2026-09-30T06:38:45.802Z"
+  },
+  {
+    "id": "out-of-scope-what-is-the-boiling-point-of-water-on-mars",
+    "question": "What is the boiling point of water on Mars?",
+    "kind": "out-of-scope",
+    "answer": "### What the evidence shows\nThe dataset does not cover this. EMBER only answers from NASA microgravity combustion records, and none of them address this question closely enough to answer it honestly.\n\n### Not covered by the data\nThis question falls outside the records EMBER holds: spacecraft fire experiments on flame spread, flammability limits, droplet and gas-jet flames, smoke and suppression.\n\nNearest experiments in the archive, in case they help:\n- ACME s-Flame: Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames\n- FLEX: Flame Extinguishment Experiment\n- SPICE: Smoke Point In Co-flow Experiment",
+    "citations": [],
+    "confidence": "none",
+    "notCovered": "This question.",
+    "generatedBy": "relevance-gate",
+    "generatedAt": "2026-09-30T06:38:46.236Z"
+  },
+  {
+    "id": "out-of-scope-when-will-starship-land-people-on-mars",
+    "question": "When will Starship land people on Mars?",
+    "kind": "out-of-scope",
+    "answer": "### What the evidence shows\nThe dataset does not cover this. EMBER only answers from NASA microgravity combustion records, and none of them address this question closely enough to answer it honestly.\n\n### Not covered by the data\nThis question falls outside the records EMBER holds: spacecraft fire experiments on flame spread, flammability limits, droplet and gas-jet flames, smoke and suppression.",
+    "citations": [],
+    "confidence": "none",
+    "notCovered": "This question.",
+    "generatedBy": "relevance-gate",
+    "generatedAt": "2026-09-30T06:38:46.499Z"
+  },
+  {
+    "id": "out-of-scope-how-do-i-file-my-income-taxes",
+    "question": "How do I file my income taxes?",
+    "kind": "out-of-scope",
+    "answer": "### What the evidence shows\nThe dataset does not cover this. EMBER only answers from NASA microgravity combustion records, and none of them address this question closely enough to answer it honestly.\n\n### Not covered by the data\nThis question falls outside the records EMBER holds: spacecraft fire experiments on flame spread, flammability limits, droplet and gas-jet flames, smoke and suppression.\n\nNearest experiments in the archive, in case they help:\n- CFI: Cool Flames Investigation\n- SPICE: Smoke Point In Co-flow Experiment\n- Partial-g tests: Partial-gravity material flammability tests in the GRC Zero Gravity Facility centrifuge",
+    "citations": [],
+    "confidence": "none",
+    "notCovered": "This question.",
+    "generatedBy": "relevance-gate",
+    "generatedAt": "2026-09-30T06:38:46.918Z"
+  },
+  {
+    "id": "digest-iss",
+    "question": "Evidence digest for ISS",
+    "mission": "iss",
+    "kind": "digest",
+    "answer": "The ISS fire safety picture shows that toxic smoke and gases, rather than heat or pressure, dominate the hazard, so rapid detection of particulates and CO/CO₂ must be prioritized [[S1]]. Smoke particles from common spacecraft materials are typically 200-400 nm, but can grow larger in still air, requiring detectors that cover this size range and can handle occasional larger agglomerates [[S3]]. Low-speed ventilation can both quench thin-fuel fires when airflow drops to 1-5 cm/s and, paradoxically, create a worst-case flammability condition at intermediate flow speeds, indicating that careful control of cabin airflow is essential [[S2]][[S5]]. Because CO concentrations can rise to hazardous levels before a 2 mg/m³ aerosol alarm triggers, detection thresholds must be lowered and detector placement optimized for the ISS volume [[S4]]. The markedly high CO-to-CO₂ ratios observed in microgravity fires further support CO sensors as early fire indicators [[S6]].",
+    "citations": [
+      {
+        "chunkId": "ntrs-20260001992:p2:c3",
+        "sourceId": "ntrs-20260001992",
+        "page": 2,
+        "label": "Saffire IV-VI · p.2",
+        "excerpt": "Overall, the pressure rise and temperature change were small but the smoke particulate rose to substantial levels and the gaseous products also achieved hazardous levels."
+      },
+      {
+        "chunkId": "ntrs-20150008962:p1:c0",
+        "sourceId": "ntrs-20150008962",
+        "page": 1,
+        "label": "BASS-II · p.1",
+        "excerpt": "The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere."
+      },
+      {
+        "chunkId": "ntrs-20130000422:p1:c1",
+        "sourceId": "ntrs-20130000422",
+        "page": 1,
+        "label": "SAME-R · p.1",
+        "excerpt": "the majority of the average smoke particle sizes were found to be in the 200 nm to 400 nm range"
+      },
+      {
+        "chunkId": "ntrs-20260001992:p9:c23",
+        "sourceId": "ntrs-20260001992",
+        "page": 9,
+        "label": "Saffire IV-VI · p.9",
+        "excerpt": "a 2 mg/m3 detection threshold was not low enough to detect the fires before some cases exceeded the 24-hour SMAC for CO"
+      },
+      {
+        "chunkId": "psi-26-presentations-flammabilityaspectsofcottonfiberglassfabric:p33:c16",
+        "sourceId": "psi-26-presentations-flammabilityaspectsofcottonfiberglassfabric",
+        "page": 33,
+        "label": "BASS · p.33",
+        "excerpt": "These tests show the enhanced flammability in microgravity for this geometry, since, in normal gravity air, a flame self-extinguishes in the opposed flow geometry"
+      },
+      {
+        "chunkId": "psi-25-reports-bass-ii-summary-report:p19:c30",
+        "sourceId": "psi-25-reports-bass-ii-summary-report",
+        "page": 19,
+        "label": "BASS-II · p.19",
+        "excerpt": "The CO to CO2 ratios for these fires are an order of magnitude higher than for efficient flue gases"
+      }
+    ],
+    "confidence": "medium",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:38:51.772Z"
+  },
+  {
+    "id": "digest-gateway",
+    "question": "Evidence digest for Gateway",
+    "mission": "gateway",
+    "kind": "digest",
+    "answer": "The Gateway fire safety analysis shows that in long-duration Cygnus fires the atmosphere quickly becomes toxic even though pressure and temperature rise only modestly, so detection of smoke and toxic gases and post-fire cleanup must be the primary focus [[S1]]. Existing aerosol detectors set at a 2 mg/m³ threshold can miss early fire development, indicating that lower thresholds or additional sensors are required for the smaller volume of Gateway [[S2]]. Experiments on thin-fuel fabrics demonstrate that reducing cabin airflow to just a few centimeters per second can quench flames, especially in lower-oxygen conditions, suggesting that ventilation shutdown could be an effective first-line response for certain fire types [[S3]]. However, in oxygen-enriched atmospheres similar to those planned for exploration vehicles, many condensed-material fires continue to burn without airflow, meaning ventilation alone may be insufficient and supplemental suppression will be needed [[S4]]. Smoke from heated spacecraft materials is dominated by particles in the 200-400 nm range, with occasional larger particles in still air, so detectors must be tuned to this size spectrum and remain effective under quiescent conditions [[S5]]. Finally, fire persistence in microgravity ceases below roughly 25 % oxygen, placing the planned 26.5-34 % oxygen environment above the self-extinguishment threshold and reinforcing the need for active fire-control measures [[S6]].",
+    "citations": [
+      {
+        "chunkId": "ntrs-20260001992:p2:c3",
+        "sourceId": "ntrs-20260001992",
+        "page": 2,
+        "label": "Saffire IV-VI · p.2",
+        "excerpt": "Overall, the pressure rise and temperature change were small but the smoke particulate rose to substantial levels and the gaseous products also achieved hazardous levels."
+      },
+      {
+        "chunkId": "ntrs-20260001992:p9:c23",
+        "sourceId": "ntrs-20260001992",
+        "page": 9,
+        "label": "Saffire IV-VI · p.9",
+        "excerpt": "a 2 mg/m3 detection threshold was not low enough to detect the fires before some cases exceeded the 24-hour SMAC for CO"
+      },
+      {
+        "chunkId": "ntrs-20150008962:p1:c0",
+        "sourceId": "ntrs-20150008962",
+        "page": 1,
+        "label": "BASS-II · p.1",
+        "excerpt": "The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere."
+      },
+      {
+        "chunkId": "psi-20:p0:c3",
+        "sourceId": "psi-20",
+        "label": "ACME BRE",
+        "excerpt": "Quasi-steady burning corresponding to various condensed-phase materials (such as PMMA and Nylon) was observed in microgravity despite the absence of air flow"
+      },
+      {
+        "chunkId": "ntrs-20130000422:p1:c1",
+        "sourceId": "ntrs-20130000422",
+        "page": 1,
+        "label": "SAME-R · p.1",
+        "excerpt": "the majority of the average smoke particle sizes were found to be in the 200 nm to 400 nm range"
+      },
+      {
+        "chunkId": "ntrs-20210022542:p4:c3",
+        "sourceId": "ntrs-20210022542",
+        "page": 4,
+        "label": "ACME BRE · p.4",
+        "excerpt": "they were found to self-extinguish in concentrations below ~25% (by volume)."
+      }
+    ],
+    "confidence": "medium",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:39:01.606Z"
+  },
+  {
+    "id": "digest-lunar",
+    "question": "Evidence digest for Lunar surface",
+    "mission": "lunar",
+    "kind": "digest",
+    "answer": "The Saffire IV-VI fires showed that smoke and toxic gases become hazardous even when pressure and temperature rise only modestly, so lunar-surface fire safety must focus on rapid smoke and CO/CO₂ detection and post-fire atmosphere cleanup rather than over-pressure protection [[S1]]. Detection thresholds used on larger stations proved insufficient for the smaller Cygnus volume, indicating that lower aerosol detection limits or additional sensors are required for timely warning in lunar habitats [[S4]]. Partial-gravity tests revealed that materials such as Mylar, Ultem and Nomex ignite at lower oxygen levels in lunar gravity, reducing the oxygen safety margin by up to about 5.75 percentage points compared with 1 g screening values, so oxygen limits derived from Earth-based tests need extra margin for lunar operations [[S2]][[S3]]. Experiments in microgravity showed flames self-extinguish below roughly 25 % O₂, while exploration atmospheres of 26.5-34 % O₂ lie above this threshold, confirming that elevated oxygen levels on the lunar surface will sustain fires once ignited [[S5]]. Theoretical and experimental work further suggests that some materials non-flammable at 1 g become flammable in lunar-gravity or microgravity conditions, making lunar-gravity the worst case for material flammability and requiring material limits to be verified at that gravity level [[S6]].",
+    "citations": [
+      {
+        "chunkId": "ntrs-20260001992:p2:c3",
+        "sourceId": "ntrs-20260001992",
+        "page": 2,
+        "label": "Saffire IV-VI · p.2",
+        "excerpt": "Overall, the pressure rise and temperature change were small but the smoke particulate rose to substantial levels and the gaseous products also achieved hazardous levels."
+      },
+      {
+        "chunkId": "ntrs-20130010991:p1:c0",
+        "sourceId": "ntrs-20130010991",
+        "page": 1,
+        "label": "Partial-g tests · p.1",
+        "excerpt": "there is a gravity level below Earth’s at which materials burn more readily than on Earth."
+      },
+      {
+        "chunkId": "ntrs-20130010991:p7:c13",
+        "sourceId": "ntrs-20130010991",
+        "page": 7,
+        "label": "Partial-g tests · p.7",
+        "excerpt": "In Lunar gravity, the oxygen margin of safety for these charring fuels is ~ 2.5% lower than 1g."
+      },
+      {
+        "chunkId": "ntrs-20260001992:p9:c23",
+        "sourceId": "ntrs-20260001992",
+        "page": 9,
+        "label": "Saffire IV-VI · p.9",
+        "excerpt": "a 2 mg/m3 detection threshold was not low enough to detect the fires before some cases exceeded the 24-hour SMAC for CO"
+      },
+      {
+        "chunkId": "ntrs-20210022542:p4:c3",
+        "sourceId": "ntrs-20210022542",
+        "page": 4,
+        "label": "ACME BRE · p.4",
+        "excerpt": "they were found to self-extinguish in concentrations below ~25% (by volume)."
+      },
+      {
+        "chunkId": "ntrs-20260000646:p1:c0",
+        "sourceId": "ntrs-20260000646",
+        "page": 1,
+        "label": "LUCI · p.1",
+        "excerpt": "some materials that will not burn in 1-g will burn in 0-g (with a low-speed flow) or in partial gravity (such as Lunar-g)."
+      }
+    ],
+    "confidence": "medium",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:39:10.600Z"
+  },
+  {
+    "id": "digest-marsTransit",
+    "question": "Evidence digest for Mars transit",
+    "mission": "marsTransit",
+    "kind": "digest",
+    "answer": "The Saffire IV-VI fires showed that smoke and toxic gases become hazardous even when pressure and temperature remain modest, so detection of particulates and CO/CO₂ must be the primary focus of fire response and post-fire cabin cleanup [[S1]]. The 2 mg/m³ aerosol threshold used in Cygnus failed to alert crews before CO exceeded the 24-hour limit, indicating that lower detection limits or additional sensors are required for smaller, faster-mixing habitats [[S2]]. Experiments on thin-fuel fabrics demonstrated that airflow below 1–5 cm/s can quench flames in microgravity, suggesting that shutting down ventilation could suppress certain fires if local flow can be reduced to a few centimeters per second [[S3]]. However, BRE tests with oxygen-enriched atmospheres showed that materials like PMMA and Nylon can burn quasi-steadily without any airflow, meaning ventilation shutdown alone will not suffice in the higher-oxygen environments planned for exploration vehicles [[S4]]. Smoke from heated spacecraft polymers is dominated by particles 200–400 nm in size, with occasional larger particles in still air, so detectors must be tuned to this size range and remain effective under quiescent conditions [[S5]]. Finally, BRE results identified an oxygen concentration near 25 % by volume as the lower limit for sustained fire in quiescent microgravity, placing typical exploration atmospheres (26.5-34 % O₂) above the self-extinguishment threshold and requiring additional suppression measures [[S6]].",
+    "citations": [
+      {
+        "chunkId": "ntrs-20260001992:p2:c3",
+        "sourceId": "ntrs-20260001992",
+        "page": 2,
+        "label": "Saffire IV-VI · p.2",
+        "excerpt": "Overall, the pressure rise and temperature change were small but the smoke particulate rose to substantial levels and the gaseous products also achieved hazardous levels."
+      },
+      {
+        "chunkId": "ntrs-20260001992:p9:c23",
+        "sourceId": "ntrs-20260001992",
+        "page": 9,
+        "label": "Saffire IV-VI · p.9",
+        "excerpt": "a 2 mg/m3 detection threshold was not low enough to detect the fires before some cases exceeded the 24-hour SMAC for CO"
+      },
+      {
+        "chunkId": "ntrs-20150008962:p1:c0",
+        "sourceId": "ntrs-20150008962",
+        "page": 1,
+        "label": "BASS-II · p.1",
+        "excerpt": "The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere."
+      },
+      {
+        "chunkId": "psi-20:p0:c3",
+        "sourceId": "psi-20",
+        "label": "ACME BRE",
+        "excerpt": "Quasi-steady burning corresponding to various condensed-phase materials (such as PMMA and Nylon) was observed in microgravity despite the absence of air flow"
+      },
+      {
+        "chunkId": "ntrs-20130000422:p1:c1",
+        "sourceId": "ntrs-20130000422",
+        "page": 1,
+        "label": "SAME-R · p.1",
+        "excerpt": "the majority of the average smoke particle sizes were found to be in the 200 nm to 400 nm range"
+      },
+      {
+        "chunkId": "ntrs-20210022542:p4:c3",
+        "sourceId": "ntrs-20210022542",
+        "page": 4,
+        "label": "ACME BRE · p.4",
+        "excerpt": "they were found to self-extinguish in concentrations below ~25% (by volume)."
+      }
+    ],
+    "confidence": "medium",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:39:20.475Z"
+  },
+  {
+    "id": "digest-marsSurface",
+    "question": "Evidence digest for Mars surface",
+    "mission": "marsSurface",
+    "kind": "digest",
+    "answer": "The Mars surface mission must treat fire hazards as primarily toxic-product problems, since long-duration fires in Cygnus produced only modest pressure and temperature rises but generated substantial smoke and hazardous CO/CO₂ levels, indicating that detection of smoke and rapid atmospheric cleanup are more critical than over-pressure protection [[S1]]. Detection systems designed for larger stations may be too slow for smaller vehicles, as a 2 mg/m³ aerosol threshold failed to alert crews before CO exceeded the 24-hour allowable limit, so lower thresholds or additional sensors are required for the habitat volume [[S3]]. Materials that are safe under Earth-gravity testing can ignite more easily in reduced gravity, with Mylar, Ultem and Nomex burning at oxygen levels up to 5.75 percentage points lower at Martian-gravity, suggesting that 1-g flammability limits are not conservative for the Martian environment and a safety margin should be added [[S2]]. Moreover, experiments show that fire growth is strongly driven by oxygen fraction rather than total pressure, as a modest increase from 0.22 to 0.30 O₂ raised flame spread by 73% even when pressure dropped, implying that the planned oxygen-enriched Martian habitat atmosphere could accelerate fire development [[S6]]. Finally, the threshold for self-sustaining flames in microgravity is around 25 % O₂, and the intended exploration atmosphere of 26.5-34 % O₂ lies above this limit, meaning that fires could persist once ignited [[S4]].",
+    "citations": [
+      {
+        "chunkId": "ntrs-20260001992:p2:c3",
+        "sourceId": "ntrs-20260001992",
+        "page": 2,
+        "label": "Saffire IV-VI · p.2",
+        "excerpt": "Overall, the pressure rise and temperature change were small but the smoke particulate rose to substantial levels and the gaseous products also achieved hazardous levels."
+      },
+      {
+        "chunkId": "ntrs-20130010991:p1:c0",
+        "sourceId": "ntrs-20130010991",
+        "page": 1,
+        "label": "Partial-g tests · p.1",
+        "excerpt": "there is a gravity level below Earth’s at which materials burn more readily than on Earth."
+      },
+      {
+        "chunkId": "ntrs-20260001992:p9:c23",
+        "sourceId": "ntrs-20260001992",
+        "page": 9,
+        "label": "Saffire IV-VI · p.9",
+        "excerpt": "a 2 mg/m3 detection threshold was not low enough to detect the fires before some cases exceeded the 24-hour SMAC for CO"
+      },
+      {
+        "chunkId": "ntrs-20210022542:p4:c3",
+        "sourceId": "ntrs-20210022542",
+        "page": 4,
+        "label": "ACME BRE · p.4",
+        "excerpt": "they were found to self-extinguish in concentrations below ~25% (by volume)."
+      },
+      {
+        "chunkId": "ntrs-20260000646:p1:c0",
+        "sourceId": "ntrs-20260000646",
+        "page": 1,
+        "label": "LUCI · p.1",
+        "excerpt": "some materials that will not burn in 1-g will burn in 0-g (with a low-speed flow) or in partial gravity (such as Lunar-g)."
+      },
+      {
+        "chunkId": "ntrs-20260001992:p6:c16",
+        "sourceId": "ntrs-20260001992",
+        "page": 6,
+        "label": "Saffire IV-VI · p.6",
+        "excerpt": "The growth rate trends for the 2-sided samples show a 73% increase in the spread rate from an oxygen concentration increase of 0.08 mol fraction"
+      }
+    ],
+    "confidence": "medium",
+    "generatedBy": "groq:openai/gpt-oss-120b",
+    "generatedAt": "2026-09-30T06:39:30.192Z"
+  }
+]

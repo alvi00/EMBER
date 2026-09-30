@@ -43,13 +43,16 @@ export const useUiStore = create<{
   setPaletteOpen: (v: boolean) => void;
   askOpen: boolean;
   askSeed: string;
-  openAsk: (seed?: string) => void;
+  /** Ask the seed immediately when the sheet opens (⌘K "Ask the Flame: …"). */
+  askAuto: boolean;
+  openAsk: (seed?: string, auto?: boolean) => void;
   setAskOpen: (v: boolean) => void;
 }>()((set) => ({
   paletteOpen: false,
   setPaletteOpen: (paletteOpen) => set({ paletteOpen }),
   askOpen: false,
   askSeed: "",
-  openAsk: (askSeed = "") => set({ askOpen: true, askSeed }),
+  askAuto: false,
+  openAsk: (askSeed = "", askAuto = false) => set({ askOpen: true, askSeed, askAuto }),
   setAskOpen: (askOpen) => set({ askOpen }),
 }));

@@ -128,7 +128,23 @@ if (chunks) {
 
 if (answers) {
   for (const a of answers) {
-    for (const c of a.citations) if (!chunkById.has(c.chunkId)) errors.push(`answer ${a.id}: citation to unknown chunk ${c.chunkId}`);
+    for (const c of a.citations) {
+      const chunk = chunkById.get(c.chunkId);
+      if (!chunk) {
+        errors.push(`answer ${a.id}: citation to unknown chunk ${c.chunkId}`);
+        continue;
+      }
+      if (chunk.sourceId !== c.sourceId) errors.push(`answer ${a.id}: citation ${c.chunkId} has source ${c.sourceId}, chunk says ${chunk.sourceId}`);
+      if (c.excerpt && !chunk.text.replace(/\s+/g, " ").includes(c.excerpt.replace(/\s+/g, " ").trim())) {
+        errors.push(`answer ${a.id}: excerpt is not verbatim in ${c.chunkId}`);
+      }
+    }
+    // Every [[S#]] marker in the stored text must resolve to a stored citation (S1 = citations[0]).
+    for (const m of a.answer.matchAll(/\[\[\s*(S\d+)\s*\]\]/gi)) {
+      const i = Number(m[1].slice(1)) - 1;
+      if (!a.citations[i]) errors.push(`answer ${a.id}: marker ${m[1]} has no citation`);
+    }
+    if (a.kind === "out-of-scope" && a.citations.length) errors.push(`answer ${a.id}: a refusal must not cite sources`);
   }
 }
 

@@ -185,3 +185,38 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
   3 hand-picked cabins: ISS fabric 22% O2 / 101.3 kPa / 20 cm/s → Directly tested (d = 0.002, Saffire-II 2-5); lunar
   fabric 34% / 56.5 kPa → Near (d = 0.100) + partial-gravity warning; Mars fabric 34% / 30 kPa / 50 cm/s → Extrapolation
   (d = 0.300). Screenshots `qa/phase8/*.png`.
+
+## Phase 9 — AI copilot, summaries, methods · ✅ (2026-09-30)
+- Provider: the human supplied a Groq key (stored only in `.env.local`, gitignored). `AI_PROVIDER=groq`, default model
+  `openai/gpt-oss-120b` (free tier, `reasoningEffort: "low"`). `src/lib/ai/provider.ts` also switches to Google, OpenAI or
+  Anthropic; no provider or no key → offline mode. Keys are read server-side only; the client gets a boolean.
+- Answer engine `src/lib/ai/answer.ts`: hybrid retrieval (top 8) → relevance gate → streamed answer with `[[S#]]`
+  aliases → server-side citation check. Offline: saved answer when the question matches (exact or cosine ≥ 0.8),
+  otherwise the most relevant passages verbatim. Provider failure (e.g. Groq's 8k tokens/min limit) falls back offline.
+- `/api/ask` streams NDJSON (meta → deltas → done with invalid / flagged / used citations); `/api/summarize` serves the
+  saved mission digest or a fresh one (`fresh=1`). In-memory rate limit applies only when a model is connected.
+- `/ask`: composer, 12 suggested questions (tagged by mission), streaming answer with citation chips → SourceDrawer,
+  mode badge (AI / offline saved / offline passages / outside the evidence), confidence, sources used, flagged-citation
+  notice, copy answer, session history, "how answers are made" rail. Mini-ask: the floating sheet and ⌘K now stream the
+  answer in place. Mission Control's digest tile shows the saved AI digest (6 top-ranked findings, every sentence cited),
+  with "Write a fresh digest" when a model is connected and the plain-language fallback when nothing is saved.
+- `scripts/ts/precompute-answers.ts` → `precomputed-answers.json`: 12 suggested answers, 5 mission digests, 5 verified
+  refusals; every citation checked against `chunks.json`. `validate-data.ts` now also checks that every `[[S#]]` resolves,
+  sources match and excerpts are verbatim.
+- `/methods` (research-paper style, every number computed from the data at build): summary, sources, 4-stage pipeline,
+  findings protocol, test points with unit conversions and outcome mappings, insight score, coverage metric, copilot,
+  limitations (incl. ML estimate not attempted), PowerShell reproduction, use of AI, glossary with `#term-<id>` anchors,
+  references (133 sources, grouped, linked) + PSI acknowledgement. `/about`: challenge, summarize/rank/interpret map,
+  team placeholder (`src/content/about.ts`, the human fills names), credits, disclaimer.
+- Decision: relevance gate at cosine 0.48, calibrated on 15 questions (in-scope 0.524–0.763, out-of-scope 0.165–0.451).
+- Decision: gpt-oss writes citations as `【S1】`; `normalizeAnswer` maps every variant (`【S1†L3】`, `[S1]`) to `[[S1]]`
+  instead of relying on the prompt alone (the prompt also asks for `[[S#]]`).
+- Decision: e2e runs the server with `AI_PROVIDER=offline` (real env overrides `.env.local`), so tests are deterministic,
+  spend no quota and cover the no-key demo path.
+- Spot check: the digest's "26.5–34% O2 exploration atmospheres" traces to PSI-20 ("10.2 psia, 26.5 %; and 8.2 psia, 34 %").
+- **Checkpoint:** with the key disabled (`AI_PROVIDER=offline` production server) 19/19 checks: 12 suggested questions →
+  saved answers, all citations resolve to real chunks with matching sources, 0 invalid; 2 paraphrases → cited passages;
+  5 out-of-scope (World Cup, cake, boiling point on Mars, Starship date, taxes) refused with no citations (max cosine
+  0.171–0.451). Live mode verified with Groq in dev (cited, high-confidence answers; digest in 1.3 s). Unit tests 28/28
+  (+7 citation tests); e2e 62/62 incl. `e2e/ask.spec.ts` (desktop + mobile). Screenshots `qa/ask-*.png`,
+  `qa/methods-*.png`, `qa/about-desktop.png`, `qa/mini-ask.png`, `qa/dashboard-digest.png`.

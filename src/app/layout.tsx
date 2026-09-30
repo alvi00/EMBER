@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import { SiteHeader } from "@/components/shell/SiteHeader";
@@ -84,7 +85,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <SiteFooter provenance={provenance} />
             <CommandPalette />
             <SourceDrawer />
-            <FloatingAsk />
+            <Suspense fallback={null}>
+              <FloatingAsk />
+            </Suspense>
           </TooltipProvider>
         </CatalogProvider>
         <Toaster position="bottom-center" />

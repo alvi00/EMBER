@@ -232,6 +232,8 @@ export const CitationSchema = z.object({
   sourceId: z.string(),
   page: z.number().int().optional(),
   label: z.string(),
+  /** Verbatim passage to highlight in the SourceDrawer (digest citations point at a finding's evidence excerpt). */
+  excerpt: z.string().optional(),
 });
 export type Citation = z.infer<typeof CitationSchema>;
 

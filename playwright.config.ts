@@ -5,7 +5,8 @@ const baseURL = process.env.E2E_BASE_URL ?? `http://localhost:${PORT}`;
 
 /**
  * E2E + accessibility runs against the local production server (`next start`).
- * `npm run e2e` builds first; `npm run e2e:quick` reuses an existing build.
+ * `npm run e2e` builds first; `npm run e2e:quick` reuses an existing build. The server runs with AI_PROVIDER=offline
+ * (real env vars override .env.local), so Ask the Flame is exercised in offline mode.
  */
 export default defineConfig({
   testDir: "./e2e",
@@ -29,5 +30,7 @@ export default defineConfig({
         url: baseURL,
         reuseExistingServer: true,
         timeout: 120_000,
+        // Run the copilot offline in tests: deterministic answers, no provider quota, and it proves the no-key path.
+        env: { AI_PROVIDER: "offline" },
       },
 });

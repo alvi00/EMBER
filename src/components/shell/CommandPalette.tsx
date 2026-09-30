@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { BookOpen, FlaskConical, LayoutGrid, MessageCircleQuestion, ScrollText } from "lucide-react";
 import { useCatalog } from "@/components/providers/CatalogProvider";
 import {
@@ -27,6 +27,7 @@ export function CommandPalette() {
   const { experiments, findings, glossary, experimentById } = useCatalog();
   const [query, setQuery] = useState("");
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -76,7 +77,9 @@ export function CommandPalette() {
                   forceMount
                   onSelect={() => {
                     setOpen(false);
-                    openAsk(query.trim());
+                    // On /ask the page itself answers; elsewhere the mini-ask sheet streams the answer in place.
+                    if (pathname?.startsWith("/ask")) router.push(`/ask?q=${encodeURIComponent(query.trim())}`);
+                    else openAsk(query.trim(), true);
                     setQuery("");
                   }}
                 >
