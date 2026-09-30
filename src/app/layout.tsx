@@ -8,7 +8,7 @@ import { CatalogProvider } from "@/components/providers/CatalogProvider";
 import { buildCoreCatalog } from "@/lib/catalog";
 import { datasetStats } from "@/lib/data";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Toaster } from "@/components/ui/sonner";
+import { ToastHost } from "@/components/shell/ToastHost";
 import { site } from "@/content/site";
 import "./globals.css";
 
@@ -78,7 +78,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <CatalogProvider catalog={catalog}>
           <TooltipProvider delayDuration={200}>
             <SiteHeader />
-            {/* min-height keeps the footer below the fold while streamed page content replaces its skeleton (no CLS). */}
+            {/* min-height keeps the footer below the fold on short pages. */}
             <main id="main" className="relative z-10 min-h-[100dvh] flex-1">
               {children}
             </main>
@@ -88,7 +88,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </Suspense>
           </TooltipProvider>
         </CatalogProvider>
-        <Toaster position="bottom-center" />
+        <ToastHost />
       </body>
     </html>
   );

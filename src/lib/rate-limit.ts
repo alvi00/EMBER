@@ -6,6 +6,10 @@ const hits = new Map<string, number[]>();
 
 export function rateLimit(key: string, limit = 20, windowMs = 60_000): { ok: boolean; retryAfter: number } {
   const now = Date.now();
+  // Keys come from a client-supplied header, so drop idle ones before the map can grow without bound.
+  if (hits.size > 1000) {
+    for (const [k, times] of hits) if (!times.length || now - times[times.length - 1] >= windowMs) hits.delete(k);
+  }
   const recent = (hits.get(key) ?? []).filter((t) => now - t < windowMs);
   if (recent.length >= limit) {
     hits.set(key, recent);

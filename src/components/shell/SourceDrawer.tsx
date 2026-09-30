@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ExternalLink, FileText, Link2 } from "lucide-react";
-import { toast } from "sonner";
+import { notify } from "@/lib/notify";
 import { useCatalog } from "@/components/providers/CatalogProvider";
 import { useFullCatalog } from "@/hooks/use-full-catalog";
 import { SkeletonLines, ErrorNotice } from "@/components/ember/states";
@@ -23,11 +23,11 @@ function Highlighted({ text, excerpt }: { text: string; excerpt?: string }) {
   const norm = text.replace(/\s+/g, " ");
   const needle = excerpt?.replace(/\s+/g, " ").trim();
   const i = needle ? norm.indexOf(needle) : -1;
-  if (!needle || i < 0) return <p className="text-sm leading-relaxed text-ink-muted">{norm}</p>;
+  if (!needle || i < 0) return <p className="text-ink-muted text-sm leading-relaxed">{norm}</p>;
   return (
-    <p className="text-sm leading-relaxed text-ink-muted">
+    <p className="text-ink-muted text-sm leading-relaxed">
       {norm.slice(0, i)}
-      <mark className="rounded bg-flame-core/20 px-0.5 text-ink ring-1 ring-flame-core/40">
+      <mark className="bg-flame-core/20 text-ink ring-flame-core/40 rounded px-0.5 ring-1">
         {norm.slice(i, i + needle.length)}
       </mark>
       {norm.slice(i + needle.length)}
@@ -48,7 +48,13 @@ export function SourceDrawer() {
   const wanted = target?.chunkId;
   const current = wanted && result?.id === wanted ? result : null;
   const chunk = current?.chunk ?? null;
-  const state: "idle" | "loading" | "error" = !wanted ? "idle" : !current ? "loading" : current.failed ? "error" : "idle";
+  const state: "idle" | "loading" | "error" = !wanted
+    ? "idle"
+    : !current
+      ? "loading"
+      : current.failed
+        ? "error"
+        : "idle";
 
   useEffect(() => {
     if (!wanted) return;
@@ -70,35 +76,36 @@ export function SourceDrawer() {
 
   return (
     <Sheet open={Boolean(target)} onOpenChange={(o) => !o && close()}>
-      <SheetContent side="right" className="w-full gap-0 overflow-y-auto border-line bg-elev-2 p-0 sm:max-w-xl">
-        <SheetHeader className="border-b border-line px-6 pt-6 pb-5">
-          <p className="flex items-center gap-2 font-mono text-xs text-ink-muted">
+      <SheetContent side="right" className="border-line bg-elev-2 w-full gap-0 overflow-y-auto p-0 sm:max-w-xl">
+        <SheetHeader className="border-line border-b px-6 pt-6 pb-5">
+          <p className="text-ink-muted flex items-center gap-2 font-mono text-xs">
             <FileText className="size-3.5" strokeWidth={1.5} aria-hidden />
             {source ? TYPE_LABEL[source.type] : "Source"}
             {details?.accession ? ` · ${details.accession}` : ""}
             {page ? ` · page ${page}` : ""}
           </p>
-          <SheetTitle className="mt-2 pr-8 text-lg leading-snug font-medium text-ink">
+          <SheetTitle className="text-ink mt-2 pr-8 text-lg leading-snug font-medium">
             {source?.title ?? target?.sourceId ?? "Source"}
           </SheetTitle>
-          <SheetDescription className="text-sm text-ink-muted">
-            {[details?.authors?.slice(0, 3).join(", "), details?.year, details?.publisher].filter(Boolean).join(" · ") ||
-              "Provenance record"}
+          <SheetDescription className="text-ink-muted text-sm">
+            {[details?.authors?.slice(0, 3).join(", "), details?.year, details?.publisher]
+              .filter(Boolean)
+              .join(" · ") || "Provenance record"}
           </SheetDescription>
         </SheetHeader>
 
         <div className="space-y-6 px-6 py-6">
           {target?.chunkId ? (
             <section aria-label="Cited passage">
-              <h3 className="text-xs font-medium text-ink-muted">Cited passage</h3>
-              <div className="mt-2 rounded-2xl border border-line bg-elev-1 p-4">
+              <h3 className="text-ink-muted text-xs font-medium">Cited passage</h3>
+              <div className="border-line bg-elev-1 mt-2 rounded-2xl border p-4">
                 {state === "loading" ? <SkeletonLines lines={5} /> : null}
                 {state === "error" ? (
                   <ErrorNotice title="Could not load the cited passage." body="The source link below still works." />
                 ) : null}
                 {chunk && state === "idle" ? <Highlighted text={chunk.text} excerpt={target.excerpt} /> : null}
               </div>
-              <p className="mt-2 font-mono text-2xs text-ink-faint">{target.chunkId}</p>
+              <p className="text-2xs text-ink-faint mt-2 font-mono">{target.chunkId}</p>
             </section>
           ) : null}
 
@@ -107,7 +114,7 @@ export function SourceDrawer() {
               {details.doi ? (
                 <>
                   <dt className="text-ink-muted">DOI</dt>
-                  <dd className="font-mono text-xs break-all text-ink">{details.doi}</dd>
+                  <dd className="text-ink font-mono text-xs break-all">{details.doi}</dd>
                 </>
               ) : null}
               {details.license ? (
@@ -125,7 +132,7 @@ export function SourceDrawer() {
                         key={id}
                         href={`/experiments/${id}`}
                         onClick={close}
-                        className="rounded-full border border-line-strong px-2 py-0.5 text-xs text-ink hover:border-flame-micro/50"
+                        className="border-line-strong text-ink hover:border-flame-micro/50 rounded-full border px-2 py-0.5 text-xs"
                       >
                         {experimentById.get(id)?.acronym ?? id}
                       </Link>
@@ -142,7 +149,7 @@ export function SourceDrawer() {
                 href={source.url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-medium text-canvas transition-colors hover:bg-white"
+                className="bg-ink text-canvas inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors hover:bg-white"
               >
                 Open original <ExternalLink className="size-3.5" strokeWidth={1.5} aria-hidden />
               </a>
@@ -153,16 +160,16 @@ export function SourceDrawer() {
                 onClick={() => {
                   navigator.clipboard
                     ?.writeText(source.url)
-                    .then(() => toast.success("Source link copied"))
-                    .catch(() => toast.error("Copy failed"));
+                    .then(() => notify("success", "Source link copied"))
+                    .catch(() => notify("error", "Copy failed"));
                 }}
-                className="inline-flex items-center gap-2 rounded-full border border-line-strong px-4 py-2 text-sm text-ink hover:bg-white/[0.05]"
+                className="border-line-strong text-ink inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm hover:bg-white/[0.05]"
               >
                 <Link2 className="size-3.5" strokeWidth={1.5} aria-hidden /> Copy link
               </button>
             ) : null}
           </div>
-          <p className="text-xs leading-relaxed text-ink-faint">
+          <p className="text-ink-faint text-xs leading-relaxed">
             EMBER shows short excerpts only and links to the original NASA record. PDFs are not re-hosted.
           </p>
         </div>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Check, CircleSlash, Copy, Cpu, TriangleAlert, WifiOff } from "lucide-react";
-import { toast } from "sonner";
+import { notify } from "@/lib/notify";
 import { AnswerBody } from "@/components/ask/AnswerBody";
 import { ConfidenceBadge } from "@/components/ember/badges";
 import { CitationChip } from "@/components/ember/CitationChip";
@@ -55,10 +55,10 @@ export function AnswerView({ state, onRetry, compact = false }: { state: AskStat
     try {
       await navigator.clipboard.writeText(`Q: ${state.question}\n\n${plain}`);
       setCopied(true);
-      toast.success("Answer copied with its citations");
+      notify("success", "Answer copied with its citations");
       setTimeout(() => setCopied(false), 1600);
     } catch {
-      toast.error("Could not copy to the clipboard");
+      notify("error", "Could not copy to the clipboard");
     }
   };
 

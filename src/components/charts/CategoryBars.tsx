@@ -1,50 +1,38 @@
-"use client";
-
-import { Bar, BarChart, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { CATEGORY_META } from "@/components/ember/badges";
 import type { FindingCategory } from "@/lib/schema";
 
 export type CategoryDatum = { category: FindingCategory; count: number; total: number };
 
-function TooltipBody({ active, payload }: { active?: boolean; payload?: { payload: CategoryDatum }[] }) {
-  if (!active || !payload?.length) return null;
-  const d = payload[0].payload;
-  return (
-    <div className="rounded-lg border border-line-strong bg-elev-3 px-3 py-2 text-xs text-ink shadow-lg">
-      <p className="font-medium">{CATEGORY_META[d.category].label}</p>
-      <p className="mt-1 font-mono text-ink-muted tabular">
-        {d.count} relevant of {d.total} findings
-      </p>
-    </div>
-  );
-}
-
-/** Findings by category (one series → one colour). Counts findings the mission rates ≥ 2 of 3 for relevance. */
+/**
+ * Findings by category (one series → one colour, no legend). Counts findings the mission rates ≥ 2 of 3 for relevance.
+ * Plain HTML bars instead of a chart library: the same encoding with no client JavaScript. Bars are thin, anchored to
+ * the baseline with a 4 px rounded data end, labelled directly; zero rows keep a 1 px stub and a "0" label. Hovering a
+ * row shows "n relevant of N findings"; keyboard and screen-reader users get the same numbers from the table.
+ */
 export function CategoryBars({ data }: { data: CategoryDatum[] }) {
   const rows = [...data].sort((a, b) => b.count - a.count || b.total - a.total);
-  const height = rows.length * 30 + 8;
+  const max = Math.max(1, ...rows.map((r) => r.count));
   return (
     <div>
-      <div style={{ height }} role="img" aria-label="Findings by category for the selected mission">
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={rows} layout="vertical" margin={{ top: 0, right: 36, bottom: 0, left: 0 }} barCategoryGap={8}>
-            <XAxis type="number" hide domain={[0, "dataMax"]} />
-            <YAxis
-              type="category"
-              dataKey="category"
-              width={128}
-              tickLine={false}
-              axisLine={false}
-              tick={{ fill: "var(--text-muted)", fontSize: 12 }}
-              tickFormatter={(c: FindingCategory) => CATEGORY_META[c].label}
-            />
-            <Tooltip content={<TooltipBody />} cursor={{ fill: "rgba(255,255,255,0.04)" }} />
-            {/* minPointSize keeps zero rows labelled ("0") instead of silently empty. */}
-            <Bar dataKey="count" fill="var(--viz-micro)" radius={[0, 4, 4, 0]} minPointSize={1} isAnimationActive={false}>
-              <LabelList dataKey="count" position="right" style={{ fill: "var(--text)", fontSize: 12, fontFamily: "var(--font-geist-mono)" }} />
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
+      <div role="img" aria-label="Findings by category for the selected mission" className="flex flex-col py-1">
+        {rows.map((r) => (
+          <div key={r.category} className="group relative flex h-[30px] items-center gap-2 rounded-md hover:bg-white/[0.04]" aria-hidden>
+            <span className="w-32 shrink-0 pr-1 text-right text-xs leading-tight text-ink-muted">{CATEGORY_META[r.category].label}</span>
+            <span className="flex min-w-0 flex-1 items-center gap-1.5 pr-2">
+              <span
+                className="h-3.5 min-w-px rounded-r bg-viz-micro"
+                style={{ width: r.count ? `calc((100% - 2.25rem) * ${r.count / max})` : "1px" }}
+              />
+              <span className="font-mono text-xs text-ink tabular">{r.count}</span>
+            </span>
+            <span className="pointer-events-none absolute top-full left-32 z-10 mt-1 hidden rounded-lg border border-line-strong bg-elev-3 px-3 py-2 text-xs whitespace-nowrap text-ink shadow-lg group-hover:block">
+              <span className="block font-medium">{CATEGORY_META[r.category].label}</span>
+              <span className="mt-1 block font-mono text-ink-muted tabular">
+                {r.count} relevant of {r.total} findings
+              </span>
+            </span>
+          </div>
+        ))}
       </div>
       <table className="sr-only">
         <caption>Findings by category</caption>

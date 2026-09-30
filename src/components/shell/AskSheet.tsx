@@ -53,7 +53,10 @@ export function AskSheet() {
     void ask(q, missionId);
   };
 
-  const starters = [...SUGGESTED_QUESTIONS.filter((s) => s.mission === missionId), ...SUGGESTED_QUESTIONS.filter((s) => s.mission !== missionId)].slice(0, 3);
+  const starters = [
+    ...SUGGESTED_QUESTIONS.filter((s) => s.mission === missionId),
+    ...SUGGESTED_QUESTIONS.filter((s) => s.mission !== missionId),
+  ].slice(0, 3);
 
   return (
     <>
@@ -66,30 +69,35 @@ export function AskSheet() {
       >
         <SheetContent
           side="bottom"
-          className="mx-auto flex max-h-[88dvh] max-w-2xl flex-col rounded-t-3xl border-line bg-elev-2 pb-6 md:bottom-6 md:rounded-3xl md:border"
+          className="border-line bg-elev-2 mx-auto flex max-h-[88dvh] max-w-2xl flex-col rounded-t-3xl pb-6 md:bottom-6 md:rounded-3xl md:border"
         >
           <SheetHeader className="px-6 pt-6">
             <SheetTitle className="font-display text-3xl font-normal">Ask the Flame</SheetTitle>
             <SheetDescription className="text-ink-muted">
-              Answers come only from NASA records, framed for {mission.label}, with citations. Research exploration only.
+              Answers come only from NASA records, framed for {mission.label}, with citations. Research exploration
+              only.
             </SheetDescription>
           </SheetHeader>
 
           {state.status !== "idle" ? (
             <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-6" aria-live="polite">
-              <p className="mb-3 font-display text-2xl leading-tight text-ink">{state.question}</p>
+              <p className="font-display text-ink mb-3 text-2xl leading-tight">{state.question}</p>
               <AnswerView state={state} onRetry={() => void ask(state.question, missionId)} compact />
               {state.status === "done" ? (
                 <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
                   <Link
                     href={`/ask?q=${encodeURIComponent(state.question)}&mission=${missionId}`}
                     onClick={() => setAskOpen(false)}
-                    className="inline-flex items-center gap-1 text-flame-micro underline-offset-4 hover:underline"
+                    className="text-flame-micro inline-flex items-center gap-1 underline-offset-4 hover:underline"
                   >
                     Open in Ask the Flame
                     <ArrowUpRight className="size-3.5" strokeWidth={1.5} aria-hidden />
                   </Link>
-                  <button type="button" onClick={reset} className="text-ink-muted underline-offset-4 hover:text-ink hover:underline">
+                  <button
+                    type="button"
+                    onClick={reset}
+                    className="text-ink-muted hover:text-ink underline-offset-4 hover:underline"
+                  >
                     Ask something else
                   </button>
                 </div>
@@ -98,7 +106,15 @@ export function AskSheet() {
           ) : null}
 
           <div className="shrink-0 px-6 pt-2">
-            <AskComposer id="mini-ask" ref={inputRef} value={question} onChange={setQuestion} onSubmit={submit} onStop={stop} busy={busy} />
+            <AskComposer
+              id="mini-ask"
+              ref={inputRef}
+              value={question}
+              onChange={setQuestion}
+              onSubmit={submit}
+              onStop={stop}
+              busy={busy}
+            />
             {state.status === "idle" ? (
               <div className="mt-3 flex flex-wrap gap-2">
                 {starters.map((s) => (
@@ -106,7 +122,7 @@ export function AskSheet() {
                     key={s.question}
                     type="button"
                     onClick={() => submit(s.question)}
-                    className="rounded-full border border-line-strong px-3 py-1.5 text-left text-xs text-ink-muted transition-colors hover:border-flame-micro/50 hover:text-ink"
+                    className="border-line-strong text-ink-muted hover:border-flame-micro/50 hover:text-ink rounded-full border px-3 py-1.5 text-left text-xs transition-colors"
                   >
                     {s.question}
                   </button>

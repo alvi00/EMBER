@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { PageHeader } from "@/components/shell/PageHeader";
 import { LensView } from "@/components/lens/LensView";
-import { SkeletonLines } from "@/components/ember/states";
 import { findings, measurements } from "@/lib/data";
+import type { Measurement } from "@/lib/schema";
 
 // Rendered per request so the cabin in the URL is server-rendered.
 export const dynamic = "force-dynamic";
@@ -14,6 +13,25 @@ export const metadata: Metadata = {
     "How close your cabin conditions are to conditions NASA actually tested: coverage verdict, nearest test points, flammability map and evidence gaps. Research exploration only.",
 };
 
+// The Lens reads conditions, outcome and provenance only; notes and secondary measurements stay on the server, which
+// keeps the serialised page payload small.
+const lensMeasurements: Measurement[] = measurements.map((m) => ({
+  id: m.id,
+  experimentId: m.experimentId,
+  testId: m.testId,
+  fuel: m.fuel,
+  fuelFamily: m.fuelFamily,
+  geometry: m.geometry,
+  o2Percent: m.o2Percent,
+  pressureKpa: m.pressureKpa,
+  flowCmS: m.flowCmS,
+  gravityG: m.gravityG,
+  outcome: m.outcome,
+  rawOutcome: m.rawOutcome,
+  sourceId: m.sourceId,
+  page: m.page,
+}));
+
 export default function LensPage() {
   return (
     <>
@@ -21,15 +39,7 @@ export default function LensPage() {
         title="Habitat Risk Lens"
         description="Set your cabin's gravity, oxygen, pressure and airflow. The Lens shows which NASA tests are closest, and where the evidence runs out."
       />
-      <Suspense
-        fallback={
-          <div className="container-ember">
-            <SkeletonLines lines={6} />
-          </div>
-        }
-      >
-        <LensView measurements={measurements} findings={findings} />
-      </Suspense>
+      <LensView measurements={lensMeasurements} findings={findings} />
     </>
   );
 }

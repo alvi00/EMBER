@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { PageHeader } from "@/components/shell/PageHeader";
 import { Explorer } from "@/components/explorer/Explorer";
-import { SkeletonLines } from "@/components/ember/states";
 import { experiments, findings, measurements } from "@/lib/data";
 import { FUEL_GROUPS, facilityGroupOf, type ExplorerRow } from "@/lib/explorer";
 import { tidy } from "@/lib/text";
@@ -30,7 +28,9 @@ function rows(): ExplorerRow[] {
       start: e.years.start,
       end: e.years.end ?? e.years.start,
       fuels: e.fuels,
-      fuelGroups: FUEL_GROUPS.filter((g) => g.test.test(fuelsText) || (g.id === "liquid" && e.category.includes("droplet"))).map((g) => g.id),
+      fuelGroups: FUEL_GROUPS.filter(
+        (g) => g.test.test(fuelsText) || (g.id === "liquid" && e.category.includes("droplet")),
+      ).map((g) => g.id),
       facilityGroup: facilityGroupOf(e),
       o2: e.conditions.o2Percent,
       pressure: e.conditions.pressureKpa,
@@ -49,7 +49,10 @@ function rows(): ExplorerRow[] {
 }
 
 function bounds(list: ExplorerRow[]) {
-  const span = (vals: number[], pad = 0): [number, number] => [Math.floor(Math.min(...vals) - pad), Math.ceil(Math.max(...vals) + pad)];
+  const span = (vals: number[], pad = 0): [number, number] => [
+    Math.floor(Math.min(...vals) - pad),
+    Math.ceil(Math.max(...vals) + pad),
+  ];
   return {
     yr: span(list.flatMap((r) => [r.start, r.end])),
     o2: span(list.flatMap((r) => (r.o2 ? [r.o2.min, r.o2.max] : []))),
@@ -66,15 +69,7 @@ export default function ExperimentsPage() {
         title="Experiments"
         description={`${list.length} NASA investigations, from droplets on the ISS to metre-long fires inside Cygnus. Search reads their source documents too.`}
       />
-      <Suspense
-        fallback={
-          <div className="container-ember">
-            <SkeletonLines lines={6} />
-          </div>
-        }
-      >
-        <Explorer rows={list} bounds={bounds(list)} />
-      </Suspense>
+      <Explorer rows={list} bounds={bounds(list)} />
     </>
   );
 }

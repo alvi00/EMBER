@@ -312,9 +312,10 @@
 }
 
 /* Hero entrance runs at first paint (no JS), so the LCP text is never held back by hydration. */
+/* Starts partly visible (not at 0): the hero copy is painted in the first frame, so it never waits on the animation. */
 @keyframes hero-rise {
   from {
-    opacity: 0;
+    opacity: 0.25;
     transform: translateY(22px);
     filter: blur(6px);
   }

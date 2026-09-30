@@ -27,7 +27,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       <LogoGlyph />
-      <span className="font-mono text-sm font-medium tracking-[0.28em] text-ink">EMBER</span>
+      <span className="text-ink font-mono text-sm font-medium tracking-[0.28em]">EMBER</span>
     </span>
   );
 }

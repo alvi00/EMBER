@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { Check, ChevronLeft, ChevronRight, ExternalLink, PencilLine, RotateCcw, X } from "lucide-react";
-import { toast } from "sonner";
+import { notify } from "@/lib/notify";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { Finding, FindingCategory, MissionRelevance } from "@/lib/schema";
@@ -35,11 +35,13 @@ const REVIEWER_KEY = "ember-reviewer";
 function Highlighted({ text, excerpt }: { text: string; excerpt: string }) {
   const norm = text.replace(/\s+/g, " ");
   const i = norm.indexOf(excerpt);
-  if (i < 0) return <p className="text-sm leading-relaxed text-ink-muted">{norm}</p>;
+  if (i < 0) return <p className="text-ink-muted text-sm leading-relaxed">{norm}</p>;
   return (
-    <p className="text-sm leading-relaxed text-ink-muted">
+    <p className="text-ink-muted text-sm leading-relaxed">
       {norm.slice(0, i)}
-      <mark className="rounded bg-flame-core/20 px-0.5 text-ink ring-1 ring-flame-core/40">{norm.slice(i, i + excerpt.length)}</mark>
+      <mark className="bg-flame-core/20 text-ink ring-flame-core/40 rounded px-0.5 ring-1">
+        {norm.slice(i, i + excerpt.length)}
+      </mark>
       {norm.slice(i + excerpt.length)}
     </p>
   );
@@ -70,7 +72,12 @@ function readReviewer(): string {
 
 export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
   const [items, setItems] = useState(initial);
-  const [index, setIndex] = useState(() => Math.max(0, initial.findIndex((i) => i.finding.status === "ai-draft")));
+  const [index, setIndex] = useState(() =>
+    Math.max(
+      0,
+      initial.findIndex((i) => i.finding.status === "ai-draft"),
+    ),
+  );
   // Reviewer name: remembered in localStorage (read after hydration via useSyncExternalStore), overridden by typing.
   const storedReviewer = useSyncExternalStore(subscribeStorage, readReviewer, () => "");
   const [typedReviewer, setReviewer] = useState<string | null>(null);
@@ -98,7 +105,7 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
     async (action: "verify" | "edit-verify" | "reject" | "reset") => {
       if (!current || busy) return;
       if (reviewer.trim().length < 2) {
-        toast.error("Enter your name before reviewing.");
+        notify("error", "Enter your name before reviewing.");
         document.getElementById("reviewer")?.focus();
         return;
       }
@@ -126,12 +133,17 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
         const json = await res.json();
         if (!res.ok) throw new Error(json.error ?? "Save failed");
         setItems((prev) => prev.map((it, i) => (i === index ? { ...it, finding: json.finding } : it)));
-        toast.success(
-          action === "reject" ? "Rejected" : action === "reset" ? "Reset to AI draft" : "Verified — saved to findings.json",
+        notify(
+          "success",
+          action === "reject"
+            ? "Rejected"
+            : action === "reset"
+              ? "Reset to AI draft"
+              : "Verified — saved to findings.json",
         );
         if (action !== "reset") setIndex((i) => Math.min(items.length - 1, i + 1));
       } catch (err) {
-        toast.error(err instanceof Error ? err.message : "Save failed");
+        notify("error", err instanceof Error ? err.message : "Save failed");
       } finally {
         setBusy(false);
       }
@@ -158,7 +170,7 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
   }, [items.length, submit]);
 
   if (!current || !draft) {
-    return <p className="mt-10 text-ink-muted">No findings to review yet. Run the extraction script first.</p>;
+    return <p className="text-ink-muted mt-10">No findings to review yet. Run the extraction script first.</p>;
   }
 
   const field =
@@ -167,7 +179,7 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
   return (
     <div className="mt-8">
       <div className="surface flex flex-wrap items-center gap-4 px-5 py-4">
-        <label htmlFor="reviewer" className="text-sm text-ink-muted">
+        <label htmlFor="reviewer" className="text-ink-muted text-sm">
           Reviewer
         </label>
         <input
@@ -184,10 +196,10 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
           placeholder="Your name"
           className={cn(field, "max-w-56")}
         />
-        <p className="font-mono text-xs text-ink-muted tabular">
+        <p className="text-ink-muted tabular font-mono text-xs">
           {counts.draft} draft · {counts.verified} verified · {counts.rejected} rejected · {items.length} total
         </p>
-        <p className="ml-auto font-mono text-xs text-ink-muted">
+        <p className="text-ink-muted ml-auto font-mono text-xs">
           <kbd>V</kbd> verify · <kbd>E</kbd> edit & verify · <kbd>R</kbd> reject · <kbd>J</kbd>/<kbd>K</kbd> next/prev
         </p>
       </div>
@@ -196,7 +208,7 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
         <Button variant="outline" size="sm" onClick={() => setIndex((i) => Math.max(0, i - 1))} disabled={index === 0}>
           <ChevronLeft /> Prev
         </Button>
-        <p className="font-mono text-sm tabular">
+        <p className="tabular font-mono text-sm">
           {index + 1} / {items.length} · {current.finding.id} · {current.experiment.acronym}
         </p>
         <Button
@@ -216,18 +228,18 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
           {current.evidence.map((ev, i) => (
             <div key={`${ev.chunkId}-${i}`} className="space-y-2">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <p className="text-sm font-medium text-ink">{ev.sourceTitle}</p>
+                <p className="text-ink text-sm font-medium">{ev.sourceTitle}</p>
                 <a
                   href={ev.sourceUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1 font-mono text-xs text-flame-micro hover:underline"
+                  className="text-flame-micro inline-flex items-center gap-1 font-mono text-xs hover:underline"
                 >
                   {ev.page ? `p.${ev.page} · ` : ""}open source <ExternalLink className="size-3" />
                 </a>
               </div>
-              <p className="font-mono text-2xs text-ink-faint">{ev.chunkId}</p>
-              <div className="max-h-80 overflow-auto rounded-xl border border-line bg-elev-2 p-4">
+              <p className="text-2xs text-ink-faint font-mono">{ev.chunkId}</p>
+              <div className="border-line bg-elev-2 max-h-80 overflow-auto rounded-xl border p-4">
                 <Highlighted text={ev.chunkText} excerpt={ev.excerpt} />
               </div>
             </div>
@@ -238,8 +250,12 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
           <h2 className="eyebrow">Finding (editable)</h2>
           {(["statement", "plainLanguage", "safetyImplication"] as const).map((key) => (
             <div key={key}>
-              <label htmlFor={key} className="text-xs text-ink-muted">
-                {key === "plainLanguage" ? "Plain language" : key === "safetyImplication" ? "Safety implication" : "Statement"}
+              <label htmlFor={key} className="text-ink-muted text-xs">
+                {key === "plainLanguage"
+                  ? "Plain language"
+                  : key === "safetyImplication"
+                    ? "Safety implication"
+                    : "Statement"}
               </label>
               <textarea
                 id={key}
@@ -252,7 +268,7 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
           ))}
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div className="col-span-2">
-              <label htmlFor="category" className="text-xs text-ink-muted">
+              <label htmlFor="category" className="text-ink-muted text-xs">
                 Category
               </label>
               <select
@@ -269,7 +285,7 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
               </select>
             </div>
             <div className="col-span-2">
-              <label htmlFor="confidence" className="text-xs text-ink-muted">
+              <label htmlFor="confidence" className="text-ink-muted text-xs">
                 Confidence
               </label>
               <select
@@ -287,7 +303,7 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
             </div>
             {(["severity", "actionability", "evidenceStrength"] as const).map((key) => (
               <div key={key}>
-                <label htmlFor={key} className="text-xs text-ink-muted">
+                <label htmlFor={key} className="text-ink-muted text-xs">
                   {key === "evidenceStrength" ? "Evidence (1–5)" : `${key[0].toUpperCase()}${key.slice(1)} (1–5)`}
                 </label>
                 <input
@@ -297,13 +313,13 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
                   max={5}
                   value={draft[key]}
                   onChange={(e) => setDraft({ ...draft, [key]: Math.min(5, Math.max(1, Number(e.target.value) || 1)) })}
-                  className={cn(field, "mt-1 tabular")}
+                  className={cn(field, "tabular mt-1")}
                 />
               </div>
             ))}
           </div>
           <fieldset>
-            <legend className="text-xs text-ink-muted">Mission relevance (0–3)</legend>
+            <legend className="text-ink-muted text-xs">Mission relevance (0–3)</legend>
             <div className="mt-1 grid grid-cols-5 gap-2">
               {MISSIONS.map((m) => (
                 <label key={m.key} className="text-2xs text-ink-muted">
@@ -322,7 +338,7 @@ export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
                         },
                       })
                     }
-                    className={cn(field, "mt-1 px-2 tabular")}
+                    className={cn(field, "tabular mt-1 px-2")}
                   />
                 </label>
               ))}
