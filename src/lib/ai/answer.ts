@@ -185,6 +185,9 @@ export async function answerQuestion(
         maxOutputTokens: 1200,
         maxRetries: 1,
         providerOptions: providerOptions(resolved.provider, resolved.modelId),
+        // Failures surface at the first token below, which logs one line and falls back offline; skip the SDK's
+        // default full-stack console error.
+        onError: () => {},
       });
       // Pull the first token before committing to AI mode, so provider/network failures fall back cleanly.
       const iterator = result.textStream[Symbol.asyncIterator]();
