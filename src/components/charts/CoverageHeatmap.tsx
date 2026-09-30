@@ -2,6 +2,7 @@
 
 import { HoverTooltip, useHoverTooltip } from "@/components/charts/HoverTooltip";
 import { GRAVITY_ROWS, O2_BINS, type CoverageCell } from "@/lib/coverage-grid";
+import { plural } from "@/lib/text";
 import { cn } from "@/lib/utils";
 
 const SEQ = ["var(--viz-seq-1)", "var(--viz-seq-2)", "var(--viz-seq-3)", "var(--viz-seq-4)", "var(--viz-seq-5)"];
@@ -70,7 +71,7 @@ export function CoverageHeatmap({
                   ) : (
                     <>
                       <p className="mt-1 font-mono tabular">
-                        {c.count} points · {c.burned} burned · {c.extinguished} extinguished / no ignition
+                        {plural(c.count, "point")} · {c.burned} burned · {c.extinguished} extinguished / no ignition
                       </p>
                       <p className="mt-1 text-ink-muted">{c.experiments.map(experimentLabel).join(", ")}</p>
                     </>

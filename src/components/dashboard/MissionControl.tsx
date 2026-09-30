@@ -99,7 +99,7 @@ export function MissionControl({ findings, timeline, coverage, unplaced, stats, 
           description="Insight Score with default weights. AI drafts are scored × 0.7 until a human verifies them."
           href={`/insights?mission=${missionId}`}
           cta="Open ranked insights and adjust weights"
-          className="md:col-span-6 xl:col-span-7 xl:row-span-2"
+          className="md:col-span-6 xl:col-span-7"
         >
           {top.length ? (
             <ol className="-mx-2 space-y-1">
@@ -164,26 +164,26 @@ export function MissionControl({ findings, timeline, coverage, unplaced, stats, 
         </BentoCard>
 
         <BentoCard
-          name="Investigations over time"
-          Icon={CalendarRange}
-          description={`Grouped by platform. Faded rows have no findings rated relevant to ${mission.short}.`}
-          href="/experiments"
-          cta="Browse all experiments"
-          className="md:col-span-6 xl:col-span-8"
-        >
-          <ExperimentTimeline rows={timeline} highlight={highlight} />
-        </BentoCard>
-
-        <BentoCard
           name="Findings by category"
           Icon={PieChart}
           description={`Findings ${mission.short} rates relevant (≥ 2 of 3).`}
           href={`/insights?mission=${missionId}`}
           cta="Filter insights by category"
-          className="md:col-span-6 xl:col-span-4"
+          className="md:col-span-6 xl:col-span-7"
         >
           <CategoryBars data={categoryData} />
         </BentoCard>
+        <BentoCard
+          name="Investigations over time"
+          Icon={CalendarRange}
+          description={`Grouped by platform. Faded rows have no findings rated relevant to ${mission.short}.`}
+          href="/experiments"
+          cta="Browse all experiments"
+          className="md:col-span-12"
+        >
+          <ExperimentTimeline rows={timeline} highlight={highlight} />
+        </BentoCard>
+
       </BentoGrid>
     </div>
   );

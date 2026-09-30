@@ -151,13 +151,21 @@ function Embers() {
   const points = useRef<THREE.Points>(null);
   const material = useRef<THREE.ShaderMaterial>(null);
   const { positions, seeds } = useMemo(() => {
+    // Seeded PRNG (mulberry32): the scatter looks random but is identical on every render, so render stays pure.
+    let t = 0x2f9bc8;
+    const rand = () => {
+      t = (t + 0x6d2b79f5) | 0;
+      let r = Math.imul(t ^ (t >>> 15), 1 | t);
+      r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r;
+      return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+    };
     const positions = new Float32Array(EMBER_COUNT * 3);
     const seeds = new Float32Array(EMBER_COUNT);
     for (let i = 0; i < EMBER_COUNT; i++) {
-      positions[i * 3] = (Math.random() - 0.5) * 0.5;
-      positions[i * 3 + 1] = -0.4 + Math.random() * 2.4;
+      positions[i * 3] = (rand() - 0.5) * 0.5;
+      positions[i * 3 + 1] = -0.4 + rand() * 2.4;
       positions[i * 3 + 2] = 0.05;
-      seeds[i] = Math.random();
+      seeds[i] = rand();
     }
     return { positions, seeds };
   }, []);

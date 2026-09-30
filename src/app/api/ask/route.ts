@@ -39,25 +39,34 @@ export async function POST(request: Request) {
   const encoder = new TextEncoder();
   const line = (obj: unknown) => encoder.encode(`${JSON.stringify(obj)}\n`);
 
+  // Set when the client disconnects (navigated away, new question): stop reading the model stream and stop writing.
+  let cancelled = false;
   const readable = new ReadableStream<Uint8Array>({
     async start(controller) {
-      controller.enqueue(line({ type: "meta", ...meta }));
+      const send = (obj: unknown) => {
+        if (!cancelled) controller.enqueue(line(obj));
+      };
+      send({ type: "meta", ...meta });
       let full = "";
       try {
         for await (const text of stream) {
+          if (cancelled) break;
           full += text;
-          controller.enqueue(line({ type: "delta", text }));
+          send({ type: "delta", text });
         }
         const { invalid } = segmentAnswer(full, meta.aliases);
-        controller.enqueue(
-          line({ type: "done", invalid, flagged: flaggedSentences(full, meta.aliases), used: usedAliases(full, meta.aliases) }),
-        );
+        send({ type: "done", invalid, flagged: flaggedSentences(full, meta.aliases), used: usedAliases(full, meta.aliases) });
       } catch (err) {
-        console.warn("EMBER ask: stream interrupted.", (err as Error).message);
-        controller.enqueue(line({ type: "error", message: "The answer stream was interrupted. Try asking again." }));
+        if (!cancelled) {
+          console.warn("EMBER ask: stream interrupted.", (err as Error).message);
+          send({ type: "error", message: "The answer stream was interrupted. Try asking again." });
+        }
       } finally {
-        controller.close();
+        if (!cancelled) controller.close();
       }
+    },
+    cancel() {
+      cancelled = true;
     },
   });
 

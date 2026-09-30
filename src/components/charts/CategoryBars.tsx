@@ -39,7 +39,8 @@ export function CategoryBars({ data }: { data: CategoryDatum[] }) {
               tickFormatter={(c: FindingCategory) => CATEGORY_META[c].label}
             />
             <Tooltip content={<TooltipBody />} cursor={{ fill: "rgba(255,255,255,0.04)" }} />
-            <Bar dataKey="count" fill="var(--viz-micro)" radius={[0, 4, 4, 0]} isAnimationActive={false}>
+            {/* minPointSize keeps zero rows labelled ("0") instead of silently empty. */}
+            <Bar dataKey="count" fill="var(--viz-micro)" radius={[0, 4, 4, 0]} minPointSize={1} isAnimationActive={false}>
               <LabelList dataKey="count" position="right" style={{ fill: "var(--text)", fontSize: 12, fontFamily: "var(--font-geist-mono)" }} />
             </Bar>
           </BarChart>

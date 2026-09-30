@@ -220,3 +220,34 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
   0.171–0.451). Live mode verified with Groq in dev (cited, high-confidence answers; digest in 1.3 s). Unit tests 28/28
   (+7 citation tests); e2e 62/62 incl. `e2e/ask.spec.ts` (desktop + mobile). Screenshots `qa/ask-*.png`,
   `qa/methods-*.png`, `qa/about-desktop.png`, `qa/mini-ask.png`, `qa/dashboard-digest.png`.
+
+## Phase 10 — Polish · ✅ (2026-09-30)
+- Audit (redesign-existing-projects, then gpt-taste as a critique lens) of every page at 1440 and 375 px; before/after
+  screenshots in `qa/phase10/before/` and `qa/phase10/after/` (11 routes × desktop + mobile). High-priority fixes:
+  - `/compare` was a placeholder that detail pages and the footer linked to: built it (NICE, done). Picker (search
+    popover, removable A/B/C chips, `?ids=` in the URL), aligned condition-range bars on shared axes (log for pressure and
+    flow), an at-a-glance table (platform, facility, years, fuels, diluents, test-point outcomes, findings, sources, PSI
+    data), strongest-evidence findings with citation chips, empty state with three ready-made comparisons.
+  - Mission Control bento: the Top 5 card spanned two rows and left ~250 px of dead space; re-paired cards by height
+    (Top 5 | digest, coverage | categories, timeline full width). Zero-count category rows now show "0".
+  - Plurals ("1 findings" → "1 finding") on explorer cards, detail header and heatmap tooltip.
+  - Meta: branded `icon.svg` (replaced the default Next.js favicon), generated `apple-icon`, `opengraph-image` (Instrument
+    Serif bundled under OFL, counts from the dataset), `robots.ts` (dev routes and API disallowed), `sitemap.ts`; titles
+    no longer use em-dashes.
+  - Micro-interactions: opacity-only page transition on client navigations (`template.tsx`, skipped on first load so LCP
+    is untouched), smooth anchor scrolling (`data-scroll-behavior="smooth"`, off under reduced motion), balanced
+    headings (`text-balance`) and pretty wrapping on lead paragraphs. /about lost its "01/02/03" meta numbering.
+- Mobile: overflow sweep with `clientWidth` at 375 and 340 px on all routes → none (the first sweep compared against
+  `innerWidth` and missed a 12 px overflow on /compare, fixed with `grid-cols-1`).
+- Code health: all 21 React-compiler lint errors cleared (state synced during render instead of in effects,
+  `useSyncExternalStore` for client-only flags and localStorage, seeded PRNG for the flame embers, stable `createRef`s);
+  4 unused Magic UI components removed. `npm run lint` clean.
+- `/api/ask`: the stream stops reading the model and writing when the client disconnects (was logging "Controller is
+  already closed").
+- Decision: `/compare` shows condition coverage as aligned range bars rather than a radar (§7.10 suggests a radar):
+  ranges on shared axes are exact and readable; identity colours validated with the dataviz script (violet / teal /
+  gold, all-pairs CVD ΔE ≥ 13.4, never blue/orange which mean micro/Earth gravity) and always paired with A–C letters.
+- Decision: links to `/compare?ids=…` use `prefetch={false}`: Next 16 kept those prefetch requests (a page that awaits
+  `searchParams`) open indefinitely, which blocked network idle.
+- **Checkpoint:** unit 34/34 (+6 compare tests), e2e 60/60 (+8 `e2e/compare.spec.ts`), typecheck + lint clean, console
+  sweep (13 routes × normal / reduced motion) 0 errors, before/after screenshots saved.

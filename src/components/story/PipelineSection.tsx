@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { createRef, useRef, useState } from "react";
 import { Database, FileSearch, Gauge, UserCheck, UserRound } from "lucide-react";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import { cn } from "@/lib/utils";
 import { SplitHeading } from "@/components/story/SplitHeading";
+import { usePrefersReducedMotion } from "@/hooks/use-client-flags";
 
 export type PipelineNode = { title: string; detail: string };
 
@@ -13,18 +14,10 @@ const ICONS = [Database, FileSearch, UserCheck, Gauge, UserRound];
 /** "How EMBER works": NASA sources → extraction → human verification → ranking → you. */
 export function PipelineSection({ nodes }: { nodes: PipelineNode[] }) {
   const container = useRef<HTMLDivElement>(null);
-  const refs = [
-    useRef<HTMLDivElement>(null),
-    useRef<HTMLDivElement>(null),
-    useRef<HTMLDivElement>(null),
-    useRef<HTMLDivElement>(null),
-    useRef<HTMLDivElement>(null),
-  ];
-  // Beams are decorative and client-only: render them after mount, and never with reduced motion.
-  const [showBeams, setShowBeams] = useState(false);
-  useEffect(() => {
-    setShowBeams(!window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-  }, []);
+  // One stable ref per pipeline node (created once; AnimatedBeam reads them after layout).
+  const [refs] = useState(() => Array.from({ length: 5 }, () => createRef<HTMLDivElement>()));
+  // Beams are decorative and client-only: never on the server, and never with reduced motion.
+  const showBeams = !usePrefersReducedMotion(true);
 
   return (
     <section aria-labelledby="pipeline-title" className="py-24 md:py-32">

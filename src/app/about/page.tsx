@@ -34,9 +34,8 @@ export default function AboutPage() {
               EMBER&apos;s answer
             </h2>
             <ol className="divide-y divide-line border-y border-line">
-              {verbs.map((v, i) => (
-                <li key={v.verb} className="grid gap-2 py-5 sm:grid-cols-[3rem_9rem_1fr_auto] sm:items-baseline">
-                  <span className="font-mono text-xs text-ink-faint">0{i + 1}</span>
+              {verbs.map((v) => (
+                <li key={v.verb} className="grid gap-2 py-5 sm:grid-cols-[9rem_1fr_auto] sm:items-baseline">
                   <span className="font-display text-3xl text-ink">{v.verb}</span>
                   <p className="text-sm leading-relaxed text-ink-muted">{v.what}</p>
                   <Link href={v.href} className="group inline-flex items-center gap-1 text-sm text-flame-micro underline-offset-4 hover:underline">

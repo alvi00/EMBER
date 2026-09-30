@@ -18,3 +18,8 @@ export function formatRange(min: number, max: number, unit: string, digits = 1):
   const f = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(digits));
   return min === max ? `${f(min)} ${unit}` : `${f(min)}-${f(max)} ${unit}`;
 }
+
+/** "1 finding", "3 findings". */
+export function plural(n: number, word: string, pluralWord = `${word}s`): string {
+  return `${n} ${n === 1 ? word : pluralWord}`;
+}

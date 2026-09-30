@@ -18,6 +18,7 @@ import {
   type ExplorerRow,
   type ExplorerState,
 } from "@/lib/explorer";
+import { plural } from "@/lib/text";
 import { cn } from "@/lib/utils";
 
 type SemanticResult = { experimentId: string; score: number; snippet: string };
@@ -38,8 +39,18 @@ export function Explorer({ rows, bounds }: { rows: ExplorerRow[]; bounds: Bounds
   const urlState = useMemo(() => parseExplorerState(new URLSearchParams(params.toString())), [params]);
   // Optimistic copy: controls respond instantly while the URL (the source of truth for sharing) catches up.
   const [state, setState] = useState<ExplorerState>(urlState);
-  useEffect(() => setState(urlState), [urlState]);
+  // When the URL changes (back/forward, shared link), adopt it. Adjusting state during render avoids an extra effect pass.
+  const [syncedUrl, setSyncedUrl] = useState(urlState);
+  if (syncedUrl !== urlState) {
+    setSyncedUrl(urlState);
+    setState(urlState);
+  }
   const [query, setQuery] = useState(state.q);
+  const [syncedQ, setSyncedQ] = useState(state.q);
+  if (syncedQ !== state.q) {
+    setSyncedQ(state.q);
+    setQuery(state.q);
+  }
   const [semantic, setSemantic] = useState<{ q: string; results: SemanticResult[]; mode: string } | null>(null);
 
   const update = useCallback(
@@ -52,9 +63,6 @@ export function Explorer({ rows, bounds }: { rows: ExplorerRow[]; bounds: Bounds
     [params, pathname, router, state],
   );
 
-  // Keep the input in sync with back/forward navigation.
-  useEffect(() => setQuery(state.q), [state.q]);
-
   // Debounce typing into the URL.
   useEffect(() => {
     if (query === state.q) return;
@@ -65,10 +73,8 @@ export function Explorer({ rows, bounds }: { rows: ExplorerRow[]; bounds: Bounds
   // Semantic half of the hybrid search (server: BM25 + embeddings over source passages).
   useEffect(() => {
     const q = state.q.trim();
-    if (q.length < 3) {
-      setSemantic(null);
-      return;
-    }
+    // Short queries are keyword-only; results are always matched to their query (semantic.q), so no reset is needed.
+    if (q.length < 3) return;
     const ctrl = new AbortController();
     fetch(`/api/search?q=${encodeURIComponent(q)}`, { signal: ctrl.signal })
       .then((r) => (r.ok ? r.json() : null))
@@ -197,7 +203,7 @@ export function Explorer({ rows, bounds }: { rows: ExplorerRow[]; bounds: Bounds
                 {" "}
                 matching “{state.q}”{" "}
                 <span className="text-xs">
-                  ({searching ? "searching sources…" : semantic?.mode === "hybrid" ? "keyword + semantic" : "keyword"})
+                  ({searching ? "searching sources…" : semantic?.q === state.q.trim() && semantic.mode === "hybrid" ? "keyword + semantic" : "keyword"})
                 </span>
               </>
             ) : null}
@@ -286,7 +292,7 @@ function ExperimentCard({ row, terms, snippet }: { row: ExplorerRow; terms: stri
           </span>
         ))}
         <span className="ml-auto font-mono text-xs text-ink-muted tabular">
-          {row.findings} findings · {row.testPoints} points · {row.sources} sources
+          {plural(row.findings, "finding")} · {plural(row.testPoints, "point")} · {plural(row.sources, "source")}
         </span>
       </div>
     </Link>

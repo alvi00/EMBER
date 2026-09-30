@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { Check, ChevronLeft, ChevronRight, ExternalLink, PencilLine, RotateCcw, X } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -55,24 +55,35 @@ function StatusPill({ status, reviewer }: { status: Finding["status"]; reviewer?
   return <span className={cn("rounded-full border px-2.5 py-0.5 font-mono text-xs", s.cls)}>{s.label}</span>;
 }
 
+function subscribeStorage(onChange: () => void) {
+  window.addEventListener("storage", onChange);
+  return () => window.removeEventListener("storage", onChange);
+}
+
+function readReviewer(): string {
+  try {
+    return localStorage.getItem(REVIEWER_KEY) ?? "";
+  } catch {
+    return "";
+  }
+}
+
 export function ReviewClient({ items: initial }: { items: ReviewItem[] }) {
   const [items, setItems] = useState(initial);
   const [index, setIndex] = useState(() => Math.max(0, initial.findIndex((i) => i.finding.status === "ai-draft")));
-  const [reviewer, setReviewer] = useState("");
+  // Reviewer name: remembered in localStorage (read after hydration via useSyncExternalStore), overridden by typing.
+  const storedReviewer = useSyncExternalStore(subscribeStorage, readReviewer, () => "");
+  const [typedReviewer, setReviewer] = useState<string | null>(null);
+  const reviewer = typedReviewer ?? storedReviewer;
   const [busy, setBusy] = useState(false);
   const current = items[index];
   const [draft, setDraft] = useState<Finding>(current?.finding);
-
-  useEffect(() => {
-    try {
-      setReviewer(localStorage.getItem(REVIEWER_KEY) ?? "");
-    } catch {
-      /* storage unavailable */
-    }
-  }, []);
-  useEffect(() => {
-    if (current) setDraft(current.finding);
-  }, [current]);
+  // Load the selected finding into the editor whenever the selection (or its saved copy) changes.
+  const [draftFor, setDraftFor] = useState(current);
+  if (current && draftFor !== current) {
+    setDraftFor(current);
+    setDraft(current.finding);
+  }
 
   const counts = useMemo(
     () => ({

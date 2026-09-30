@@ -37,20 +37,20 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
   title: {
-    default: `${site.name} — Fire in freefall, ranked for your mission`,
+    default: `${site.name} · Fire in freefall, ranked for your mission`,
     template: `%s · ${site.name}`,
   },
   description: site.description,
   applicationName: site.name,
   openGraph: {
-    title: `${site.name} — ${site.expansion}`,
+    title: `${site.name}: ${site.expansion}`,
     description: site.description,
     type: "website",
     siteName: site.name,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — ${site.expansion}`,
+    title: `${site.name}: ${site.expansion}`,
     description: site.description,
   },
 };
@@ -67,6 +67,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`dark ${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">

@@ -40,6 +40,11 @@
   --viz-partial: #c98500; /* partial gravity (Moon, Mars) */
   --viz-neutral: #8a90a2; /* ground / no data (always with hatch) */
   /* Sequential single-hue ramp (low → high count) */
+  /* Identity of compared experiments (/compare): validated dark-mode categorical set, all-pairs CVD ΔE ≥ 13.4.
+     Deliberately not blue/orange, which mean microgravity / Earth gravity elsewhere. Always paired with letters A–C. */
+  --viz-cmp-1: #8b7cf6;
+  --viz-cmp-2: #2ba89a;
+  --viz-cmp-3: #b5872b;
   --viz-seq-1: #123040;
   --viz-seq-2: #17506a;
   --viz-seq-3: #1f7396;

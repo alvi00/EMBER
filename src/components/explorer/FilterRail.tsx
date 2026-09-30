@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
 import {
   CATEGORY_LABEL,
@@ -77,7 +77,13 @@ function RangeFilter({
   onCommit: (v: [number, number] | undefined) => void;
 }) {
   const [local, setLocal] = useState<[number, number]>(value ?? bounds);
-  useEffect(() => setLocal(value ?? bounds), [value, bounds]);
+  // Re-sync when the committed value changes from outside (URL, reset). Keyed by content, not array identity.
+  const syncKey = `${value?.join(",") ?? "any"}|${bounds.join(",")}`;
+  const [syncedKey, setSyncedKey] = useState(syncKey);
+  if (syncedKey !== syncKey) {
+    setSyncedKey(syncKey);
+    setLocal(value ?? bounds);
+  }
   const fmt = (n: number) => (step < 1 ? n.toFixed(1) : String(Math.round(n)));
   return (
     <div>

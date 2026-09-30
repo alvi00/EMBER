@@ -8,7 +8,7 @@ import { FindingCard } from "@/components/experiment/FindingCard";
 import { EmptyState, SkeletonLines } from "@/components/ember/states";
 import { experiments, findingsFor, getExperiment, measurementsFor, sourcesFor } from "@/lib/data";
 import { CATEGORY_LABEL } from "@/lib/explorer";
-import { formatRange, tidy } from "@/lib/text";
+import { formatRange, plural, tidy } from "@/lib/text";
 
 export const dynamicParams = false;
 
@@ -108,7 +108,7 @@ export default async function ExperimentPage(props: PageProps<"/experiments/[id]
           <div>
             <dt className="text-xs text-ink-muted">Evidence in EMBER</dt>
             <dd className="mt-1 font-mono text-xs text-ink tabular">
-              {fs.length} findings · {ms.length} test points · {srcs.length} sources
+              {plural(fs.length, "finding")} · {plural(ms.length, "test point")} · {plural(srcs.length, "source")}
             </dd>
           </div>
           <div>
@@ -157,6 +157,7 @@ export default async function ExperimentPage(props: PageProps<"/experiments/[id]
           </Link>
           <Link
             href={`/compare?ids=${e.id}`}
+            prefetch={false}
             className="inline-flex h-10 items-center gap-2 rounded-full border border-line-strong px-4 text-sm text-ink transition-colors hover:bg-white/[0.05]"
           >
             <GitCompareArrows className="size-4" strokeWidth={1.5} aria-hidden /> Compare with…

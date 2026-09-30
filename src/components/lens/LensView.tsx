@@ -76,9 +76,14 @@ export function LensView({ measurements, findings }: { measurements: Measurement
     geom: params.get("geom") ?? defaults.geom,
   };
   const [s, setS] = useState<LensState>(fromUrl);
-  const urlKey = params.toString();
   // Re-sync when the URL or the mission changes (e.g. switching mission resets the cabin to that mission's defaults).
-  useEffect(() => setS(fromUrl), [urlKey, missionId]); // eslint-disable-line react-hooks/exhaustive-deps
+  // Adjusting state during render (keyed by URL + mission) avoids an effect that would render twice.
+  const syncKey = `${params.toString()}|${missionId}`;
+  const [syncedKey, setSyncedKey] = useState(syncKey);
+  if (syncedKey !== syncKey) {
+    setSyncedKey(syncKey);
+    setS(fromUrl);
+  }
 
   useEffect(() => {
     const t = setTimeout(() => {

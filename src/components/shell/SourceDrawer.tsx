@@ -38,31 +38,29 @@ function Highlighted({ text, excerpt }: { text: string; excerpt?: string }) {
 export function SourceDrawer() {
   const { target, close } = useSourceDrawer();
   const { sourceById, experimentById } = useCatalog();
-  const [chunk, setChunk] = useState<Chunk | null>(null);
-  const [state, setState] = useState<"idle" | "loading" | "error">("idle");
+  // The fetched chunk is stored with its id, so loading / error / stale states are derived rather than reset in an effect.
+  const [result, setResult] = useState<{ id: string; chunk: Chunk | null; failed: boolean } | null>(null);
   const source = target ? sourceById.get(target.sourceId) : undefined;
+  const wanted = target?.chunkId;
+  const current = wanted && result?.id === wanted ? result : null;
+  const chunk = current?.chunk ?? null;
+  const state: "idle" | "loading" | "error" = !wanted ? "idle" : !current ? "loading" : current.failed ? "error" : "idle";
 
   useEffect(() => {
-    if (!target?.chunkId) {
-      setChunk(null);
-      setState("idle");
-      return;
-    }
+    if (!wanted) return;
     let cancelled = false;
-    setState("loading");
-    fetch(`/api/chunk?id=${encodeURIComponent(target.chunkId)}`)
+    fetch(`/api/chunk?id=${encodeURIComponent(wanted)}`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((json: { chunk: Chunk }) => {
-        if (!cancelled) {
-          setChunk(json.chunk);
-          setState("idle");
-        }
+        if (!cancelled) setResult({ id: wanted, chunk: json.chunk, failed: false });
       })
-      .catch(() => !cancelled && setState("error"));
+      .catch(() => {
+        if (!cancelled) setResult({ id: wanted, chunk: null, failed: true });
+      });
     return () => {
       cancelled = true;
     };
-  }, [target?.chunkId]);
+  }, [wanted]);
 
   const page = target?.page ?? chunk?.page;
 
