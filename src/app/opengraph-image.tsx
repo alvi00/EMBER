@@ -13,7 +13,7 @@ export default async function OpengraphImage() {
   const [serif, serifItalic, sans] = await Promise.all([
     readFile(join(process.cwd(), "src/assets/fonts/InstrumentSerif-Regular.ttf")),
     readFile(join(process.cwd(), "src/assets/fonts/InstrumentSerif-Italic.ttf")),
-    readFile(join(process.cwd(), "node_modules/next/dist/compiled/@vercel/og/Geist-Regular.ttf")),
+    readFile(join(process.cwd(), "src/assets/fonts/Geist-Regular.ttf")),
   ]);
   const s = datasetStats();
   const stats = [

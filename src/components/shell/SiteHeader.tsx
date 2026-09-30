@@ -89,9 +89,7 @@ export function SiteHeader() {
           >
             <Menu className="size-4" strokeWidth={1.5} aria-hidden />
           </button>
-          {menuLoaded ? (
-            <MobileNav open={menuOpen} onOpenChange={setMenuOpen} pathname={pathname} trigger={menuButton} />
-          ) : null}
+          {menuLoaded ? <MobileNav open={menuOpen} onOpenChange={setMenuOpen} trigger={menuButton} /> : null}
         </div>
       </div>
     </header>

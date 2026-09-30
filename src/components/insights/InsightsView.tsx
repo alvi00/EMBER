@@ -318,7 +318,7 @@ export function InsightsView({ findings }: { findings: Finding[] }) {
           </p>
         </div>
         {visible.length ? (
-          <LazyMotion features={loadMotionFeatures} strict>
+          <LazyMotion features={loadMotionFeatures}>
             <LayoutGroup>
               <ol className="space-y-3">
                 {visible.map((r) => (

@@ -41,7 +41,7 @@ export const credits: { group: string; items: { name: string; note: string; href
       { name: "Tailwind CSS, shadcn/ui, Magic UI", note: "Styling and components", href: "https://ui.shadcn.com" },
       { name: "GSAP", note: "Scroll choreography", href: "https://gsap.com" },
       { name: "three.js and React Three Fiber", note: "The interactive flame", href: "https://threejs.org" },
-      { name: "D3 and Recharts", note: "Charts", href: "https://d3js.org" },
+      { name: "D3", note: "Chart scales", href: "https://d3js.org" },
       { name: "MiniSearch", note: "Keyword search", href: "https://lucaong.github.io/minisearch/" },
       { name: "Vercel AI SDK", note: "Model provider switch and streaming", href: "https://ai-sdk.dev" },
       { name: "PyMuPDF", note: "PDF text extraction", href: "https://pymupdf.readthedocs.io" },

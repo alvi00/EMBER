@@ -8,12 +8,12 @@ export function rejectCrossSite(request: Request): Response | null {
     return Response.json({ error: "Send the request as application/json." }, { status: 415 });
   }
   const origin = request.headers.get("origin");
-  if (origin) {
-    try {
-      if (new URL(origin).host !== new URL(request.url).host) return Response.json({ error: "Cross-site request refused." }, { status: 403 });
-    } catch {
-      return Response.json({ error: "Bad origin." }, { status: 403 });
-    }
+  if (!origin) return null;
+  let sameHost = false;
+  try {
+    sameHost = new URL(origin).host === new URL(request.url).host;
+  } catch {
+    // An unparsable Origin is treated as cross-site.
   }
-  return null;
+  return sameHost ? null : Response.json({ error: "Cross-site request refused." }, { status: 403 });
 }

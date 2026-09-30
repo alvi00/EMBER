@@ -2,17 +2,17 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import { NOTICE_EVENT, type Notice } from "@/lib/notify";
+import { TOASTER_EVENT } from "@/lib/notify";
 
-const LiveToaster = dynamic(() => import("@/components/shell/LiveToaster").then((m) => m.LiveToaster), { ssr: false });
+const Toaster = dynamic(() => import("@/components/ui/sonner").then((m) => m.Toaster), { ssr: false });
 
 /** Mounts the toaster only once something has been announced; until then no toast code is downloaded. */
 export function ToastHost() {
-  const [notices, setNotices] = useState<Notice[]>([]);
+  const [needed, setNeeded] = useState(false);
   useEffect(() => {
-    const onNotice = (e: Event) => setNotices((prev) => [...prev, (e as CustomEvent<Notice>).detail]);
-    window.addEventListener(NOTICE_EVENT, onNotice);
-    return () => window.removeEventListener(NOTICE_EVENT, onNotice);
+    const onNotice = () => setNeeded(true);
+    window.addEventListener(TOASTER_EVENT, onNotice, { once: true });
+    return () => window.removeEventListener(TOASTER_EVENT, onNotice);
   }, []);
-  return notices.length ? <LiveToaster notices={notices} /> : null;
+  return needed ? <Toaster position="bottom-center" /> : null;
 }

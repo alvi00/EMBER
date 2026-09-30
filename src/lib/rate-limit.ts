@@ -3,12 +3,15 @@
  * client loop; it is not a security boundary (the site runs locally).
  */
 const hits = new Map<string, number[]>();
+let lastSweep = 0;
 
 export function rateLimit(key: string, limit = 20, windowMs = 60_000): { ok: boolean; retryAfter: number } {
   const now = Date.now();
-  // Keys come from a client-supplied header, so drop idle ones before the map can grow without bound.
-  if (hits.size > 1000) {
-    for (const [k, times] of hits) if (!times.length || now - times[times.length - 1] >= windowMs) hits.delete(k);
+  // Keys come from a client-supplied header, so drop idle ones (at most once per window) before the map can grow
+  // without bound.
+  if (hits.size > 1000 && now - lastSweep >= windowMs) {
+    lastSweep = now;
+    for (const [k, times] of hits) if (now - times[times.length - 1] >= windowMs) hits.delete(k);
   }
   const recent = (hits.get(key) ?? []).filter((t) => now - t < windowMs);
   if (recent.length >= limit) {

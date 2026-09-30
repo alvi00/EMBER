@@ -6,8 +6,7 @@ export const site = {
   tagline: "Fire-safety evidence from NASA microgravity combustion research, ranked for your mission.",
   description:
     "EMBER summarizes, ranks and interprets NASA microgravity combustion findings into traceable fire-safety insights for the ISS, Gateway, the Moon and Mars.",
-  disclaimer:
-    "Not an official NASA product. A research exploration tool, not for operational safety decisions.",
+  disclaimer: "Not an official NASA product. A research exploration tool, not for operational safety decisions.",
   provenance:
     "Evidence drawn from NASA Physical Sciences Informatics (PSI) and the NASA Technical Reports Server (NTRS). Every finding links to its source.",
   challenge: "NASA Space Apps Challenge 2026 · Flame in Freefall",
@@ -23,6 +22,9 @@ export const primaryNav: NavItem[] = [
   { href: "/ask", label: "Ask the Flame", short: "Ask" },
   { href: "/methods", label: "Methods" },
 ];
+
+/** Every public page, for the mobile menu and the command palette. */
+export const allPagesNav: NavItem[] = [{ href: "/", label: "Home" }, ...primaryNav, { href: "/about", label: "About" }];
 
 export const footerNav: NavItem[] = [
   ...primaryNav,

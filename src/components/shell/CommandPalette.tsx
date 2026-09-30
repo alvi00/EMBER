@@ -15,7 +15,7 @@ import {
   CommandShortcut,
 } from "@/components/ui/command";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
-import { primaryNav } from "@/content/site";
+import { allPagesNav } from "@/content/site";
 import { useUiStore } from "@/lib/stores";
 import { truncate } from "@/lib/text";
 
@@ -85,7 +85,7 @@ export function CommandPalette() {
               </CommandGroup>
             ) : null}
             <CommandGroup heading="Pages">
-              {[{ href: "/", label: "Home" }, ...primaryNav, { href: "/about", label: "About" }].map((p) => (
+              {allPagesNav.map((p) => (
                 <CommandItem key={p.href} value={`page ${p.label}`} onSelect={() => go(p.href)}>
                   <LayoutGrid strokeWidth={1.5} />
                   {p.label}

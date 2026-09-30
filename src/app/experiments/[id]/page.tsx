@@ -10,8 +10,6 @@ import { experiments, findingsFor, getExperiment, measurementsFor, sourcesFor } 
 import { CATEGORY_LABEL } from "@/lib/explorer";
 import { formatRange, plural, tidy } from "@/lib/text";
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return experiments.map((e) => ({ id: e.id }));
 }

@@ -7,13 +7,15 @@ import { rejectCrossSite } from "@/lib/same-origin";
 
 export const runtime = "nodejs";
 
+const NO_STORE = { "cache-control": "no-store" };
+
 function saved(mission: MissionId) {
   const d = precomputedDigest(mission);
-  if (!d) return Response.json({ mode: "none" }, { headers: { "cache-control": "no-store" } });
+  if (!d) return Response.json({ mode: "none" }, { headers: NO_STORE });
   const aliases = Object.fromEntries(d.citations.map((c, i) => [`S${i + 1}`, c]));
   return Response.json(
     { mode: "precomputed", text: d.answer, aliases, generatedBy: d.generatedBy, generatedAt: d.generatedAt },
-    { headers: { "cache-control": "no-store" } },
+    { headers: NO_STORE },
   );
 }
 
@@ -35,14 +37,23 @@ export async function POST(request: Request) {
   if (!body.success) return Response.json({ error: "Unknown mission." }, { status: 400 });
   const limit = rateLimit(`summarize:${clientKey(request)}`, 6);
   if (!limit.ok) {
-    return Response.json({ error: "Too many digest requests. Try again shortly." }, { status: 429, headers: { "retry-after": String(limit.retryAfter) } });
+    return Response.json(
+      { error: "Too many digest requests. Try again shortly." },
+      { status: 429, headers: { "retry-after": String(limit.retryAfter) } },
+    );
   }
   try {
     const live = await generateDigest(body.data.mission);
     if (live) {
       return Response.json(
-        { mode: "ai", text: live.text, aliases: live.aliases, generatedBy: live.generatedBy, generatedAt: new Date().toISOString() },
-        { headers: { "cache-control": "no-store" } },
+        {
+          mode: "ai",
+          text: live.text,
+          aliases: live.aliases,
+          generatedBy: live.generatedBy,
+          generatedAt: new Date().toISOString(),
+        },
+        { headers: NO_STORE },
       );
     }
   } catch (err) {

@@ -2,17 +2,6 @@
 
 import { useSyncExternalStore } from "react";
 
-const noopSubscribe = () => () => {};
-
-/** True after hydration, false on the server and during hydration, without a setState-in-effect round trip. */
-export function useIsClient(): boolean {
-  return useSyncExternalStore(
-    noopSubscribe,
-    () => true,
-    () => false,
-  );
-}
-
 function subscribeReducedMotion(onChange: () => void) {
   const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
   mq.addEventListener("change", onChange);

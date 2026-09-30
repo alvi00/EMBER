@@ -1,11 +1,11 @@
 /**
- * Toasts without shipping the toast library on every page: callers dispatch a notice, and `ToastHost` (root layout)
- * loads the Sonner toaster on the first one and shows it and every later notice.
+ * Toasts without shipping the toast library on every page: the first notice asks `ToastHost` (root layout) to mount
+ * the Sonner toaster, and the toast itself is sent through a lazily imported `sonner`. Sonner replays active toasts
+ * to a toaster that subscribes late, so nothing sent while the toaster loads is lost.
  */
-export type Notice = { kind: "success" | "error"; message: string };
+export const TOASTER_EVENT = "ember:toaster";
 
-export const NOTICE_EVENT = "ember:notice";
-
-export function notify(kind: Notice["kind"], message: string) {
-  window.dispatchEvent(new CustomEvent<Notice>(NOTICE_EVENT, { detail: { kind, message } }));
+export function notify(kind: "success" | "error", message: string) {
+  window.dispatchEvent(new Event(TOASTER_EVENT));
+  void import("sonner").then(({ toast }) => toast[kind](message));
 }

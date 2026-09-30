@@ -16,18 +16,24 @@ export function CategoryBars({ data }: { data: CategoryDatum[] }) {
     <div>
       <div role="img" aria-label="Findings by category for the selected mission" className="flex flex-col py-1">
         {rows.map((r) => (
-          <div key={r.category} className="group relative flex h-[30px] items-center gap-2 rounded-md hover:bg-white/[0.04]" aria-hidden>
-            <span className="w-32 shrink-0 pr-1 text-right text-xs leading-tight text-ink-muted">{CATEGORY_META[r.category].label}</span>
+          <div
+            key={r.category}
+            className="group relative flex h-[30px] items-center gap-2 rounded-md hover:bg-white/[0.04]"
+            aria-hidden
+          >
+            <span className="text-ink-muted w-32 shrink-0 pr-1 text-right text-xs leading-tight">
+              {CATEGORY_META[r.category].label}
+            </span>
             <span className="flex min-w-0 flex-1 items-center gap-1.5 pr-2">
               <span
-                className="h-3.5 min-w-px rounded-r bg-viz-micro"
-                style={{ width: r.count ? `calc((100% - 2.25rem) * ${r.count / max})` : "1px" }}
+                className="bg-viz-micro h-3.5 min-w-px rounded-r"
+                style={{ width: `calc((100% - 2.25rem) * ${r.count / max})` }}
               />
-              <span className="font-mono text-xs text-ink tabular">{r.count}</span>
+              <span className="text-ink tabular font-mono text-xs">{r.count}</span>
             </span>
-            <span className="pointer-events-none absolute top-full left-32 z-10 mt-1 hidden rounded-lg border border-line-strong bg-elev-3 px-3 py-2 text-xs whitespace-nowrap text-ink shadow-lg group-hover:block">
+            <span className="border-line-strong bg-elev-3 text-ink pointer-events-none absolute top-full left-32 z-10 mt-1 hidden rounded-lg border px-3 py-2 text-xs whitespace-nowrap shadow-lg group-hover:block">
               <span className="block font-medium">{CATEGORY_META[r.category].label}</span>
-              <span className="mt-1 block font-mono text-ink-muted tabular">
+              <span className="text-ink-muted tabular mt-1 block font-mono">
                 {r.count} relevant of {r.total} findings
               </span>
             </span>

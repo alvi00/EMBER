@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { primaryNav, site } from "@/content/site";
+import { usePathname } from "next/navigation";
+import { allPagesNav, site } from "@/content/site";
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { isActivePath } from "@/components/shell/nav-paths";
@@ -10,14 +11,13 @@ import { isActivePath } from "@/components/shell/nav-paths";
 export function MobileNav({
   open,
   onOpenChange,
-  pathname,
   trigger,
 }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  pathname: string;
   trigger: React.RefObject<HTMLButtonElement | null>;
 }) {
+  const pathname = usePathname() ?? "/";
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent
@@ -35,7 +35,7 @@ export function MobileNav({
         </div>
         <nav aria-label="Mobile" className="px-4">
           <ul className="grid grid-cols-2 gap-2">
-            {[{ href: "/", label: "Home" }, ...primaryNav, { href: "/about", label: "About" }].map((item) => {
+            {allPagesNav.map((item) => {
               const active = isActivePath(pathname, item.href);
               return (
                 <li key={item.href}>

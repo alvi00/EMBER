@@ -82,7 +82,7 @@ export function MissionControl({ findings, timeline, coverage, unplaced, stats, 
 
       <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-[1.25rem] border border-line bg-line sm:grid-cols-3 xl:grid-cols-5">
         {kpis.map((k, i) => (
-          <div key={k.label} className={cn("bg-elev-1 p-5", i === 4 && "col-span-2 sm:col-span-1")}>
+          <div key={k.label} className={cn("bg-elev-1 p-5", i === 4 && "col-span-2 xl:col-span-1")}>
             <dt className="text-xs text-ink-muted">{k.label}</dt>
             <dd className="mt-2">
               <Ticker value={k.value} className={cn("text-3xl font-medium", i === 0 ? "text-flame-core" : "text-ink")} />
@@ -179,7 +179,7 @@ export function MissionControl({ findings, timeline, coverage, unplaced, stats, 
           description={`Grouped by platform. Faded rows have no findings rated relevant to ${mission.short}.`}
           href="/experiments"
           cta="Browse all experiments"
-          className="md:col-span-12"
+          className="md:col-span-6 xl:col-span-12"
         >
           <ExperimentTimeline rows={timeline} highlight={highlight} />
         </BentoCard>
