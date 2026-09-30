@@ -68,7 +68,7 @@ export function ExperimentTimeline({
         ))}
       </ul>
       <div className="overflow-x-auto">
-        <svg width={width} height={height} className="block max-w-none" role="img" aria-label="Timeline of investigations by platform">
+        <svg width={width} height={height} className="block max-w-none" role="group" aria-label="Timeline of investigations by platform">
           <defs>
             <pattern id="tl-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
               <rect width="6" height="6" fill="rgba(138,144,162,0.28)" />

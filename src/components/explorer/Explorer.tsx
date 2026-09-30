@@ -195,6 +195,7 @@ export function Explorer({ rows, bounds }: { rows: ExplorerRow[]; bounds: Bounds
           </div>
         </div>
 
+        <h2 className="sr-only">Results</h2>
         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-ink-muted" aria-live="polite">
           <span>
             <span className="font-mono text-ink tabular">{ordered.length}</span> of {rows.length} experiments

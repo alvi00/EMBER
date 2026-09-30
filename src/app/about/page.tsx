@@ -48,7 +48,7 @@ export default function AboutPage() {
             <p className="mt-4 max-w-[68ch] text-sm text-ink-muted">
               Built on {s.sources} NASA sources: {s.investigations} investigations, {s.findings} findings and {s.testPoints} test points,
               each traceable to its source. See{" "}
-              <Link href="/methods" className="text-flame-micro underline-offset-4 hover:underline">
+              <Link href="/methods" className="text-flame-micro underline decoration-flame-micro/40 underline-offset-4 hover:decoration-flame-micro">
                 Methods
               </Link>{" "}
               for how.

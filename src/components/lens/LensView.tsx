@@ -180,7 +180,7 @@ export function LensView({ measurements, findings }: { measurements: Measurement
                   )}
                 >
                   {p.label}
-                  <span className="block font-mono text-[10px] text-ink-faint">{p.g} g</span>
+                  <span className="block font-mono text-[10px] text-ink-muted">{p.g} g</span>
                 </button>
               ))}
             </div>

@@ -92,8 +92,14 @@ function CommandList({
   className,
   ...props
 }: React.ComponentProps<typeof CommandPrimitive.List>) {
+  // cmdk renders a plain sizer <div> between role="listbox" and its options; give it role="presentation" so the
+  // listbox → group/option structure is valid (axe aria-required-children).
+  const fixSizer = React.useCallback((node: HTMLDivElement | null) => {
+    node?.querySelector("[cmdk-list-sizer]")?.setAttribute("role", "presentation")
+  }, [])
   return (
     <CommandPrimitive.List
+      ref={fixSizer}
       data-slot="command-list"
       className={cn(
         "no-scrollbar max-h-72 scroll-py-1 overflow-x-hidden overflow-y-auto outline-none",

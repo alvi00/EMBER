@@ -14,12 +14,14 @@ function SwitcherInner({ compact = false }: { compact?: boolean }) {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
         className="relative isolate inline-flex h-9 items-center gap-2 rounded-full px-3 text-xs text-ink transition-colors hover:bg-white/[0.04] focus-visible:outline-2 focus-visible:outline-flame-micro"
-        aria-label={`Mission: ${mission.label}. Change mission`}
       >
         <span aria-hidden className="gradient-ring absolute inset-0 -z-10 rounded-full" />
         <Orbit className="size-3.5 text-flame-micro" strokeWidth={1.5} aria-hidden />
+        {/* The accessible name contains the visible text ("Moon" or "Lunar surface"), as WCAG 2.5.3 requires. */}
+        <span className="sr-only">Mission: </span>
         <span className={cn(compact && "hidden sm:inline")}>{mission.label}</span>
         <span className={cn(compact && "sm:hidden")}>{compact ? mission.short : null}</span>
+        <span className="sr-only">, change mission</span>
         <ChevronDown className="size-3.5 text-ink-muted" strokeWidth={1.5} aria-hidden />
       </PopoverTrigger>
       <PopoverContent align="end" className="w-72 border-line bg-elev-2 p-1.5">

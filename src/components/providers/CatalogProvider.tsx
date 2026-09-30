@@ -1,16 +1,17 @@
 "use client";
 
 import { createContext, useContext, useMemo } from "react";
-import type { Catalog, CatalogExperiment, CatalogSource } from "@/lib/catalog";
+import type { CatalogExperiment, CoreCatalog, CoreSource } from "@/lib/catalog";
 
-type CatalogContextValue = Catalog & {
-  sourceById: Map<string, CatalogSource>;
+type CatalogContextValue = CoreCatalog & {
+  sourceById: Map<string, CoreSource>;
   experimentById: Map<string, CatalogExperiment>;
 };
 
 const CatalogContext = createContext<CatalogContextValue | null>(null);
 
-export function CatalogProvider({ catalog, children }: { catalog: Catalog; children: React.ReactNode }) {
+/** Core catalogue shared by every page (chips, labels). Heavier details come from `useFullCatalog`. */
+export function CatalogProvider({ catalog, children }: { catalog: CoreCatalog; children: React.ReactNode }) {
   const value = useMemo(
     () => ({
       ...catalog,

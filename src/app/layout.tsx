@@ -3,11 +3,9 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import { SiteHeader } from "@/components/shell/SiteHeader";
 import { SiteFooter } from "@/components/shell/SiteFooter";
-import { CommandPalette } from "@/components/shell/CommandPalette";
-import { SourceDrawer } from "@/components/shell/SourceDrawer";
-import { FloatingAsk } from "@/components/shell/FloatingAsk";
+import { Overlays } from "@/components/shell/Overlays";
 import { CatalogProvider } from "@/components/providers/CatalogProvider";
-import { buildCatalog } from "@/lib/catalog";
+import { buildCoreCatalog } from "@/lib/catalog";
 import { datasetStats } from "@/lib/data";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
@@ -61,7 +59,7 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  const catalog = buildCatalog();
+  const catalog = buildCoreCatalog();
   const stats = datasetStats();
   const provenance = `${stats.investigations} investigations, ${stats.findings} findings and ${stats.testPoints} test points drawn from ${stats.sources} NASA sources (Physical Sciences Informatics and the Technical Reports Server). Every finding links to its source.`;
   return (
@@ -80,14 +78,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <CatalogProvider catalog={catalog}>
           <TooltipProvider delayDuration={200}>
             <SiteHeader />
-            <main id="main" className="relative z-10 flex-1">
+            {/* min-height keeps the footer below the fold while streamed page content replaces its skeleton (no CLS). */}
+            <main id="main" className="relative z-10 min-h-[100dvh] flex-1">
               {children}
             </main>
             <SiteFooter provenance={provenance} />
-            <CommandPalette />
-            <SourceDrawer />
             <Suspense fallback={null}>
-              <FloatingAsk />
+              <Overlays />
             </Suspense>
           </TooltipProvider>
         </CatalogProvider>

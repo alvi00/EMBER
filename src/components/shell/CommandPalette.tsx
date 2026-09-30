@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { BookOpen, FlaskConical, LayoutGrid, MessageCircleQuestion, ScrollText } from "lucide-react";
 import { useCatalog } from "@/components/providers/CatalogProvider";
+import { useFullCatalog } from "@/hooks/use-full-catalog";
 import {
   Command,
   CommandEmpty,
@@ -11,7 +12,6 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-  CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
@@ -19,26 +19,19 @@ import { primaryNav } from "@/content/site";
 import { useUiStore } from "@/lib/stores";
 import { truncate } from "@/lib/text";
 
-/** ⌘K / Ctrl+K: search experiments, findings and glossary, jump to pages, or ask the copilot. */
+/** ⌘K / Ctrl+K (shortcut handled by `Overlays`): search experiments, findings and glossary, jump to pages, or ask. */
 export function CommandPalette() {
   const open = useUiStore((s) => s.paletteOpen);
   const setOpen = useUiStore((s) => s.setPaletteOpen);
   const openAsk = useUiStore((s) => s.openAsk);
-  const { experiments, findings, glossary, experimentById } = useCatalog();
+  const { experiments, experimentById } = useCatalog();
+  // Findings and glossary arrive with the full catalogue on first open; pages and experiments are available at once.
+  const full = useFullCatalog();
+  const findings = full?.findings ?? [];
+  const glossary = full?.glossary ?? [];
   const [query, setQuery] = useState("");
   const router = useRouter();
   const pathname = usePathname();
-
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-        e.preventDefault();
-        setOpen(!useUiStore.getState().paletteOpen);
-      }
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [setOpen]);
 
   const go = (href: string) => {
     setOpen(false);
@@ -99,7 +92,6 @@ export function CommandPalette() {
                 </CommandItem>
               ))}
             </CommandGroup>
-            <CommandSeparator />
             <CommandGroup heading="Experiments">
               {experiments.map((e) => (
                 <CommandItem
@@ -113,7 +105,6 @@ export function CommandPalette() {
                 </CommandItem>
               ))}
             </CommandGroup>
-            <CommandSeparator />
             <CommandGroup heading="Findings">
               {findings.map((f) => (
                 <CommandItem
@@ -126,7 +117,6 @@ export function CommandPalette() {
                 </CommandItem>
               ))}
             </CommandGroup>
-            <CommandSeparator />
             <CommandGroup heading="Glossary">
               {glossary.map((g) => (
                 <CommandItem

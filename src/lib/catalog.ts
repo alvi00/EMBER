@@ -28,6 +28,10 @@ export type Catalog = {
   glossary: CatalogTerm[];
 };
 
+/** What every page ships: enough for citation chips, labels and "Open original". The rest loads via /api/catalog. */
+export type CoreSource = Pick<CatalogSource, "id" | "title" | "type" | "url" | "label">;
+export type CoreCatalog = { sources: CoreSource[]; experiments: CatalogExperiment[] };
+
 const acronymOf = new Map(experiments.map((e) => [e.id, e.acronym]));
 
 /** Short label for citation chips, e.g. "FLEX" or "NTRS 20150023456". */
@@ -71,5 +75,13 @@ export function buildCatalog(): Catalog {
       status: f.status,
     })),
     glossary: glossary.map((g) => ({ id: g.id, term: g.term, short: g.short })),
+  };
+}
+
+export function buildCoreCatalog(): CoreCatalog {
+  const full = buildCatalog();
+  return {
+    sources: full.sources.map(({ id, title, type, url, label }) => ({ id, title, type, url, label })),
+    experiments: full.experiments,
   };
 }

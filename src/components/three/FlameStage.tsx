@@ -73,9 +73,34 @@ export function FlameStage({ className, initialGravity = 1 }: { className?: stri
   useEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
     const decide = () => setMode(!reduce.matches && supportsWebGL() && !lowPower() ? "webgl" : "poster");
-    decide();
+    // The poster (rendered from the live scene) shows first. three.js loads on the visitor's first interaction or after
+    // 3.5 s, whichever comes first, and then only when the browser is idle, so the WebGL bundle never competes with
+    // first paint, hydration or the first input.
+    const w = window as Window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+    let idle: number | undefined;
+    const events = ["pointermove", "pointerdown", "keydown", "wheel", "touchstart", "scroll"] as const;
+    const start = () => {
+      stop();
+      idle = w.requestIdleCallback ? w.requestIdleCallback(decide, { timeout: 1500 }) : window.setTimeout(decide, 200);
+    };
+    const timer = window.setTimeout(start, 3500);
+    const stop = () => {
+      window.clearTimeout(timer);
+      for (const e of events) window.removeEventListener(e, start);
+    };
+    for (const e of events) window.addEventListener(e, start, { once: true, passive: true });
     reduce.addEventListener("change", decide);
-    return () => reduce.removeEventListener("change", decide);
+    return () => {
+      stop();
+      if (idle !== undefined) {
+        if (w.cancelIdleCallback) w.cancelIdleCallback(idle);
+        else window.clearTimeout(idle);
+      }
+      reduce.removeEventListener("change", decide);
+    };
   }, []);
 
   useEffect(() => flameState.subscribe((g) => setPosterG(g)), []);
@@ -92,14 +117,14 @@ export function FlameStage({ className, initialGravity = 1 }: { className?: stri
     <div ref={ref} className={cn("relative flex flex-col", className)}>
       <div className="relative min-h-0 flex-1">
         {/* soft radial backdrop so the flame reads as light in a dark cabin */}
-        {mode !== "poster" ? (
+        {mode === "webgl" ? (
           <div
             aria-hidden
             className="pointer-events-none absolute inset-x-[10%] top-[18%] bottom-[22%] rounded-full bg-[radial-gradient(closest-side,rgba(123,97,255,0.12),transparent)]"
           />
         ) : null}
         {mode === "webgl" ? <FlameScene active={visible} /> : null}
-        {mode === "poster" ? <Poster gravity={posterG} /> : null}
+        {mode !== "webgl" ? <Poster gravity={posterG} /> : null}
       </div>
       <div className="relative z-10 px-2 pb-2">
         <GravitySlider />

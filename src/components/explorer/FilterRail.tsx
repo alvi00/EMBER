@@ -41,7 +41,8 @@ function CheckList({
               <label
                 className={cn(
                   "flex min-h-9 cursor-pointer items-center gap-2.5 rounded-lg px-2 text-sm transition-colors hover:bg-white/[0.04]",
-                  o.count === 0 && !checked && "opacity-50",
+                  // Empty options read as dimmed via a lighter text token (not opacity), keeping AA contrast.
+                  o.count === 0 && !checked && "[&>span]:text-ink-faint",
                 )}
               >
                 <input
@@ -50,7 +51,7 @@ function CheckList({
                   onChange={() => onToggle(o.id)}
                   className="size-4 rounded border-line-strong accent-[var(--flame-micro)]"
                 />
-                <span className={cn("flex-1", checked ? "text-ink" : "text-ink-muted")}>{o.label}</span>
+                <span className={cn("flex-1", checked ? "text-ink" : o.count === 0 ? "text-ink-faint" : "text-ink-muted")}>{o.label}</span>
                 <span className="font-mono text-xs text-ink-faint tabular">{o.count}</span>
               </label>
             </li>

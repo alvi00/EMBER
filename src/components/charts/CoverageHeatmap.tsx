@@ -91,7 +91,7 @@ export function CoverageHeatmap({
                   className={cn(
                     "relative flex items-center justify-center rounded-md font-mono text-[11px] tabular outline-none focus-visible:ring-2 focus-visible:ring-flame-micro",
                     compact ? "h-8" : "h-10",
-                    c.count === 0 ? "hatch bg-elev-2 text-ink-faint" : bucket(c.count) >= 3 ? "text-canvas" : "text-ink",
+                    c.count === 0 ? "hatch bg-elev-2 text-ink-faint" : bucket(c.count) >= 3 ? "text-canvas" : "text-white",
                   )}
                   style={c.count ? { background: SEQ[bucket(c.count)] } : undefined}
                 >

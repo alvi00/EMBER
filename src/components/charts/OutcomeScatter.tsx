@@ -115,7 +115,7 @@ export function OutcomeScatter({
   return (
     <figure ref={container} className="relative">
       <OutcomeLegend outcomes={present.length ? present : ["burned", "self-extinguished"]} />
-      <svg viewBox={`0 0 ${W} ${height}`} className="mt-2 w-full" role="img" aria-label={caption}>
+      <svg viewBox={`0 0 ${W} ${height}`} className="mt-2 w-full" role="group" aria-label={caption}>
         {yTicks.map((t) => (
           <g key={`y${t}`}>
             <line x1={M.left} x2={W - M.right} y1={sy(t)} y2={sy(t)} stroke="rgba(255,255,255,0.06)" />

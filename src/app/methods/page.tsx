@@ -91,7 +91,8 @@ function H2({ id, children }: { id: string; children: React.ReactNode }) {
 
 function Formula({ children }: { children: React.ReactNode }) {
   return (
-    <pre className="overflow-x-auto rounded-xl border border-line bg-elev-1 px-4 py-3 font-mono text-[13px] leading-relaxed text-ink">
+    // tabIndex: wide formulas scroll horizontally, so keyboard users must be able to focus and scroll them.
+    <pre tabIndex={0} className="overflow-x-auto rounded-xl border border-line bg-elev-1 px-4 py-3 font-mono text-[13px] leading-relaxed text-ink focus-visible:outline-2 focus-visible:outline-flame-micro">
       {children}
     </pre>
   );
@@ -99,7 +100,12 @@ function Formula({ children }: { children: React.ReactNode }) {
 
 function Table({ head, rows }: { head: string[]; rows: React.ReactNode[][] }) {
   return (
-    <div className="overflow-x-auto rounded-xl border border-line">
+    <div
+      tabIndex={0}
+      role="region"
+      aria-label={`Table: ${head.join(", ")}`}
+      className="overflow-x-auto rounded-xl border border-line focus-visible:outline-2 focus-visible:outline-flame-micro"
+    >
       <table className="w-full min-w-[520px] text-left text-sm">
         <thead className="bg-elev-1 text-xs text-ink-muted">
           <tr>
@@ -385,7 +391,7 @@ npm run build; npm start`}</Formula>
                         .filter((r) => termId.has(r))
                         .map((r, i, arr) => (
                           <span key={r}>
-                            <a href={`#term-${r}`} className="text-flame-micro underline-offset-4 hover:underline">
+                            <a href={`#term-${r}`} className="text-flame-micro underline decoration-flame-micro/40 underline-offset-4 hover:decoration-flame-micro">
                               {glossary.find((x) => x.id === r)?.term}
                             </a>
                             {i < arr.length - 1 ? ", " : ""}
@@ -431,7 +437,7 @@ npm run build; npm start`}</Formula>
                               <p className="mt-1 text-xs">
                                 {src.experimentIds.slice(0, 4).map((id, i) => (
                                   <span key={id}>
-                                    <Link href={`/experiments/${id}`} className="text-flame-micro underline-offset-4 hover:underline">
+                                    <Link href={`/experiments/${id}`} className="text-flame-micro underline decoration-flame-micro/40 underline-offset-4 hover:decoration-flame-micro">
                                       {acronym(id)}
                                     </Link>
                                     {i < Math.min(src.experimentIds.length, 4) - 1 ? ", " : ""}

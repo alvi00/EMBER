@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { ArrowUpRight, MessageCircleQuestion } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { AnswerView } from "@/components/ask/AnswerView";
 import { AskComposer } from "@/components/ask/AskComposer";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -13,13 +12,11 @@ import { useMission } from "@/hooks/use-mission";
 import { useUiStore } from "@/lib/stores";
 
 /**
- * Floating "Ask" button + mini-ask sheet (project.md §7). The answer streams in place with the same citation chips
- * as /ask; "Open in Ask the Flame" continues there. Hidden on /ask itself.
+ * Mini-ask sheet (project.md §7), loaded on first open by `Overlays`. The answer streams in place with the same
+ * citation chips as /ask; "Open in Ask the Flame" continues there.
  */
-export function FloatingAsk() {
-  const pathname = usePathname();
+export function AskSheet() {
   const askOpen = useUiStore((s) => s.askOpen);
-  const openAsk = useUiStore((s) => s.openAsk);
   const setAskOpen = useUiStore((s) => s.setAskOpen);
   const { missionId, mission } = useMission();
   const { state, ask, stop, reset } = useAskStream();
@@ -28,44 +25,38 @@ export function FloatingAsk() {
   const busy = state.status === "loading" || state.status === "streaming";
 
   // React to the sheet being opened (or re-seeded) from anywhere: ⌘K asks at once, the button just focuses the input.
-  useEffect(
-    () =>
-      useUiStore.subscribe((s, prev) => {
-        if (!s.askOpen || (prev.askOpen && s.askSeed === prev.askSeed)) return;
-        if (s.askAuto && s.askSeed) {
-          setQuestion("");
-          void ask(s.askSeed, missionId);
-        } else {
-          setQuestion(s.askSeed);
-          setTimeout(() => inputRef.current?.focus(), 50);
-        }
-      }),
-    [ask, missionId],
-  );
+  // The sheet is mounted by the open that loads it, so that first open is handled once on mount as well.
+  const handledFirstOpen = useRef(false);
+  useEffect(() => {
+    const onOpen = (s: ReturnType<typeof useUiStore.getState>) => {
+      if (s.askAuto && s.askSeed) {
+        setQuestion("");
+        void ask(s.askSeed, missionId);
+      } else {
+        setQuestion(s.askSeed);
+        setTimeout(() => inputRef.current?.focus(), 50);
+      }
+    };
+    if (!handledFirstOpen.current) {
+      handledFirstOpen.current = true;
+      const now = useUiStore.getState();
+      if (now.askOpen) queueMicrotask(() => onOpen(now));
+    }
+    return useUiStore.subscribe((s, prev) => {
+      if (!s.askOpen || (prev.askOpen && s.askSeed === prev.askSeed)) return;
+      onOpen(s);
+    });
+  }, [ask, missionId]);
 
   const submit = (q: string) => {
     setQuestion("");
     void ask(q, missionId);
   };
 
-  if (pathname?.startsWith("/ask")) return null;
-
   const starters = [...SUGGESTED_QUESTIONS.filter((s) => s.mission === missionId), ...SUGGESTED_QUESTIONS.filter((s) => s.mission !== missionId)].slice(0, 3);
 
   return (
     <>
-      <button
-        type="button"
-        onClick={() => openAsk()}
-        className="group fixed right-4 bottom-4 z-40 inline-flex h-12 items-center gap-2 rounded-full border border-white/10 bg-elev-2/85 pr-5 pl-2 text-sm text-ink shadow-[0_12px_40px_-12px_rgba(123,97,255,0.45)] backdrop-blur-xl transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] hover:-translate-y-0.5 active:scale-[0.98] md:right-6 md:bottom-6"
-        aria-label="Ask the Flame"
-      >
-        <span className="flex size-8 items-center justify-center rounded-full bg-flame-violet/20 text-flame-violet-text">
-          <MessageCircleQuestion className="size-4" strokeWidth={1.5} aria-hidden />
-        </span>
-        Ask
-      </button>
-
       <Sheet
         open={askOpen}
         onOpenChange={(open) => {

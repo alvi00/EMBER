@@ -209,7 +209,12 @@ export default async function ComparePage({ searchParams }: PageProps<"/compare"
               <h2 id="glance" className="eyebrow mb-4">
                 At a glance
               </h2>
-              <div className="overflow-x-auto rounded-2xl border border-line">
+              <div
+                tabIndex={0}
+                role="region"
+                aria-labelledby="glance"
+                className="overflow-x-auto rounded-2xl border border-line focus-visible:outline-2 focus-visible:outline-flame-micro"
+              >
                 <table className="w-full min-w-[640px] text-left text-sm">
                   <thead className="bg-elev-1">
                     <tr>

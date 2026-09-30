@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useSyncExternalStore } from "react";
 import { Download, ExternalLink } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { EmptyState } from "@/components/ember/states";
@@ -11,6 +11,22 @@ import type { Measurement } from "@/lib/schema";
 
 export const TABS = ["summary", "findings", "conditions", "data", "sources"] as const;
 export type TabId = (typeof TABS)[number];
+
+/*
+ * The active tab lives in ?tab= but is read from `location` rather than useSearchParams: detail pages are statically
+ * generated, and useSearchParams would make the whole tab panel client-only (skeleton in the HTML, late LCP).
+ * The server and hydration render Summary; the URL tab applies right after. history.replaceState is synced by Next.
+ */
+const URL_EVENT = "ember:urlchange";
+function subscribeUrl(onChange: () => void) {
+  window.addEventListener("popstate", onChange);
+  window.addEventListener(URL_EVENT, onChange);
+  return () => {
+    window.removeEventListener("popstate", onChange);
+    window.removeEventListener(URL_EVENT, onChange);
+  };
+}
+const readUrlTab = () => new URLSearchParams(window.location.search).get("tab");
 
 export type ConditionRow = { label: string; value: string; note?: string };
 export type SourceRow = { id: string; title: string; kind: string; year?: number; authors?: string; url: string; local: boolean };
@@ -80,17 +96,17 @@ export function ExperimentTabs({
   sources: SourceRow[];
   psiUrl?: string;
 }) {
-  const params = useSearchParams();
-  const router = useRouter();
-  const pathname = usePathname();
-  const tab = (TABS as readonly string[]).includes(params.get("tab") ?? "") ? (params.get("tab") as TabId) : "summary";
+  const urlTab = useSyncExternalStore(subscribeUrl, readUrlTab, () => null);
+  const tab: TabId = (TABS as readonly string[]).includes(urlTab ?? "") ? (urlTab as TabId) : "summary";
   const axes = chooseAxes(measurements);
 
   const setTab = (t: string) => {
-    const q = new URLSearchParams(params.toString());
+    const q = new URLSearchParams(window.location.search);
     if (t === "summary") q.delete("tab");
     else q.set("tab", t);
-    router.replace(q.toString() ? `${pathname}?${q}` : pathname, { scroll: false });
+    const qs = q.toString();
+    window.history.replaceState(window.history.state, "", qs ? `${window.location.pathname}?${qs}` : window.location.pathname);
+    window.dispatchEvent(new Event(URL_EVENT));
   };
 
   const download = () => {

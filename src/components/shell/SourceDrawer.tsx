@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ExternalLink, FileText, Link2 } from "lucide-react";
 import { toast } from "sonner";
 import { useCatalog } from "@/components/providers/CatalogProvider";
+import { useFullCatalog } from "@/hooks/use-full-catalog";
 import { SkeletonLines, ErrorNotice } from "@/components/ember/states";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useSourceDrawer } from "@/lib/stores";
@@ -41,6 +42,9 @@ export function SourceDrawer() {
   // The fetched chunk is stored with its id, so loading / error / stale states are derived rather than reset in an effect.
   const [result, setResult] = useState<{ id: string; chunk: Chunk | null; failed: boolean } | null>(null);
   const source = target ? sourceById.get(target.sourceId) : undefined;
+  // Authors, DOI, licence and linked experiments come from the full catalogue (fetched once, on first open).
+  const full = useFullCatalog();
+  const details = target ? full?.sourceById.get(target.sourceId) : undefined;
   const wanted = target?.chunkId;
   const current = wanted && result?.id === wanted ? result : null;
   const chunk = current?.chunk ?? null;
@@ -71,14 +75,14 @@ export function SourceDrawer() {
           <p className="flex items-center gap-2 font-mono text-xs text-ink-muted">
             <FileText className="size-3.5" strokeWidth={1.5} aria-hidden />
             {source ? TYPE_LABEL[source.type] : "Source"}
-            {source?.accession ? ` · ${source.accession}` : ""}
+            {details?.accession ? ` · ${details.accession}` : ""}
             {page ? ` · page ${page}` : ""}
           </p>
           <SheetTitle className="mt-2 pr-8 text-lg leading-snug font-medium text-ink">
             {source?.title ?? target?.sourceId ?? "Source"}
           </SheetTitle>
           <SheetDescription className="text-sm text-ink-muted">
-            {[source?.authors?.slice(0, 3).join(", "), source?.year, source?.publisher].filter(Boolean).join(" · ") ||
+            {[details?.authors?.slice(0, 3).join(", "), details?.year, details?.publisher].filter(Boolean).join(" · ") ||
               "Provenance record"}
           </SheetDescription>
         </SheetHeader>
@@ -98,25 +102,25 @@ export function SourceDrawer() {
             </section>
           ) : null}
 
-          {source ? (
+          {details ? (
             <dl className="grid grid-cols-[7rem_1fr] gap-x-4 gap-y-2 text-sm">
-              {source.doi ? (
+              {details.doi ? (
                 <>
                   <dt className="text-ink-muted">DOI</dt>
-                  <dd className="font-mono text-xs break-all text-ink">{source.doi}</dd>
+                  <dd className="font-mono text-xs break-all text-ink">{details.doi}</dd>
                 </>
               ) : null}
-              {source.license ? (
+              {details.license ? (
                 <>
                   <dt className="text-ink-muted">Licence</dt>
-                  <dd className="text-ink">{source.license}</dd>
+                  <dd className="text-ink">{details.license}</dd>
                 </>
               ) : null}
-              {source.experimentIds.length ? (
+              {details.experimentIds.length ? (
                 <>
                   <dt className="text-ink-muted">Experiments</dt>
                   <dd className="flex flex-wrap gap-1.5">
-                    {source.experimentIds.map((id) => (
+                    {details.experimentIds.map((id) => (
                       <Link
                         key={id}
                         href={`/experiments/${id}`}
