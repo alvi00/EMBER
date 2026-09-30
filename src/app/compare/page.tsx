@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import Link from "next/link";
 import { ArrowUpRight, GitCompareArrows } from "lucide-react";
 import { ComparePicker } from "@/components/compare/ComparePicker";
@@ -85,9 +84,9 @@ export default async function ComparePage({ searchParams }: PageProps<"/compare"
         title="Compare experiments"
         description="Put two or three investigations side by side: the conditions each one tested, what happened, and what it found."
       >
-        <Suspense fallback={<div className="h-10" />}>
-          <ComparePicker options={options} selected={ids} />
-        </Suspense>
+        {/* Rendered inline (no Suspense): the page is per-request, so the picker is part of the first HTML and never
+            shifts the content below it. */}
+        <ComparePicker options={options} selected={ids} />
       </PageHeader>
 
       <div className="container-ember space-y-14 pb-24">
