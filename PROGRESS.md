@@ -74,3 +74,24 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
 - **Checkpoint:** `npm run data:validate` ✅ (133 sources, 29 experiments, 44 findings, 472 measurements, 3,404 chunks,
   31 glossary terms). Spot-check of 3 random findings (f-flex-01, f-saffire-iv-vi-04, f-acme-bre-01) against their source
   pages: all statements supported, derived numbers (0.22→0.30 O2, 1000→544 mbar) match Table 1.
+
+## Phase 4 — Design system · ✅ (2026-09-30)
+- Loaded **design-taste-frontend** + **high-end-visual-design**. Design read: evidence-first science web app for judges,
+  mission planners and researchers; deep-space dark-tech editorial language (restrained "ethereal glass"), Tailwind v4 +
+  customised shadcn/ui. Dials: landing 8/7/3, data pages 5/4/6. project.md explicitly names Instrument Serif and
+  lucide-react (1.5 stroke), so those override the skills' defaults. Adopted from the skills: floating glass nav island,
+  double-bezel cards for key tiles, pill CTAs with nested trailing icon, custom cubic-bezier motion, no em-dashes in UI copy.
+- Magic UI (via **magicui MCP** → shadcn CLI) into `src/components/magicui/`: Particles, NumberTicker, BentoGrid, BorderBeam,
+  AnimatedBeam, Marquee, TextAnimate, BlurFade, ShineBorder, AnimatedGridPattern (duplicate button.tsx removed).
+- EMBER primitives `src/components/ember/`: StatusBadge (verified / AI draft / rejected), ConfidenceBadge, SeverityMeter,
+  CategoryBadge, OutcomeBadge, CitationChip, MissionChip, Bezel, CtaLink, EmptyState/ErrorNotice/SkeletonLines, Reveal,
+  Ticker (SSR real value → NumberTicker), custom glyphs (droplet / sheet / gas-jet flame, smoke, suppression).
+- Shell: floating nav island with motion `layoutId` active pill, ⌘K CommandPalette (pages, 29 experiments, 44 findings,
+  31 glossary terms, "Ask the Flame: …"), MissionSwitcher (`?mission=` + persisted zustand store), global SourceDrawer
+  (source provenance + cited chunk highlighted via `/api/chunk`, open original, copy link), floating Ask + mini-ask sheet,
+  footer provenance line computed from data.
+- `src/lib/missions.ts`: gravity per mission; cabin defaults sourced where NASA states them (ISS 101.3 kPa / ~22% O2 —
+  NTRS 20205004657; Lunar 56.5 kPa / 34% O2 — NTRS 20260002050), others labelled "assumed".
+- Decision: `--text-faint` raised from #6B7184 to #7A8094 (4.16:1 → 5.1:1 on --bg) after axe flagged it.
+- **Checkpoint:** styleguide screenshots `qa/phase4/styleguide-{1440,768,375}.png` reviewed; axe (axe-core 4.x injected via
+  Playwright) = **0 violations** after fixes; 0 console errors; `tsc --noEmit` clean.

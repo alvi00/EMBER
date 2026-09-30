@@ -99,6 +99,39 @@
       opacity: 0;
     }
   }
+
+  --animate-marquee: marquee var(--duration) infinite linear;
+
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  --animate-shine: shine var(--duration) infinite linear;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    to {
+      background-position: 0% 0%;
+    }
+  }
 }
 
 /* EMBER is dark-only: shadcn variables point at EMBER tokens */
@@ -192,6 +225,17 @@
     border: 1px solid var(--line);
     border-radius: var(--radius-card);
     box-shadow: var(--card-highlight);
+  }
+  /* 1px flame-gradient ring (active mission chip, primary CTA border) */
+  .gradient-ring {
+    padding: 1px;
+    background: var(--flame-gradient);
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
   }
   .hatch {
     background-image: var(--hatch);

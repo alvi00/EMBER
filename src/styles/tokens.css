@@ -15,7 +15,7 @@
   /* Text */
   --text: #e8eaf0;
   --text-muted: #8a90a2;
-  --text-faint: #6b7184;
+  --text-faint: #7a8094; /* ≥ 4.5:1 on --bg and --bg-elev-2 */
 
   /* Flame palette */
   --flame-micro: #4cc9f0;

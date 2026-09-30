@@ -7,7 +7,7 @@ export const site = {
   description:
     "EMBER summarizes, ranks and interprets NASA microgravity combustion findings into traceable fire-safety insights for the ISS, Gateway, the Moon and Mars.",
   disclaimer:
-    "Not an official NASA product. Research exploration tool — not for operational safety decisions.",
+    "Not an official NASA product. A research exploration tool, not for operational safety decisions.",
   provenance:
     "Evidence drawn from NASA Physical Sciences Informatics (PSI) and the NASA Technical Reports Server (NTRS). Every finding links to its source.",
   challenge: "NASA Space Apps Challenge 2026 · Flame in Freefall",
