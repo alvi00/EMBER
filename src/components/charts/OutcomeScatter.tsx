@@ -103,8 +103,13 @@ export function OutcomeScatter({
   }, [plotted, x, y, crosshair, height, M.left, M.right, M.bottom, M.top]);
 
   const present = Array.from(new Set(plotted.map((p) => p.outcome)));
-  const xTicks = sx.ticks(6);
-  const yTicks = sy.ticks(5);
+  // Log axes get 1-2-5 ticks so labels never crowd.
+  const logTicks = (scale: typeof sx) => {
+    const [a, b] = scale.domain() as [number, number];
+    return [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000].filter((t) => t >= Math.min(a, b) && t <= Math.max(a, b));
+  };
+  const xTicks = x.log ? logTicks(sx) : sx.ticks(6);
+  const yTicks = y.log ? logTicks(sy) : sy.ticks(5);
   const fmt = (n: number) => (Math.abs(n) >= 100 ? n.toFixed(0) : Number(n.toPrecision(3)).toString());
 
   return (
@@ -136,7 +141,12 @@ export function OutcomeScatter({
             <circle r={16} fill="none" stroke="var(--flame-core)" strokeOpacity={0.5} className="motion-safe:animate-pulse" />
             <line x1={-22} x2={22} stroke="var(--flame-core)" strokeWidth={1.5} />
             <line y1={-22} y2={22} stroke="var(--flame-core)" strokeWidth={1.5} />
-            <text x={20} y={-18} className="fill-flame-core text-[11px]">
+            <text
+              x={sx(crosshair.x) > W - 120 ? -20 : 20}
+              y={-18}
+              textAnchor={sx(crosshair.x) > W - 120 ? "end" : "start"}
+              className="fill-flame-core text-[11px]"
+            >
               {crosshair.label}
             </text>
           </g>

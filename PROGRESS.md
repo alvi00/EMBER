@@ -164,3 +164,24 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
 - **Checkpoint:** `e2e/explorer.spec.ts` 6/6 ✅ (desktop + mobile: filter → table → reload restores → open BASS-II →
   Findings tab → citation opens SourceDrawer with highlighted passage + NASA link → reload restores tab; search in URL with
   highlights; unknown id 404). Screenshots `qa/phase7/*.png` (1440 / 768 / 375). 0 console errors.
+
+## Phase 8 — Insights + Risk Lens · ✅ (2026-09-30)
+- `/insights`: InsightCards (rank, score, category / status / confidence / experiment badges, statement, plain language,
+  safety implication, all evidence chips), weight panel (4 sliders with % share, reset, visible formula), live re-rank
+  with FLIP (motion `layout`, disabled under reduced motion), score-breakdown popover (stacked bar + per-factor points +
+  AI-draft factor + formula; 4-colour set validated with the dataviz script, adjacent CVD ΔE ≥ 8.4), category and
+  confidence filters, selected insight (#hash) marked with BorderBeam, weights/filters in the URL (`?w=35-30-20-15`).
+  NICE done: "Export mission brief (PDF)" via a print stylesheet (browser print-to-PDF), no extra dependency.
+- `src/lib/coverage.ts` (§9.6) + 11 Vitest cases: per-dimension normalisation over the dataset range (log for pressure,
+  log1p for flow), weighted Euclidean over shared dimensions (missing ones skipped + reported), thresholds 0.05 / 0.15,
+  gravity mismatch never "direct" + partial-gravity warning, k nearest ordering, empty scope.
+- `/lens`: cabin inputs (gravity presets + custom, O2, pressure, flow, material family, geometry; defaults from the
+  mission, sourced/assumed label, all in the URL), coverage verdict with distance + warnings, flammability map (O2 vs flow
+  on a log axis, outcome by colour + shape, cabin crosshair), nearest 5 points (distance, other-gravity flag, outcome,
+  source chip), evidence-gaps panel ("where future experiments are needed") with the per-family coverage heatmap, relevant
+  insights, permanent disclaimer.
+- **Checkpoint:** unit tests 21/21 ✅; `e2e/insights-lens.spec.ts` 12/12 ✅ (desktop + mobile): Lunar → Severity 0 /
+  Actionability max → order changes, `w=0-30-20-100` in URL, mission switch re-ranks, breakdown popover; Lens verdicts for
+  3 hand-picked cabins: ISS fabric 22% O2 / 101.3 kPa / 20 cm/s → Directly tested (d = 0.002, Saffire-II 2-5); lunar
+  fabric 34% / 56.5 kPa → Near (d = 0.100) + partial-gravity warning; Mars fabric 34% / 30 kPa / 50 cm/s → Extrapolation
+  (d = 0.300). Screenshots `qa/phase8/*.png`.

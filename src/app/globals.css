@@ -363,3 +363,31 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Mission brief print view (Insights → Export mission brief) */
+@media print {
+  @page {
+    margin: 16mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+  body::before,
+  header.sticky,
+  footer,
+  .print\:hidden,
+  button[aria-label="Ask the Flame"] {
+    display: none !important;
+  }
+  main * {
+    color: #111 !important;
+    background: transparent !important;
+    border-color: #ccc !important;
+    box-shadow: none !important;
+  }
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+}
