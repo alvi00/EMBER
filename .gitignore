@@ -53,3 +53,6 @@ next-env.d.ts
 /models-cache/
 /data/interim/
 /.playwright-mcp/
+
+# claude code session lock
+.claude/scheduled_tasks.lock

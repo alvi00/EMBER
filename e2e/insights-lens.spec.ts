@@ -55,3 +55,16 @@ test.describe("Habitat Risk Lens verdicts", () => {
     await expect(page.getByRole("heading", { name: "Evidence gaps" })).toBeVisible();
   });
 });
+
+test.describe("Shareable insight images", () => {
+  test("each insight links to a PNG card; unknown ids are 404", async ({ page, request }) => {
+    await page.goto("/insights?mission=lunar");
+    const link = page.getByRole("link", { name: "Share image of insight 1 (PNG download)", exact: true });
+    await expect(link).toBeVisible();
+    const href = await link.getAttribute("href");
+    const img = await request.get(href!);
+    expect(img.status()).toBe(200);
+    expect(img.headers()["content-type"]).toContain("image/png");
+    expect((await request.get("/api/share/not-a-finding")).status()).toBe(404);
+  });
+});

@@ -52,7 +52,11 @@ export function EvidenceDigest({
     setLoading(true);
     setFailure(null);
     try {
-      const res = await fetch(`/api/summarize?mission=${missionId}&fresh=1`);
+      const res = await fetch("/api/summarize", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ mission: missionId }),
+      });
       const body = await res.json();
       if (!res.ok || body.mode === "none") throw new Error(body.error ?? "No digest available.");
       setLive({ mission: missionId, digest: body as Digest });

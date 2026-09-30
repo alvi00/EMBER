@@ -8,7 +8,7 @@ import findingsJson from "../../data/processed/findings.json";
 import measurementsJson from "../../data/processed/measurements.json";
 import glossaryJson from "../../data/processed/glossary.json";
 import sourcesJson from "../../data/sources.json";
-import type { Experiment, Finding, GlossaryTerm, Measurement, MissionId, Source } from "@/lib/schema";
+import type { Experiment, Finding, GlossaryTerm, Measurement, Source } from "@/lib/schema";
 
 export const experiments = experimentsJson as unknown as Experiment[];
 export const sources = sourcesJson as unknown as Source[];
@@ -60,17 +60,3 @@ export function datasetStats() {
   };
 }
 
-export type SourceLabel = { id: string; short: string; title: string; url: string; type: Source["type"]; year?: number };
-
-/** Short citation label such as "NTRS 20150023456" or "PSI-25 · BASS-II Summary Report". */
-export function sourceLabel(s: Source): SourceLabel {
-  const short =
-    s.type === "psi-dataset" || (s.type === "presentation" && s.accession?.startsWith("PSI"))
-      ? `${s.accession ?? "PSI"}`
-      : s.type === "nasa-web"
-        ? "NASA Science"
-        : `NTRS ${s.accession ?? ""}`.trim();
-  return { id: s.id, short, title: s.title, url: s.url, type: s.type, year: s.year };
-}
-
-export const missionIds: MissionId[] = ["iss", "gateway", "lunar", "marsTransit", "marsSurface"];

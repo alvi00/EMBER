@@ -4,6 +4,7 @@ import { flaggedSentences, segmentAnswer, usedAliases } from "@/lib/ai/citations
 import { MissionIdSchema } from "@/lib/schema";
 import { providerStatus } from "@/lib/ai/provider";
 import { clientKey, rateLimit } from "@/lib/rate-limit";
+import { rejectCrossSite } from "@/lib/same-origin";
 
 export const runtime = "nodejs";
 
@@ -21,6 +22,8 @@ const BodySchema = z.object({
  * Keys stay on the server; the client only ever sees answer text and chunk ids.
  */
 export async function POST(request: Request) {
+  const refused = rejectCrossSite(request);
+  if (refused) return refused;
   // The limiter protects the provider quota, so it only applies when a model is connected.
   const limit = providerStatus().available ? rateLimit(`ask:${clientKey(request)}`) : { ok: true, retryAfter: 0 };
   if (!limit.ok) {

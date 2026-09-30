@@ -106,10 +106,6 @@ export async function hybridSearch(
   return { hits, mode, queryVector };
 }
 
-export function getChunk(id: string): Chunk | undefined {
-  return load().byId.get(id);
-}
-
 /** Aggregate chunk hits to experiments (best fused score per experiment) for the explorer's hybrid search. */
 export async function searchExperiments(query: string) {
   const { hits, mode } = await hybridSearch(query, { k: 40, pool: 40 });

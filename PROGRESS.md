@@ -251,3 +251,42 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
   `searchParams`) open indefinitely, which blocked network idle.
 - **Checkpoint:** unit 34/34 (+6 compare tests), e2e 60/60 (+8 `e2e/compare.spec.ts`), typecheck + lint clean, console
   sweep (13 routes × normal / reduced motion) 0 errors, before/after screenshots saved.
+
+## Session 2 — resume (2026-09-30, 17:30 Asia/Dhaka)
+Checked the real state, not just this log: git (11 phase commits up to `d2fe8d7 Phase 11 QA`, plus uncommitted
+security-review / simplify fixes and a shareable-image route), routes, scripts, data, and a full test run.
+Data: 133 sources · 29 experiments · 44 findings (44 `ai-draft`, 0 verified, 0 rejected) across 20 investigations ·
+472 measurements (156 burned / 311 self-extinguished / 5 no-ignition) · 3,404 chunks · 31 glossary terms · 22 saved answers.
+Checks: typecheck ✅ · lint ✅ · unit 34/34 ✅ · data:validate ✅ · `npm run build` ✅ · Playwright 120 passed,
+20 skipped by design (tablet sweep runs on the desktop project only), 0 failed.
+
+| Phase / §7 item | Status | Missing |
+|---|---|---|
+| 1 Scaffold | done | none |
+| 2 Data collection | done | none (PSI login was not needed: public API) |
+| 3 Processing & knowledge base | done | 0/44 findings human-verified (team task in `/review`); STRETCH ML model not attempted |
+| 4 Design system | done | none |
+| 5 Landing + 3D flame | done | none |
+| 6 Mission Control | done | none |
+| 7 Explorer & detail | done | none |
+| 8 Insights + Risk Lens | done | NICE mission brief PDF done (print stylesheet) |
+| 9 AI copilot, summaries, methods | done | none (Groq key in `.env.local`, offline mode tested) |
+| 10 Polish | done | NICE `/compare` done |
+| 11 STRETCH list (project.md numbering) | partial | shareable insight images built but uncommitted; ML estimate, light theme, bn toggle, scenario cards not started |
+| 12 Local QA & demo-ready (the prompt's "Phase 11") | partial | axe + tablet/motion specs done; Lighthouse run once (simulated: dashboard/lens 85, 4 pages 88–89, below the 90 target); security/simplify fixes uncommitted; code-review not logged; route × breakpoint × motion screenshots, offline demo walk, README final pass and final report missing |
+| Shell (nav, mission switcher, ⌘K, Ask button, footer, mobile sheet) | done | none |
+| 7.1 Landing | done | step copy uses AI-draft findings (badged) because none are verified yet |
+| 7.2 Dashboard | done | none |
+| 7.3 Explorer | done | none |
+| 7.4 Detail | done | none |
+| 7.5 Insights | done | none |
+| 7.6 Risk Lens | done | (6) ML estimate is STRETCH, not built |
+| 7.7 Ask the Flame | done | none |
+| 7.8 Methods | done | none |
+| 7.9 About | done | team names are placeholders for the human |
+| §8 3D flame | done | none |
+
+- Decision: project.md now numbers the STRETCH list as Phase 11 and local QA as Phase 12. The prompt's "Phase 11 final
+  report" is written as the Phase 12 QA report, and STRETCH work only starts once Phase 12 is green.
+- Decision: stale `next dev` (3000) and `next start` (3100) servers from the last session were stopped so e2e runs on a
+  fresh build instead of reusing an old server.

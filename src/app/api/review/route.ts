@@ -3,6 +3,7 @@ import path from "node:path";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { FindingSchema, type Finding } from "@/lib/schema";
+import { rejectCrossSite } from "@/lib/same-origin";
 
 /**
  * DEV ONLY — records a human review decision in data/processed/findings.json.
@@ -34,6 +35,8 @@ export async function POST(request: Request) {
   if (process.env.NODE_ENV === "production") {
     return NextResponse.json({ error: "Not available in production" }, { status: 404 });
   }
+  const refused = rejectCrossSite(request);
+  if (refused) return refused;
   const parsed = BodySchema.safeParse(await request.json().catch(() => null));
   if (!parsed.success) {
     return NextResponse.json({ error: parsed.error.issues[0]?.message ?? "Invalid request" }, { status: 400 });

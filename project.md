@@ -455,11 +455,14 @@ Load **minimalist-ui** + **dataviz**. `/experiments` (filters, cards/table, hybr
 ### Phase 11 
 ML estimate in Lens · light theme · Bengali (bn) toggle for key UI copy · narrated mission scenario cards · shareable insight images.
 
-### Phase 12 
-1. `README.md`: what it is, local setup (PowerShell commands), env vars, data sources, how to re-run the data pipeline, architecture, AI-use disclosure, limitations.
-2. Final PROGRESS.md report: what's done per tier, test/Lighthouse results, known issues, how to run.
-**Then STOP.** No deploy, no push.
 
+### Phase 12 — Local QA & demo-ready · MUST · ~2 h
+Playwright full run: all e2e flows; screenshots of every route × 3 breakpoints × (normal, reduced-motion); console errors = 0; axe = 0 serious/critical.
+Lighthouse against npm run build && npm start locally — targets: Performance ≥ 85 landing / ≥ 90 elsewhere; Accessibility ≥ 95; Best Practices ≥ 95; SEO ≥ 95. Lazy-load 3D, split heavy charts, compress assets; quantize embeddings.json if > 5 MB.
+code-review, simplify, security-review passes; fix findings.
+Walk the demo path (§12) end-to-end in production mode with the network off; it must be flawless.
+README.md: what it is, local setup (PowerShell commands), env vars, data sources, how to re-run the data pipeline, architecture, AI-use disclosure, limitations.
+Final PROGRESS.md report: what's done per tier, test/Lighthouse results, known issues, how to run. Then STOP. No deploy, no push.
 ---
 
 ## 12. Demo path (what the human will record — make sure it's flawless)

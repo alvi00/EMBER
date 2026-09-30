@@ -4,5 +4,3 @@ import { notFound } from "next/navigation";
 export function assertDevOnly() {
   if (process.env.NODE_ENV === "production") notFound();
 }
-
-export const isDev = process.env.NODE_ENV !== "production";

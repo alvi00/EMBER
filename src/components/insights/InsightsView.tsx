@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { LayoutGroup, motion, useReducedMotion } from "motion/react";
-import { FileDown, RotateCcw, SlidersHorizontal } from "lucide-react";
+import { FileDown, ImageDown, RotateCcw, SlidersHorizontal } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Slider } from "@/components/ui/slider";
 import { BorderBeam } from "@/components/magicui/border-beam";
@@ -114,7 +114,18 @@ function InsightCard({ r, selected, mission, label }: { r: RankedFinding; select
                 <CitationChip key={`${ev.chunkId}-${i}`} sourceId={ev.sourceId} chunkId={ev.chunkId} page={ev.page} excerpt={ev.excerpt} />
               ))}
             </div>
-            <BreakdownPopover r={r} mission={mission} />
+            <div className="flex items-center gap-2">
+              <a
+                href={`/api/share/${f.id}`}
+                download={`ember-${f.id}.png`}
+                className="inline-flex items-center gap-1.5 rounded-full border border-line-strong px-2.5 py-1 text-xs text-ink-muted transition-colors hover:text-ink"
+                aria-label={`Share image of insight ${r.rank} (PNG download)`}
+              >
+                <ImageDown className="size-3.5" strokeWidth={1.5} aria-hidden />
+                Share image
+              </a>
+              <BreakdownPopover r={r} mission={mission} />
+            </div>
           </div>
         </div>
       </div>
