@@ -111,8 +111,8 @@ def conditions_flex2() -> dict:
     rows = read_csv_rows(table("PSI-68", "Flex2"))
     fuels = [r["Sample (Fuel Type)"].strip() for r in rows if r.get("Sample (Fuel Type)", "").strip()]
     return {
-        "o2Percent": {"min": 17.0, "max": 30.0, "note": "O2 mole fraction values 0.17–0.30 listed in the PSI table"},
-        "pressureKpa": {"min": round(0.5 * ATM_TO_KPA, 1), "max": round(3.0 * ATM_TO_KPA, 1), "note": "0.5–3.0 atm"},
+        "o2Percent": {"min": 17.0, "max": 30.0, "note": "O2 mole fraction values 0.17-0.30 listed in the PSI table"},
+        "pressureKpa": {"min": round(0.5 * ATM_TO_KPA, 1), "max": round(3.0 * ATM_TO_KPA, 1), "note": "0.5-3.0 atm"},
         "flowCmS": {"min": 0.1, "max": 5.0, "note": "flow velocity range listed in the PSI table"},
         "gravityG": {"min": 0, "max": 0, "note": "ISS microgravity"},
         "diluent": ["N2", "He"],
@@ -225,8 +225,8 @@ def curated(details: dict) -> list[dict]:
         facility="Microgravity Science Glovebox (MSG)",
         fuels=["PMMA (films, slabs, rods, spheres)", "Cotton-fiberglass fabric (SIBAL)", "Nomex", "Wax candle"],
         conditions=strip(bass2), conditionsSourceIds=["psi-25", "psi-25-experimental-table-bass-ii", "ntrs-20160000593"],
-        summaryPlain="BASS-II burned thin and thick samples — acrylic slabs, rods, spheres and fabric — while the crew turned the air speed and the oxygen level up and down, mapping when flames grow, spread, shrink or go out.",
-        whyItMatters="It measured the low-speed and low-oxygen limits where solid materials stop burning in microgravity — the data needed to judge whether 1 g material screening is conservative in space.",
+        summaryPlain="BASS-II burned thin and thick samples, acrylic slabs, rods, spheres and fabric, while the crew turned the air speed and the oxygen level up and down, mapping when flames grow, spread, shrink or go out.",
+        whyItMatters="It measured the low-speed and low-oxygen limits where solid materials stop burning in microgravity, the data needed to judge whether 1 g material screening is conservative in space.",
         extraSources=["ntrs-20160000593", "ntrs-20150008962", "ntrs-20160012691", "ntrs-20170006615", "ntrs-20150019858"],
         _tests=bass2.get("_tests"),
     ))
@@ -250,7 +250,7 @@ def curated(details: dict) -> list[dict]:
         id="cfi", psi="PSI-39", acronym="CFI", category=["droplet"], platform="ISS",
         facility="Combustion Integrated Rack (CIR), Multi-User Droplet Combustion Apparatus (MDCA)",
         fuels=cfi["_fuels"] or ["n-dodecane"], conditions=strip(cfi), conditionsSourceIds=["psi-39", "psi-39-experimental-table-cfi"],
-        summaryPlain="The Cool Flames Investigation burned droplets of n-dodecane and related fuels at different pressures and with helium dilution to study cool flames — faint, low-temperature flames that are hard to see and easy to miss.",
+        summaryPlain="The Cool Flames Investigation burned droplets of n-dodecane and related fuels at different pressures and with helium dilution to study cool flames, faint, low-temperature flames that are hard to see and easy to miss.",
         whyItMatters="Cool flames can persist after a visible flame is gone, so detection and extinguishment strategies need to account for them; the data also test chemistry models used across combustion safety.",
         extraSources=["ntrs-20210022617"],
         _tests=cfi.get("_tests"),
@@ -261,8 +261,8 @@ def curated(details: dict) -> list[dict]:
         fuels=["Cotton-fiberglass fabric (SIBAL), 94 × 40.6 cm"],
         conditions={"o2Percent": {"min": 21.5, "max": 21.7, "note": "PSI experimental table"}, "flowCmS": {"min": 20, "max": 20}, "gravityG": LOW_G_CYGNUS},
         conditionsSourceIds=["psi-98", "psi-98-experimental-table-saffire-1"],
-        years={"start": 2016}, yearsNote="Launched 22 March 2016 on Cygnus OA-6 (NTRS 20170000230). PSI metadata lists 2001–2008, which appears to duplicate the SAME record.",
-        summaryPlain="Saffire-I set the first large fire ever lit on purpose inside a spacecraft — a fabric sheet almost a metre long, burned in an empty cargo ship after it left the ISS, with and against the airflow.",
+        years={"start": 2016}, yearsNote="Launched 22 March 2016 on Cygnus OA-6 (NTRS 20170000230). PSI metadata lists 2001-2008, which appears to duplicate the SAME record.",
+        summaryPlain="Saffire-I set the first large fire ever lit on purpose inside a spacecraft, a fabric sheet almost a metre long, burned in an empty cargo ship after it left the ISS, with and against the airflow.",
         whyItMatters="Earlier space tests used samples around 15 cm long; fires do not scale linearly, so this was the first look at how a realistic-size fire grows in a real vehicle.",
         extraSources=["ntrs-20170008805", "ntrs-20170001636", "ntrs-20170000230", "ntrs-20170002628"],
     ))
@@ -291,8 +291,8 @@ def curated(details: dict) -> list[dict]:
         category=["solid", "large-scale"], platform="Cygnus",
         facility="Saffire flow unit + far-field diagnostics in the Cygnus vehicle",
         fuels=["PMMA (5 mm 1-sided, 10 mm 2-sided, structured)", "Cotton fabric", "Cotton-fiberglass fabric (SIBAL)", "Nomex"],
-        conditions={"o2Percent": {"min": 22, "max": 31, "note": "O2 mole fraction 0.22–0.31 across flights (Table 1, NTRS 20260001992)"},
-                    "pressureKpa": {"min": 54.1, "max": 100.0, "note": "541–1000 mbar across flights (Table 1, NTRS 20260001992)"},
+        conditions={"o2Percent": {"min": 22, "max": 31, "note": "O2 mole fraction 0.22-0.31 across flights (Table 1, NTRS 20260001992)"},
+                    "pressureKpa": {"min": 54.1, "max": 100.0, "note": "541-1000 mbar across flights (Table 1, NTRS 20260001992)"},
                     "flowCmS": {"min": 5, "max": 20, "note": "20 cm/s opposed flow, reduced to 5 cm/s near test end"},
                     "gravityG": LOW_G_CYGNUS},
         conditionsSourceIds=["ntrs-20260001992", "ntrs-20210017785"],
@@ -300,7 +300,7 @@ def curated(details: dict) -> list[dict]:
         agencies=["NASA"],
         objectives="Observe the growth and spread of realistic fires over thin and thick solid samples at current and anticipated exploration atmospheres; assess the impact of the fire on the spacecraft and the transport of heat and smoke; demonstrate combustion-product measurement and post-fire cleanup systems.",
         summaryPlain="The last three Saffire flights burned larger acrylic and fabric samples inside Cygnus, lowered the cabin pressure and raised the oxygen to mimic planned exploration atmospheres, and measured the heat, carbon monoxide, carbon dioxide and smoke that spread through the whole vehicle.",
-        whyItMatters="These are the only data on what a realistic fire does to an entire spacecraft cabin — and they show the toxic gases and smoke, not heat or pressure, become the first hazard.",
+        whyItMatters="These are the only data on what a realistic fire does to an entire spacecraft cabin, and they show the toxic gases and smoke, not heat or pressure, become the first hazard.",
         sourceIds=["ntrs-20210011521", "ntrs-20240002981", "ntrs-20260001992", "ntrs-20220002714", "ntrs-20210017785", "ntrs-20170000230"],
         hasRawData=False, kind="flight",
     ))
@@ -367,7 +367,7 @@ def curated(details: dict) -> list[dict]:
         facility="Microgravity Science Glovebox (MSG)",
         fuels=["Spacecraft materials heated below ignition (e.g. Teflon, Kapton, cotton lampwick, silicone rubber)", "Dibutyl phthalate (DBP)"],
         conditions={"gravityG": MICRO}, conditionsSourceIds=["psi-102"],
-        summaryPlain="SAME heated common spacecraft materials until they smoked — without flaming — and measured the smoke particles and how two kinds of smoke detector responded.",
+        summaryPlain="SAME heated common spacecraft materials until they smoked, without flaming, and measured the smoke particles and how two kinds of smoke detector responded.",
         whyItMatters="Smoke detectors are tuned on Earth; if microgravity smoke is made of different-sized particles, a detector could miss a real fire.",
         extraSources=["ntrs-20130000422"],
     ))
@@ -388,7 +388,7 @@ def curated(details: dict) -> list[dict]:
         conditions={"flowCmS": {"min": 5.4, "max": 65, "note": "co-flow air velocity (PSI approach)"}, "gravityG": MICRO},
         conditionsSourceIds=["psi-107"],
         years={"start": 2009, "end": 2009}, yearsNote="SPICE tests ran in the ISS MSG from February through June 2009 (PSI-107 SPICE final report).",
-        summaryPlain="SPICE turned up the fuel on small jet flames until they began to release smoke — the 'smoke point' — across 526 flames with different nozzles and airflows.",
+        summaryPlain="SPICE turned up the fuel on small jet flames until they began to release smoke, the 'smoke point', across 526 flames with different nozzles and airflows.",
         whyItMatters="Smoke points measure how sooty a fuel is; they feed the smoke-production models used to size spacecraft fire detection.",
         extraSources=[],
     ))
@@ -397,7 +397,7 @@ def curated(details: dict) -> list[dict]:
         facility="Microgravity Science Glovebox (MSG)",
         fuels=["Methane", "Ethylene", "Ethane", "Propane", "N2-diluted mixtures"],
         conditions={"gravityG": MICRO, "diluent": ["N2"]}, conditionsSourceIds=["psi-106", "psi-106-experimental-table-slice"],
-        years={"start": 2012, "end": 2012}, yearsNote="Test dates February–March 2012 from the PSI experimental table.",
+        years={"start": 2012, "end": 2012}, yearsNote="Test dates February-March 2012 from the PSI experimental table.",
         summaryPlain="SLICE studied small gas flames in a gentle co-flow of air to find how fast the air can move before the flame lifts off the burner and blows out.",
         whyItMatters="Lift-off and blow-out limits describe how ventilation can stabilise or extinguish a flame.",
         extraSources=[],
@@ -434,7 +434,7 @@ def curated(details: dict) -> list[dict]:
         years={"start": 2025}, yearsNote="Launched 4 February 2025 (NTRS 20250010653).",
         agencies=["NASA"],
         objectives="Demonstrate material flammability experiments in partial gravity by burning samples for more than 25 seconds in simulated lunar gravity, measuring flame spread, growth and the oxygen level at extinction.",
-        summaryPlain="LUCI spun a suborbital rocket so that its experiment felt Moon-like gravity for minutes, and burned a fabric sheet and an acrylic rod — the first long-duration burns ever made in lunar gravity.",
+        summaryPlain="LUCI spun a suborbital rocket so that its experiment felt Moon-like gravity for minutes, and burned a fabric sheet and an acrylic rod, the first long-duration burns ever made in lunar gravity.",
         whyItMatters="Lunar habitats and landers will have fires in one-sixth gravity, where some materials may burn more readily than on Earth; LUCI is the stepping stone to burning samples on the Moon itself.",
         sourceIds=["ntrs-20250010653", "ntrs-20260000646"], hasRawData=False, kind="flight",
     ))
@@ -448,7 +448,7 @@ def curated(details: dict) -> list[dict]:
         agencies=["NASA"],
         objectives="Determine material flammability limits at Martian and lunar gravity in a drop-tower centrifuge and compare them with the NASA-STD-6001 normal-gravity screening test.",
         summaryPlain="Engineers spun small burning samples inside a drop-tower capsule so that, during five seconds of free fall, they felt Moon or Mars gravity, then compared the lowest oxygen level that supports burning with Earth results.",
-        whyItMatters="These tests found that some materials burn at lower oxygen in partial gravity than on Earth — the key reason NASA is revisiting its 1 g material screening for lunar missions.",
+        whyItMatters="These tests found that some materials burn at lower oxygen in partial gravity than on Earth, the key reason NASA is revisiting its 1 g material screening for lunar missions.",
         sourceIds=["ntrs-20130010991", "ntrs-20250002114"], hasRawData=False, kind="flight",
     ))
     E.append(dict(
@@ -460,7 +460,7 @@ def curated(details: dict) -> list[dict]:
         agencies=["NASA"],
         objectives="Study ignition and flammability of solid spacecraft materials in practical geometries at oxygen concentrations and pressures representative of NASA exploration atmospheres, including suppression by diluents, flow reduction and venting.",
         summaryPlain="SoFIE is a reusable insert for the ISS combustion rack that lets several research teams ignite real spacecraft materials at different pressures and oxygen levels.",
-        whyItMatters="It is the facility built to answer the open questions the earlier experiments raised — especially in exploration atmospheres.",
+        whyItMatters="It is the facility built to answer the open questions the earlier experiments raised, especially in exploration atmospheres.",
         sourceIds=["ntrs-20200000361", "nasa-web-why-flames"], hasRawData=False, kind="flight",
     ))
 
@@ -484,7 +484,7 @@ def curated(details: dict) -> list[dict]:
     E.append(dict(id="same-smoke-modeling", psi="PSI-115", acronym="PSI-115 SAME modeling", category=["smoke"], platform="Ground",
                   fuels=["Dibutyl phthalate (DBP) vapour"], conditions={}, conditionsSourceIds=[],
                   summaryPlain="A ground study that simulated how smoke particles grow near a heated sample with and without gravity, using the SAME geometry.",
-                  whyItMatters="Links microgravity smoke-particle size to the airflow around a smouldering source — key for detector design.", extraSources=[]))
+                  whyItMatters="Links microgravity smoke-particle size to the airflow around a smouldering source, key for detector design.", extraSources=[]))
     return E
 
 
@@ -505,7 +505,7 @@ def main() -> int:
         acronym = d.get("investigationAcronym") or acc
         sources.append({
             "id": slug(acc),
-            "title": f"{fix_text(d.get('title'))} ({acronym}) — NASA PSI investigation record",
+            "title": f"{fix_text(d.get('title'))} ({acronym}), NASA PSI investigation record",
             "type": "psi-dataset",
             "url": PSI_URL.format(acc=acc),
             "accessed": ACCESSED,
@@ -600,7 +600,7 @@ def main() -> int:
         "accessed": ACCESSED,
         "localPath": web_txt.relative_to(ROOT).as_posix(),
         "experimentIds": ["flex", "sofie", "saffire-i"],
-        "publisher": "NASA Science — Biological and Physical Sciences",
+        "publisher": "NASA Science, Biological and Physical Sciences",
         "note": "Public explainer article.",
     })
 

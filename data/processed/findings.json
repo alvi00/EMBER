@@ -3,7 +3,7 @@
   "id": "f-saffire-i-01",
   "experimentId": "saffire-i",
   "statement": "In the first large-scale fire set inside an orbiting spacecraft (Saffire-I, 94 × 40.6 cm cotton-fiberglass fabric, 20 cm/s airflow), the concurrent-flow flame settled to a steady size and spread rate instead of accelerating as an upward flame of that size does in 1 g.",
-  "plainLanguage": "A metre-long burning fabric sheet in a spaceship did not keep speeding up the way it would on Earth — it settled into a steady, constant-size flame.",
+  "plainLanguage": "A metre-long burning fabric sheet in a spaceship did not keep speeding up the way it would on Earth, it settled into a steady, constant-size flame.",
   "category": "scale-effects",
   "safetyImplication": "Large low-gravity fires in ventilated cabins may grow steadily rather than explosively, but they keep burning for as long as the airflow feeds them.",
   "evidence": [
@@ -32,7 +32,7 @@
   "id": "f-saffire-i-02",
   "experimentId": "saffire-i",
   "statement": "Saffire-I flames spread more slowly than in earlier microgravity tests in smaller ducts, even for a wider sample; the authors attribute the difference to flow acceleration from hot-gas expansion in small tunnels.",
-  "plainLanguage": "The size of the space around a fire changes how fast it spreads — small test tunnels made flames spread faster than a realistic cabin-sized space.",
+  "plainLanguage": "The size of the space around a fire changes how fast it spreads, small test tunnels made flames spread faster than a realistic cabin-sized space.",
   "category": "scale-effects",
   "safetyImplication": "Flame-spread data from small-duct tests may overstate spread in open cabins but understate it in tight spaces; enclosure geometry must be considered in fire scenarios.",
   "evidence": [
@@ -87,10 +87,10 @@
  {
   "id": "f-saffire-ii-01",
   "experimentId": "saffire-ii",
-  "statement": "None of the Saffire-II silicone samples (0.27–1.03 mm) spread a flame in low gravity at the tested flow speeds, although the 0.27 mm sample is entirely consumed in the upward-burning 1 g test.",
+  "statement": "None of the Saffire-II silicone samples (0.27-1.03 mm) spread a flame in low gravity at the tested flow speeds, although the 0.27 mm sample is entirely consumed in the upward-burning 1 g test.",
   "plainLanguage": "Thin silicone that burns completely on Earth would not spread a flame at all in the orbiting test.",
   "category": "materials",
-  "safetyImplication": "For silicone at spacecraft-like flow speeds, the 1 g upward screening test was conservative — a material that passes it is unlikely to spread fire in 0 g.",
+  "safetyImplication": "For silicone at spacecraft-like flow speeds, the 1 g upward screening test was conservative, a material that passes it is unlikely to spread fire in 0 g.",
   "evidence": [
    {
     "sourceId": "ntrs-20170008805",
@@ -146,7 +146,7 @@
   "id": "f-saffire-ii-03",
   "experimentId": "saffire-ii",
   "statement": "Reducing ambient pressure in 1 g slows concurrent flame spread over 10 mm PMMA toward the rate measured in microgravity on Saffire-II (100 kPa, 20 cm/s), and a mixed-convection correlation extrapolated to low pressure predicts the Saffire-II spread rate well.",
-  "plainLanguage": "Burning samples on Earth at lower air pressure mimics how they burn in weightlessness — a cheaper way to test materials for space.",
+  "plainLanguage": "Burning samples on Earth at lower air pressure mimics how they burn in weightlessness, a cheaper way to test materials for space.",
   "category": "materials",
   "safetyImplication": "Low-pressure ground testing can approximate flame behaviour at untested gravity levels, supporting material screening for lunar and Martian habitats.",
   "evidence": [
@@ -180,7 +180,7 @@
  {
   "id": "f-saffire-iv-vi-01",
   "experimentId": "saffire-iv-vi",
-  "statement": "In seven long-duration fires inside Cygnus (Saffire IV–VI), cabin pressure and temperature rose only slightly, but smoke particulate reached substantial levels and CO and CO2 reached hazardous levels.",
+  "statement": "In seven long-duration fires inside Cygnus (Saffire IV-VI), cabin pressure and temperature rose only slightly, but smoke particulate reached substantial levels and CO and CO2 reached hazardous levels.",
   "plainLanguage": "In a real spacecraft-sized fire, the danger to the crew came from smoke and toxic gases, not from heat or pressure.",
   "category": "smoke-detection",
   "safetyImplication": "Spacecraft fire response should prioritise detection of smoke and toxic products and post-fire atmosphere cleanup over heat or overpressure protection.",
@@ -217,7 +217,7 @@
   "statement": "Saffire IV and V fires with heat release rates up to 10 kW had a measurable effect on Cygnus pressure, temperature and CO2, but the average vehicle conditions did not rise to unacceptable levels.",
   "plainLanguage": "Even a fire giving off as much heat as several space heaters did not make the whole cargo ship too hot or over-pressurised.",
   "category": "scale-effects",
-  "safetyImplication": "For vehicles of Cygnus size (~17–19 m³ free volume), bulk heating and overpressure are less limiting than combustion products.",
+  "safetyImplication": "For vehicles of Cygnus size (~17-19 m³ free volume), bulk heating and overpressure are less limiting than combustion products.",
   "evidence": [
    {
     "sourceId": "ntrs-20210011521",
@@ -243,7 +243,7 @@
  {
   "id": "f-saffire-iv-vi-03",
   "experimentId": "saffire-iv-vi",
-  "statement": "Flame growth over thick PMMA in Saffire IV–VI was linear in time, including at elevated oxygen, indicating that low-gravity flame spread and growth in these conditions does not accelerate.",
+  "statement": "Flame growth over thick PMMA in Saffire IV-VI was linear in time, including at elevated oxygen, indicating that low-gravity flame spread and growth in these conditions does not accelerate.",
   "plainLanguage": "Even with extra oxygen, the flames on thick plastic grew at a steady pace rather than faster and faster.",
   "category": "flame-spread",
   "safetyImplication": "Linear growth gives crews a more predictable window to detect and respond, unlike accelerating upward fires on Earth.",
@@ -271,8 +271,8 @@
  {
   "id": "f-saffire-iv-vi-04",
   "experimentId": "saffire-iv-vi",
-  "statement": "For 2-sided PMMA in Saffire IV–VI, raising oxygen by 0.08 mole fraction (0.22 → 0.30) increased the flame growth rate by 73% even though total pressure dropped by 45% (1000 → 544 mbar).",
-  "plainLanguage": "Lower cabin pressure did not make fires calmer — the extra oxygen in planned exploration atmospheres made them grow much faster.",
+  "statement": "For 2-sided PMMA in Saffire IV-VI, raising oxygen by 0.08 mole fraction (0.22 → 0.30) increased the flame growth rate by 73% even though total pressure dropped by 45% (1000 → 544 mbar).",
+  "plainLanguage": "Lower cabin pressure did not make fires calmer, the extra oxygen in planned exploration atmospheres made them grow much faster.",
   "category": "flame-spread",
   "safetyImplication": "Reduced-pressure, oxygen-enriched exploration atmospheres increase fire growth; oxygen fraction, not total pressure, dominates.",
   "evidence": [
@@ -301,7 +301,7 @@
   "id": "f-saffire-iv-vi-05",
   "experimentId": "saffire-iv-vi",
   "statement": "In the Cygnus configuration, a 2 mg/m³ aerosol detection threshold did not detect some Saffire fires before CO exceeded the 24-hour spacecraft maximum allowable concentration; the authors conclude a lower threshold or additional detectors would be needed.",
-  "plainLanguage": "A standard smoke-alarm setting went off too late in some tests — toxic carbon monoxide had already passed the one-day safety limit.",
+  "plainLanguage": "A standard smoke-alarm setting went off too late in some tests, toxic carbon monoxide had already passed the one-day safety limit.",
   "category": "smoke-detection",
   "safetyImplication": "Detection thresholds and detector placement must be sized to vehicle volume and mixing; ISS-style settings may be too slow for smaller vehicles.",
   "evidence": [
@@ -362,7 +362,7 @@
  {
   "id": "f-bass-01",
   "experimentId": "bass",
-  "statement": "In BASS, opposed-flow flames over cotton-fiberglass fabric reached steady spread in microgravity, with the fastest spread at an intermediate flow speed — a geometry in which the same fabric self-extinguishes in normal-gravity air (downward spread).",
+  "statement": "In BASS, opposed-flow flames over cotton-fiberglass fabric reached steady spread in microgravity, with the fastest spread at an intermediate flow speed, a geometry in which the same fabric self-extinguishes in normal-gravity air (downward spread).",
   "plainLanguage": "A fabric flame that goes out on Earth when burning downward kept spreading in space when a gentle breeze fed it.",
   "category": "flame-spread",
   "safetyImplication": "Microgravity with gentle ventilation can be more flammable than the 1 g condition used to judge a material; there is a worst-case airflow speed.",
@@ -425,9 +425,9 @@
   "id": "f-bass-ii-01",
   "experimentId": "bass-ii",
   "statement": "BASS-II determined a low-speed quenching boundary for concurrent spread over cotton-fiberglass fabric: flames quench when the airflow falls to between 1 and 5 cm/s, with higher quench speeds at lower oxygen.",
-  "plainLanguage": "If the air around a burning fabric almost stops moving (below a few cm per second), the flame starves and goes out — sooner when oxygen is lower.",
+  "plainLanguage": "If the air around a burning fabric almost stops moving (below a few cm per second), the flame starves and goes out, sooner when oxygen is lower.",
   "category": "extinction",
-  "safetyImplication": "Shutting down cabin ventilation can extinguish thin-fuel fires in 0 g, especially combined with reduced oxygen — but only if local flow truly drops to a few cm/s.",
+  "safetyImplication": "Shutting down cabin ventilation can extinguish thin-fuel fires in 0 g, especially combined with reduced oxygen, but only if local flow truly drops to a few cm/s.",
   "evidence": [
    {
     "sourceId": "ntrs-20150008962",
@@ -460,7 +460,7 @@
   "id": "f-bass-ii-02",
   "experimentId": "bass-ii",
   "statement": "Oxygen-consumption calorimetry showed most BASS-II flames released well below 100 W, and the flames burned fuel-rich (global equivalence ratio ≈ 1.3) under low-velocity forced flow.",
-  "plainLanguage": "The small space flames were weak — under the power of a light bulb — and burned inefficiently, leaving unburned fuel behind.",
+  "plainLanguage": "The small space flames were weak, under the power of a light bulb, and burned inefficiently, leaving unburned fuel behind.",
   "category": "scale-effects",
   "safetyImplication": "Small, slow low-g fires can smoulder along fuel-rich, which favours incomplete-combustion products such as CO and soot.",
   "evidence": [
@@ -521,7 +521,7 @@
  {
   "id": "f-bass-ii-04",
   "experimentId": "bass-ii",
-  "statement": "Normal-gravity blowoff limits for PMMA rods (0.635–3.81 cm, 14–18% O2) agree with BASS-II microgravity results once buoyant stretch and fuel blockage are included, enabling a 1 g test that extrapolates to microgravity flammability limits.",
+  "statement": "Normal-gravity blowoff limits for PMMA rods (0.635-3.81 cm, 14-18% O2) agree with BASS-II microgravity results once buoyant stretch and fuel blockage are included, enabling a 1 g test that extrapolates to microgravity flammability limits.",
   "plainLanguage": "A new Earth-based test can predict when a material stops burning in space, by accounting for how gravity stretches the flame.",
   "category": "materials",
   "safetyImplication": "Offers a tractable ground method to estimate low-gravity flammability limits for new cabin materials without flight tests.",
@@ -556,7 +556,7 @@
   "id": "f-confined-01",
   "experimentId": "confined-combustion",
   "statement": "In ISS Confined Combustion tests on cotton-fiberglass fabric between parallel baffles, flame length and spread rate first increased and then decreased as the gap was narrowed, giving an optimal (worst-case) baffle distance.",
-  "plainLanguage": "Squeezing a fire between two walls first makes it bigger, then — if the gap gets tight enough — starves it.",
+  "plainLanguage": "Squeezing a fire between two walls first makes it bigger, then, if the gap gets tight enough, starves it.",
   "category": "scale-effects",
   "safetyImplication": "Fires behind panels or between racks can be more vigorous than in open space at intermediate gaps; gap size is a design variable for fire safety.",
   "evidence": [
@@ -611,8 +611,8 @@
  {
   "id": "f-flex-01",
   "experimentId": "flex",
-  "statement": "FLEX methanol droplets burned in O2/N2/CO2 and O2/N2/He mixtures at 0.7 and 1 atm had a limiting oxygen index of about 12–13% O2 by volume.",
-  "plainLanguage": "Methanol droplets kept burning until the oxygen was cut to roughly 12–13% — far below normal air.",
+  "statement": "FLEX methanol droplets burned in O2/N2/CO2 and O2/N2/He mixtures at 0.7 and 1 atm had a limiting oxygen index of about 12-13% O2 by volume.",
+  "plainLanguage": "Methanol droplets kept burning until the oxygen was cut to roughly 12-13%, far below normal air.",
   "category": "suppression",
   "safetyImplication": "Oxygen levels low enough to stop liquid-fuel droplet fires are well below what crews can breathe, so whole-cabin oxygen reduction alone is not a practical suppressant.",
   "evidence": [
@@ -678,10 +678,10 @@
  {
   "id": "f-flex-03",
   "experimentId": "flex",
-  "statement": "FLEX methanol droplets (≈1.5–4 mm) showed two extinction modes: diffusive extinction from insufficient flame residence time (linked to water absorption) and radiative extinction from excessive heat loss for larger droplets.",
+  "statement": "FLEX methanol droplets (≈1.5-4 mm) showed two extinction modes: diffusive extinction from insufficient flame residence time (linked to water absorption) and radiative extinction from excessive heat loss for larger droplets.",
   "plainLanguage": "Small droplets go out because the flame is too cramped; big ones go out because they lose too much heat by glowing.",
   "category": "extinction",
-  "safetyImplication": "Whether a liquid-fuel fire self-extinguishes depends on its size — there is a window of sizes that burn longest.",
+  "safetyImplication": "Whether a liquid-fuel fire self-extinguishes depends on its size, there is a window of sizes that burn longest.",
   "evidence": [
    {
     "sourceId": "ntrs-20130014061",
@@ -712,7 +712,7 @@
  {
   "id": "f-cfi-01",
   "experimentId": "cfi",
-  "statement": "CFI observed hot-flame burning followed by cool-flame burning of n-dodecane droplets across ambient pressures of about 380 to 3800 mmHg (0.5–5 atm).",
+  "statement": "CFI observed hot-flame burning followed by cool-flame burning of n-dodecane droplets across ambient pressures of about 380 to 3800 mmHg (0.5-5 atm).",
   "plainLanguage": "The invisible 'cool flame' after-burn happened across a wide range of cabin pressures, not just normal air pressure.",
   "category": "cool-flames",
   "safetyImplication": "Reduced-pressure exploration cabins do not rule out cool-flame after-burning of liquid hydrocarbons.",
@@ -769,7 +769,7 @@
   "id": "f-acme-bre-01",
   "experimentId": "acme-bre",
   "statement": "BRE flames emulating condensed materials such as PMMA and Nylon burned quasi-steadily in microgravity without any air flow when the atmosphere was oxygen-enriched, whereas in 21% O2 they self-extinguished quickly.",
-  "plainLanguage": "Turning off the fans — a standard way to fight a space fire — did not put out these flames when there was extra oxygen.",
+  "plainLanguage": "Turning off the fans, a standard way to fight a space fire, did not put out these flames when there was extra oxygen.",
   "category": "suppression",
   "safetyImplication": "Ventilation shutdown may not extinguish fires in the elevated-oxygen atmospheres planned for exploration vehicles; additional suppression is needed.",
   "evidence": [
@@ -803,9 +803,9 @@
   "id": "f-acme-bre-02",
   "experimentId": "acme-bre",
   "statement": "In quiescent microgravity, BRE flames self-extinguished at oxygen concentrations below about 25% by volume; larger flames generally self-extinguished within 1.5 minutes and methane flames within a minute.",
-  "plainLanguage": "Without airflow, these flames went out on their own below roughly 25% oxygen — but kept going above it.",
+  "plainLanguage": "Without airflow, these flames went out on their own below roughly 25% oxygen, but kept going above it.",
   "category": "extinction",
-  "safetyImplication": "About 25% O2 appears to mark a threshold for still-air fire persistence; exploration atmospheres of 26.5–34% O2 are above it.",
+  "safetyImplication": "About 25% O2 appears to mark a threshold for still-air fire persistence; exploration atmospheres of 26.5-34% O2 are above it.",
   "evidence": [
    {
     "sourceId": "ntrs-20210022542",
@@ -842,7 +842,7 @@
   "id": "f-acme-bre-03",
   "experimentId": "acme-bre",
   "statement": "BRE investigators suggest NASA increase use of its alternative flammability Test 2 (cone calorimeter), because it measures material properties that correspond to the microgravity flames observed with the BRE burner.",
-  "plainLanguage": "A different Earth lab test — one that measures heat release — may predict space fire behaviour better.",
+  "plainLanguage": "A different Earth lab test, one that measures heat release, may predict space fire behaviour better.",
   "category": "materials",
   "safetyImplication": "Material qualification could add NASA-STD-6001 Test 2 data to better anticipate low-gravity burning.",
   "evidence": [
@@ -871,7 +871,7 @@
   "statement": "In ACME CLD Flame, sooty microgravity coflow flames were taller and wider and contained 5 to 8 times more soot than equivalent 1 g flames.",
   "plainLanguage": "Without gravity, the same flame made several times more soot.",
   "category": "smoke-detection",
-  "safetyImplication": "Low-gravity fires can produce more soot per unit of fuel — relevant to smoke-detector response, radiation heating and filter loading.",
+  "safetyImplication": "Low-gravity fires can produce more soot per unit of fuel, relevant to smoke-detector response, radiation heating and filter loading.",
   "evidence": [
    {
     "sourceId": "ntrs-20210022542",
@@ -927,7 +927,7 @@
   "statement": "E-FIELD Flames found clear correlations between flame luminosity, combustion intensity and ion current, and showed that highly diluted flames can be stabilized with very weak electric fields.",
   "plainLanguage": "A gentle electric field can hold a very weak flame in place.",
   "category": "extinction",
-  "safetyImplication": "Mainly fundamental — PSI states the study was not aimed at space applications; it indicates electric fields could control flames in future combustion devices.",
+  "safetyImplication": "Mainly fundamental, PSI states the study was not aimed at space applications; it indicates electric fields could control flames in future combustion devices.",
   "evidence": [
    {
     "sourceId": "ntrs-20210022542",
@@ -986,7 +986,7 @@
  {
   "id": "f-acme-s-flame-01",
   "experimentId": "acme-s-flame",
-  "statement": "s-Flame found radiative extinction to be a common event in ISS tests of spherical diffusion flames — predicted computationally but not previously observed for these conditions — occurring at high flow rates, with kinetic extinction at low flow rates.",
+  "statement": "s-Flame found radiative extinction to be a common event in ISS tests of spherical diffusion flames, predicted computationally but not previously observed for these conditions, occurring at high flow rates, with kinetic extinction at low flow rates.",
   "plainLanguage": "Bigger, well-fed flames in space often put themselves out by radiating away their heat.",
   "category": "extinction",
   "safetyImplication": "Radiative self-extinguishment is real in 0 g and must be captured by the fire models used for spacecraft design.",
@@ -1048,10 +1048,10 @@
  {
   "id": "f-same-r-01",
   "experimentId": "same-r",
-  "statement": "SAME-2 smoke from five spacecraft materials heated below ignition (Teflon, Kapton, cotton, silicone rubber, Pyrell) had average particle sizes mostly in the 200–400 nm range, with some quiescent (no-flow) cases producing substantially larger particles.",
+  "statement": "SAME-2 smoke from five spacecraft materials heated below ignition (Teflon, Kapton, cotton, silicone rubber, Pyrell) had average particle sizes mostly in the 200-400 nm range, with some quiescent (no-flow) cases producing substantially larger particles.",
   "plainLanguage": "Smoke from overheated spacecraft materials is made of very fine particles, and in still air some particles grow much larger.",
   "category": "smoke-detection",
-  "safetyImplication": "Spacecraft smoke detectors must be sensitive to 200–400 nm particles and tolerate larger particles from still-air smouldering.",
+  "safetyImplication": "Spacecraft smoke detectors must be sensitive to 200-400 nm particles and tolerate larger particles from still-air smouldering.",
   "evidence": [
    {
     "sourceId": "ntrs-20130000422",
@@ -1113,7 +1113,7 @@
   "statement": "Across 55 microgravity smoke-point measurements in SPICE, increasing coflow velocity and decreasing burner diameter both increased the smoke-point flame length, consistent with residence-time arguments.",
   "plainLanguage": "Faster surrounding air and smaller fuel jets let a flame grow longer before it starts releasing smoke.",
   "category": "smoke-detection",
-  "safetyImplication": "Ventilation speed changes how sooty a low-gravity flame is — slow air favours earlier smoke release.",
+  "safetyImplication": "Ventilation speed changes how sooty a low-gravity flame is, slow air favours earlier smoke release.",
   "evidence": [
    {
     "sourceId": "psi-107-reports-spice-finalreport",
@@ -1144,7 +1144,7 @@
  {
   "id": "f-spice-02",
   "experimentId": "spice",
-  "statement": "SPICE ranked fuel sooting propensity in microgravity as ethylene < propane < 50% propylene < 75% propylene < propylene — the same order as in normal gravity except that ethylene and propane swap places.",
+  "statement": "SPICE ranked fuel sooting propensity in microgravity as ethylene < propane < 50% propylene < 75% propylene < propylene, the same order as in normal gravity except that ethylene and propane swap places.",
   "plainLanguage": "Which fuels are smokiest is almost the same in space as on Earth.",
   "category": "materials",
   "safetyImplication": "Normal-gravity sooting rankings can largely be used to anticipate the relative smokiness of fuels in 0 g.",
@@ -1179,7 +1179,7 @@
   "id": "f-partial-g-01",
   "experimentId": "partial-g-centrifuge",
   "statement": "Drop-tower centrifuge tests at Martian gravity (0.38 g) found Mylar, Ultem and Nomex burning at lower oxygen concentrations than in the NASA-STD-6001 Test 1 at 1 g (limits up to 5.75 percentage points lower across partial-g levels), suggesting a gravity level below Earth's where materials burn more readily.",
-  "plainLanguage": "On Mars- or Moon-like gravity, some materials can burn in less oxygen than they need on Earth — so passing Earth's test may not be enough.",
+  "plainLanguage": "On Mars- or Moon-like gravity, some materials can burn in less oxygen than they need on Earth, so passing Earth's test may not be enough.",
   "category": "materials",
   "safetyImplication": "1 g flammability screening may not be conservative for lunar and Martian habitats; a safety factor on 1 g limits may be needed.",
   "evidence": [
@@ -1218,7 +1218,7 @@
   "id": "f-partial-g-02",
   "experimentId": "partial-g-centrifuge",
   "statement": "For the charring fuels Nomex and Ultem, the oxygen margin of safety in lunar gravity was about 2.5 percentage points lower than the 1 g screening value; for non-charring Mylar the lunar margin was −5.75 points.",
-  "plainLanguage": "At Moon gravity, the safety margin on oxygen shrank by a few percent — even more for a thin plastic film.",
+  "plainLanguage": "At Moon gravity, the safety margin on oxygen shrank by a few percent, even more for a thin plastic film.",
   "category": "materials",
   "safetyImplication": "Lunar cabin oxygen limits derived from 1 g material tests should carry a margin of several percentage points.",
   "evidence": [
@@ -1280,7 +1280,7 @@
   "id": "f-luci-01",
   "experimentId": "luci",
   "statement": "Theory and experiments indicate some materials that will not burn in 1 g will burn in 0 g with low-speed flow or in lunar gravity; related work suggests the oxygen concentration needed for flammability reaches a minimum near lunar gravity.",
-  "plainLanguage": "The Moon's weak gravity may be the most dangerous gravity level for fires — flames there get just enough fresh air without being cooled too much.",
+  "plainLanguage": "The Moon's weak gravity may be the most dangerous gravity level for fires, flames there get just enough fresh air without being cooled too much.",
   "category": "materials",
   "safetyImplication": "Lunar surface habitats may face the worst-case gravity for material flammability; material limits should be checked at lunar g.",
   "evidence": [

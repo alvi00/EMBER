@@ -31,6 +31,21 @@
   /* Violet lifted for text use on dark surfaces (AA ≥ 4.5:1 on --bg-elev-1) */
   --flame-violet-text: #a594ff;
 
+  /*
+   * Chart palette (dataviz validator, dark mode vs --bg-elev-1): blue/orange and blue/amber pairs pass lightness band,
+   * chroma, CVD (ΔE ≈ 21) and normal-vision checks. Amber and orange never share a chart.
+   */
+  --viz-micro: #2f9bc8; /* microgravity / extinguished side */
+  --viz-earth: #d95926; /* 1 g / burned */
+  --viz-partial: #c98500; /* partial gravity (Moon, Mars) */
+  --viz-neutral: #8a90a2; /* ground / no data (always with hatch) */
+  /* Sequential single-hue ramp (low → high count) */
+  --viz-seq-1: #123040;
+  --viz-seq-2: #17506a;
+  --viz-seq-3: #1f7396;
+  --viz-seq-4: #2f9bc8;
+  --viz-seq-5: #6fd0f2;
+
   --flame-gradient: linear-gradient(135deg, var(--flame-micro) 0%, var(--flame-violet) 50%, var(--flame-earth) 100%);
 
   /* Hatched "no data" pattern (never colour alone) */

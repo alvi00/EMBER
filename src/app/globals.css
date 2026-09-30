@@ -41,6 +41,10 @@
   --color-danger: var(--danger);
   --color-ok: var(--ok);
   --color-unknown: var(--unknown);
+  --color-viz-micro: var(--viz-micro);
+  --color-viz-earth: var(--viz-earth);
+  --color-viz-partial: var(--viz-partial);
+  --color-viz-neutral: var(--viz-neutral);
 
   /* shadcn semantic colours */
   --color-background: var(--background);

@@ -121,3 +121,24 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
   (poster, no canvas); mobile `qa/phase5/mobile-375-*.png`. Production build: CLS **0.00008**, **0 long tasks** during load
   and a full scroll (rAF frame timing is throttled to 1 fps in the background automation tab, so FPS was not measurable
   here). Route e2e 24/24 ✅ on the production server.
+
+## Phase 6 — Mission Control · ✅ (2026-09-30)
+- Loaded **stitch-design-taste** + **dataviz**. Dashboard tiles use sans only (Geist / Geist Mono); display serif stays in
+  the page header. Chart palette computed with the dataviz validator (dark mode vs --bg-elev-1): brand tones failed the
+  dark lightness band, so charts use stepped tokens `--viz-micro #2F9BC8`, `--viz-earth #D95926`, `--viz-partial #C98500`
+  (blue/orange ΔE 21.7, blue/amber ΔE 21.4 — all checks pass; amber and orange never share a chart), neutral + hatch for
+  ground/no-data, single-hue sequential ramp for counts.
+- `src/lib/scoring.ts` implemented now (needed for Top 5) with 10 Vitest tests (ordering, weight normalisation,
+  all-zero/invalid weights → defaults, AI-draft × 0.7, rejected excluded, mission re-rank, deterministic ties): all pass.
+- Mission Control (Magic UI BentoGrid, re-themed): KPI row (Tickers), Top 5 insights (score, category, status, source
+  chip), evidence digest (offline, assembled from top-ranked findings with citations — replaced by AI digest in Phase 9),
+  coverage mini-heatmap gravity × O2 (hatched = no data, ring = mission cabin, → /lens), experiment timeline by platform
+  (D3 scales + SVG, regime colour, hatched ground rows, open-ended bars flagged, hover/focus tooltips, links to detail),
+  findings-by-category bars (Recharts, single series, direct labels, sr-only table). Layout-matching skeleton.
+- Copy sweep: em-dashes/en-dashes removed from all authored UI text (findings statements/plain language/implications,
+  glossary, curated experiment copy, mission notes); verbatim evidence excerpts untouched. Findings re-extracted: 44 ✅.
+- Fix: heatmap header used an `sr-only` cell that dropped out of the grid (row labels shifted); replaced with a visible
+  "O2" corner cell.
+- **Checkpoint:** screenshots `qa/phase6/dashboard-{1440,768,375}.png`; mission switch ISS → Mars surface updates URL,
+  KPIs, Top 5 ids, cabin cell ("Mars, O2 ≥30%: no data"), category data; keyboard traversal: 60 tab stops all visible,
+  timeline bars show a focus stroke + tooltip (`qa/phase6/timeline-focus.png`); 0 console errors; no horizontal overflow at 375.

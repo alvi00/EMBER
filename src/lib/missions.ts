@@ -38,7 +38,7 @@ export const MISSIONS: Mission[] = [
       flowCmS: 20,
       sourced: true,
       sourceId: "ntrs-20205004657",
-      note: "ISS ambient 1.0 atm and ~22% O2 (21.3–22.9% daily range) per NTRS 20205004657. Flow 20 cm/s is the Saffire test speed, not a vehicle requirement.",
+      note: "ISS ambient 1.0 atm and ~22% O2 (21.3-22.9% daily range) per NTRS 20205004657. Flow 20 cm/s is the Saffire test speed, not a vehicle requirement.",
     },
   },
   {
