@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { PageHeader } from "@/components/shell/PageHeader";
+import { T } from "@/components/ember/T";
 import { MissionControl } from "@/components/dashboard/MissionControl";
 import { DashboardSkeleton } from "@/components/dashboard/DashboardSkeleton";
 import { datasetStats, findings } from "@/lib/data";
@@ -21,10 +22,7 @@ export default function DashboardPage() {
   const stats = datasetStats();
   return (
     <>
-      <PageHeader
-        title="Mission Control"
-        description="The state of NASA fire-safety evidence for one mission at a time, every number traceable to a source."
-      />
+      <PageHeader title={<T k="page.dashboard.title" />} description={<T k="page.dashboard.lead" />} />
       <Suspense fallback={<DashboardSkeleton />}>
         <MissionControl
           findings={findings}

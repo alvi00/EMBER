@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { footerNav, site } from "@/content/site";
+import { NAV_KEY } from "@/content/i18n";
+import { T } from "@/components/ember/T";
 import { Logo } from "@/components/shell/Logo";
 
 export function SiteFooter({ provenance }: { provenance?: React.ReactNode }) {
@@ -17,7 +19,7 @@ export function SiteFooter({ provenance }: { provenance?: React.ReactNode }) {
             {footerNav.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="text-ink-muted hover:text-ink transition-colors">
-                  {item.label}
+                  <T k={NAV_KEY[item.href].label} />
                 </Link>
               </li>
             ))}
@@ -30,7 +32,9 @@ export function SiteFooter({ provenance }: { provenance?: React.ReactNode }) {
       </div>
       <div className="border-line border-t">
         <div className="container-ember text-ink-muted flex flex-col gap-2 py-5 text-xs md:flex-row md:items-center md:justify-between">
-          <p>{site.disclaimer}</p>
+          <p>
+            <T k="disclaimer.site" />
+          </p>
           <p className="font-mono">
             {site.name} · {site.expansion}
           </p>

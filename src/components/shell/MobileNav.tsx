@@ -6,6 +6,8 @@ import { allPagesNav, site } from "@/content/site";
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { isActivePath } from "@/components/shell/nav-paths";
+import { LocaleToggle, T } from "@/components/ember/T";
+import { NAV_KEY } from "@/content/i18n";
 
 /** Mobile bottom-sheet navigation. Loaded on the first tap of the menu button, so the dialog code is not in every page. */
 export function MobileNav({
@@ -50,12 +52,13 @@ export function MobileNav({
                         : "border-line text-ink-muted hover:text-ink",
                     )}
                   >
-                    {item.label}
+                    <T k={NAV_KEY[item.href].label} />
                   </Link>
                 </li>
               );
             })}
           </ul>
+          <LocaleToggle className="mt-4" />
         </nav>
       </SheetContent>
     </Sheet>

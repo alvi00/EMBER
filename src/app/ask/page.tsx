@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AskClient } from "@/components/ask/AskClient";
 import { PageHeader } from "@/components/shell/PageHeader";
+import { T } from "@/components/ember/T";
 import { providerStatus } from "@/lib/ai/provider";
 
 // Per request: reads ?q= and ?mission=, and reports whether an AI provider is configured (never the key itself).
@@ -16,11 +17,7 @@ export default function AskPage() {
   const { available, provider, modelId } = providerStatus();
   return (
     <>
-      <PageHeader
-        eyebrow="Evidence copilot"
-        title="Ask the Flame"
-        description="Questions answered only from NASA microgravity combustion records. Every claim cites its passage, and when the data is silent EMBER says so."
-      />
+      <PageHeader eyebrow="Evidence copilot" title={<T k="page.ask.title" />} description={<T k="page.ask.lead" />} />
       <AskClient ai={{ available, provider, modelId }} />
     </>
   );

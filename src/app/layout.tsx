@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { Geist, Geist_Mono, Instrument_Serif, Noto_Sans_Bengali, Noto_Serif_Bengali } from "next/font/google";
 import { SiteHeader } from "@/components/shell/SiteHeader";
 import { SiteFooter } from "@/components/shell/SiteFooter";
 import { Overlays } from "@/components/shell/Overlays";
@@ -30,6 +30,22 @@ const instrumentSerif = Instrument_Serif({
   weight: "400",
   style: ["normal", "italic"],
   display: "swap",
+});
+
+// Bengali faces for the optional বাংলা copy. Not preloaded and limited to the Bengali unicode range, so browsers only
+// download them when Bengali text is on screen.
+const notoSansBengali = Noto_Sans_Bengali({
+  variable: "--font-bengali-sans",
+  subsets: ["bengali"],
+  display: "swap",
+  preload: false,
+});
+
+const notoSerifBengali = Noto_Serif_Bengali({
+  variable: "--font-bengali-serif",
+  subsets: ["bengali"],
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -66,12 +82,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`dark ${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
+      className={`dark ${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} ${notoSansBengali.variable} ${notoSerifBengali.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <a
           href="#main"
-          className="sr-only z-50 rounded-md bg-elev-2 px-4 py-2 text-sm focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+          className="bg-elev-2 sr-only z-50 rounded-md px-4 py-2 text-sm focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
         >
           Skip to content
         </a>

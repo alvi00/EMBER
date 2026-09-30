@@ -409,3 +409,14 @@
     break-inside: avoid;
   }
 }
+
+/* Bengali copy (the বাংলা toggle): Noto faces, roomier line height for the script's vowel signs. */
+[lang="bn"] {
+  font-family: var(--font-bengali-sans), var(--font-geist-sans), system-ui, sans-serif;
+  letter-spacing: 0;
+}
+.font-display [lang="bn"] {
+  font-family: var(--font-bengali-serif), var(--font-instrument-serif), serif;
+  font-style: normal;
+  line-height: 1.3;
+}

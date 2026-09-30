@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/shell/PageHeader";
+import { T } from "@/components/ember/T";
 import { Explorer } from "@/components/explorer/Explorer";
 import { experiments, findings, measurements } from "@/lib/data";
 import { FUEL_GROUPS, facilityGroupOf, type ExplorerRow } from "@/lib/explorer";
@@ -66,8 +67,8 @@ export default function ExperimentsPage() {
   return (
     <>
       <PageHeader
-        title="Experiments"
-        description={`${list.length} NASA investigations, from droplets on the ISS to metre-long fires inside Cygnus. Search reads their source documents too.`}
+        title={<T k="page.experiments.title" />}
+        description={<T k="page.experiments.lead" vars={{ n: list.length }} />}
       />
       <Explorer rows={list} bounds={bounds(list)} />
     </>

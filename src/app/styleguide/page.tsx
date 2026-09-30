@@ -69,10 +69,10 @@ export default function StyleguidePage() {
     <div className="container-ember space-y-20 py-12">
       <header>
         <p className="eyebrow">Dev only</p>
-        <h1 className="mt-3 font-display text-6xl leading-tight">Styleguide</h1>
-        <p className="mt-3 max-w-2xl text-ink-muted">
-          Deep space, living flame. Blue means microgravity and cool; amber-orange means Earth gravity, soot and
-          danger. Meaning is never carried by colour alone.
+        <h1 className="font-display mt-3 text-6xl leading-tight">Styleguide</h1>
+        <p className="text-ink-muted mt-3 max-w-2xl">
+          Deep space, living flame. Blue means microgravity and cool; amber-orange means Earth gravity, soot and danger.
+          Meaning is never carried by colour alone.
         </p>
       </header>
 
@@ -83,29 +83,33 @@ export default function StyleguidePage() {
         <ul className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4 xl:grid-cols-6">
           {COLORS.map((c) => (
             <li key={c.name} className="surface overflow-hidden">
-              <div className={`h-20 border-b border-line ${c.cls}`} />
+              <div className={`border-line h-20 border-b ${c.cls}`} />
               <div className="p-3">
-                <p className="font-mono text-xs text-ink">{c.name}</p>
-                <p className="font-mono text-2xs text-ink-muted">{c.value}</p>
-                <p className="mt-1 text-xs text-ink-muted">{c.use}</p>
+                <p className="text-ink font-mono text-xs">{c.name}</p>
+                <p className="text-2xs text-ink-muted font-mono">{c.value}</p>
+                <p className="text-ink-muted mt-1 text-xs">{c.use}</p>
               </div>
             </li>
           ))}
         </ul>
-        <div role="img" className="mt-4 h-3 rounded-full [background:var(--flame-gradient)]" aria-label="Flame gradient" />
+        <div
+          role="img"
+          className="mt-4 h-3 rounded-full [background:var(--flame-gradient)]"
+          aria-label="Flame gradient"
+        />
       </section>
 
       <section aria-labelledby="sg-type">
         <h2 id="sg-type" className="text-2xl font-medium">
           Type scale
         </h2>
-        <p className="mt-2 text-sm text-ink-muted">
+        <p className="text-ink-muted mt-2 text-sm">
           Display: Instrument Serif (italic for emotive words). UI: Geist Sans. Data: Geist Mono with tabular figures.
         </p>
         <ul className="mt-6 space-y-5">
           {TYPE.map((t) => (
             <li key={t.size} className="grid grid-cols-[3rem_1fr] items-baseline gap-4 overflow-hidden">
-              <span className="font-mono text-xs text-ink-faint">{t.size}</span>
+              <span className="text-ink-faint font-mono text-xs">{t.size}</span>
               <span className={`truncate ${t.cls}`}>{t.sample}</span>
             </li>
           ))}
@@ -129,7 +133,7 @@ export default function StyleguidePage() {
           </Button>
           <Button variant="destructive">Reject</Button>
         </div>
-        <p className="mt-4 text-sm text-ink-muted">
+        <p className="text-ink-muted mt-4 text-sm">
           Keyboard focus shows a 2 px flame-micro outline with 2 px offset on every interactive element. Tab through
           this row to check.
         </p>
@@ -174,7 +178,9 @@ export default function StyleguidePage() {
         </h2>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           {ev ? <CitationChip sourceId={ev.sourceId} chunkId={ev.chunkId} page={ev.page} excerpt={ev.excerpt} /> : null}
-          {ev ? <CitationChip sourceId={ev.sourceId} chunkId={ev.chunkId} page={ev.page} excerpt={ev.excerpt} index={1} /> : null}
+          {ev ? (
+            <CitationChip sourceId={ev.sourceId} chunkId={ev.chunkId} page={ev.page} excerpt={ev.excerpt} index={1} />
+          ) : null}
           {MISSIONS.map((m, i) => (
             <MissionChip key={m.id} mission={m} active={i === 2} />
           ))}
@@ -185,7 +191,7 @@ export default function StyleguidePage() {
         <h2 id="sg-glyphs" className="text-2xl font-medium">
           Glyphs
         </h2>
-        <ul className="mt-6 flex flex-wrap gap-6 text-ink">
+        <ul className="text-ink mt-6 flex flex-wrap gap-6">
           {[
             { C: DropletFlameGlyph, label: "Droplet flame" },
             { C: SheetFlameGlyph, label: "Solid-sheet flame" },
@@ -197,7 +203,7 @@ export default function StyleguidePage() {
               <span className="surface flex size-16 items-center justify-center">
                 <C className="size-7" />
               </span>
-              <span className="text-xs text-ink-muted">{label}</span>
+              <span className="text-ink-muted text-xs">{label}</span>
             </li>
           ))}
         </ul>
@@ -208,22 +214,22 @@ export default function StyleguidePage() {
           Cards
         </h2>
         <div className="surface p-6">
-          <p className="text-sm text-ink-muted">Surface card</p>
-          <p className="mt-2 text-3xl font-medium tabular">
+          <p className="text-ink-muted text-sm">Surface card</p>
+          <p className="tabular mt-2 text-3xl font-medium">
             <Ticker value={findings.length} className="text-flame-core" />
           </p>
-          <p className="mt-1 text-sm text-ink-muted">findings (Magic UI NumberTicker, runs once)</p>
+          <p className="text-ink-muted mt-1 text-sm">findings (Magic UI NumberTicker, runs once)</p>
         </div>
         <Bezel innerClassName="p-6">
-          <p className="text-sm text-ink-muted">Double-bezel card</p>
+          <p className="text-ink-muted text-sm">Double-bezel card</p>
           <p className="mt-2 text-lg">Hero panels and key tiles.</p>
         </Bezel>
         <div className="surface relative overflow-hidden p-6">
           <BorderBeam size={80} duration={8} colorFrom="#4CC9F0" colorTo="#7B61FF" />
-          <p className="text-sm text-ink-muted">Selected card</p>
+          <p className="text-ink-muted text-sm">Selected card</p>
           <p className="mt-2 text-lg">BorderBeam marks the selected insight.</p>
         </div>
-        <div className="relative overflow-hidden rounded-full border border-line px-6 py-3 text-sm md:col-span-3 md:w-max">
+        <div className="border-line relative overflow-hidden rounded-full border px-6 py-3 text-sm md:col-span-3 md:w-max">
           <ShineBorder shineColor={["#4CC9F0", "#7B61FF", "#FF7A18"]} borderWidth={1} />
           ShineBorder is reserved for the primary CTA only.
         </div>
@@ -239,10 +245,13 @@ export default function StyleguidePage() {
           action={{ href: "/experiments", label: "Clear all filters" }}
         />
         <div className="surface p-6">
-          <p className="mb-4 text-sm text-ink-muted">Loading</p>
+          <p className="text-ink-muted mb-4 text-sm">Loading</p>
           <SkeletonLines lines={4} />
         </div>
-        <ErrorNotice title="The AI provider did not respond." body="Showing retrieval-only results from the dataset instead." />
+        <ErrorNotice
+          title="The AI provider did not respond."
+          body="Showing retrieval-only results from the dataset instead."
+        />
       </section>
     </div>
   );

@@ -9,6 +9,8 @@ import { primaryNav, site } from "@/content/site";
 import { Logo } from "@/components/shell/Logo";
 import { MissionSwitcher } from "@/components/shell/MissionSwitcher";
 import { isActivePath } from "@/components/shell/nav-paths";
+import { LocaleToggle, T } from "@/components/ember/T";
+import { NAV_KEY } from "@/content/i18n";
 import { useUiStore } from "@/lib/stores";
 import { cn } from "@/lib/utils";
 
@@ -52,8 +54,12 @@ export function SiteHeader() {
                       active ? "text-ink" : "text-ink-muted hover:text-ink",
                     )}
                   >
-                    <span className="xl:hidden">{item.short ?? item.label}</span>
-                    <span className="hidden xl:inline">{item.label}</span>
+                    <span className="xl:hidden">
+                      <T k={NAV_KEY[item.href].short ?? NAV_KEY[item.href].label} />
+                    </span>
+                    <span className="hidden xl:inline">
+                      <T k={NAV_KEY[item.href].label} />
+                    </span>
                   </Link>
                 </li>
               );
@@ -74,6 +80,7 @@ export function SiteHeader() {
               ⌘K
             </kbd>
           </button>
+          <LocaleToggle className="hidden md:inline-flex" />
           <MissionSwitcher compact />
           <button
             ref={menuButton}

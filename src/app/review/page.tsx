@@ -46,8 +46,8 @@ export default async function ReviewPage() {
   return (
     <div className="container-ember py-10">
       <p className="eyebrow">Dev only · Human verification</p>
-      <h1 className="mt-3 font-display text-5xl leading-tight">Finding review</h1>
-      <p className="mt-3 max-w-2xl text-ink-muted">
+      <h1 className="font-display mt-3 text-5xl leading-tight">Finding review</h1>
+      <p className="text-ink-muted mt-3 max-w-2xl">
         Every finding was drafted from the source text and is marked <strong>AI draft</strong> until a person checks it
         against the highlighted excerpt. Your decision is written to <code>data/processed/findings.json</code>.
       </p>

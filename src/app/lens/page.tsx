@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/shell/PageHeader";
+import { T } from "@/components/ember/T";
 import { LensView } from "@/components/lens/LensView";
 import { findings, measurements } from "@/lib/data";
 import type { Measurement } from "@/lib/schema";
@@ -35,10 +36,7 @@ const lensMeasurements: Measurement[] = measurements.map((m) => ({
 export default function LensPage() {
   return (
     <>
-      <PageHeader
-        title="Habitat Risk Lens"
-        description="Set your cabin's gravity, oxygen, pressure and airflow. The Lens shows which NASA tests are closest, and where the evidence runs out."
-      />
+      <PageHeader title={<T k="page.lens.title" />} description={<T k="page.lens.lead" />} />
       <LensView measurements={lensMeasurements} findings={findings} />
     </>
   );
