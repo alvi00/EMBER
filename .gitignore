@@ -49,3 +49,6 @@ next-env.d.ts
 /playwright/.cache/
 /qa/
 !.env.example
+
+/models-cache/
+/data/interim/

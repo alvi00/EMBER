@@ -1,13 +1,57 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import type { Metadata } from "next";
-import { PageHeader } from "@/components/shell/PageHeader";
 import { assertDevOnly } from "@/lib/dev-only";
+import type { Chunk, Experiment, Finding, Source } from "@/lib/schema";
+import { ReviewClient, type ReviewItem } from "@/components/review/ReviewClient";
 
 export const metadata: Metadata = {
   title: "Finding review",
   robots: { index: false, follow: false },
 };
 
-export default function Page() {
+// Always read the latest findings.json from disk so decisions show up immediately.
+export const dynamic = "force-dynamic";
+
+async function readJson<T>(rel: string): Promise<T> {
+  return JSON.parse(await readFile(path.join(process.cwd(), rel), "utf8")) as T;
+}
+
+export default async function ReviewPage() {
   assertDevOnly();
-  return <PageHeader eyebrow="Dev only" title="Finding review" />;
+  const [findings, chunks, sources, experiments] = await Promise.all([
+    readJson<Finding[]>("data/processed/findings.json"),
+    readJson<Chunk[]>("data/processed/chunks.json"),
+    readJson<Source[]>("data/sources.json"),
+    readJson<Experiment[]>("data/processed/experiments.json"),
+  ]);
+  const chunkById = new Map(chunks.map((c) => [c.id, c]));
+  const sourceById = new Map(sources.map((s) => [s.id, s]));
+  const expById = new Map(experiments.map((e) => [e.id, e]));
+
+  const items: ReviewItem[] = findings.map((f) => ({
+    finding: f,
+    experiment: { id: f.experimentId, acronym: expById.get(f.experimentId)?.acronym ?? f.experimentId },
+    evidence: f.evidence.map((ev) => {
+      const s = sourceById.get(ev.sourceId);
+      return {
+        ...ev,
+        chunkText: chunkById.get(ev.chunkId)?.text ?? "",
+        sourceTitle: s?.title ?? ev.sourceId,
+        sourceUrl: s?.url ?? "#",
+      };
+    }),
+  }));
+
+  return (
+    <div className="container-ember py-10">
+      <p className="eyebrow">Dev only · Human verification</p>
+      <h1 className="mt-3 font-display text-5xl leading-tight">Finding review</h1>
+      <p className="mt-3 max-w-2xl text-ink-muted">
+        Every finding was drafted from the source text and is marked <strong>AI draft</strong> until a person checks it
+        against the highlighted excerpt. Your decision is written to <code>data/processed/findings.json</code>.
+      </p>
+      <ReviewClient items={items} />
+    </div>
+  );
 }

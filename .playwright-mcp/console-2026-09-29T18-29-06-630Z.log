@@ -1,3 +1,5 @@
 [     734ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://science.nasa.gov/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1:1
 [     836ms] [LOG] init popups ✔ @ https://science.nasa.gov/wp-content/uploads/pum/pum-site-scripts-1.js?defer&generated=1753194535&ver=1.25.0:6
 [    5845ms] [LOG] prevented @ https://science.nasa.gov/wp-content/uploads/pum/pum-site-scripts-1.js?defer&generated=1753194535&ver=1.25.0:6
+[25665344ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[25665385ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776

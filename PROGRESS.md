@@ -50,3 +50,27 @@ Scope: website only, local (project.md revised 2026-09-29). No deploy, no push, 
   SAFFIRE-I/III SIBAL thickness units are inconsistent across PSI tables → kept as raw notes, not converted.
 - **Checkpoint:** `npm run data:validate` ✅ (133 sources, 29 experiments, every experiment ≥ 1 source, all ids resolve).
   Manifest: `data/raw-manifest.md` (119 files, 295.7 MB).
+
+## Phase 3 — Processing & knowledge base · ✅ (2026-09-30)
+- `extract_pdf.py` (PyMuPDF — pdfplumber was not installed and PyMuPDF was): 88 text sources → **3,404 chunks**
+  (~350 tokens, 60 overlap, never crossing a page, page numbers kept; PSI investigation metadata and the NASA web page
+  are page-less chunks).
+- `clean_tables.py` + `build_measurements.py`: **472 measurement rows** — FLEX droplets (274), ACME CFI-G (133), partial-g
+  limits Table I (24), BASS-II SIBAL appendix (18), Saffire-II µg + 1 g reference (14), Saffire IV–VI Table 1 (7), Saffire-I (2).
+  Outcome mappings and unit conversions are documented in the scripts (and will be listed on /methods). Spreadsheet error
+  cells / "none" / 0-pressure placeholders are treated as missing. Reused BASS-II samples and one ambiguous row split by a
+  page break are excluded.
+- Findings: no AI key at build time → drafted by Claude Code from the chunks (§10.4 option) in
+  `data/curation/findings.draft.json`; `extract-findings.ts` resolves every excerpt to a chunk id + page and rejects
+  anything not verbatim or > 25 words. **44 findings across 20 investigations, all `ai-draft`, 0 rejected.**
+  Re-running preserves human decisions (verified / rejected / reviewer).
+- `/review` (dev-only) is ready: source chunk with highlighted excerpt ← → editable fields, Verify / Edit & verify /
+  Reject, shortcuts V/E/R/J/K, writes `findings.json` via dev-only `/api/review`. **Ready for the team to verify in
+  parallel.** Screenshot `qa/phase3/review-1440.png`.
+- Embeddings: `Xenova/all-MiniLM-L6-v2` (q8) over all chunks → int8-quantised `embeddings.json` (1.92 MB, model cached in
+  `models-cache/` for offline query embedding). BM25: MiniSearch `search-index.json` (3.49 MB).
+- `glossary.json`: 31 terms written in our own words.
+- STRETCH ML model (step 7): not attempted now — deferred to Phase 12 time permitting; will be stated on /methods.
+- **Checkpoint:** `npm run data:validate` ✅ (133 sources, 29 experiments, 44 findings, 472 measurements, 3,404 chunks,
+  31 glossary terms). Spot-check of 3 random findings (f-flex-01, f-saffire-iv-vi-04, f-acme-bre-01) against their source
+  pages: all statements supported, derived numbers (0.22→0.30 O2, 1000→544 mbar) match Table 1.
